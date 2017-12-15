@@ -1,0 +1,28 @@
+.styleguide-example__rendered {
+  position: relative;
+}
+.styleguide-example__toggle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: transparent;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  pointer-events: none;
+}
+.styleguide-example__toggle:focus {
+  pointer-events: all;
+  color: var(--color-ui-07);
+}
+.styleguide-example__rendered:hover .styleguide-example__toggle {
+  pointer-events: all;
+  color: var(--color-ui-07);
+}
+.styleguide-example__rendered:hover .styleguide-example__toggle:hover {
+  color: var(--color-ui-06);
+}

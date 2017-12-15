@@ -1,4 +1,9 @@
-// JS Goes here - ES6 supported
+/*
+ * Everything except initStyleguide should be usable
+ * for ParisWeb's site.
+ * TODO : Update webpack.conf.js in order to generate
+ * two separate bundles
+ */
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/js/app.js");
+import initStyleguide from "./styleguide";
+initStyleguide();

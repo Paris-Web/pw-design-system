@@ -1,0 +1,15 @@
+<div class="styleguide-example">
+    <div class="styleguide-example__rendered"  tabindex="-1">
+        {{ .Inner }}
+        <button class="styleguide-example__toggle" aria-label="Afficher le code">
+            </>
+        </button>
+    </div>
+    <div class="styleguide-example__code">
+        <pre>
+            <code>
+                {{ (trim .Inner " \n") | htmlEscape | safeHTML }}
+            </code>
+        </pre>
+    </div>
+</div>
