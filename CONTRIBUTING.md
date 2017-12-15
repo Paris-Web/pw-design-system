@@ -1,49 +1,23 @@
 # CONTRIBUTING
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+Pour installer le projet, cf. README.md.
 
-## Setup
+## Règles de contribution
 
-```sh
-$ git clone https://github.com/netlify/victor-hugo
-$ cd victor-hugo
-$ npm install
-```
+**N'importe qui peut contribuer**, tant que c'est fait de manière bienveillante.
 
-## Building
+**Le code n'appartient à personne.** Si quelqu'un se rend compte qu'il y a mieux à faire sur certaines parties, il est possible de supprimer tout ou partie du code initial, tant que c'est fait de manière utile (le but n'est pas changer de stack tous les 4 matins).
 
-```sh
-$ npm run build
-```
+**Passer par des PRs.** Cela permettra d'avoir une certaine homogénéité dans le code et évitera d'avoir des parties connues uniquement d'une personne dans le projet. Evitons le Bus Factor :)
 
-## Testing
+## Aide à contribution
 
-```sh
-$ npm run test
-```
+Si vous avez des doutes sur la démarche à suivre, n'hésitez pas à contacter une des personnes suivantes qui se feront une joie de vous aider, que ce soit pour ajouter de nouveaux composants, en modifier ou suivre le processus de Pull Request&nbsp;:
 
-```sh
-$ npm run test:watch
-```
+* Julien Pradet
 
-## Runing the server
+Si certains souhaitent s'ajouter à la liste, n'hésitez pas à faire un commit. Le but est simplement de recenser les gens prêts à aider les autres à contribuer. Il n'y a pas de grand gourou. Si vous souhaitez être ajouté à la liste mais n'êtes pas sûr de pouvoir aider, contactez l'une des personnes de cette liste qui vous montrera toutes les ficelles.
 
-```sh
-$ npm run start
-```
+## Modification des présentes règles
 
-## Pull Requests
-
-We actively welcome your pull requests.
-
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-
-## License
-
-By contributing to Victor-Hugo, you agree that your contributions will be licensed
-under its [MIT license](LICENSE).
+Ces règles n'ont pas vocation à être figées dans le marbre. Si vous pensez qu'il y a des améliorations à faire, n'hésitez pas à venir en discuter. Le but est simplement de proposer un esprit sain de contribution. :)
