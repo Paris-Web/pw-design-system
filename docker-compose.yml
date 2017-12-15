@@ -1,0 +1,15 @@
+npm:
+  build: ./
+  command: start
+  expose:
+    - 3000
+    - 3001
+  ports:
+    - "3000:3000"
+    - "3001:3001"
+  volumes:
+    - ~/.npm:/root/.npm
+    - ./:/app
+  environment:
+    VIRTUAL_HOST: www.pwds.test
+    VIRTUAL_PORT: 3000
