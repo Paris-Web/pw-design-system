@@ -1,0 +1,34 @@
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 2em;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+.logos > * > * {
+  padding: 1em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.logos > .dark {
+  background: var(--color-ui-07);
+}
+
+.logos > .dark .styleguide-example__toggle:focus {
+  color: var(--color-ui-01);
+}
+.logos > .dark .styleguide-example__rendered:hover .styleguide-example__toggle {
+  color: var(--color-ui-02);
+}
+.logos
+  > .dark
+  .styleguide-example__rendered:hover
+  .styleguide-example__toggle:hover {
+  color: var(--color-ui-01);
+}

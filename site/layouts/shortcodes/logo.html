@@ -1,0 +1,17 @@
+{{ if .Get "small" }}
+    {{ if eq (.Get "type") "black" }}
+        <img src="/images/logo/logo-favicon-nb.svg" width="65" height="65" alt="Paris Web" />
+    {{ else if eq (.Get "type") "white" }}
+        <img src="/images/logo/logo-favicon-inverse.svg" width="65" height="65" alt="Paris Web" />
+    {{ else }}
+        <img src="/images/logo/logo-favicon.svg" width="65" height="65" alt="Paris Web" />
+    {{ end }}
+{{ else }}
+    {{ if eq (.Get "type") "black" }}
+        <img src="/images/logo/logo-nb.svg" width="178" height="80" alt="Paris Web" />
+    {{ else if eq (.Get "type") "white" }}
+        <img src="/images/logo/logo-inverse.svg" width="178" height="80" alt="Paris Web" />
+    {{ else }}
+        <img src="/images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+    {{ end }}
+{{ end }}
