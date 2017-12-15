@@ -1,19 +1,16 @@
 <nav>
+
     <ul>
+        {{ $currentPage := . }}
         <li>
             Tokens
             <ul>
-                <li>
-                    <a href="/tokens/logo">Logo</a>
+            {{ range .Site.Menus.tokens }}
+                <li class="{{if or ($currentPage.IsMenuCurrent "tokens" .) ($currentPage.HasMenuCurrent "tokens" .) }} active{{end}}">
+                    <a href="{{.URL}}">{{ .Name }}</a>
                 </li>
-                <li>
-                    <a href="/tokens/colors">Couleurs</a>
-                </li>
-                <li>
-                    <a href="/tokens/typography">Typographie</a>
-                </li>
-            </ul>
+            {{ end }}
+             </ul>
         </li>
     </ul>
 </nav>
-
