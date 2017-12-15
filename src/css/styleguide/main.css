@@ -1,0 +1,8 @@
+/*
+ * Contains all the CSS rules specific to the styleguide
+ * CSS files outside of this directory are meant to be
+ * used directly in ParisWeb's site.s
+ */
+
+@import "./layout.css";
+@import "./partials/nav.css";

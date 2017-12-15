@@ -1,14 +1,13 @@
 /*
-  You can use import statements to include partials:
+ * Everything except styleguide/main.css should be usable
+ * for ParisWeb's site.
+ * TODO : Split gulp tasks in order to have to generated bundles
  */
-@import "imports/reset.css";
+@import "util/reset.css";
+@import "util/colors.css";
+@import "styleguide/main.css";
 
-
-/*
-  Or add your statements here:
- */
-body{
+body {
   font-family: sans-serif;
   font-size: 1em;
-  text-align: center;
 }
