@@ -1,5 +1,7 @@
 npm:
-  build: ./
+  image: node:9.3.0-alpine
+  working_dir: /app
+  entrypoint: npm
   command: start
   expose:
     - 3000
