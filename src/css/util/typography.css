@@ -1,26 +1,14 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"),
-    url("/fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
-}
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
-    url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
-}
-
 html,
 body {
   color: var(--color-text-1);
   font-size: 14px;
-  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
+}
+
+.wf-ptsans-n4-active,
+.wf-ptsans-n4-active body {
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 * {
@@ -34,15 +22,14 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+.wf-ptsansnarrow-n4-active h1,
+.wf-ptsansnarrow-n4-active h2,
+.wf-ptsansnarrow-n4-active h3,
+.wf-ptsansnarrow-n4-active h4,
+.wf-ptsansnarrow-n4-active h5,
+.wf-ptsansnarrow-n4-active h6 {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
 }
 
 h1 {
