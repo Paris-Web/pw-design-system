@@ -17,11 +17,11 @@
   grid-column: 1/5;
 }
 
-h1 {
+.styleguide .content > h1 {
   position: relative;
 }
 
-h1::after {
+.styleguide .content > h1::after {
   content: "";
   display: block;
   position: absolute;
@@ -32,11 +32,11 @@ h1::after {
   background: var(--color-brand-01);
 }
 
-h2 {
+.styleguide .content > h2 {
   position: relative;
 }
 
-h2::after {
+.styleguide .content > h2::after {
   content: "";
   display: block;
   position: absolute;
@@ -47,7 +47,7 @@ h2::after {
   background: var(--color-brand-01);
 }
 
-h1,
-h2 {
+.styleguide .content > h1,
+.styleguide .content > h2 {
   margin: 3rem 0 1.5rem 0;
 }
