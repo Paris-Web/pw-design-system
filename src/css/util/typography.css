@@ -1,14 +1,35 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("/fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
+    url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
 html,
 body {
   color: var(--color-text-01);
   font-size: 14px;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
 }
 
-.wf-ptsans-n4-active,
-.wf-ptsans-n4-active body {
-  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+.font-fallback,
+.font-fallback body,
+.font-fallback h1,
+.font-fallback h2,
+.font-fallback h3,
+.font-fallback h4,
+.font-fallback h5,
+.font-fallback h6 {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 * {
@@ -22,12 +43,12 @@ body {
   }
 }
 
-.wf-ptsansnarrow-n4-active h1,
-.wf-ptsansnarrow-n4-active h2,
-.wf-ptsansnarrow-n4-active h3,
-.wf-ptsansnarrow-n4-active h4,
-.wf-ptsansnarrow-n4-active h5,
-.wf-ptsansnarrow-n4-active h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
     sans-serif;
 }
