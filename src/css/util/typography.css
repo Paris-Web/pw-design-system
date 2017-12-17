@@ -76,12 +76,12 @@ a {
   text-decoration-skip-ink: auto;
   color: var(--color-special-blue);
 }
+a:visited {
+  color: var(--color-brand-03);
+}
 a:active,
 a.active {
   color: var(--color-brand-01-dark);
-}
-a:visited {
-  color: var(--color-brand-03);
 }
 a:hover,
 a:focus {
