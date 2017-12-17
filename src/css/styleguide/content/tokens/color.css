@@ -1,0 +1,109 @@
+@import "../../../util/colors.css";
+
+.styleguide-color__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.styleguide-color {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.styleguide-color__display {
+  height: 4rem;
+  width: 100%;
+  min-width: 20ch;
+  background: transparent;
+  box-sizing: border-box;
+  background: currentColor;
+  border: 1px solid currentColor;
+  margin: 0 0 0.5rem 0;
+}
+.styleguide-color__color {
+  margin: 0 1rem 0 0;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.styleguide-color__hex {
+  margin: 0;
+}
+
+.styleguide-color--color-brand-01 .styleguide-color__display {
+  color: var(--color-brand-01);
+}
+.styleguide-color--color-brand-02 .styleguide-color__display {
+  color: var(--color-brand-02);
+}
+.styleguide-color--color-brand-03 .styleguide-color__display {
+  color: var(--color-brand-03);
+}
+
+.styleguide-color--color-brand-01-dark .styleguide-color__display {
+  color: var(--color-brand-01-dark);
+}
+.styleguide-color--color-brand-02-dark .styleguide-color__display {
+  color: var(--color-brand-02-dark);
+}
+.styleguide-color--color-brand-03-dark .styleguide-color__display {
+  color: var(--color-brand-03-dark);
+}
+
+.styleguide-color--color-brand-01-light .styleguide-color__display {
+  color: var(--color-brand-01-light);
+}
+.styleguide-color--color-brand-02-light .styleguide-color__display {
+  color: var(--color-brand-02-light);
+}
+.styleguide-color--color-brand-03-light .styleguide-color__display {
+  color: var(--color-brand-03-light);
+}
+
+.styleguide-color--color-ui-01 .styleguide-color__display {
+  color: var(--color-ui-01);
+  border-color: var(--color-ui-03);
+}
+.styleguide-color--color-ui-02 .styleguide-color__display {
+  color: var(--color-ui-02);
+}
+.styleguide-color--color-ui-03 .styleguide-color__display {
+  color: var(--color-ui-03);
+}
+.styleguide-color--color-ui-04 .styleguide-color__display {
+  color: var(--color-ui-04);
+}
+.styleguide-color--color-ui-05 .styleguide-color__display {
+  color: var(--color-ui-05);
+}
+.styleguide-color--color-ui-06 .styleguide-color__display {
+  color: var(--color-ui-06);
+}
+.styleguide-color--color-ui-07 .styleguide-color__display {
+  color: var(--color-ui-07);
+}
+
+.styleguide-color--color-text-01 .styleguide-color__display {
+  color: var(--color-text-01);
+}
+.styleguide-color--color-text-02 .styleguide-color__display {
+  color: var(--color-text-02);
+}
+.styleguide-color--color-text-03 .styleguide-color__display {
+  color: var(--color-text-03);
+}
+.styleguide-color--color-text-inverted .styleguide-color__display {
+  color: var(--color-text-inverted);
+  border-color: var(--color-ui-03);
+}
+
+.styleguide-color--color-special-red .styleguide-color__display {
+  color: var(--color-special-red);
+}
+.styleguide-color--color-special-green .styleguide-color__display {
+  color: var(--color-special-green);
+}
+.styleguide-color--color-special-yellow .styleguide-color__display {
+  color: var(--color-special-yellow);
+}
+.styleguide-color--color-special-blue .styleguide-color__display {
+  color: var(--color-special-blue);
+}
