@@ -1,0 +1,17 @@
+.portrait {
+  display: inline-block;
+  width: 9rem; /* ~140px */
+  text-align: center;
+  margin: calc(var(--base-spacing) * 2);
+}
+.portrait__avatar {
+  height: 9rem; /* ~140px */
+}
+.portrait__avatar img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+.portrait__name {
+  color: ;
+}

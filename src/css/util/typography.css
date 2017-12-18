@@ -23,31 +23,43 @@ body {
 }
 
 .wf-ptsansnarrow-n4-active h1,
+.wf-ptsansnarrow-n4-active .h1-like,
 .wf-ptsansnarrow-n4-active h2,
+.wf-ptsansnarrow-n4-active .h2-like,
 .wf-ptsansnarrow-n4-active h3,
+.wf-ptsansnarrow-n4-active .h3-like,
 .wf-ptsansnarrow-n4-active h4,
+.wf-ptsansnarrow-n4-active .h4-like,
 .wf-ptsansnarrow-n4-active h5,
-.wf-ptsansnarrow-n4-active h6 {
+.wf-ptsansnarrow-n4-active .h5-like,
+.wf-ptsansnarrow-n4-active h6,
+.wf-ptsansnarrow-n4-active .h6-like {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
     sans-serif;
 }
 
-h1 {
+h1,
+.h1-like {
   font-size: 2.25rem;
 }
-h2 {
+h2,
+.h2-like {
   font-size: 1.75rem;
 }
-h3 {
+h3,
+.h3-like {
   font-size: 1.5rem;
 }
-h4 {
+h4,
+.h4-like {
   font-size: 1.125rem;
 }
-h5 {
+h5,
+.h5-like {
   font-size: 1rem;
 }
-h6 {
+h6,
+.h6-like {
   font-size: 0.875rem;
 }
 
