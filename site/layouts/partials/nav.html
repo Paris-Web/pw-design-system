@@ -6,8 +6,13 @@
             Tokens
             <ul>
             {{ range .Site.Menus.tokens }}
-                <li class="{{if or ($currentPage.IsMenuCurrent "tokens" .) ($currentPage.HasMenuCurrent "tokens" .) }} active{{end}}">
-                    <a href="{{.URL}}">{{ .Name }}</a>
+                <li>
+                    <a
+                        class="{{if or ($currentPage.IsMenuCurrent "tokens" .) ($currentPage.HasMenuCurrent "tokens" .) }} active{{end}}"
+                        href="{{.URL}}"
+                    >
+                        {{ .Name }}
+                    </a>
                 </li>
             {{ end }}
              </ul>

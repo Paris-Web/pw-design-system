@@ -4,6 +4,8 @@
  * TODO : Update webpack.conf.js in order to generate
  * two separate bundles
  */
-
+import initTypography from "./util/typography";
 import initStyleguide from "./styleguide";
+
+initTypography();
 initStyleguide();

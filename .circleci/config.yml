@@ -27,7 +27,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: npm run build
+      - run: HUGO_BASEURL=/test/design-system/`echo $CIRCLE_BRANCH | tr "/" "-"`/ npm run build
 
       - persist_to_workspace:
           root: ~/repo/dist

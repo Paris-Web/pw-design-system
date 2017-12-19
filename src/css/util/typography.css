@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("/fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
+    url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+html,
+body {
+  color: var(--color-text-01);
+  font-size: 14px;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.font-fallback,
+.font-fallback body,
+.font-fallback h1,
+.font-fallback h2,
+.font-fallback h3,
+.font-fallback h4,
+.font-fallback h5,
+.font-fallback h6 {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+* {
+  font-size: inherit;
+}
+
+@media screen and (min-width: 400px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+p.giga {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+p.mega {
+  font-size: 3rem;
+  font-weight: normal;
+}
+p.big {
+  font-size: 1.125rem;
+}
+p.small {
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration-style: underline;
+  text-decoration-skip-ink: auto;
+  color: var(--color-special-blue);
+}
+a:visited {
+  color: var(--color-brand-03);
+}
+a:active,
+a.active {
+  color: var(--color-brand-01-dark);
+}
+a:hover,
+a:focus {
+  color: var(--color-brand-01);
+}
+
+code {
+  background: var(--color-ui-02);
+}
