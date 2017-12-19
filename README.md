@@ -38,6 +38,13 @@ Pour compiler le site, executez la commande suivante :
 npm run build
 ```
 
+### Déploiement
+
+Pour déployer le site exécuter le script `./scripts/deploy.sh`.
+
+Note : il faut avoir un accès SSH autorisé à la machine hébergeant le site.
+Voir https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informations
+
 ## Structure
 
 ```
