@@ -30,7 +30,7 @@ export default {
   },
   output: {
     path: path.join(__dirname, "dist"),
-    publicPath: "/",
+    publicPath: process.env.HUGO_BASEURL || "/",
     filename: "[name].js"
   },
   externals:  [/^vendor\/.+\.js$/]
