@@ -40,7 +40,7 @@ gulp.task("css", () => {
           {
             filter: "**/fonts/**/*",
             url: asset => {
-              return path.join(baseUrl, asset.url);
+              return baseUrl + asset.url;
             }
           }
         ]),
