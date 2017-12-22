@@ -1,5 +1,4 @@
 import gulp from "gulp";
-import path from "path";
 import { spawn } from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
@@ -11,6 +10,14 @@ import BrowserSync from "browser-sync";
 import watch from "gulp-watch";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+
+const getBaseUrl = () => {
+  let baseUrl = process.env.HUGO_BASEURL || "/";
+  if (!baseUrl.endsWith("/")) {
+    baseUrl += "/";
+  }
+  return baseUrl;
+};
 
 const browserSync = BrowserSync.create();
 
@@ -30,7 +37,7 @@ gulp.task("build-preview", ["css", "js"], cb =>
 
 // Compile CSS with PostCSS
 gulp.task("css", () => {
-  const baseUrl = process.env.HUGO_BASEURL || "/";
+  const baseUrl = getBaseUrl();
   gulp
     .src("./src/css/*.css")
     .pipe(
@@ -40,7 +47,7 @@ gulp.task("css", () => {
           {
             filter: "**/fonts/**/*",
             url: asset => {
-              return path.join(baseUrl, asset.url);
+              return baseUrl + asset.url.replace(/^\//, "");
             }
           }
         ]),
