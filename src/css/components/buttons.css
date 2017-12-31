@@ -1,0 +1,78 @@
+.btn {
+  background: var(--color-brand-02);
+  color: var(--color-text-inverted);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--color-brand-02-dark);
+}
+.btn:focus {
+  outline-color: var(--color-brand-02-dark);
+}
+.btn:disabled {
+  opacity: 0.5;
+  background: var(--color-brand-02);
+}
+
+.btn-primary {
+  background: var(--color-brand-01);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--color-brand-01-dark);
+}
+.btn-primary:focus {
+  outline-color: var(--color-brand-01-dark);
+}
+.btn-primary:disabled {
+  background: var(--color-brand-01);
+}
+
+.btn-inverted {
+  color: var(--color-brand-02-dark);
+  background: var(--color-ui-01);
+  transition: color 0.25s ease;
+}
+.btn-inverted:hover,
+.btn-inverted:focus {
+  color: var(--color-text-inverted);
+  background: var(--color-brand-02-dark);
+}
+.btn-inverted:focus {
+  outline-color: var(--color-brand-02-dark);
+}
+.btn-inverted:disabled {
+  color: var(--color-text-03);
+  background: var(--color-ui-01);
+}
+
+.btn-ghost {
+  color: var(--color-brand-02-dark);
+  background: transparent;
+  transition: color 0.25s ease;
+}
+.btn-ghost:hover,
+.btn-ghost:focus {
+  color: var(--color-text-inverted);
+  background: var(--color-brand-02-dark);
+}
+.btn-ghost:focus {
+  outline-color: var(--color-brand-02-dark);
+}
+.btn-ghost:disabled {
+  color: var(--color-brand-02-dark);
+  background: transparent;
+}
+
+.btn-small {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}

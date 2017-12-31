@@ -17,5 +17,21 @@
             {{ end }}
              </ul>
         </li>
+
+        <li>
+            Components
+            <ul>
+            {{ range .Site.Menus.components }}
+                <li>
+                    <a
+                        class="{{if or ($currentPage.IsMenuCurrent "components" .) ($currentPage.HasMenuCurrent "components" .) }} active{{end}}"
+                        href="{{.URL}}"
+                    >
+                        {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
+             </ul>
+        </li>
     </ul>
 </nav>
