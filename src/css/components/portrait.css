@@ -1,8 +1,12 @@
 .portrait {
+  position: relative;
   display: inline-block;
   width: 9rem; /* ~140px */
   text-align: center;
   margin: calc(var(--base-spacing) * 2);
+}
+.portrait--link {
+  cursor: pointer;
 }
 .portrait__avatar {
   height: 9rem; /* ~140px */
@@ -21,4 +25,17 @@
 }
 .portrait:hover .portrait__name a.title {
   color: var(--color-brand-02);
+}
+.portrait .portrait__name a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.portrait__links a {
+  position: relative;
+  z-index: 2;
 }

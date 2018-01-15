@@ -38,7 +38,6 @@ menu: "components"
         {{< /example >}}
     </dd>
 
-
     <dd>
         {{< example >}}
             {{< portrait
@@ -48,4 +47,15 @@ menu: "components"
         {{< /example >}}
     </dd>
 
+    <dd>
+        {{< example >}}
+            {{< portrait
+            name="Camille Exemple"
+            description="Pixelliste avec lien et réseaux"
+            link="#"
+            twitter="https://www.twitter.com/CamilleExample"
+            github="https://www.github.com/CamilleExample"
+            website="https://www.camilleexemple.com/" >}}
+        {{< /example >}}
+    </dd>
 </dl>

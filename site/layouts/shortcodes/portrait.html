@@ -1,23 +1,23 @@
-<div class="portrait">
+<div class="portrait {{ if .Get "link" }}portrait--link{{ end }}">
     <div class="portrait__avatar">
         {{ if .Get "avatar" }}
-        <img src="{{ .Get " avatar " }}" alt="" /> {{ else }}
+        <img src="{{ .Get "avatar" }}" alt="" /> {{ else }}
         <img src="https://www.bootikexpress.fr/wp-content/uploads/avatar-6.png" alt="" /> {{ end }}
     </div>
 
     {{ if (.Get "twitter") or (.Get "github") or (.Get "website") }}
     <div class="portrait__links">
         {{ if .Get "twitter" }}
-        <a href="{{ .Get " twitter " }}">
-            <img src="" />
+        <a href="{{ .Get "twitter" }}">
+            <img src="" />T
         </a>
         {{ end }} {{ if .Get "github" }}
-        <a href="{{ .Get " github " }}">
-            <img src="" />
+        <a href="{{ .Get "github" }}">
+            <img src="" />G
         </a>
         {{ end }} {{ if .Get "website" }}
-        <a href="{{ .Get " website " }}">
-            <img src="" />
+        <a href="{{ .Get "website" }}">
+            <img src="" />W
         </a>
         {{ end }}
     </div>
@@ -25,8 +25,10 @@
 
     <div class="portrait__name h3-like">
         {{ if .Get "link" }}
-        <a href="{{ .Get " link " }}" class="title">{{ .Get "name" }}</a>
-        {{ else }} {{ .Get "name" }} {{ end }}
+            <a href="{{ .Get "link" }}" class="title">{{ .Get "name" }}</a>
+        {{ else }}
+            {{ .Get "name" }}
+        {{ end }}
     </div>
     <div class="portrait__description">{{ .Get "description" }}</div>
 </div>
