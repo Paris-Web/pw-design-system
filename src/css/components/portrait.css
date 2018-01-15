@@ -1,29 +1,30 @@
 .portrait {
   position: relative;
   display: inline-block;
-  width: 9rem; /* ~140px */
+  width: 11rem; /* ~140px */
   text-align: center;
-  margin: calc(var(--base-spacing) * 2);
+  margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
 }
 .portrait--link {
   cursor: pointer;
 }
 .portrait__avatar {
   height: 9rem; /* ~140px */
-  border-radius: 4.5rem;
+  border-radius: 5rem;
 }
 .portrait__avatar img {
-  border-radius: calc(4.5rem * 1.2);
-  max-width: 100%;
-  max-height: 100%;
+  border-radius: 5rem;
   display: block;
 }
 .portrait__avatar svg, .portrait__avatar img {
-  transform: scale(0.85);
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(1);
+  transform-origin: bottom center;
   transition: transform 0.3s ease;
 }
 .portrait:hover .portrait__avatar svg, .portrait:hover .portrait__avatar img {
-  transform: scale(1) translateY(-.5rem);
+  transform: scale(1.1);
 }
 .portrait:hover .portrait__name a.title {
   color: var(--color-brand-02);
@@ -48,4 +49,60 @@
 }
 .font-fallback .portrait svg text {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.portrait-long {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+.portrait-long__side {
+  text-align: center;
+  margin-right: calc(var(--base-spacing) * 8);
+}
+.portrait-long__content {
+  max-width: 60ch;
+}
+.portrait-long__content .portrait__name {
+  margin-bottom: calc(var(--base-spacing) * 2);
+}
+.portrait-long .portrait__avatar svg, .portrait-long .portrait__avatar img {
+  transform-origin: top center;
+}
+.portrait-long .portrait__links {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.portrait-long:hover .portrait__links {
+  transform: translateY(calc(9rem * 0.1));
+}
+
+.portrait-small {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+  max-width: 30ch;
+}
+.portrait-small__side {
+  text-align: center;
+  margin-right: calc(var(--base-spacing) * 2);
+}
+.portrait-small__side .portrait__avatar {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.portrait-small .portrait__avatar svg, .portrait-small .portrait__avatar img {
+  transform-origin: center center;
+}
+.portrait-small__content {
+  max-width: 60ch;
+  min-width: 15ch;
+}
+.portrait-small__content .portrait__name {
+  margin-bottom: var(--base-spacing);
 }

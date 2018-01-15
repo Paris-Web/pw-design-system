@@ -77,6 +77,7 @@ h2,
 h3,
 .h3-like {
   font-size: 1.5rem;
+  line-height: 1.15;
 }
 h4,
 .h4-like {
@@ -129,7 +130,6 @@ a:focus {
 }
 a.title {
   color: var(--color-brand-01);
-  font-size: 1.5rem;
   font-weight: bold;
 }
 a.title:hover,
