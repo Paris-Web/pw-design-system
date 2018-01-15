@@ -34,7 +34,17 @@ menu: "components"
         {{< example >}}
             {{< portrait
             name="Camille Exemple"
-            description="Pixelliste sans filet" >}}
+            description="Pixelliste sans réseaux" >}}
+        {{< /example >}}
+    </dd>
+
+
+    <dd>
+        {{< example >}}
+            {{< portrait
+            name="Camille Exemple"
+            description="Pixelliste avec lien"
+            link="#" >}}
         {{< /example >}}
     </dd>
 

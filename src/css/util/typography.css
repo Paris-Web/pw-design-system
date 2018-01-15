@@ -63,6 +63,7 @@ h6,
 .h6-like {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
     sans-serif;
+  font-weight: bold;
 }
 
 h1,
@@ -125,6 +126,15 @@ a.active {
 a:hover,
 a:focus {
   color: var(--color-brand-01);
+}
+a.title {
+  color: var(--color-brand-01);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a.title:hover,
+a.title:focus {
+  color: var(--color-brand-02);
 }
 
 code {
