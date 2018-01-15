@@ -32,5 +32,21 @@
             {{ end }}
              </ul>
         </li>
+        
+        <li>
+            Modules
+            <ul>
+            {{ range .Site.Menus.modules }}
+                <li>
+                    <a
+                        class="{{if or ($currentPage.IsMenuCurrent "modules" .) ($currentPage.HasMenuCurrent "modules" .) }} active{{end}}"
+                        href="{{.URL}}"
+                    >
+                        {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
+             </ul>
+        </li>
     </ul>
 </nav>

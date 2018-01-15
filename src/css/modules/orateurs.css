@@ -1,0 +1,12 @@
+.orateurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.orateurs__more {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
+}
