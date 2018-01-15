@@ -6,6 +6,7 @@
 @import "util/reset.css";
 @import "util/colors.css";
 @import "util/typography.css";
+@import "components/buttons.css";
 @import "styleguide/main.css";
 
 body {
