@@ -8,6 +8,7 @@ menu: "modules"
 
 ## Lineup
 
+{{< example >}}
 {{< lineup link="#voir-plus">}}
     {{< portrait name="Camille Exemple"
     description="Pixelliste avec lien et réseaux" link="#"
@@ -47,3 +48,4 @@ menu: "modules"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 {{< /lineup >}}
+{{< /example >}}
