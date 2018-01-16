@@ -7,6 +7,7 @@
 @import "util/colors.css";
 @import "util/typography.css";
 @import "util/grid.css";
+@import "components/breadcrumb.css";
 @import "components/portrait.css";
 @import "components/buttons.css";
 @import "modules/orateurs.css";

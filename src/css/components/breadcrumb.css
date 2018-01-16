@@ -1,0 +1,9 @@
+.breadcrumb > span:not(:last-child)::after {
+  content: '/';
+  display: inline-block;
+  margin: 0 calc(var(--base-spacing) * 4);
+}
+
+.breadcrumb > span:last-child {
+  font-weight: bold;
+}
