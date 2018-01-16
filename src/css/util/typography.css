@@ -24,11 +24,17 @@ body {
 .font-fallback,
 .font-fallback body,
 .font-fallback h1,
+.font-fallback .h1-like,
 .font-fallback h2,
+.font-fallback .h2-like,
 .font-fallback h3,
+.font-fallback .h3-like,
 .font-fallback h4,
+.font-fallback .h4-like,
 .font-fallback h5,
-.font-fallback h6 {
+.font-fallback .h5-like,
+.font-fallback h6,
+.font-fallback .h6-like {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
@@ -45,31 +51,45 @@ body {
 }
 
 h1,
+.h1-like,
 h2,
+.h2-like,
 h3,
+.h3-like,
 h4,
+.h4-like,
 h5,
-h6 {
+.h5-like,
+h6,
+.h6-like {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
     sans-serif;
+  font-weight: bold;
 }
 
-h1 {
+h1,
+.h1-like {
   font-size: 2.25rem;
 }
-h2 {
+h2,
+.h2-like {
   font-size: 1.75rem;
 }
-h3 {
+h3,
+.h3-like {
   font-size: 1.5rem;
+  line-height: 1.15;
 }
-h4 {
+h4,
+.h4-like {
   font-size: 1.125rem;
 }
-h5 {
+h5,
+.h5-like {
   font-size: 1rem;
 }
-h6 {
+h6,
+.h6-like {
   font-size: 0.875rem;
 }
 
@@ -108,6 +128,14 @@ a.active {
 a:hover,
 a:focus {
   color: var(--color-brand-01);
+}
+a.title {
+  color: var(--color-brand-01);
+  font-weight: bold;
+}
+a.title:hover,
+a.title:focus {
+  color: var(--color-brand-02);
 }
 
 code {

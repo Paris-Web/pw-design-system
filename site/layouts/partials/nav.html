@@ -17,14 +17,28 @@
             {{ end }}
              </ul>
         </li>
-
         <li>
-            Components
+            Composants
             <ul>
             {{ range .Site.Menus.components }}
                 <li>
                     <a
                         class="{{if or ($currentPage.IsMenuCurrent "components" .) ($currentPage.HasMenuCurrent "components" .) }} active{{end}}"
+                        href="{{.URL}}"
+                    >
+                        {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
+             </ul>
+        </li>        
+        <li>
+            Modules
+            <ul>
+            {{ range .Site.Menus.modules }}
+                <li>
+                    <a
+                        class="{{if or ($currentPage.IsMenuCurrent "modules" .) ($currentPage.HasMenuCurrent "modules" .) }} active{{end}}"
                         href="{{.URL}}"
                     >
                         {{ .Name }}

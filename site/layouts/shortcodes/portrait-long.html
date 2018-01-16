@@ -1,0 +1,60 @@
+<div class="portrait portrait-long {{ if .Get "link" }}portrait--link{{ end }}">
+    <div class="portrait-long__side">
+        <div class="portrait__avatar">
+            {{ if .Get "avatar" }}
+                <img src="{{ .Get "avatar" }}" alt="" />
+            {{ else }}
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+                    <defs>
+                        <circle id="a" cx="70" cy="70" r="70"/>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <mask id="b" fill="#fff">
+                            <use xlink:href="#a"/>
+                        </mask>
+                        <use fill="#C5C3CE" xlink:href="#a"/>
+                        <g fill-rule="nonzero" mask="url(#b)">
+                            <path fill="#FFF" d="M60.175 24.561H80.07v7.737H60.175zM51.578 90.877H88.42v5.281H51.578zM41.754 34.386h56.737V90.51H41.754z"/>
+                            <path fill="#423F4A" d="M83.632 98.246s40.526 4.982 44.456 5.596c3.93.613 4.298 2.07 4.298 3.066v39.724H8.596v-39.724c0-.997.369-2.453 4.299-3.066 3.93-.614 42.245-5.596 42.245-5.596"/>
+                            <path fill="#FFF" d="M55.263 97.529c0 1.122 6.536 2.046 14.675 2.046 8.14 0 14.799-.924 14.799-2.046v-1.647H55.263v1.647z"/>
+                            <path fill="#423F4A" d="M70 104.386c-5.94 0-15.965-1.158-15.965-5.275v-4.348h31.93v4.348c0 4.246-10.025 5.275-15.965 5.275zm-13.613-6.754v1.48c.37.9 5.321 2.7 13.49 2.7 8.167 0 13.118-1.8 13.489-2.83v-1.35h-26.98z"/>
+                            <path fill="#423F4A" d="M94.07 31.684H81.421v-5.158c0-1.842-1.474-3.193-3.193-3.193H62.263c-1.842 0-3.193 1.474-3.193 3.193v5.158H46.298c-3.93 0-7 3.193-7 7v46.298c0 3.93 3.193 7 7 7h4.176v2.334c0 1.842 1.473 3.193 3.193 3.193h32.79c1.841 0 3.192-1.474 3.192-3.193v-2.334h4.421c3.93 0 7-3.193 7-7V38.684c0-3.93-3.193-7-7-7zm-32.298-5.28c0-.246.246-.492.491-.492h15.965c.246 0 .368.246.368.492v5.157H61.772v-5.157zM87.07 94.316c0 .245-.245.491-.491.491h-32.79c-.245 0-.49-.246-.49-.491v-2.334h33.648v2.334h.123zm11.176-9.334a4.141 4.141 0 0 1-4.176 4.176H46.421a4.141 4.141 0 0 1-4.175-4.176V38.684a4.141 4.141 0 0 1 4.175-4.175H94.07a4.141 4.141 0 0 1 4.176 4.175v46.298z"/>
+                        </g>
+                        <text fill="#423F4A" font-family="PT Sans Narrow" font-size="36" font-style="condensed" font-weight="bold" mask="url(#b)" text-anchor="middle">
+                            <tspan x="70" y="75">?</tspan>
+                        </text>
+                    </g>
+                </svg>
+            {{ end }}
+        </div>
+
+        {{ if (.Get "twitter") or (.Get "github") or (.Get "website") }}
+        <div class="portrait__links">
+            {{ if .Get "twitter" }}
+            <a href="{{ .Get "twitter" }}">
+                <img src="" />T
+            </a>
+            {{ end }} {{ if .Get "github" }}
+            <a href="{{ .Get "github" }}">
+                <img src="" />G
+            </a>
+            {{ end }} {{ if .Get "website" }}
+            <a href="{{ .Get "website" }}">
+                <img src="" />W
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="portrait-long__content">
+        <div class="portrait__name h3-like">
+            {{ if .Get "link" }}
+                <a href="{{ .Get "link" }}" class="title">{{ .Get "name" }}</a>
+            {{ else }}
+                {{ .Get "name" }}
+            {{ end }}
+        </div>
+        <div class="portrait__description">{{ .Inner }}</div>
+    </div>
+</div>
