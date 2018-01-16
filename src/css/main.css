@@ -8,6 +8,7 @@
 @import "util/typography.css";
 @import "util/grid.css";
 @import "components/portrait.css";
+@import "components/buttons.css";
 @import "modules/orateurs.css";
 @import "styleguide/main.css";
 

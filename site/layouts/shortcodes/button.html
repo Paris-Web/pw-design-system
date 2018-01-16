@@ -1,0 +1,19 @@
+{{ $disabled := .Get "disabled" }}
+{{ $icon := .Get "icon" }}
+
+{{ $availableSizes := slice "small" }}
+{{ if in $availableSizes (.Get "size")}}
+    {{ $.Scratch.Set "size" (.Get "size") }}
+{{ end }}
+
+{{ $availableTypes := slice "primary" "inverted" "ghost" }}
+{{ if in $availableTypes (.Get "type")}}
+    {{ $.Scratch.Set "type" (.Get "type")  }}
+{{ end }}
+<button
+    {{ if eq $disabled "disabled" }}disabled="disabled"{{ end }}
+    class="btn{{ if $.Scratch.Get "type" }} btn-{{$.Scratch.Get "type"}}{{ end }}{{ if $.Scratch.Get "size" }} btn-{{ $.Scratch.Get "size" }}{{ end }}"
+>
+    {{ .Inner | htmlEscape }}
+    {{ if $icon }}<span class="icon">{{$icon}}</span>{{ end }}
+</button>
