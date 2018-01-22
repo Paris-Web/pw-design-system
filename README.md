@@ -2,19 +2,53 @@
 
 ## Concept
 
-Le but de ce dépôt est d'implémenter et documenter les différents composants faisant parti du Design System de Paris Web.
+Le but de ce dépôt est d'implémenter et documenter les différents composants
+faisant parti du Design System de Paris Web.
 
-La brique utilisée pour le moment est [Hugo](https://gohugo.io/). C'est un générateur de site statique.
+La brique utilisée pour le moment est [Hugo](https://gohugo.io/). C'est un
+générateur de site statique.
 
-Attention, ce n'est pour l'instant qu'un POC afin de décider ensemble si cela est vraiement pertinent à utiliser ou non. Tous les retours sont les bienvenus.
+Attention, ce n'est pour l'instant qu'un POC afin de décider ensemble si cela
+est vraiement pertinent à utiliser ou non. Tous les retours sont les bienvenus.
+
+## Roadmap
+
+* [ ] ⌛️ Composant - Tabs
+* [ ] ️⌛️ Composant - Hero
+* [ ] ️⌛️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
+      orateur.rice ?)
+* [ ] ⌛️ Composant - Citation
+* [ ] ⌛️ Composant - Sponsor
+* [ ] ⌛️ Composant - Partager réseaux sociaux
+* [ ] ⌛️ Composant - Liste de liens (liens normaux et liens de téléchargement,
+      cf page actu et page conférence, footer)
+* [ ] ⌛️ Composant - Image légendée
+* [ ] Composant - Info Conférence (cf. page conférence + liste/tableau
+      conférences)
+* [ ] ⌛️ Module - Liste conférences
+* [ ] 🚧 Module - Tableau conférences (Julien)
+* [ ] 🗨️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
+      accessible à tous, etc.)
+* [ ] ⌛️ Module - Actu' phare
+* [ ] ⌛️ Module - Liste actu'
+* [ ] ⌛️ Module - Header contenu (cf. page actu et page conférence)
+* [ ] ⌛️ Module - Devenir sponsor
+* [ ] ⌛️ Page - Actu
+* [ ] 🗨️ Page - Sponsor
+* [ ] ⌛️ Page - Conférence
+* [ ] ⌛️ Page - Header
+* [ ] ⌛️ Page - Footer
+* [ ] 🗨️ Page - Sidebar ?
 
 ## Usage
 
 ### Prerequisites
 
-Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines.
+Il faut installer [node](https://nodejs.org/en/download/) et
+[npm](https://www.npmjs.com/get-npm) sur vos machines.
 
-Ensuite, récupérez ce dépôt et installez les dépendances avec la commande suivante :
+Ensuite, récupérez ce dépôt et installez les dépendances avec la commande
+suivante :
 
 ```bash
 npm install
@@ -28,7 +62,8 @@ Pour faire tourner une instance locale du site, executez la commande suivante :
 npm start
 ```
 
-Vous pouvez ensuite aller sur http://localhost:3000/ \_- a moins que votre navigateur ne se soit ouvert tout seul.
+Vous pouvez ensuite aller sur http://localhost:3000/ \_- a moins que votre
+navigateur ne se soit ouvert tout seul.
 
 ### Static build
 
@@ -42,8 +77,8 @@ npm run build
 
 Pour déployer le site exécuter le script `./scripts/deploy.sh`.
 
-Note : il faut avoir un accès SSH autorisé à la machine hébergeant le site.
-Voir https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informations
+Note : il faut avoir un accès SSH autorisé à la machine hébergeant le site. Voir
+https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informations
 
 ## Structure
 
@@ -60,9 +95,14 @@ Voir https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informa
 
 ## Elements propres au Design System
 
-Ce Design System permet au pôle design de discuter des évolutions de celui-ci et valider les implémentations réalisées. Cependant, il est aussi utile aux intégrateurs afin de voir quel HTML utiliser pour afficher telle ou telle brique.
+Ce Design System permet au pôle design de discuter des évolutions de celui-ci et
+valider les implémentations réalisées. Cependant, il est aussi utile aux
+intégrateurs afin de voir quel HTML utiliser pour afficher telle ou telle
+brique.
 
-Pour cela, nous avons mis en place le shortcode `{{< example >}}`. En le mettant autour de votre composant, vous permettez à celui qui visualise le styleguide d'afficher le code en cliquant sur le composant.
+Pour cela, nous avons mis en place le shortcode `{{< example >}}`. En le mettant
+autour de votre composant, vous permettez à celui qui visualise le styleguide
+d'afficher le code en cliquant sur le composant.
 
 Cela a été implémenté dans la page Logo si vous voulez voir ce que cela donne.
 
@@ -74,4 +114,5 @@ Cela a été implémenté dans la page Logo si vous voulez voir ce que cela donn
 
 ## Brique initial
 
-[Victor Hugo](https://github.com/netlify/victor-hugo) (cf. `VICTOR_HUGO_LICENSE`)
+[Victor Hugo](https://github.com/netlify/victor-hugo) (cf.
+`VICTOR_HUGO_LICENSE`)
