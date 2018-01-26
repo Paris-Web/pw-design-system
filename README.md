@@ -13,32 +13,45 @@ est vraiement pertinent à utiliser ou non. Tous les retours sont les bienvenus.
 
 ## Roadmap
 
-* [ ] ⌛️ Composant - Tabs
-* [ ] ️⌛️ Composant - Hero
-* [ ] ️⌛️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
+Les points avec ⚠️ sont les points à préciser avant de passer à l'intégration.  
+Les points avec 🛠️ sont les points en cours de réalisation.  
+Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour éviter de se marcher dessus.
+
+### Appel à orateurs + Inscriptions (26 février)
+
+Date limite pour le design system : 9 février
+
+* [ ] ️Composant - Hero
+* [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
-* [ ] ⌛️ Composant - Citation
-* [ ] ⌛️ Composant - Sponsor
-* [ ] ⌛️ Composant - Partager réseaux sociaux
-* [ ] ⌛️ Composant - Liste de liens (liens normaux et liens de téléchargement,
+* [ ] Composant - Citation
+* [ ] Composant - Sponsor
+* [ ] Composant - Partager réseaux sociaux
+* [ ] Composant - Liste de liens (liens normaux et liens de téléchargement,
       cf page actu et page conférence, footer)
-* [ ] ⌛️ Composant - Image légendée
-* [ ] Composant - Info Conférence (cf. page conférence + liste/tableau
+* [ ] Composant - Image légendée
       conférences)
-* [ ] ⌛️ Module - Liste conférences
-* [ ] 🚧 Module - Tableau conférences (Julien)
-* [ ] 🗨️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
+* [ ] ⚠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.)
-* [ ] ⌛️ Module - Actu' phare
-* [ ] ⌛️ Module - Liste actu'
-* [ ] ⌛️ Module - Header contenu (cf. page actu et page conférence)
-* [ ] ⌛️ Module - Devenir sponsor
-* [ ] ⌛️ Page - Actu
-* [ ] 🗨️ Page - Sponsor
-* [ ] ⌛️ Page - Conférence
-* [ ] ⌛️ Page - Header
-* [ ] ⌛️ Page - Footer
-* [ ] 🗨️ Page - Sidebar ?
+* [ ] Module - Actu' phare
+* [ ] Module - Liste actu'
+* [ ] Module - Header contenu (cf. page actu et page conférence)
+* [ ] Module - Devenir sponsor
+* [ ] Page - Actu
+* [ ] ⚠️ Page - Sponsor
+* [ ] Page - Header
+* [ ] Page - Footer
+* [ ] ⚠️ Page - Sidebar ?
+
+### Annonce des conférences (23 avril)
+
+Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la deadline, pour éviter d'accumuler le retard. Il y aura bien assez de choses à faire ailleurs)
+
+* [ ] Composant - Tabs
+* [ ] Composant - Info Conférence (cf. page conférence + liste/tableau
+* [ ] Module - Liste conférences
+* [ ] Module - Tableau conférences
+* [ ] Page - Conférence
 
 ## Usage
 
