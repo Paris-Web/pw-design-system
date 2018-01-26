@@ -7,11 +7,9 @@
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
-    min-height: 500px;
-    --hero-padding: calc(var(--base-spacing) * 10);
-    padding: 100px 0 calc(var(--hero-padding) / 2) 0;
+    --hero-padding: calc(var(--base-spacing) * 6);
+    padding: 100px 0 calc(var(--hero-padding)) 0;
 }
-
 
 .hero__title, .hero__sub-title, .hero__action {
     padding: 0 var(--hero-padding);
@@ -21,19 +19,19 @@
 }
 
 .hero__title {
-    max-width: 60ch;
+    max-width: 25ch;
     display: flex;
     align-items: flex-end;
     color: var(--color-text-inverted);
 }
 
 .hero__sub-title {
-    max-width: 70ch;
+    max-width: 35ch;
     padding: 0 var(--hero-padding);
     color: var(--color-text-inverted);
 }
 
-.hero__title > *, .hero__sub-title > * {
+.hero__title > *, .hero__sub-title > *, .hero__action > * {
     margin: 0;
 }
 .hero__title > *, .hero__sub-title > * {
@@ -53,11 +51,11 @@
 }
 .hero__title > *::before {
     top: calc(var(--hero-padding) / 3);
-    bottom: calc(-1 * var(--hero-padding) / 3);
+    bottom: calc(-1 * var(--hero-padding) / 4);
 }
 .hero__sub-title > *::before {
-    top: calc(var(--hero-padding) / 4);
-    bottom: calc(-1 * var(--hero-padding) / 3);
+    top: calc(var(--hero-padding) / 6);
+    bottom: calc(-1 * var(--hero-padding) / 4);
 }
 
 .hero__action a::after {
@@ -68,4 +66,29 @@
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .hero {
+        min-height: 500px;
+        --hero-padding: calc(var(--base-spacing) * 10);
+    }
+
+    .hero__sub-title, .hero__action {
+        margin-top: calc(var(--hero-padding) / 3 * 2);
+    }
+    .hero__title {
+        max-width: 60ch;
+    }
+    .hero__sub-title {
+        max-width: 70ch;
+    }
+    .hero__title > *::before {
+        top: calc(var(--hero-padding) / 3);
+        bottom: calc(-1 * var(--hero-padding) / 3);
+    }
+    .hero__sub-title > *::before {
+        top: calc(var(--hero-padding) / 4);
+        bottom: calc(-1 * var(--hero-padding) / 3);
+    }
 }
