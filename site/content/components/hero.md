@@ -1,0 +1,14 @@
+---
+title: "Hero"
+menu: "components"
+---
+
+# Hero
+
+{{< example >}}{{< hero
+    title="Paris Web 2018"
+    subTitle="La conférence francophone des gens qui font du web"
+    image="images/hero/paysage.jpg"
+    link="#"
+    action="Découvrir les archives"
+>}}{{</ example >}}

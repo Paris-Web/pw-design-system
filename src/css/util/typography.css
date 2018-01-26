@@ -98,13 +98,15 @@ p {
   font-weight: normal;
   margin: 1rem 0;
 }
-p.giga {
+.giga {
   font-size: 4.5rem;
   font-weight: bold;
+  line-height: 1;
 }
-p.mega {
+.mega {
   font-size: 3rem;
   font-weight: normal;
+  line-height: 1;
 }
 p.big {
   font-size: 1.125rem;
