@@ -1,5 +1,7 @@
 # Paris Web Design System
 
+[Accéder au Design System](https://stage.paris-web.fr/design-system/master/)
+
 ## Concept
 
 Le but de ce dépôt est d'implémenter et documenter les différents composants
@@ -21,7 +23,7 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 
 Date limite pour le design system : 9 février
 
-* [ ] ️🛠️ Composant - Hero (#8 - Julien)
+* [ ] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
 * [ ] Composant - Citation
