@@ -21,7 +21,7 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 
 Date limite pour le design system : 9 février
 
-* [ ] ️🛠️ Composant - Hero (Julien)
+* [ ] ️🛠️ Composant - Hero (#8 - Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
 * [ ] Composant - Citation
@@ -41,7 +41,7 @@ Date limite pour le design system : 9 février
 * [ ] ⚠️ Page - Sponsor
 * [ ] Page - Header
 * [ ] Page - Footer
-* [ ] ⚠️ Page - Sidebar ?
+* [ ] 🛠️ Page - Sidebar (Julien)
 
 ### Annonce des conférences (23 avril)
 
