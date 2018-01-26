@@ -21,7 +21,7 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 
 Date limite pour le design system : 9 février
 
-* [ ] ️Composant - Hero
+* [ ] ️🛠️ Composant - Hero (Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
 * [ ] Composant - Citation
