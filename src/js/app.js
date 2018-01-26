@@ -5,7 +5,9 @@
  * two separate bundles
  */
 import initTypography from "./util/typography";
+import initNavigation from './pages/nav'
 import initStyleguide from "./styleguide";
 
 initTypography();
+initNavigation();
 initStyleguide();

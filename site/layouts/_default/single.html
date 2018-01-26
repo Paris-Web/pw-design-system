@@ -2,10 +2,12 @@
 
 {{ partial "nav" . }}
 
-<div class="content">
-    {{ .Content }}
-</div>
+<main class="main">
+    <div class="content">
+        {{ .Content }}
+    </div>
+    {{ partial "styleguide-example-container" }}
+</main>
 
-{{ partial "styleguide-example-container" }}
 
 {{ partial "footer" . }}
