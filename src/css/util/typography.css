@@ -138,6 +138,17 @@ a.title:focus {
   color: var(--color-brand-02);
 }
 
-code {
+code, pre {
   background: var(--color-ui-02);
+}
+
+.date-important {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+  sans-serif;
+  text-transform: uppercase;
+  color: var(--color-text-03);
+  font-weight: bold;
+}
+.font-fallback .date-important {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
