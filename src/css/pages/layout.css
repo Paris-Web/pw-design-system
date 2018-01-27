@@ -21,6 +21,10 @@
     max-width: 132px;
 }
 
+body.is-menu-opened {
+    height: 100vh;
+    overflow: hidden;
+}
 .menu {
     position: fixed;
     top: 0;
@@ -52,16 +56,12 @@
     width: 100%;
     height: 100%;
     background: var(--color-ui-01);
-    border: 1px solid var(--color-ui-01);
     border-right: 2px solid var(--color-ui-02);
     transition: transform 0.4s ease-out 0s;
     will-change: transition;
     transform: translateX(-50%) scale(1.1);
-    padding: calc(var(--base-spacing) * 6);
+    padding: calc(var(--base-spacing) * 6) 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     overflow-y: auto;
 }
 .menu--opened .menu__content {
@@ -91,6 +91,13 @@
     outline: none;
 }
 
+.menu__content__wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .menu__links {
     flex: 1;
     display: flex;
@@ -106,23 +113,52 @@
     margin-bottom: calc(var(--base-spacing) * 3);
 }
 .menu__links a {
+    display: block;
+    position: relative;
     color: var(--color-text-01);
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    line-height: 2;
+    line-height: 1.5;
+    margin: 0.5rem 0;
 }
 
-.menu__links a:hover, .menu__links a:focus {
-    text-decoration: underline;
+.menu__links a:hover::before, .menu__links a:focus::before, .menu__links a.active::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.menu__links a.active::before {
+    background: var(--color-brand-02);
+}
+.menu__links a:hover::before, .menu__links a:focus::before {
+    background: var(--color-brand-01);
+}
+
+.menu__links a:hover > span, .menu__links a:focus > span, .menu__links a.active > span {
+    position: relative;
+    z-index: 1;
+    color: var(--color-text-inverted);
 }
 .menu__links a:focus {
     outline: none;
 }
 
 .content {
-    max-width: calc(100% - var(--base-spacing) * 4);
+    max-width: calc(100% - var(--base-spacing) * 6);
     min-height: 100vh;
+    padding: calc(var(--base-spacing) * 10) 0;
+    margin: 0 auto;
+}
+
+.content > :first-child {
+    margin-top: 0;
+}
+.content > :last-child {
+    margin-bottom: 0;
 }
 
 .footer {
@@ -147,6 +183,10 @@
     }
     .header__about .date {
         text-align: right;
+    }
+    .content {
+        width: calc(80ch + 8vw);
+        max-width: calc(100% - var(--base-spacing) * 12);
     }
 }
 

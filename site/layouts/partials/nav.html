@@ -8,9 +8,11 @@
 
         <div class="header__about">
             <div class="logo">
-                <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                <a href="{{.Site.BaseURL}}">
+                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                </a>
             </div>
-    
+
             <p class="date">
                 <span class="date-important">Du <time datetime="2018-10-04T09:00">4</time> au <time datetime="2018-10-06T18:00">6 octobre 2018</time></span>
             </p>
@@ -20,65 +22,69 @@
         <div class="menu__overlay js-close-menu"></div>
         <div class="menu__content">
             <button class="close-menu js-close-menu">&times;</button>
-            <div>
-                <div class="logo">
-                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
-                </div>
-        
-                <p class="date">
-                    <span class="date-important">Du <time datetime="2018-10-04T09:00">4</time> au <time datetime="2018-10-06T18:00">6 octobre 2018</time></span>
-                </p>
-            </div>
+            <div class="menu__content__wrapper">
+                <div>
+                    <div class="logo">
+                        <a href="{{.Site.BaseURL}}">
+                            <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                        </a>
+                    </div>
 
-            <div class="menu__links">
-                <ul>
-                    {{ $currentPage := . }}
-                    <li>
-                        Tokens
-                        <ul>
-                        {{ range .Site.Menus.tokens }}
-                            <li>
-                                <a
-                                    class="h3-like {{if or ($currentPage.IsMenuCurrent "tokens" .) ($currentPage.HasMenuCurrent "tokens" .) }} active{{end}}"
-                                    href="{{.URL}}"
-                                >
-                                    {{ .Name }}
-                                </a>
-                            </li>
-                        {{ end }}
-                        </ul>
-                    </li>
-                    <li>
-                        Composants
-                        <ul>
-                        {{ range .Site.Menus.components }}
-                            <li>
-                                <a
-                                    class="h3-like {{if or ($currentPage.IsMenuCurrent "components" .) ($currentPage.HasMenuCurrent "components" .) }} active{{end}}"
-                                    href="{{.URL}}"
-                                >
-                                    {{ .Name }}
-                                </a>
-                            </li>
-                        {{ end }}
-                        </ul>
-                    </li>        
-                    <li>
-                        Modules
-                        <ul>
-                        {{ range .Site.Menus.modules }}
-                            <li>
-                                <a
-                                    class="h3-like {{if or ($currentPage.IsMenuCurrent "modules" .) ($currentPage.HasMenuCurrent "modules" .) }} active{{end}}"
-                                    href="{{.URL}}"
-                                >
-                                    {{ .Name }}
-                                </a>
-                            </li>
-                        {{ end }}
-                        </ul>
-                    </li>
-                </ul>
+                    <p class="date">
+                        <span class="date-important">Du <time datetime="2018-10-04T09:00">4</time> au <time datetime="2018-10-06T18:00">6 octobre 2018</time></span>
+                    </p>
+                </div>
+
+                <div class="menu__links">
+                    <ul>
+                        {{ $currentPage := . }}
+                        <li>
+                            Tokens
+                            <ul>
+                            {{ range .Site.Menus.tokens }}
+                                <li>
+                                    <a
+                                        class="h3-like {{if or ($currentPage.IsMenuCurrent "tokens" .) ($currentPage.HasMenuCurrent "tokens" .) }} active{{end}}"
+                                        href="{{.URL}}"
+                                    >
+                                        <span>{{ .Name }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                            </ul>
+                        </li>
+                        <li>
+                            Composants
+                            <ul>
+                            {{ range .Site.Menus.components }}
+                                <li>
+                                    <a
+                                        class="h3-like {{if or ($currentPage.IsMenuCurrent "components" .) ($currentPage.HasMenuCurrent "components" .) }} active{{end}}"
+                                        href="{{.URL}}"
+                                    >
+                                        <span>{{ .Name }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                            </ul>
+                        </li>
+                        <li>
+                            Modules
+                            <ul>
+                            {{ range .Site.Menus.modules }}
+                                <li>
+                                    <a
+                                        class="h3-like {{if or ($currentPage.IsMenuCurrent "modules" .) ($currentPage.HasMenuCurrent "modules" .) }} active{{end}}"
+                                        href="{{.URL}}"
+                                    >
+                                        <span>{{ .Name }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>

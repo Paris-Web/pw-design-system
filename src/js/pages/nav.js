@@ -1,9 +1,11 @@
 const listenButtons = () => {
     const openMenu = () => {
+        document.body.classList.add('is-menu-opened')
         document.querySelector('#menu').classList.add('menu--opened')
     }
 
     const closeMenu = () => {
+        document.body.classList.remove('is-menu-opened')
         document.querySelector('#menu').classList.remove('menu--opened')
     }
 

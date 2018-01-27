@@ -41,8 +41,3 @@
   left: 0;
   background: var(--color-brand-01);
 }
-
-.styleguide .content > h1,
-.styleguide .content > h2 {
-  margin: 3rem 0 1.5rem 0;
-}
