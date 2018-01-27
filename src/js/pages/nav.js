@@ -1,12 +1,16 @@
 const listenButtons = () => {
+    let previouslyFocusedElement
     const openMenu = () => {
+        previouslyFocusedElement = document.activeElement
         document.body.classList.add('is-menu-opened')
         document.querySelector('#menu').classList.add('menu--opened')
+        document.querySelector('#menu .menu__content').focus();
     }
 
     const closeMenu = () => {
         document.body.classList.remove('is-menu-opened')
         document.querySelector('#menu').classList.remove('menu--opened')
+        previouslyFocusedElement.focus();
     }
 
     document.querySelector('.js-open-menu')

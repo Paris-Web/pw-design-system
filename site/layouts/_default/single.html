@@ -1,8 +1,10 @@
 {{ partial "header" . }}
 
+<a class="screen-reader screen-reader-focusable" href="{{ relref . "#main" }}">Skip to the main content</a>
+
 {{ partial "nav" . }}
 
-<main class="main">
+<main class="main" id="main" tabindex="-1">
     <div class="content">
         {{ .Content }}
     </div>
