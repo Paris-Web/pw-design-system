@@ -150,6 +150,14 @@ body.is-menu-opened {
     outline: none;
 }
 
+.go-to-content:focus {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
 .main {
     min-height: 70vh;
 }
@@ -219,6 +227,10 @@ body.is-menu-opened {
         display: none;
     }
 
+    .go-to-content:focus {
+        width: 20vw;
+        text-align: center;
+    }
     .main {
         margin-left: 20vw;
         min-height: 100vh;
