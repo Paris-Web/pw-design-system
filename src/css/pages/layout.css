@@ -34,7 +34,11 @@ body.is-menu-opened {
     z-index: 100;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: opacity 0.2s ease-in;
+}
+.menu--visible {
+    visibility: visible;
 }
 .menu--opened {
     opacity: 1;
@@ -116,11 +120,10 @@ body.is-menu-opened {
     display: block;
     position: relative;
     color: var(--color-text-01);
-    text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    line-height: 1.5;
-    margin: 0.5rem 0;
+    line-height: 1.4;
+    margin: calc(var(--base-spacing) * 2) 0;
 }
 
 .menu__links a:hover::before, .menu__links a:focus::before, .menu__links a.active::before {
@@ -203,6 +206,7 @@ body.is-menu-opened {
         opacity: 1;
         pointer-events: all;
         width: auto;
+        visibility: visible;
     }
     .menu__overlay {
         display: none;

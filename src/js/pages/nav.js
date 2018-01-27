@@ -1,15 +1,23 @@
 const listenButtons = () => {
     let previouslyFocusedElement
+    const onCloseMenuTransitionEnd = () => {
+        document.querySelector('#menu').classList.remove('menu--visible')
+        document.querySelector('#menu .menu__content')
+            .removeEventListener('transitionend', onCloseMenuTransitionEnd)
+    }
     const openMenu = () => {
         previouslyFocusedElement = document.activeElement
         document.body.classList.add('is-menu-opened')
         document.querySelector('#menu').classList.add('menu--opened')
+        document.querySelector('#menu').classList.add('menu--visible')
         document.querySelector('#menu .menu__content').focus();
     }
 
     const closeMenu = () => {
         document.body.classList.remove('is-menu-opened')
         document.querySelector('#menu').classList.remove('menu--opened')
+        document.querySelector('#menu .menu__content')
+            .addEventListener('transitionend', onCloseMenuTransitionEnd)
         previouslyFocusedElement.focus();
     }
 
