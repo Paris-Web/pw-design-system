@@ -104,6 +104,14 @@ body.is-menu-opened {
     justify-content: space-between;
 }
 
+.menu .logo a, .menu .logo a img {
+    display: block;
+    margin: 0 auto;
+}
+.menu .date {
+    font-size: 1.1rem;
+}
+
 .menu__links {
     flex: 1;
     display: flex;
@@ -140,7 +148,7 @@ body.is-menu-opened {
     background: var(--color-brand-02);
 }
 .menu__links a:hover::before, .menu__links a:focus::before {
-    background: var(--color-brand-01);
+    background: var(--color-brand-02-dark);
 }
 
 .menu__links a:hover > span, .menu__links a:focus > span, .menu__links a.active > span {

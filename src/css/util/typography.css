@@ -104,7 +104,7 @@ h6,
 p {
   font-size: 1rem;
   font-weight: normal;
-  margin: 1rem 0;
+  margin: calc(var(--base-spacing) * 4) 0;
 }
 p.giga {
   font-size: 4.5rem;
