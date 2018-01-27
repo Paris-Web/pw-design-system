@@ -14,7 +14,3 @@
 @import "modules/orateurs.css";
 @import "pages/layout.css";
 @import "styleguide/main.css";
-
-body {
-  font-size: 1em;
-}
