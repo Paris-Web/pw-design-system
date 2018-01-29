@@ -36,7 +36,7 @@ const listenButtons = () => {
 }
 
 const listenIntersection = (element, callback) => {
-    if (IntersectionObserver) {
+    if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(entries => {
             const entry = entries.find(entry => entry.target === element)
             callback(entry)
