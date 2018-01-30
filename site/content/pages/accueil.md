@@ -67,11 +67,6 @@ Après la conférence
 		<button class="white">Découvrir</button>
 	</li>
 	<li>
-		<h3>Presse</h3
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam ex nostrum eos, iste ab possimus perspiciatis veritatis voluptas.</p>
-		<button class="white">Découvrir</button>
-	</li>
-	<li>
 		<h3>Flickr</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam ex nostrum eos, iste ab possimus perspiciatis veritatis voluptas.</p>
 		<button class="white">Voir le direct!</button>

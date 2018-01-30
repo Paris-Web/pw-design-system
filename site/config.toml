@@ -2,6 +2,9 @@ baseurl = "/"
 languageCode = "fr-fr"
 languageLang = "fr"
 title = "Paris Web Design System"
+defaultContentLanguage = "fr"
+pygmentsCodeFences = true
+pygmentsStyle = "colorful"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
