@@ -35,7 +35,7 @@ Date limite pour le design system : 9 février
       conférences)
 * [ ] ⚠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.)
-* [ ] Module - Actu' phare
+* [ ] 🛠️ Module - Actu' phare (Pierre)
 * [ ] Module - Liste actu'
 * [ ] Module - Header contenu (cf. page actu et page conférence)
 * [ ] Module - Devenir sponsor
