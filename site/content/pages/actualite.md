@@ -25,15 +25,12 @@ Ces places unitaires seront disponibles à la vente dès que *le programme 2018 
 
 Les plus fidèles d'entre vous voudront peut-être réserver leur place avant cette date. Ils bénéficieront donc en avant-première d'un tarif Early Bird, dans la limite des stocks disponibles.
 
-Formules
-(prix TTC) 	Early bird
-du 14/02 au 22/04 	Standard
-du 23/04 au 19/09 	Late bird
-du 20/09 au 03/10
-Ateliers (1j) 	35€ 	35€ 	35€
-Conférences (1j) 	- 	220€ 	240€
-Conférences (2j) 	340€ 	360€ 	400€
-Pass intégral (3j) 	375€ 	395€ 	435€
+| Formules<br>(prix TTC) | Early bird<br>du 14/02 au 22/04 | Standard<br>du 23/04 au 19/09 | Late bird<br>du 20/09 au 03/10 |
+| ------------------- | :--------------------------: | :------------------------: | :-------------------------: |
+| Ateliers (1j) | 35€ | 35€ | 35€ |
+| Conférences (1j) | - | 220€ | 240€ |
+| Conférences (2j) | 340€ | 360€ | 400€ |
+| Pass intégral (3j) | 375€ | 395€ | 435€ |
 
 Un tarif réduit pour les conférences sera disponible en quantité limitée pour les étudiants de moins de 26 ans et les demandeurs d'emploi, sur justificatif.
 
