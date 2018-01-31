@@ -76,3 +76,10 @@
   padding: 0.3rem 1rem;
   font-size: 1rem;
 }
+
+button svg * {
+  fill: var(--color-text-03);
+}
+button:hover svg *, button:focus svg * {
+  fill: var(--color-text-01);
+}
