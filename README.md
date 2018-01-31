@@ -1,5 +1,7 @@
 # Paris Web Design System
 
+[Accéder au Design System](https://stage.paris-web.fr/design-system/master/)
+
 ## Concept
 
 Le but de ce dépôt est d'implémenter et documenter les différents composants
@@ -13,15 +15,15 @@ est vraiement pertinent à utiliser ou non. Tous les retours sont les bienvenus.
 
 ## Roadmap
 
-Les points avec ⚠️ sont les points à préciser avant de passer à l'intégration.  
-Les points avec 🛠️ sont les points en cours de réalisation.  
+Les points avec ⚠️ sont les points à préciser avant de passer à l'intégration.
+Les points avec 🛠️ sont les points en cours de réalisation.
 Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour éviter de se marcher dessus.
 
 ### Appel à orateurs + Inscriptions (26 février)
 
 Date limite pour le design system : 9 février
 
-* [ ] ️🛠️ Composant - Hero (#8 - Julien)
+* [ ] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
 * [ ] Composant - Citation
@@ -31,9 +33,10 @@ Date limite pour le design system : 9 février
       cf page actu et page conférence, footer)
 * [ ] Composant - Image légendée
       conférences)
+* [ ] Composant - Pagination (résultats recherche) - http://www.a11ymatters.com/pattern/pagination/
 * [ ] ⚠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.)
-* [ ] Module - Actu' phare
+* [ ] 🛠️ Module - Actu' phare (Pierre)
 * [ ] Module - Liste actu'
 * [ ] Module - Header contenu (cf. page actu et page conférence)
 * [ ] Module - Devenir sponsor
@@ -42,6 +45,7 @@ Date limite pour le design system : 9 février
 * [ ] Page - Header
 * [ ] Page - Footer
 * [ ] 🛠️ Page - Sidebar (Julien)
+* [ ] Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0
 
 ### Annonce des conférences (23 avril)
 

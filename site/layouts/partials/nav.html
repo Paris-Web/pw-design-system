@@ -87,6 +87,20 @@
                             {{ end }}
                             </ul>
                         </li>
+                        <li>
+                            Pages
+                            <ul>
+                                {{ range .Site.Menus.pages }}
+                                <li>
+                                    <a class="h3-like {{if or ($currentPage.IsMenuCurrent " pages " .) ($currentPage.HasMenuCurrent "pages " .) }} active{{end}}" href="{{.URL}}">
+                                        <span>
+                                            {{ .Name }}
+                                        </span>
+                                    </a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

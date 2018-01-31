@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div style="display:flex">
+    <div>
+      <p class="breadcrumb">
+        <span>
+          <a href="{{.Site.BaseURL}}">Accueil</a>
+        </span>
+        <span>
+          <a href="#">Actualités</a>
+        </span>
+        <span>
+          {{ .Title }}
+        </span>
+      </p>
+
+      {{ .Content }}
+    </div>
+
+    <div style="width:20vw; margin-left: 4em; padding: 2em 1em;">
+      Je suis la sidebar !
+
+      <ul>
+        <li><a href="">Coucou</a></li>
+        <li><a href="">Hello</a></li>
+        <li><a href="">Lorem</a></li>
+        <li><a href="">Ahah</a></li>
+      </ul>
+    </div>
+  </div>
+{{ end }}
