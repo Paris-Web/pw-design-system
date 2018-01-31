@@ -1,20 +1,15 @@
-.styleguide {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 100vh;
-}
 
-.styleguide nav {
-  grid-column: 1;
-  overflow-y: auto;
-}
-.styleguide .content {
-  padding: 0 1.5rem;
-  grid-column: 2/5;
-  overflow-y: auto;
-}
 .styleguide .styleguide-example-container {
-  grid-column: 1/5;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-ui-01);
+  padding: calc(var(--base-spacing) * 10);
+  max-height: 50vh;
+  overflow: auto;
+  border-top: 2px solid var(--color-ui-02);
 }
 
 .styleguide .content > h1 {
@@ -47,7 +42,22 @@
   background: var(--color-brand-01);
 }
 
-.styleguide .content > h1,
-.styleguide .content > h2 {
-  margin: 3rem 0 1.5rem 0;
+.back-to-design-system {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  width: 20vw;
+  max-width: 380px;
+  text-align: center;
+  background: var(--color-brand-01);
+  color: var(--color-text-inverted);
+  padding: var(--base-spacing);
+}
+.back-to-design-system:visited {
+  color: var(--color-text-inverted);
+}
+.back-to-design-system:hover, .back-to-design-system:focus, .back-to-design-system:active {
+  background: var(--color-brand-02);
 }

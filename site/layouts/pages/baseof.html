@@ -1,20 +1,17 @@
 {{ partial "header" . }}
 
-{{ partial "nav" . }}
+<a class="back-to-design-system" href=".">Revenir au Design System</a>
+<a class="go-to-content screen-reader screen-reader-focusable" href="{{ relref . "#main" }}">Aller au contenu</a>
 
-<div class="content">
-  {{ partial "template/banniere" . }}
+{{ partial "template/nav" . }}
 
+<main class="main" id="main" tabindex="-1">
   {{ block "main" . }}
     {{ .Content }}
   {{ end }}
-
-  <!-- TODO À voir si cela doit plutôt n’être que sur certaines pages ou si OK ici -->
   {{ partial "template/sponsors" . }}
+</main>
 
-  {{ partial "template/pied-de-page" . }}
-</div>
-
-{{ partial "styleguide-example-container" }}
+{{ partial "template/pied-de-page" . }}
 
 {{ partial "footer" . }}
