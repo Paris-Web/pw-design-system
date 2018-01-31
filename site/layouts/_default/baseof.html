@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+
+{{ partial "nav" . }}
+
+<div class="content">
+    {{ block "main" . }}
+      {{ .Content }}
+    {{ end }}
+</div>
+
+{{ partial "styleguide-example-container" }}
+
+{{ partial "footer" . }}

@@ -1,5 +1,4 @@
 <nav>
-
     <ul>
         {{ $currentPage := . }}
         <li>
@@ -31,7 +30,7 @@
                 </li>
             {{ end }}
              </ul>
-        </li>        
+        </li>
         <li>
             Modules
             <ul>
@@ -46,6 +45,18 @@
                 </li>
             {{ end }}
              </ul>
+        </li>
+        <li>
+            Pages
+            <ul>
+                {{ range .Site.Menus.pages }}
+                <li>
+                    <a class="{{if or ($currentPage.IsMenuCurrent " pages " .) ($currentPage.HasMenuCurrent "pages " .) }} active{{end}}" href="{{.URL}}">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
         </li>
     </ul>
 </nav>
