@@ -7,13 +7,12 @@
 @import "util/colors.css";
 @import "util/typography.css";
 @import "util/grid.css";
+@import "util/screen-reader.css";
+@import "util/icons.css";
 @import "components/breadcrumb.css";
 @import "components/portrait.css";
 @import "components/buttons.css";
 @import "components/hero.css";
 @import "modules/orateurs.css";
+@import "pages/layout.css";
 @import "styleguide/main.css";
-
-body {
-  font-size: 1em;
-}

@@ -13,10 +13,25 @@
     url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
 }
 
+:root { font-size: 14px;  }
+@media (min-width: 700px){
+	:root { font-size: 16px;  }
+}
+@media (min-width: 1150px){
+  /* 50% de nos visiteurs sont entre 1150 et 1920px de large. */
+	:root {
+		font-size: calc( 16px + (24 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
+	}
+}
+@media (min-width: 1920px){
+	:root {
+		font-size: 24px;
+	}
+}
+
 html,
 body {
   color: var(--color-text-01);
-  font-size: 14px;
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
 }
@@ -41,13 +56,6 @@ body {
 * {
   font-family: inherit;
   font-size: inherit;
-}
-
-@media screen and (min-width: 400px) {
-  html,
-  body {
-    font-size: 16px;
-  }
 }
 
 h1,
@@ -96,7 +104,7 @@ h6,
 p {
   font-size: 1rem;
   font-weight: normal;
-  margin: 1rem 0;
+  margin: calc(var(--base-spacing) * 4) 0;
 }
 .giga {
   font-size: 2.25rem;
@@ -148,6 +156,17 @@ a.title:focus {
   color: var(--color-brand-02);
 }
 
-code {
+code, pre {
   background: var(--color-ui-02);
+}
+
+.date-important {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+  sans-serif;
+  text-transform: uppercase;
+  color: var(--color-text-03);
+  font-weight: bold;
+}
+.font-fallback .date-important {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }

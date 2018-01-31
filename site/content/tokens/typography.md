@@ -74,3 +74,7 @@ example >}}<p class="mega">Méga - 3rem</p>{{< /example >}}
 {{< example >}}<p class="big">Big - 1.125rem</p>{{< /example >}} {{<
 example >}}<p>p - 1rem</p>{{< /example >}} {{<
 example >}}<p class="small">Small - 0.75rem</p>{{< /example >}}
+
+## Date importante
+
+<p class="date-important">Du 4 au 6 octobre 2018<p>
