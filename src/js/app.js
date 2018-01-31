@@ -4,6 +4,7 @@
  * TODO : Update webpack.conf.js in order to generate
  * two separate bundles
  */
+
 import "./util/polyfill"
 import initTypography from "./util/typography";
 import initNavigation from './pages/nav'

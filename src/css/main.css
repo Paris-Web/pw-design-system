@@ -8,6 +8,7 @@
 @import "util/typography.css";
 @import "util/grid.css";
 @import "util/screen-reader.css";
+@import "util/icons.css";
 @import "components/breadcrumb.css";
 @import "components/portrait.css";
 @import "components/buttons.css";
