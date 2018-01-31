@@ -17,7 +17,7 @@ menu: "modules"
             <div class="menu__head">
                 <div class="logo">
                     <a href="/">
-                        <img src="/images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Paris Web" />
+                        <img src="images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Paris Web" />
                     </a>
                 </div>
 
@@ -29,24 +29,24 @@ menu: "modules"
             <div class="menu__links">
                 <ul>
                     <li>
-                        <a class="h3-like" href="/modules/sidebar">
+                        <a class="h3-like" href="modules/sidebar">
                             <span>Programme</span>
                         </a>
                     </li>
                     <li>
-                        <a class="h3-like" href="/modules/sidebar">
+                        <a class="h3-like" href="modules/sidebar">
                             <span>Archives</span>
                         </a>
                     </li>
                     <li>
-                        <a class="h3-like" href="/modules/sidebar">
+                        <a class="h3-like" href="modules/sidebar">
                             <span>Orateurs</span>
                         </a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a class="h3-like" href="/modules/sidebar">
+                        <a class="h3-like" href="modules/sidebar">
                             <span>
                                 Rechercher
                                 <svg class="icon search" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" role="img" aria-hidden="true">
