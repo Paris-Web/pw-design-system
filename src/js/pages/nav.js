@@ -68,16 +68,18 @@ const listenFooterPosition = () => {
     const footer = document.querySelector('#footer')
     const menu = document.querySelector('#menu')
 
-    listenIntersection(footer, entry => {
-        requestAnimationFrame(() => {
-            if (entry.isIntersecting) {
-                document.body.classList.add('is-footer-visible')
-                menu.style.bottom = `${footer.getBoundingClientRect().height}px`
-            } else {
-                document.body.classList.remove('is-footer-visible')
-            }
+    if (footer) {
+        listenIntersection(footer, entry => {
+            requestAnimationFrame(() => {
+                if (entry.isIntersecting) {
+                    document.body.classList.add('is-footer-visible')
+                    menu.style.bottom = `${footer.getBoundingClientRect().height}px`
+                } else {
+                    document.body.classList.remove('is-footer-visible')
+                }
+            })
         })
-    })
+    }
 }
 
 const initNavigation = () => {
