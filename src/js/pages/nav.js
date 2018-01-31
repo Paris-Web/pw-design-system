@@ -51,6 +51,17 @@ const listenIntersection = (element, callback) => {
             callback({isIntersecting: window.scrollY > offsetTop - windowHeight})
         });
     }
+
+    let lastResize = null
+    window.addEventListener('resize', () => {
+        let now = window.performance.now()
+        if (!lastResize || lastResize + 300 < now) {
+            lastResize = now
+            const offsetTop = element.offsetTop
+            const windowHeight = window.innerHeight;
+            callback({isIntersecting: window.scrollY > offsetTop - windowHeight})
+        }
+    })
 }
 
 const listenFooterPosition = () => {
