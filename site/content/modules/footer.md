@@ -1,4 +1,14 @@
-<footer role="contentinfo" id="footer" class="footer">
+---
+title: "Footer"
+menu: "modules"
+layout: "full"
+---
+
+<div class="content">
+    <h1>Footer</h1>
+</div>
+
+<footer role="contentinfo" class="footer">
     <div class="full-content">
         <section class="full-content__side footer__description">
             <h2>

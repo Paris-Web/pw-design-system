@@ -212,12 +212,6 @@ body.is-menu-opened {
     margin-bottom: 0;
 }
 
-.footer {
-    padding: 20px;
-    color: var(--color-text-inverted);
-    background: var(--color-ui-06);
-}
-
 @media screen and (min-width: 44em) {
     .header {
         padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 6);
