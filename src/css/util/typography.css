@@ -1,16 +1,55 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'),
+      url('/fonts/PTSans-Regular.woff2') format('woff2'),
+      url('/fonts/PTSans-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"),
-    url("/fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
 }
+
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: 'PT Sans';
+  src: local('PT Sans Italic'), local('PTSans-Italic'),
+      url('/fonts/PTSans-Italic.woff2') format('woff2'),
+      url('/fonts/PTSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'),
+      url('/fonts/PTSans-BoldItalic.woff2') format('woff2'),
+      url('/fonts/PTSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+      url('/fonts/PTSans-Bold.woff2') format('woff2'),
+      url('/fonts/PTSans-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
-    url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'),
+      url('/fonts/PTSans-Narrow.woff2') format('woff2'),
+      url('/fonts/PTSans-Narrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'),
+      url('/fonts/PTSans-NarrowBold.woff2') format('woff2'),
+      url('/fonts/PTSans-NarrowBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 :root { font-size: 0.9em;  }
