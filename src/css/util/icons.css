@@ -13,3 +13,17 @@ svg.icon * {
     margin-bottom: -0.1rem;
     vertical-align: baseline;
 }
+.icon.icon--social {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.icon-link {
+    display: inline-block;
+    color: var(--color-text-03);
+    text-decoration: none;
+    padding: calc(var(--base-spacing) * 1);
+}
+.icon-link .icon {
+    display: block;
+}

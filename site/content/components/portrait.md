@@ -12,10 +12,9 @@ menu: "components"
     <dd>
         {{< example >}}
             {{< portrait
-            avatar=""
             name="Camille Exemple"
-            twitter="https://www.twitter.com/CamilleExample"
-            github="https://www.github.com/CamilleExample"
+            twitter="https://www.twitter.com/CamilleExemple"
+            github="https://www.github.com/CamilleExemple"
             website="https://www.camilleexemple.com/"
             description="Pixelliste sans filet" >}}
         {{< /example >}}
@@ -25,7 +24,7 @@ menu: "components"
         {{< example >}}
             {{< portrait
             name="Camille Exemple"
-            twitter="https://www.twitter.com/CamilleExample"
+            twitter="https://www.twitter.com/CamilleExemple"
             description="Pixelliste sans filet" >}}
         {{< /example >}}
     </dd>
@@ -50,12 +49,22 @@ menu: "components"
     <dd>
         {{< example >}}
             {{< portrait
+            avatar="https://www.paris-web.fr/img/staff/joachim-robert.jpg"
             name="Camille Exemple"
             description="Pixelliste avec lien et réseaux"
             link="#"
-            twitter="https://www.twitter.com/CamilleExample"
-            github="https://www.github.com/CamilleExample"
-            website="https://www.camilleexemple.com/" >}}
+            twitter="https://www.twitter.com/CamilleExemple"
+            github="https://www.github.com/CamilleExemple"
+            website="https://www.camilleexemple.com/"
+            linkedin="https://www.linkedin.com/CamilleExemple" >}}
+        {{< /example >}}
+    </dd>
+
+    <dd>
+        {{< example >}}
+            {{< portrait
+            surprise="true"
+            name="Orateur·rice Surprise&nbsp;!" >}}
         {{< /example >}}
     </dd>
 </dl>
@@ -69,8 +78,8 @@ menu: "components"
                 link="#"
                 avatar=""
                 name="Camille Exemple"
-                twitter="https://www.twitter.com/CamilleExample"
-                github="https://www.github.com/CamilleExample"
+                twitter="https://www.twitter.com/CamilleExemple"
+                github="https://www.github.com/CamilleExemple"
                 website="https://www.camilleexemple.com/" >}}
                 Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.
