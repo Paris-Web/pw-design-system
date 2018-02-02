@@ -57,6 +57,10 @@
   color: var(--color-brand-03-light);
 }
 
+.styleguide-color--color-brand-02-darker .styleguide-color__display {
+  color: var(--color-brand-02-darker);
+}
+
 .styleguide-color--color-ui-01 .styleguide-color__display {
   color: var(--color-ui-01);
   border-color: var(--color-ui-03);

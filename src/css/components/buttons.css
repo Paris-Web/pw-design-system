@@ -1,5 +1,5 @@
 .btn {
-  background: var(--color-brand-02);
+  background: var(--color-brand-02-dark);
   color: var(--color-text-inverted);
   font-weight: bold;
   font-size: 1rem;
@@ -12,10 +12,10 @@
 }
 .btn:hover,
 .btn:focus {
-  background: var(--color-brand-02-dark);
+  background: var(--color-brand-02-darker);
 }
 .btn:focus {
-  outline-color: var(--color-brand-02-dark);
+  outline-color: var(--color-brand-02-darker);
 }
 .btn:disabled {
   opacity: 0.5;
