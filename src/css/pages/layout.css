@@ -83,6 +83,7 @@ body.is-menu-opened {
     padding: calc(var(--base-spacing) * 6) 0;
     text-align: center;
     overflow-y: auto;
+    max-width: 380px;
 }
 .menu--opened .menu__content {
     transform: translateX(0%) scale(1);
@@ -267,6 +268,7 @@ body.is-menu-opened {
         width: 20vw;
         transform: translateX(0%) scale(1);
         opacity: 1;
+        max-width: 100%;
     }
     .menu__content > .close-menu {
         display: none;
