@@ -2,8 +2,14 @@ svg.icon * {
     fill: currentColor;
 }
 
-.icon.search {
+.icon.icon--search {
     height: 1.5rem;
     width: 1.5rem;
     margin-bottom: -0.1rem;
+}
+.icon.icon--menu {
+    height: 0.9rem;
+    width: 1.8rem;
+    margin-bottom: -0.1rem;
+    vertical-align: baseline;
 }
