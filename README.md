@@ -23,18 +23,21 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 
 Date limite pour le design system : 9 février
 
+* [ ] Favicon
 * [ ] Tokens - titraille (typographie)
 * [ ] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
 * [ ] Composant - Citation
+* [ ] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
 * [ ] Composant - Sponsor
 * [ ] Composant - Partager réseaux sociaux
 * [ ] Composant - Liste de liens (liens normaux et liens de téléchargement,
       cf page actu et page conférence, footer)
 * [ ] Composant - Image légendée
       conférences)
-* [ ] Composant - Pagination (résultats recherche) - http://www.a11ymatters.com/pattern/pagination/
+* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
+* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
 * [ ] ⚠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.)
 * [ ] 🛠️ Module - Actu' phare (Pierre)
