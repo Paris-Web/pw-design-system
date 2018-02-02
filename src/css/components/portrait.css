@@ -1,7 +1,7 @@
 .portrait {
   position: relative;
   display: inline-block;
-  width: 11rem; /* ~140px */
+  width: 12rem; /* ~140px */
   text-align: center;
   margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
 }
