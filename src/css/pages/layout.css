@@ -143,7 +143,7 @@ body.is-menu-opened {
     font-weight: bold;
     text-decoration: none;
     line-height: 1.4;
-    margin: calc(var(--base-spacing) * 2) 0;
+    margin: 0.25em 0;
 }
 
 .menu__links a:hover::before, .menu__links a:focus::before, .menu__links a.active::before {
@@ -245,6 +245,7 @@ body.is-menu-opened {
         width: 20vw;
         transform: translateX(0%) scale(1);
         opacity: 1;
+        box-sizing: content-box;
     }
     .menu__content > .close-menu {
         display: none;
@@ -256,6 +257,7 @@ body.is-menu-opened {
     }
     .main {
         margin-left: 20vw;
+        margin-left: calc(20vw - 1px);
         min-height: 100vh;
     }
 
