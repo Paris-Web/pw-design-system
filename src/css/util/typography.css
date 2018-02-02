@@ -62,7 +62,7 @@
 		font-size: calc( 1em + (24 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
 	}
 }
-@media (min-width: 1920px){
+@media (min-width: 120em){
 	:root {
 		font-size: 1.5em;
 	}
