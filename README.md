@@ -23,6 +23,7 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 
 Date limite pour le design system : 9 février
 
+* [ ] Tokens - titraille (typographie)
 * [ ] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
 * [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
       orateur.rice ?)
@@ -40,8 +41,10 @@ Date limite pour le design system : 9 février
 * [ ] Module - Liste actu'
 * [ ] Module - Header contenu (cf. page actu et page conférence)
 * [ ] Module - Devenir sponsor
+* [ ] Module - Portrait -> tous les orateurs
 * [ ] Page - Actu
-* [ ] ⚠️ Page - Sponsor
+* [ ] Page - Liste Actus
+* [ ] Page - Sponsors
 * [ ] Page - Header
 * [ ] Page - Footer
 * [ ] 🛠️ Page - Sidebar (Julien)
@@ -51,6 +54,7 @@ Date limite pour le design system : 9 février
 
 Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la deadline, pour éviter d'accumuler le retard. Il y aura bien assez de choses à faire ailleurs)
 
+* [ ] Composant - Tags
 * [ ] Composant - Tabs
 * [ ] Composant - Info Conférence (cf. page conférence + liste/tableau
 * [ ] Module - Liste conférences
