@@ -42,8 +42,8 @@ Date limite pour le design system : 9 février
 * [ ] Module - Devenir sponsor
 * [ ] Page - Actu
 * [ ] ⚠️ Page - Sponsor
-* [ ] Page - Header
-* [ ] Page - Footer
+* [ ] 🛠️ Page - Header (Julien)
+* [ ] 🛠️ Page - Footer (Julien)
 * [ ] 🛠️ Page - Sidebar (Julien)
 * [ ] Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0
 
