@@ -107,12 +107,12 @@ p {
   margin: calc(var(--base-spacing) * 4) 0;
 }
 .giga {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1;
 }
 .mega {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
   line-height: 1;
 }
@@ -121,7 +121,7 @@ p {
     font-size: 4.5rem;
   }
   .mega {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 p.big {

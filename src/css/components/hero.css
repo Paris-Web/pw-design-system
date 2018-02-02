@@ -1,3 +1,6 @@
+:root {
+    --hero-padding: calc(var(--base-spacing) * 6);
+}
 
 .hero {
     position: relative;
@@ -7,11 +10,29 @@
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
-    --hero-padding: calc(var(--base-spacing) * 6);
     padding: 100px 0 calc(var(--hero-padding)) 0;
+    height: 100%;
+    min-height: 75vh;
+}
+
+@media screen and (orientation:portrait) {
+    .hero {
+        min-height: 75vw;
+    }
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, rgba(80, 120, 220, 1) 1%,rgba(120, 80, 250, 0.2) 50%,rgba(180, 80, 200, 1) 100%);
 }
 
 .hero__title, .hero__sub-title, .hero__action {
+    position: relative;
     padding: 0 var(--hero-padding);
 }
 .hero__sub-title, .hero__action {
@@ -19,14 +40,14 @@
 }
 
 .hero__title {
-    max-width: 25ch;
+    max-width: 40ch;
     display: flex;
     align-items: flex-end;
     color: var(--color-text-inverted);
 }
 
 .hero__sub-title {
-    max-width: 35ch;
+    max-width: 50ch;
     padding: 0 var(--hero-padding);
     color: var(--color-text-inverted);
 }
@@ -54,8 +75,8 @@
     bottom: calc(-1 * var(--hero-padding) / 4);
 }
 .hero__sub-title > *::before {
-    top: calc(var(--hero-padding) / 6);
-    bottom: calc(-1 * var(--hero-padding) / 4);
+    top: calc(var(--hero-padding) / 4);
+    bottom: calc(-1 * var(--hero-padding) / 3);
 }
 
 .hero__action a::after {
@@ -70,7 +91,6 @@
 
 @media screen and (min-width: 700px) {
     .hero {
-        min-height: 500px;
         --hero-padding: calc(var(--base-spacing) * 10);
     }
 
@@ -84,11 +104,11 @@
         max-width: 70ch;
     }
     .hero__title > *::before {
-        top: calc(var(--hero-padding) / 3);
+        top: calc(var(--hero-padding) / 4);
         bottom: calc(-1 * var(--hero-padding) / 3);
     }
     .hero__sub-title > *::before {
-        top: calc(var(--hero-padding) / 4);
+        top: calc(var(--hero-padding) / 5);
         bottom: calc(-1 * var(--hero-padding) / 3);
     }
 }
