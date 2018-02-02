@@ -1,8 +1,5 @@
-:root {
-    --hero-padding: calc(var(--base-spacing) * 6);
-}
-
 .hero {
+    --hero-padding: calc(var(--base-spacing) * 6);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,7 +7,7 @@
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
-    padding: 100px 0 calc(var(--hero-padding)) 0;
+    padding: calc(var(--hero-padding)) 0;
     height: 100%;
     min-height: 75vh;
 }
@@ -35,9 +32,6 @@
     position: relative;
     padding: 0 var(--hero-padding);
 }
-.hero__sub-title, .hero__action {
-    margin-top: calc(var(--hero-padding) / 3 * 2);
-}
 
 .hero__title {
     max-width: 40ch;
@@ -50,6 +44,10 @@
     max-width: 50ch;
     padding: 0 var(--hero-padding);
     color: var(--color-text-inverted);
+    margin-top: calc(var(--base-spacing) * 4);
+}
+.hero__action {
+    margin-top: calc(var(--base-spacing) * 6);
 }
 
 .hero__title > *, .hero__sub-title > *, .hero__action > * {
@@ -71,12 +69,12 @@
     background: var(--color-brand-03);
 }
 .hero__title > *::before {
-    top: calc(var(--hero-padding) / 3);
-    bottom: calc(-1 * var(--hero-padding) / 4);
+    top: 0.25em;
+    bottom: -0.5rem;
 }
 .hero__sub-title > *::before {
-    top: calc(var(--hero-padding) / 4);
-    bottom: calc(-1 * var(--hero-padding) / 3);
+    top: 0.25em;
+    bottom: -0.5rem;
 }
 
 .hero__action a::after {
@@ -92,10 +90,17 @@
 @media screen and (min-width: 44em) {
     .hero {
         --hero-padding: calc(var(--base-spacing) * 10);
+        padding: calc(var(--hero-padding)) 0;
     }
 
-    .hero__sub-title, .hero__action {
-        margin-top: calc(var(--hero-padding) / 3 * 2);
+    .hero__title, .hero__sub-title, .hero__action {
+        padding: 0 var(--hero-padding) 0 calc(var(--hero-padding) * 1.5);
+    }
+    .hero__sub-title {
+        margin-top: calc(var(--base-spacing) * 6);
+    }
+    .hero__action {
+        margin-top: calc(var(--base-spacing) * 8);
     }
     .hero__title {
         max-width: 60ch;
@@ -103,12 +108,16 @@
     .hero__sub-title {
         max-width: 70ch;
     }
+    .hero__title > *::before, .hero__sub-title > *::before {
+        left: calc(-1.5 * var(--hero-padding));
+        right: calc(-1.5 * var(--hero-padding));
+    }
     .hero__title > *::before {
-        top: calc(var(--hero-padding) / 4);
-        bottom: calc(-1 * var(--hero-padding) / 3);
+        top: 0.25em;
+        bottom: -1rem;
     }
     .hero__sub-title > *::before {
-        top: calc(var(--hero-padding) / 5);
-        bottom: calc(-1 * var(--hero-padding) / 3);
+        top: 0.25em;
+        bottom: -1rem;
     }
 }

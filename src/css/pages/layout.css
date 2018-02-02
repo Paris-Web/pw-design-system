@@ -242,6 +242,7 @@ body.is-menu-opened {
         display: none;
     }
     .menu .menu__content {
+        box-sizing: content-box;
         width: 20vw;
         transform: translateX(0%) scale(1);
         opacity: 1;
