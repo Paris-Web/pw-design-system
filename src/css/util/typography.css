@@ -13,19 +13,19 @@
     url("/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf");
 }
 
-:root { font-size: 14px;  }
-@media (min-width: 700px){
-	:root { font-size: 16px;  }
+:root { font-size: 0.9em;  }
+@media (min-width: 44em){
+	:root { font-size: 1em;  }
 }
-@media (min-width: 1150px){
+@media (min-width: 68em){
   /* 50% de nos visiteurs sont entre 1150 et 1920px de large. */
 	:root {
-		font-size: calc( 16px + (24 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
+		font-size: calc( 1em + (24 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
 	}
 }
 @media (min-width: 1920px){
 	:root {
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 }
 
@@ -116,7 +116,7 @@ p {
   font-weight: normal;
   line-height: 1;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 44em) {
   .giga {
     font-size: 4.5rem;
   }
