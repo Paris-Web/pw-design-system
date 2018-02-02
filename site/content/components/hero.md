@@ -1,9 +1,12 @@
 ---
 title: "Hero"
 menu: "components"
+layout: "full"
 ---
 
-# Hero
+<div class="content">
+<h1>Hero</h1>
+</div>
 
 {{< example >}}{{< hero
     title="Paris Web 2018"
