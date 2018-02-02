@@ -144,7 +144,7 @@ layout: "full"
     <section class="full-content full-content--reversed footer__legal">
         <div class="full-content__side">
             <p>
-                Les contenus publiés sur ce site appartiennent à l’association Paris Web mais sont publiés sous licence CC-NC-SA.
+                Les contenus publiés sur ce site appartiennent à l’association Paris Web mais sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/">CC-NC-SA</a>.
                 <br />
                 Les conférences publiées sur ce site restent la propriété de leurs auteurs, sauf mention contraire.
             </p>
