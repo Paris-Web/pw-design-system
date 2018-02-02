@@ -202,7 +202,7 @@ body.is-menu-opened {
     background: var(--color-ui-06);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 44em) {
     .header__about {
         flex: 2;
         display: flex;
@@ -226,7 +226,7 @@ body.is-menu-opened {
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 68em) {
     .header {
         display: none;
     }

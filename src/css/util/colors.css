@@ -1,12 +1,12 @@
 :root {
-  --color-brand-01: #f45099;
-  --color-brand-02: #49badf;
+  --color-brand-01: #e11a81;
+  --color-brand-02: #058fd6;
   --color-brand-03: #734bf9;
-  --color-brand-01-dark: #e90e70;
-  --color-brand-02-dark: #2195bb;
+  --color-brand-01-dark: #e90f70;
+  --color-brand-02-dark: #0071b8;
   --color-brand-03-dark: #4f27d6;
-  --color-brand-01-light: #f998c3;
-  --color-brand-02-light: #8ad3ea;
+  --color-brand-01-light: #ff52ab;
+  --color-brand-02-light: #3d9dd9;
   --color-brand-03-light: #ad95fb;
 
   --color-ui-01: #fff;
@@ -25,5 +25,5 @@
   --color-special-red: #ff2d40;
   --color-special-green: #39ca74;
   --color-special-yellow: #fdc02f;
-  --color-special-blue: #0a89ef;
+  --color-special-blue: #0172f0;
 }

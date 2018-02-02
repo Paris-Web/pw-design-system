@@ -5,11 +5,11 @@
 {{ partial "nav" . }}
 
 <main class="main" id="main" tabindex="-1">
-    <div class="content">
-        {{ block "main" . }}
+    {{ block "main" . }}
+        <div class="content">
           {{ .Content }}
-        {{ end }}
-    </div>
+        </div>
+    {{ end }}
     {{ partial "styleguide-example-container" }}
 </main>
 

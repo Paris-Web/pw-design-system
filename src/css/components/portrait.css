@@ -77,7 +77,7 @@
   text-align: left;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 44em) {
   .portrait-long {
     display: flex;
     text-align: left;
