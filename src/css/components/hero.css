@@ -103,10 +103,10 @@
         margin-top: calc(var(--base-spacing) * 8);
     }
     .hero__title {
-        max-width: 60ch;
+        max-width: 62ch;
     }
     .hero__sub-title {
-        max-width: 70ch;
+        max-width: 72ch;
     }
     .hero__title > *::before, .hero__sub-title > *::before {
         left: calc(-1.5 * var(--hero-padding));
