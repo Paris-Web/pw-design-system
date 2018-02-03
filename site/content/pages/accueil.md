@@ -4,7 +4,7 @@ date: 2017-12-13T20:36:14+01:00
 menu: "pages"
 ---
 
-<section class="hero" style="background-image: url('{{< ref "/index.md" >}}images/hero/paysage.jpg')">
+<section class="hero" style="background-image: url('{{images/hero/paysage.jpg')">
     <div class="hero__title">
 			<h1 class="giga"><span>Paris Web 2018</span></h1>
 		</div>
