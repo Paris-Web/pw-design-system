@@ -1,15 +1,15 @@
 {{ partial "header" . }}
 
-<a class="go-to-content screen-reader screen-reader-focusable" href="{{ relref . "#main" }}">Aller au contenu</a>
+<a class="go-to-content screen-reader screen-reader-focusable" href="#main">Aller au contenu</a>
 
 {{ partial "nav" . }}
 
 <main class="main" id="main" tabindex="-1">
-    <div class="content">
-        {{ block "main" . }}
+    {{ block "main" . }}
+        <div class="content">
           {{ .Content }}
-        {{ end }}
-    </div>
+        </div>
+    {{ end }}
     {{ partial "styleguide-example-container" }}
 </main>
 

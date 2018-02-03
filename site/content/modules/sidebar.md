@@ -49,7 +49,7 @@ menu: "modules"
                         <a class="h3-like" href="modules/sidebar">
                             <span>
                                 Rechercher
-                                <svg class="icon search" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" role="img" aria-hidden="true">
+                                <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" role="img" aria-hidden="true">
                                     <path fill="#000" fill-rule="evenodd" d="M15.175 16.71a9 9 0 1 1 2.121-2.121l6.806 6.806-2.122 2.121-6.805-6.805zm-.973-3.093A6 6 0 1 0 5.717 5.13a6 6 0 0 0 8.485 8.486z"/>
                                 </svg>
 

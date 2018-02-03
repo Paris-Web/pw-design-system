@@ -4,24 +4,19 @@ date: 2017-12-13T20:36:14+01:00
 menu: "pages"
 ---
 
-Bienvenue sur cette fausse page d’accueil.
-
-En fonction des périodes elle contiendra différentes sections de contenu.
-
-## BLOC PRESENTATION
-
-```html
-<section class="image-presentation">
-  <div class="w1140p center bloc-presentation">
-    <div class="head-presentation one-third">
-      <time datetime="">29.09 > 01.10</time>
-      <h1>Paris Web 2017</h1>
-      <span>La conférence francophone des gens qui font le web</span>
-      <button class="bleu">Revoir</button>
+<section class="hero" style="background-image: url('{{< ref "/index.md" >}}images/hero/paysage.jpg')">
+    <div class="hero__title">
+			<h1 class="giga"><span>Paris Web 2018</span></h1>
+		</div>
+    <div class="hero__sub-title">
+			<span class="mega"><span>La conférence francophone des gens qui font le web</span></span>
+		</div>
+    <div class="hero__action">
+        <a href="pages/accueil" class="btn btn-primary">
+            Découvrir les archives
+        </a>
     </div>
-  </div>
 </section>
-```
 
 ## Live (nouveau)
 
