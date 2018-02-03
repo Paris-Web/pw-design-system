@@ -7,9 +7,11 @@ layout: "2-cols"
 
 # Paris Web - Des vœux, des dates et des tarifs pour Paris Web 2018
 
-<time datetime="16 janvier 2018" pubdate="">Publié le 16 janvier 2018</time>
+<time datetime="16 janvier 2018" pubdate="">16 janvier 2018</time>
 
-Toute l'équipe de Paris Web est heureuse de vous souhaiter une excellente année 2018, pleine d'émerveillements, de bons moments et de partage autour de notre amour du web.
+<p class="intro">
+  Toute l'équipe de Paris Web est heureuse de vous souhaiter une excellente année 2018, pleine d'émerveillements, de bons moments et de partage autour de notre amour du web.
+</p>
 
 ![Paris Web vous souhaite une année 2018 pleine de réussite](https://www.paris-web.fr/actualites/carte-voeux-paris-web-2018-petit.png)
 

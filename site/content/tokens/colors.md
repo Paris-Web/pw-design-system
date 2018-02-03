@@ -25,6 +25,10 @@ menu: "tokens"
 </div>
 
 <div class="styleguide-color__wrapper">
+{{< color >}}--color-brand-02-darker{{< /color >}}
+</div>
+
+<div class="styleguide-color__wrapper">
 {{< color >}}--color-ui-01{{< /color >}}
 {{< color >}}--color-ui-02{{< /color >}}
 {{< color >}}--color-ui-03{{< /color >}}
