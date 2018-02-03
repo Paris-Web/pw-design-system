@@ -4,19 +4,13 @@ date: 2017-12-13T20:36:14+01:00
 menu: "pages"
 ---
 
-<section class="hero" style="background-image: url('{{images/hero/paysage.jpg')">
-    <div class="hero__title">
-			<h1 class="giga"><span>Paris Web 2018</span></h1>
-		</div>
-    <div class="hero__sub-title">
-			<span class="mega"><span>La conférence francophone des gens qui font le web</span></span>
-		</div>
-    <div class="hero__action">
-        <a href="pages/accueil" class="btn btn-primary">
-            Découvrir les archives
-        </a>
-    </div>
-</section>
+{{< hero
+    title="Paris Web 2018"
+    subTitle="La conférence francophone des gens qui font du web"
+    image="hero.jpg"
+    link="#"
+    action="Découvrir les archives"
+>}}
 
 ## Live (nouveau)
 
