@@ -14,18 +14,17 @@
   text-align: center;
 }
 
-.logos > .dark {
+.dark {
   background: var(--color-ui-07);
 }
 
-.logos > .dark .styleguide-example__toggle:focus {
+.dark .styleguide-example__toggle:focus {
   color: var(--color-ui-01);
 }
-.logos > .dark .styleguide-example__rendered:hover .styleguide-example__toggle {
+.dark .styleguide-example__rendered:hover .styleguide-example__toggle {
   color: var(--color-ui-02);
 }
-.logos
-  > .dark
+.dark
   .styleguide-example__rendered:hover
   .styleguide-example__toggle:hover {
   color: var(--color-ui-01);
