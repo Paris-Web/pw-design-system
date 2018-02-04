@@ -21,7 +21,7 @@ layout: "full"
     <div class="header__about">
         <div class="logo">
             <a href="#">
-                <img src="/images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                <img src="/images/logo/logo.svg" role="img" width="178" height="80" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil" />
             </a>
         </div>
 

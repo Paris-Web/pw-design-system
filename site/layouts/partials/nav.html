@@ -1,5 +1,5 @@
 <div class="nav">
-    <header class="header">
+    <header class="header" role="banner" tabindex="-1">
         <div class="header__menu-button">
             <button class="js-open-menu open-menu">
                 <svg class="icon icon--menu" xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15">
@@ -12,7 +12,7 @@
         <div class="header__about">
             <div class="logo">
                 <a href="{{.Site.BaseURL}}">
-                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" width="178" height="80" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil"/>
                 </a>
             </div>
 
@@ -21,7 +21,7 @@
             </p>
         </div>
     </header>
-    <nav class="menu" id="menu">
+    <nav class="menu" id="menu" role="navigation">
         <div class="menu__overlay js-close-menu"></div>
         <div class="menu__content" tabindex="-1">
             <button class="close-menu js-close-menu" title="Revenir au contenu">
@@ -33,7 +33,7 @@
                 <div class="menu__head">
                     <div class="logo">
                         <a href="{{.Site.BaseURL}}">
-                            <img src="{{.Site.BaseURL}}images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Paris Web" />
+                            <img src="{{.Site.BaseURL}}images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil"/>
                         </a>
                     </div>
 

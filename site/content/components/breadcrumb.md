@@ -7,15 +7,20 @@ menu: "components"
 # Breadcrumb
 
 {{< example >}}
-<p class="breadcrumb">
-  <span>
-    <a href="#racine">Page racine</a>
-  </span>
-  <span>
-    <a href="#interne">Page interne</a>
-  </span>
-  <span>
-    Page courante
-  </span>
-</p>
+<div class="breadcrumb">
+  <p class="screen-reader">Vous êtes ici :</p>
+  <ol>
+    <li>
+      <a href="#racine">Page racine</a>
+    </li>
+    <li>
+      <a href="#interne">Page interne</a>
+    </li>
+    <li>
+      <span aria-current="page">
+        Page courante
+      </span>
+    </li>
+  </ol>
+</div>
 {{< /example >}}
