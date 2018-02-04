@@ -41,6 +41,9 @@
   left: 0;
   background: var(--color-brand-01);
 }
+.styleguide .call-for-papers h2::after, .styleguide .call-for-papers .h2-like::after {
+  display: none;
+}
 
 .back-to-design-system {
   display: block;
