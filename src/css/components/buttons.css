@@ -18,7 +18,7 @@
 .btn:hover,
 .btn:focus {
   color: var(--color-text-inverted);
-  background: var(--color-brand-02-dark);
+  background: var(--color-brand-02-darker);
 }
 .btn:focus {
   outline-color: white;
