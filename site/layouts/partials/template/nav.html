@@ -1,7 +1,10 @@
 <div class="nav">
-    <header class="header">
+    <header class="header" role="banner" tabindex="-1">
         <div class="header__menu-button">
-            <button class="js-open-menu">
+            <button class="js-open-menu open-menu">
+                <svg class="icon icon--menu" xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15">
+                    <path fill="#585462" fill-rule="evenodd" d="M28.521 5.625c.377.006.752.158 1.04.458.37.385.506.92.409 1.417a1.604 1.604 0 0 1-.41 1.417c-.287.3-.662.452-1.039.458l-4.96 5.167c-.586.61-1.536.61-2.122 0a1.609 1.609 0 0 1 0-2.21L26.08 7.5l-4.64-4.833a1.609 1.609 0 0 1 0-2.21 1.458 1.458 0 0 1 2.122 0l4.96 5.168zM1.5 0h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1 0-3zm0 6h18a1.5 1.5 0 0 1 0 3h-18a1.5 1.5 0 0 1 0-3zm0 6h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1 0-3z"/>
+                </svg>
                 Menu
             </button>
         </div>
@@ -9,7 +12,7 @@
         <div class="header__about">
             <div class="logo">
                 <a href="{{.Site.BaseURL}}">
-                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" width="178" height="80" alt="Paris Web" />
+                    <img src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" width="178" height="80" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil"/>
                 </a>
             </div>
 
@@ -18,7 +21,7 @@
             </p>
         </div>
     </header>
-    <nav class="menu" id="menu">
+    <nav class="menu" id="menu" role="navigation">
         <div class="menu__overlay js-close-menu"></div>
         <div class="menu__content" tabindex="-1">
             <button class="close-menu js-close-menu" title="Revenir au contenu">
@@ -30,7 +33,7 @@
                 <div class="menu__head">
                     <div class="logo">
                         <a href="/">
-                            <img src="images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Paris Web" />
+                            <img src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" style="width: 10em; height: 4.5em" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil"/>
                         </a>
                     </div>
 
@@ -62,7 +65,7 @@
                             <a class="h3-like" href="modules/sidebar">
                                 <span>
                                     Rechercher
-                                    <svg class="icon search" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" role="img" aria-hidden="true">
+                                    <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" role="img" aria-hidden="true">
                                         <path fill="#000" fill-rule="evenodd" d="M15.175 16.71a9 9 0 1 1 2.121-2.121l6.806 6.806-2.122 2.121-6.805-6.805zm-.973-3.093A6 6 0 1 0 5.717 5.13a6 6 0 0 0 8.485 8.486z"/>
                                     </svg>
 

@@ -1,17 +1,23 @@
 {{ define "main" }}
   <div class="content" style="display:flex">
     <div>
-      <p class="breadcrumb">
-        <span>
-          <a href="{{.Site.BaseURL}}">Accueil</a>
-        </span>
-        <span>
-          <a href="#">Actualités</a>
-        </span>
-        <span>
-          {{ .Title }}
-        </span>
-      </p>
+     
+    <div class="breadcrumb">
+        <p class="screen-reader">Vous êtes ici :</p>
+        <ol>
+          <li>
+            <a href="{{.Site.BaseURL}}">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Actualités</a>
+          </li>
+          <li>
+              <span aria-current="page">
+            {{ .Title }}
+          </span>
+        </li>
+      </ol>
+    </div>
 
       {{ .Content }}
     </div>

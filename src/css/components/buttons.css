@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  background: var(--color-brand-02);
+  background: var(--color-brand-02-dark);
   color: var(--color-text-inverted);
   font-weight: bold;
   font-size: 1rem;
@@ -43,20 +43,20 @@
 }
 
 .btn-inverted {
-  color: var(--color-brand-02-dark);
+  color: var(--color-brand-02-darker);
   background: var(--color-ui-01);
   transition: color 0.25s ease;
 }
 .btn-inverted:visited {
-  color: var(--color-brand-02-dark);
+  color: var(--color-brand-02-darker);
 }
 .btn-inverted:hover,
 .btn-inverted:focus {
   color: var(--color-text-inverted);
-  background: var(--color-brand-02-dark);
+  background: var(--color-brand-02-darker);
 }
 .btn-inverted:focus {
-  outline-color: var(--color-brand-02-dark);
+  outline-color: var(--color-brand-02-darker);
 }
 .btn-inverted:disabled {
   color: var(--color-text-03);
@@ -64,20 +64,20 @@
 }
 
 .btn-ghost {
-  color: var(--color-brand-02-dark);
+  color: var(--color-brand-02-darker);
   background: transparent;
   transition: color 0.25s ease;
 }
 .btn-ghost:hover,
 .btn-ghost:focus {
   color: var(--color-text-inverted);
-  background: var(--color-brand-02-dark);
+  background: var(--color-brand-02-darker);
 }
 .btn-ghost:focus {
-  outline-color: var(--color-brand-02-dark);
+  outline-color: var(--color-brand-02-darker);
 }
 .btn-ghost:disabled {
-  color: var(--color-brand-02-dark);
+  color: var(--color-brand-02-darker);
   background: transparent;
 }
 

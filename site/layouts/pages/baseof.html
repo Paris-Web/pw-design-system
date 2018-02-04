@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 
-<a class="back-to-design-system" href=".">Revenir au Design System</a>
-<a class="go-to-content screen-reader screen-reader-focusable" href="{{ relref . "#main" }}">Aller au contenu</a>
+<a class="back-to-design-system" href="{{ .Site.BaseURL }}">Revenir au Design System</a>
+<a class="go-to-content screen-reader screen-reader-focusable" href="#main">Aller au contenu</a>
 
 {{ partial "template/nav" . }}
 
