@@ -1,9 +1,18 @@
-.breadcrumb > span:not(:last-child)::after {
+.breadcrumb ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li:not(:last-child)::after {
   content: '/';
   display: inline-block;
   margin: 0 calc(var(--base-spacing) * 4);
 }
 
-.breadcrumb > span:last-child {
+.breadcrumb li:last-child span {
   font-weight: bold;
 }
