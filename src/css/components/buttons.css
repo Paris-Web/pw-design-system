@@ -21,7 +21,10 @@
   background: var(--color-brand-02-dark);
 }
 .btn:focus {
-  outline-color: var(--color-brand-02-dark);
+  outline-color: white;
+  outline-offset: -4px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -34,9 +37,6 @@
 .btn-primary:hover,
 .btn-primary:focus {
   background: var(--color-brand-01-dark);
-}
-.btn-primary:focus {
-  outline-color: var(--color-brand-01-dark);
 }
 .btn-primary:disabled {
   background: var(--color-brand-01);
@@ -55,9 +55,6 @@
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
 }
-.btn-inverted:focus {
-  outline-color: var(--color-brand-02-darker);
-}
 .btn-inverted:disabled {
   color: var(--color-text-03);
   background: var(--color-ui-01);
@@ -72,9 +69,6 @@
 .btn-ghost:focus {
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
-}
-.btn-ghost:focus {
-  outline-color: var(--color-brand-02-darker);
 }
 .btn-ghost:disabled {
   color: var(--color-brand-02-darker);

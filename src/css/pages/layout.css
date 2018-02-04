@@ -114,8 +114,8 @@ body.is-menu-opened {
     color: var(--color-text-01);
 }
 .menu__content > .close-menu:focus {
-    border: 1px solid var(--color-ui-06);
-    padding: calc(0.5rem - 1px);
+    border: 2px solid var(--color-ui-07);
+    padding: calc(0.5rem - 2px);
     outline: none;
 }
 
