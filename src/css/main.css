@@ -13,6 +13,11 @@
 @import "components/portrait.css";
 @import "components/buttons.css";
 @import "components/hero.css";
+@import "components/inline-list.css";
+@import "components/columns-list.css";
+@import "components/social-link.css";
 @import "modules/orateurs.css";
+@import "modules/footer.css";
+@import "modules/full-content.css";
 @import "pages/layout.css";
 @import "styleguide/main.css";

@@ -1,8 +1,18 @@
-<footer role="contentinfo" id="footer" class="footer">
+---
+title: "Footer"
+menu: "modules"
+layout: "full"
+---
+
+<div class="content">
+    <h1>Footer</h1>
+</div>
+
+<footer role="contentinfo" class="footer">
     <div class="full-content">
         <section class="full-content__side footer__description" aria-labelledby="main-title">
             <h2 id="footer-title">
-              <img class="footer-logo" src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" alt="Paris Web" />
+              <img class="footer-logo" src="{{< ref "/index.md" >}}images/logo/logo.svg" role="img" alt="Paris Web" />
             </h2>
             <p>
                 Depuis plus de dix ans, Paris Web est le rendez-vous incontournable des professionnels francophones du Web. Les conférences et ateliers Paris Web sont organisés par l’association à but non lucratif Paris-Web.
