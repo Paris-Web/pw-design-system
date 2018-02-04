@@ -13,6 +13,8 @@
 @import "components/portrait.css";
 @import "components/buttons.css";
 @import "components/hero.css";
+@import "components/banner.css";
 @import "modules/orateurs.css";
+@import "modules/quote.css";
 @import "pages/layout.css";
 @import "styleguide/main.css";

@@ -1,0 +1,8 @@
+.call-to-action {
+    color: var(--color-text-inverted);
+    background-image: linear-gradient(261deg, #b44ec9, #4c70da), linear-gradient(262deg, #734bf9, #4f27d6);
+}
+
+.call-to-action a {
+    color: var(--color-text-inverted);
+}
