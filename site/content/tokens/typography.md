@@ -60,7 +60,7 @@ c’est pas très grave.
 ## Affichage
 
 {{< example >}}<p class="giga">Giga - 4.5rem</p>{{< /example >}} {{<
-example >}}<p class="mega">Méga - 3rem</p>{{< /example >}}
+example >}}<p class="mega">Méga - 2.5rem</p>{{< /example >}}
 
 ## Titraille
 

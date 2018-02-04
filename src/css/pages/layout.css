@@ -114,8 +114,8 @@ body.is-menu-opened {
     color: var(--color-text-01);
 }
 .menu__content > .close-menu:focus {
-    border: 1px solid var(--color-ui-06);
-    padding: calc(0.5rem - 1px);
+    border: 2px solid var(--color-ui-07);
+    padding: calc(0.5rem - 2px);
     outline: none;
 }
 
@@ -159,7 +159,7 @@ body.is-menu-opened {
     font-weight: bold;
     text-decoration: none;
     line-height: 1.4;
-    margin: calc(var(--base-spacing) * 2) 0;
+    margin: 0.25em 0;
 }
 
 .menu__links a:hover::before, .menu__links a:focus::before, .menu__links a.active::before {
@@ -280,6 +280,7 @@ body.is-menu-opened {
     }
     .main {
         margin-left: 20vw;
+        margin-left: calc(20vw - 1px);
         min-height: 100vh;
     }
 

@@ -17,9 +17,9 @@ menu: "pages"
 Pendant la conférence
 
 ```html
-<section class="background-highlight">
+<section class="background-highlight" aria-labelledby="live">
   <div class="w1140p center">
-  <h2>Suivez le direct !</h2>
+  <h2 id="live">Suivez le direct !</h2>
   <li class="grid-3-small-1">
     <ul>
       <h3>Salle Moebius</h3>
@@ -46,9 +46,9 @@ Pendant la conférence
 Après la conférence
 
 ```html
-<section class="background-highlight">
+<section class="background-highlight" aria-labelledby="relive">
 <div class="w1140p center txtcenter">
-<h2 class="white">Revivez l'événement !</h2>
+<h2 id="relive" class="white">Revivez l'événement !</h2>
 <ul class="grid-5-small-1">
 	<li>
 		<h3>Presse</h3>
@@ -73,9 +73,9 @@ Après la conférence
 </ul>
 </div>
 </section>
-<section class="chiffres">
+<section class="chiffres" aria-labelledby="key-figures">
 	<div class="w1140p center txtcenter">
-	<h2 class='black'>Paris Web résumé en chiffres !</h2>
+	<h2 id="key-figures" class='black'>Paris Web résumé en chiffres !</h2>
 	<ul class="grid-5-small-1 ">
 		<li>
 			<span>10</span> Lorempi
@@ -102,9 +102,9 @@ Après la conférence
 Pendant la conférence
 
 ```php
-	<section class="s-speakers s-speakers-widget l-groundZero l-block l-third">
+	<section class="s-speakers s-speakers-widget l-groundZero l-block l-third" aria-labelledby="speakers">
 	  <article>
-		<h2>Les orateurs 2016</h2>
+		<h2 id="speakers">Les orateurs 2016</h2>
 		<a href="template.php?version=<?php echo $_GET['version']?>&template=liste-orateur&periode=<?php echo $_GET['periode']?>">Voir tous les orateurs</a>
 		<ul>
       <?php foreach ($selection_orateur as $label_orateur){ ?>

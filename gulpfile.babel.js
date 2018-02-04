@@ -51,7 +51,12 @@ gulp.task("css", () => {
             }
           }
         ]),
-        cssnext()
+        cssnext({
+          browsers: [
+            'last 2 versions',
+            '> 1%'
+          ]
+        })
       ])
     )
     .pipe(gulp.dest("./dist/css"))
