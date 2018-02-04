@@ -1,7 +1,9 @@
 svg.icon * {
     fill: currentColor;
 }
-
+.icon {
+    display: inline-block;
+}
 .icon.icon--search {
     height: 1.5rem;
     width: 1.5rem;
@@ -16,6 +18,10 @@ svg.icon * {
 .icon.icon--social {
     height: 1.4rem;
     width: 1.4rem;
+}
+.icon.icon--left-arrow {
+    height: 0.8em;
+    width: 1.2em;
 }
 
 .icon-link {
