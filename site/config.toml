@@ -1,4 +1,4 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "fr-fr"
 languageLang = "fr"
 title = "Paris Web Design System"

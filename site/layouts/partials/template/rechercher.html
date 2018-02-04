@@ -1,9 +1,9 @@
-<form method="get" action="https://www.paris-web.fr/cgi/mt/mt-search.cgi">
+<form method="get" action="#">
   <div role="search">
     <label for="recherche" class="visuallyhidden">Rechercher sur le site :</label>
     <input type="text" name="search" id="recherche" placeholder="Recherchez" value=""/>
     <input type="hidden" name="IncludeBlogs" value="all" />
     <input type="hidden" name="limit" value="100" />
-    <input type="image" src="img<?php echo $_GET['version']?>/sprites/ico-search.png" alt="Valider la recherche sur le site" />
+    <input type="submit" value="Valider la recherche sur le site" />
   </div>
 </form>

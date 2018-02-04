@@ -13,7 +13,7 @@ layout: "2-cols"
   Toute l'équipe de Paris Web est heureuse de vous souhaiter une excellente année 2018, pleine d'émerveillements, de bons moments et de partage autour de notre amour du web.
 </p>
 
-![Paris Web vous souhaite une année 2018 pleine de réussite](https://www.paris-web.fr/actualites/carte-voeux-paris-web-2018-petit.png)
+![Paris Web vous souhaite une année 2018 pleine de réussite](carte-voeux-paris-web-2018-petit.png)
 
 *Crédits : © Franck Paul*
 
