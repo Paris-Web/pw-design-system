@@ -11,8 +11,8 @@
     font-size: 1.125em;
     font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
       sans-serif;
-    padding: 0.5rem;
-    margin: -0.5rem;
+    padding: calc(2 * var(--base-spacing));
+    margin: calc(-2 * var(--base-spacing));
     display: inline-block;
 }
 .font-fallback .footer a {
