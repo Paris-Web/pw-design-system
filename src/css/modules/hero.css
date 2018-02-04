@@ -9,7 +9,7 @@
     box-sizing: border-box;
     padding: calc(var(--hero-padding)) 0;
     height: 100%;
-    min-height: 75vh;
+    min-height: 70vh;
 }
 
 @media screen and (orientation:portrait) {
@@ -119,5 +119,11 @@
     .hero__sub-title > *::before {
         top: 0.25em;
         bottom: -1rem;
+    }
+}
+
+@media screen and (min-width: 68em) {
+    .hero {
+        min-height: 75vh;
     }
 }

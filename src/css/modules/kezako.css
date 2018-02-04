@@ -1,5 +1,5 @@
 .kezako {
-    min-height: 25vh;
+    min-height: 20vh;
 }
 .kezako li {
     min-width: 15ch;
@@ -17,5 +17,11 @@
     }
     .kezako li:nth-child(3) {
         min-width: auto;
+    }
+}
+
+@media screen and (min-width: 68em) {
+    .kezako {
+        min-height: 25vh;
     }
 }

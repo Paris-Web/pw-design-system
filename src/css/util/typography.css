@@ -199,6 +199,10 @@ a.title:focus {
 code, pre {
   background: var(--color-ui-02);
 }
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
 
 .date-important {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
