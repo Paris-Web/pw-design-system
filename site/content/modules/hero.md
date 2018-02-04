@@ -1,6 +1,6 @@
 ---
 title: "Hero"
-menu: "components"
+menu: "modules"
 layout: "full"
 ---
 

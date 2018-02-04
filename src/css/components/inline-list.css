@@ -3,8 +3,21 @@
     padding: 0;
     margin: 0;
 }
+
 .inline-list li {
     display: inline;
-    padding: 0.5rem;
+    padding: calc(var(--base-spacing) * 2);
     margin: 0;
+}
+
+.inline-list--full {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inline-list--full li {
+    display: block;
+    text-align: center;
 }

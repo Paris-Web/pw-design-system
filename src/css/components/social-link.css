@@ -1,5 +1,5 @@
-.social-link a {
-    display: flex;
+.social-link {
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -10,4 +10,13 @@
     height: 2rem;
     display: block;
     margin: 0 auto;
+}
+.social-link--big {
+    font-weight: bold;
+}
+.social-link--big svg {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto calc(var(--base-spacing) * 2);
 }
