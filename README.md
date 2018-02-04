@@ -26,9 +26,9 @@ Date limite pour le design system : 9 février
 * [ ] Favicon
 * [ ] Tokens - titraille (typographie)
 * [x] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
-* [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
+* [ ] ️🛠️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
       orateur.rice ?)
-* [ ] Composant - Citation
+* [ ] 🛠️ Composant - Citation (Julien)
 * [ ] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
 * [ ] Composant - Sponsor
 * [ ] Composant - Partager réseaux sociaux
