@@ -43,19 +43,25 @@ c’est pas très grave.
 
 ## Liens
 
-<p>
-    Les liens sont toujours soulignés idéalement avec l’option
-    <code>text-decoration-skip-ink: auto;</code>. La couleur du lien et du trait de soulignement est toujours la couleur <code>--color-special-blue</code>, au hover c’est <code>--color-brand-01</code>
-</p>
+Les liens sont toujours soulignés idéalement avec l’option
+<code>text-decoration-skip-ink: auto;</code>. La couleur du lien et du trait de soulignement est toujours la couleur <code>--color-special-blue</code>, au hover c’est <code>--color-brand-01</code>
 
-<a href="">Lien classique avec du texte courant</a>
+{{< example >}}
+    <a href="">Lien classique avec du texte courant</a>
+{{< /example >}}
 
-<p>
-    Si les liens sont des titres, ils doivent être soulignés, couleur <code>--color-brand-01</code>, en gras et suffisamment
-    gros pour ne pas avoir de confusion avec les textes normaux.
-</p>
+Si les liens sont des titres, ils doivent être soulignés, couleur <code>--color-brand-01</code>, en gras et suffisamment
+gros pour ne pas avoir de confusion avec les textes normaux.
 
-<a href="" class="title">Lien titre</a>
+{{< example >}}
+    <a href="" class="title">Lien titre</a>
+{{< /example >}}
+
+Si les liens sont des titres dans un contenu dense, ils doivent être soulignés, de la même couleur que le contenu pour ne pas alourdir la page et gêner la lecture.
+
+{{< example >}}
+    <a href="" class="discreet">Lien titre discret</a>
+{{< /example >}}
 
 ## Affichage
 

@@ -185,6 +185,13 @@ a.title:hover,
 a.title:focus {
   color: var(--color-brand-01-dark);
 }
+a.discreet {
+  color: inherit;
+}
+a.discreet:hover,
+a.discreet:focus {
+  color: var(--color-brand-01);
+}
 
 code, pre {
   background: var(--color-ui-02);

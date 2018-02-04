@@ -4,7 +4,7 @@
 
 {{ partial "nav" . }}
 
-<main class="main" id="main" tabindex="-1">
+<main class="main{{ if isset .Params "styleguideclassmodifier" }} main--{{ .Params.styleguideclassmodifier }}{{ end }}" id="main" tabindex="-1">
     {{ block "main" . }}
         <div class="content">
           {{ .Content }}

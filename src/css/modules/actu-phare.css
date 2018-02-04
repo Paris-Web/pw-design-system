@@ -1,0 +1,26 @@
+.actu-phare__illustration {
+  max-width: 100%;
+}
+.actu-phare__title {
+  margin-top: calc(var(--base-spacing) * 2);
+  margin-bottom: calc(var(--base-spacing));
+}
+.actu-phare__pubdate {
+  color: var(--color-text-03);
+}
+.actu-phare__excerpt {
+  margin-top: 0;
+}
+
+.actu-phare {
+  position: relative;
+}
+.actu-phare__title a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
