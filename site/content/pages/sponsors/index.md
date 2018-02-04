@@ -2,6 +2,7 @@
 title: "Sponsors"
 date: 2017-12-13T20:36:14+01:00
 menu: "pages"
+layout: "sponsors"
 ---
 
 # Ils nous soutiennent

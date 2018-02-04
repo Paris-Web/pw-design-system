@@ -1,13 +1,22 @@
 <div class="content">
   <h2>Sponsor Premium</h2>
+
+  {{ with .Site.GetPage "page" "pages/sponsors/index.md" }}
   <ul>
+    {{ $sponsorsResources := .Resources }}
+    {{ range where (.Resources.ByType "page") ".Params.niveau" "platine" }}
     <li>
-      <a href="http://delicious-insights.com/">
-        <img width="150" src="https://www.paris-web.fr/img/partenaires/delicious_insights.png" alt="Delicious Insights" title="">
-      </a>
-    </li>
+        {{ $glob := printf "%s/logo.*" .Params.logoDir }}
+        {{ $logo := ($sponsorsResources.GetMatch $glob).Resize "150x" }}
+        <a href="{{ .Params.siteUrl }}">
+          <img width="150" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
+        </a>
+      </li>
+    {{ end }}
   </ul>
+  {{ end }}
+
   <footer>
-    <a href="#TODO/ils-nous-soutiennent">Découvrez tous nos sponsors</a>
+    <a href="{{ relref . "pages/sponsors/index.md" }}">Découvrez tous nos sponsors</a>
   </footer>
 </div>
