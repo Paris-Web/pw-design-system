@@ -1,7 +1,7 @@
 <footer role="contentinfo" id="footer" class="footer">
     <div class="full-content">
-        <section class="full-content__side footer__description">
-            <h2>
+        <section class="full-content__side footer__description" aria-labelledby="main-title">
+            <h2 id="footer-title">
               <img class="footer-logo" src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" alt="Paris Web" />
             </h2>
             <p>
@@ -132,23 +132,21 @@
         </div>
     </div>
     <div class="full-content full-content--reversed footer__legal">
-        <div class="full-content__side">
-            <section>
-                <p>
-                    Les contenus publiés sur ce site appartiennent à l’association Paris Web mais sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/">CC-NC-SA</a>.
-                </p>
-                <p>
-                    Les conférences publiées sur ce site restent la propriété de leurs auteurs, sauf mention contraire.
-                </p>
-            </section>
-        </div>
+        <section class="full-content__side">
+            <p>
+                Les contenus publiés sur ce site appartiennent à l’association Paris Web mais sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/">CC-NC-SA</a>.
+            </p>
+            <p>
+                Les conférences publiées sur ce site restent la propriété de leurs auteurs, sauf mention contraire.
+            </p>
+        </section>
         <div class="full-content__main">
             <div class="full-content__main__content">
-                <section>
-                    <p>
-                        Editions précédentes
-                    </p>
-                    <ol>
+                <section aria-labelledby="footer-previous-editions">
+                    <h3 id="footer-previous-editions" class="normal inline-title">
+                        Editions précédentes&nbsp;:
+                    </h3>
+                    <ol class="inline-list">
                         <li><a href="//www.paris-web.fr/2017/">2017</a></li>
                         <li><a href="//www.paris-web.fr/2016/">2016</a></li>
                         <li><a href="//www.paris-web.fr/2015/">2015</a></li>

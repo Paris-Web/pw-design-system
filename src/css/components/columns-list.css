@@ -70,6 +70,6 @@
 
     .columns-list--follow > li:nth-child(n) {
         width: 50%;
-        margin: var(--base-spacing) 0 0 0;
+        margin: calc(var(--base-spacing) * 2) 0 0 0;
     }
 }
