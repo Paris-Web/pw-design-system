@@ -6,6 +6,7 @@ menu: "pages"
 
 {{< hero
     title="Paris Web 2018"
+    titleId="main-title"
     subTitle="La conférence francophone des gens qui font du web"
     image="hero.jpg"
     link="#"
