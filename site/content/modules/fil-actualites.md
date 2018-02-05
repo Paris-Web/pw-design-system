@@ -23,19 +23,19 @@ colonne de la [page de détail d’une actualité]({{< relref "pages/actualite/i
         <ul class="fil-actu__list">
             <li class="fil-actu__list__item">
                 <a href="#" class="discreet">Etiam porta sem malesuada magna mollis euismod.</a>
-                <time datetime="2017-10-16" class="fil-actu__list__item__pubdate">16 octobre 2017</time>
+                <time datetime="2017-10-16" class="date">16 octobre 2017</time>
             </li>
             <li class="fil-actu__list__item">
                 <a href="#" class="discreet">Cras mattis consectetur purus sit amet fermentum.</a>
-                <time datetime="2017-10-03" class="fil-actu__list__item__pubdate">3 octobre 2017</time>
+                <time datetime="2017-10-03" class="date">3 octobre 2017</time>
             </li>
             <li class="fil-actu__list__item">
                 <a href="#" class="discreet">Maecenas faucibus mollis interdum.</a>
-                <time datetime="2017-09-28" class="fil-actu__list__item__pubdate">28 septembre 2017</time>
+                <time datetime="2017-09-28" class="date">28 septembre 2017</time>
             </li>
             <li class="fil-actu__list__item">
                 <a href="#" class="discreet">Etiam porta sem malesuada magna mollis euismod.</a>
-                <time datetime="2017-10-16" class="fil-actu__list__item__pubdate">16 octobre 2017</time>
+                <time datetime="2017-10-16" class="date">16 octobre 2017</time>
             </li>
         </ul>
 

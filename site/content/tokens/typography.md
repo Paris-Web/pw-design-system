@@ -81,6 +81,15 @@ example >}}<p class="mega">Méga - 2.5rem</p>{{< /example >}}
 example >}}<p>p - 1rem</p>{{< /example >}} {{<
 example >}}<p class="small">Small - 0.75rem</p>{{< /example >}}
 
-## Date importante
+## Date
+
+### Standard
+
+Pour des raisons d’accessibilité, cette classe n’est disponible que pour
+des balises `<time>`.
+
+{{< example >}}<time datetime="2017-10-16" class="date">16 octobre 2017</time>{{< /example >}}
+
+### Importante
 
 <p class="date-important">Du 4 au 6 octobre 2018<p>

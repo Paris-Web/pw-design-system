@@ -5,9 +5,6 @@
   margin-top: calc(var(--base-spacing) * 2);
   margin-bottom: calc(var(--base-spacing));
 }
-.actu-phare__pubdate {
-  color: var(--color-text-03);
-}
 .actu-phare__excerpt {
   margin-top: 0;
 }

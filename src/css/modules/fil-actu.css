@@ -22,6 +22,3 @@
 .fil-actu__list__item > * {
   display: block;
 }
-.fil-actu__list__item__pubdate {
-  color: var(--color-text-03);
-}

@@ -197,6 +197,10 @@ code, pre {
   background: var(--color-ui-02);
 }
 
+time.date {
+  color: var(--color-text-03);
+}
+
 .date-important {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
   sans-serif;
