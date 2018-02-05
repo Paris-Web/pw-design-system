@@ -14,6 +14,7 @@ menu: "tokens"
 * {{< example >}}{{< icon icon="twitter" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="linkedin" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="web" >}}{{< /example >}}
+* {{< example >}}{{< icon icon="left-arrow" >}}{{< /example >}}
 
 ## Grandes icones
 
