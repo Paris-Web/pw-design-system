@@ -1,7 +1,6 @@
 ---
 title: "Actu phare"
 menu: "modules"
-styleguideClassModifier: "actu-phare"
 ---
 
 # Actualité phare

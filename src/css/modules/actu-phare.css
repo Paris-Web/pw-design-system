@@ -1,4 +1,5 @@
 .actu-phare__illustration {
+  display: block;
   max-width: 100%;
 }
 .actu-phare__title {
@@ -11,6 +12,7 @@
 
 .actu-phare {
   position: relative;
+  max-width: 60ch;
 }
 .actu-phare__title a:before {
   content: '';

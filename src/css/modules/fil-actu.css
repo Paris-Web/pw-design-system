@@ -1,3 +1,6 @@
+.fil-actu {
+  max-width: 40ch;
+}
 .fil-actu__title {
   margin-top: 0;
   margin-bottom: 0;

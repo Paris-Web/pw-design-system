@@ -1,7 +1,6 @@
 ---
 title: "Fil d’actualités"
 menu: "modules"
-styleguideClassModifier: "fil-actu"
 ---
 
 # Fil d’actualités
@@ -31,7 +30,7 @@ colonne de la [page de détail d’une actualité]({{< relref "pages/actualite/i
             <time datetime="2017-09-28" class="date">28 septembre 2017</time>
         </li>
         <li class="actu-list__item">
-            <a href="#" class="discreet">Etiam porta sem malesuada magna mollis euismod.</a>
+            <a href="#" class="discreet">Etiam porta sem malesuada magna mollis eta sem malesuada magna mollis euismod.</a>
             <time datetime="2017-10-16" class="date">16 octobre 2017</time>
         </li>
     {{< /fil-actu >}}
