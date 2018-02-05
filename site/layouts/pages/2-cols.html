@@ -1,7 +1,5 @@
 {{ define "main" }}
-  <div class="content" style="display:flex">
-    <div>
-     
+  <div class="content content--2-cols">
     <div class="breadcrumb">
         <p class="screen-reader">Vous êtes ici :</p>
         <ol>
@@ -19,18 +17,51 @@
       </ol>
     </div>
 
-      {{ .Content }}
-    </div>
+    <h1 class="separation separation--primary">
+      {{ .Title }}
+    </h1>
 
-    <div style="width:20vw; margin-left: 4em; padding: 2em 1em;">
-      Je suis la sidebar !
+    <div class="content__wrapper">
+      <div class="content__main">
+        {{ if not .Date.IsZero }}
+          <time datetime="16 janvier 2018" class="date big">16 janvier 2018</time>
+        {{ end }}
+        {{ .Content }}
+      </div>
 
-      <ul>
-        <li><a href="">Coucou</a></li>
-        <li><a href="">Hello</a></li>
-        <li><a href="">Lorem</a></li>
-        <li><a href="">Ahah</a></li>
-      </ul>
+      <aside class="content__sidebar fil-actu">
+          <h3 class="separation fil-actu__title">Fil d’actualités</h3>
+
+          <ul class="fil-actu__list">
+            {{/* TODO Use < fil-actu > */}}
+            <li class="fil-actu__list__item">
+                <a href="#" class="discreet">Des vœux, des dates et des tarifs pour Paris Web 2018</a>
+                <time datetime="2017-10-16" class="date">16 octobre 2017</time>
+            </li>
+            <li class="fil-actu__list__item">
+                <a href="#" class="discreet">En chemin vers Paris Web 2018 !</a>
+                <time datetime="2017-10-03" class="date">3 octobre 2017</time>
+            </li>
+            <li class="fil-actu__list__item">
+                <a href="#" class="discreet">Devenir membre bénévole pour Paris Web 2018, pourquoi, comment ?</a>
+                <time datetime="2017-09-28" class="date">28 septembre 2017</time>
+            </li>
+            <li class="fil-actu__list__item">
+                <a href="#" class="discreet">Paris Web 2017, c'est fini !</a>
+                <time datetime="2017-11-03" class="date">3 novembre 2017</time>
+            </li>
+            {{/* TODO < /fil-actu > */}}
+          </ul>
+
+          <footer class="fil-actu__more">
+              <a href="#" class="title">
+                Toute l'actualité de Paris Web
+                <svg class="icon icon--left-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18">
+                    <path fill="#E11A81" fill-rule="evenodd" d="M9 8.064v1.68l-7.416 8.28-1.488-1.92 4.488-6.312 1.776-.864-1.776-.72L0 1.896 1.488 0z"/>
+                </svg>
+              </a>
+          </footer>
+      </aside>
     </div>
   </div>
 {{ end }}

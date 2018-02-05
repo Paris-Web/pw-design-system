@@ -1,0 +1,8 @@
+@media screen and (min-width: 68em) {
+    .content--2-cols .content__wrapper {
+        display: flex;
+    }
+    .content--2-cols .content__sidebar {
+        margin-left: calc(var(--base-spacing) * 8);
+    }
+}
