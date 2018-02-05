@@ -1,6 +1,5 @@
 @media screen and (min-width: 44em) {
-    .main--actu-phare > .content {
+    .main--actu-phare .styleguide-example {
         max-width: 50%;
-        margin-left: 5vw;
     }
 }
