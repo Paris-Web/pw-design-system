@@ -13,7 +13,7 @@ menu: "pages"
     action="Découvrir les archives"
 >}}
 
-<section class="content content--no-padding">
+<section class="content">
   <ul class="inline-list inline-list--full kezako">
     <li>
         <span class="social-link social-link--big">

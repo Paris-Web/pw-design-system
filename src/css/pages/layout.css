@@ -201,11 +201,7 @@ body.is-menu-opened {
 }
 .content {
     max-width: calc(100% - var(--base-spacing) * 6);
-    padding: calc(var(--base-spacing) * 6) 0;
-    margin: 0 auto;
-}
-.content--no-padding {
-    padding: 0;
+    margin: calc(var(--base-spacing) * 6) auto;
 }
 
 .content > :first-child {
@@ -242,10 +238,7 @@ body.is-menu-opened {
     .content {
         width: calc(90ch);
         max-width: calc(100% - var(--base-spacing) * 12);
-        padding: calc(var(--base-spacing) * 10) 0;
-    }
-    .content--no-padding {
-        padding: 0;
+        margin: calc(var(--base-spacing) * 10) auto;
     }
 }
 
@@ -287,7 +280,6 @@ body.is-menu-opened {
     .content {
         width: calc(80ch + 8vw);
         max-width: 70vw;
-        margin: 0 auto;
     }
 
     body {
