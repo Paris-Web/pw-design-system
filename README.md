@@ -29,22 +29,16 @@ Date limite pour le design system : 9 février
 * [ ] ️🛠️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
       orateur.rice ?)
 * [ ] 🛠️ Composant - Citation (Julien)
-* [ ] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
+* [x] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
 * [ ] Composant - Sponsor
-* [ ] Composant - Partager réseaux sociaux
-* [ ] Composant - Liste de liens (liens normaux et liens de téléchargement,
-      cf page actu et page conférence, footer)
-* [ ] Composant - Image légendée
-      conférences)
+* [ ] 🛠️ Composant - Image légendée (Julien)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
-* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
 * [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
 * [x] 🛠️ Module - Actu' phare (#24)
 * [x] ️🛠️ Module - Liste actu' (#24)
-* [ ] Module - Header contenu (cf. page actu et page conférence)
 * [ ] Module - Devenir sponsor
-* [ ] Module - Portrait -> tous les orateurs
+* [ ] 🛠️ Module - Portrait -> tous les orateurs (Julien)
 * [x] 🛠️ Page - Actu (#24)
 * [ ] Page - Liste Actus
 * [ ] Page - Sponsors
@@ -63,6 +57,10 @@ Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la d
 * [ ] Module - Liste conférences
 * [ ] Module - Tableau conférences
 * [ ] Page - Conférence
+
+### Nice to have
+
+* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
 
 ## Usage
 
