@@ -96,11 +96,13 @@ grâce aux classes utilitaires `hX-like`.
 
 Certains titres ont pour but de séparer des sections logiques : au sein d’un article on reste dans la même section (et la liste de liens sur le côté est une autre section), mais deux catégories de sponsors doivent être séparées.
 
-Dans ce cas il faut utiliser cette variante `separation`, et les décorations sous les titres permettront cela.
+Dans ce cas il faut utiliser les classes `separation` et sa variante
+`separation--primary`, et les décorations sous les titres permettront cela.
 
+{{< example >}}<h1 class="separation separation--primary">H1 - 2.25rem</h1>{{< /example >}}
 {{< example >}}<h1 class="separation">H1 - 2.25rem</h1>{{< /example >}}
 {{< example >}}<h2 class="separation">H2 - 1.75rem</h2>{{< /example >}}
-{{< example >}}<h3 class="separation">H3 - 1.5rem</h3>{{< /example >}}
+{{< example >}}<h3 class="separation separation--primary">H3 - 1.5rem</h3>{{< /example >}}
 
 ## Texte courant
 

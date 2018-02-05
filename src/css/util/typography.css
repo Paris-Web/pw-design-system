@@ -131,29 +131,26 @@ h6,
   font-size: 0.875rem;
 }
 
-h1.separation,
-h2.separation,
-h3.separation {
+.separation,
+.separation,
+.separation {
   position: relative;
 }
-h1.separation::after,
-h2.separation::after,
-h3.separation::after {
+.separation::after,
+.separation::after,
+.separation::after {
   content: "";
   display: block;
   position: absolute;
   width: 3rem;
   left: 0;
-}
-h1.separation::after {
-  background: var(--color-brand-01);
-  height: 0.3rem;
-  bottom: -0.2em;
-}
-h2.separation::after,
-h3.separation::after {
   background: var(--color-brand-02);
   height: 0.15rem;
+  bottom: -0.2em;
+}
+.separation--primary::after {
+  background: var(--color-brand-01);
+  height: 0.3rem;
   bottom: -0.2em;
 }
 
