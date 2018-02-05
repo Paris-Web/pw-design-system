@@ -2,6 +2,9 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.fil-actu__more {
+  white-space: nowrap;
+}
 
 .actu-list {
   list-style: none;
