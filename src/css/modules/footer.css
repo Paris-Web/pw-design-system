@@ -22,7 +22,7 @@
     text-decoration: underline;
 }
 
-.footer-logo {
+.footer-title img {
     width: 5em;
     display: block;
 }
@@ -36,6 +36,13 @@
 }
 .footer__legal section + section {
     margin-top: calc(var(--base-spacing) * 2);
+}
+
+.footer__legal .full-content__side {
+    margin-top: var(--base-spacing);
+}
+.footer-previous-editions {
+    margin-bottom: calc(var(--base-spacing) * 2)
 }
 
 @media screen and (min-width: 44em) {

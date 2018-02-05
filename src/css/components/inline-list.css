@@ -6,7 +6,7 @@
 
 .inline-list li {
     display: inline;
-    padding: calc(var(--base-spacing) * 2);
+    padding: var(--base-spacing);
     margin: 0;
 }
 

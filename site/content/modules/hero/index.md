@@ -10,8 +10,9 @@ layout: "full"
 
 {{< example >}}{{< hero
     title="Paris Web 2018"
+    titleId="main-title"
     subTitle="La conférence francophone des gens qui font du web"
-    image="images/hero/paysage.jpg"
+    image="paysage.jpg"
     link="#"
     action="Découvrir les archives"
 >}}{{</ example >}}
