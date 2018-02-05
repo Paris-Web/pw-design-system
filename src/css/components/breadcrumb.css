@@ -17,3 +17,10 @@
 .breadcrumb li:last-child span {
   font-weight: bold;
 }
+
+@media screen and (min-width: 68em) {
+  .breadcrumb {
+    position: absolute;
+    top: calc(var(--base-spacing) * -10);
+  }
+}
