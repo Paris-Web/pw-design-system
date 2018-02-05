@@ -105,6 +105,12 @@ h6,
   font-weight: bold;
 }
 
+.font-fallback .normal, .normal {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
 h1,
 .h1-like {
   font-size: 2.25rem;
@@ -131,6 +137,10 @@ h5,
 h6,
 .h6-like {
   font-size: 0.875rem;
+}
+
+.inline-title {
+  display: inline;
 }
 
 .separation,

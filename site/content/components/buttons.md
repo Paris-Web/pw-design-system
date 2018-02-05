@@ -1,9 +1,9 @@
 ---
-title: "Buttons"
+title: "Boutons"
 menu: "components"
 ---
 
-# Buttons
+# Boutons
 
 ## Normal
 
