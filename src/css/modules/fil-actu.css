@@ -2,16 +2,16 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-.fil-actu__list {
+
+.actu-list {
   list-style: none;
   padding: 0;
 }
-
-.fil-actu__list__item {
+.actu-list__item {
   position: relative;
   margin: calc(var(--base-spacing) * 2) auto;
 }
-.fil-actu__list__item > a:before {
+.actu-list__item > a:before {
   content: '';
   position: absolute;
   left: 0;
@@ -20,6 +20,6 @@
   bottom: 0;
   z-index: 1;
 }
-.fil-actu__list__item > * {
+.actu-list__item > * {
   display: block;
 }
