@@ -88,8 +88,9 @@ example >}}<p class="mega">Méga - 2.5rem</p>{{< /example >}}
 Il est également possible d’appliquer ces styles sur d’autres éléments
 grâce aux classes utilitaires `hX-like`.
 
-{{< example >}}<span class="h1-like">Je suis un span .h1-like</span>{{< /example >}}
-{{< example >}}<p class="h2-like">Je suis un p .h2-like</p>{{< /example >}}
+{{< example >}}<span class="h1-like">Je suis un span .h1-like avec un long contenu qui peut passer sur 2 lignes</span>{{< /example >}}
+{{< example >}}<p class="h2-like">Je suis un p .h2-like avec un long contenu qui peut passer sur 2 lignes</p>{{< /example >}}
+{{< example >}}<p class="h3-like">Je suis un p .h3-like avec un long contenu qui peut passer sur 2 lignes</p>{{< /example >}}
 
 
 ## Séparation
