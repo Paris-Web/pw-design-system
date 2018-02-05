@@ -23,5 +23,10 @@ menu: "tokens"
         <li>{{< example >}}{{< icon icon="big-twitter" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-mail" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-rss" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-conference" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-workshop" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-heart" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-code" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-thumbsup" >}}{{< /example >}}</li>
     </ul>
 </div>

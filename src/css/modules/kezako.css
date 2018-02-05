@@ -6,6 +6,9 @@
     color: var(--color-text-02);
     flex: 1;
 }
+.kezako .icon {
+    color: var(--color-text-03);
+}
 .kezako li:nth-child(3) {
     min-width: 100%;
 }
