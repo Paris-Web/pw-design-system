@@ -5,11 +5,11 @@
     <img src="{{ $illustration.Permalink }}" alt="" class="actu-phare__illustration" />
   {{ end }}
   <h3 class="actu-phare__title">
-    <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "titre" }}</a>
+    <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>
   </h3>
   <time datetime="{{ .Get "date" }}" class="date">{{ .Get "date" }}</time>
 
   <p class="actu-phare__excerpt">
-    {{ .Get "résumé" }}
+    {{ .Get "excerpt" }}
   </p>
 </article>

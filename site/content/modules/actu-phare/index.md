@@ -15,11 +15,11 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 
 {{< example >}}
     {{< actu-phare
-        titre="Lorem ipsum dolor, sit amet"
+        title="Lorem ipsum dolor, sit amet"
         illustration="applaudissements.jpg"
         date="18 janvier 2018"
         url="#"
-        résumé="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore. Mollit sint reprehenderit in dolor nostrud ex id in mollit consequat adipisicing exercitation."
+        excerpt="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore. Mollit sint reprehenderit in dolor nostrud ex id in mollit consequat adipisicing exercitation."
     >}}
 {{< /example >}}
 
@@ -27,10 +27,10 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 
 {{< example >}}
     {{< actu-phare
-        titre="Lorem ipsum dolor"
+        title="Lorem ipsum dolor"
         date="18 décembre 2017"
         url="#"
-        résumé="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis."
+        excerpt="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis."
     >}}
 {{< /example >}}
 
@@ -38,10 +38,10 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 
 {{< example >}}
     {{< actu-phare
-        titre="Devenir membre bénévole pour Paris Web 2018, pourquoi, comment ?"
+        title="Devenir membre bénévole pour Paris Web 2018, pourquoi, comment ?"
         illustration="public.jpg"
         date="15 mai 2017"
         url="#"
-        résumé="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore. Mollit sint reprehenderit in dolor nostrud ex id in mollit consequat adipisicing exercitation."
+        excerpt="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore. Mollit sint reprehenderit in dolor nostrud ex id in mollit consequat adipisicing exercitation."
     >}}
 {{< /example >}}
