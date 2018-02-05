@@ -13,6 +13,39 @@ menu: "pages"
     action="Découvrir les archives"
 >}}
 
+<section class="hp-actus" aria-labelledby="news-title">
+	<h2 class="separation separation--primary" id="news-title">Actualités</h2>
+
+	<div class="hp-actus__content">
+		{{< actu-phare
+			titre="Devenez partenaires de Paris Web 2018 !"
+			illustration="applaudissements.jpg"
+			date="18 janvier 2018"
+			url="#"
+			résumé="Augmentez votre visibilité professionnelle en devenant partenaire de Paris Web 2018."
+		>}}
+
+		{{< fil-actu >}}
+			<li class="fil-actu__list__item">
+					<a href="{{< relref "pages/actualite/index.md" >}}" class="discreet">Des vœux, des dates et des tarifs pour Paris Web 2018</a>
+					<time datetime="2017-10-16" class="date">16 octobre 2017</time>
+			</li>
+			<li class="fil-actu__list__item">
+					<a href="{{< relref "pages/actualite/index.md" >}}" class="discreet">En chemin vers Paris Web 2018 !</a>
+					<time datetime="2017-10-03" class="date">3 octobre 2017</time>
+			</li>
+			<li class="fil-actu__list__item">
+					<a href="{{< relref "pages/actualite/index.md" >}}" class="discreet">Devenir membre bénévole pour Paris Web 2018, pourquoi, comment ?</a>
+					<time datetime="2017-09-28" class="date">28 septembre 2017</time>
+			</li>
+			<li class="fil-actu__list__item">
+					<a href="{{< relref "pages/actualite/index.md" >}}" class="discreet">Paris Web 2017, c'est fini !</a>
+					<time datetime="2017-11-03" class="date">3 novembre 2017</time>
+			</li>
+		{{< /fil-actu >}}
+	</div>
+</section>
+
 ## Live (nouveau)
 
 Pendant la conférence
