@@ -1,0 +1,5 @@
+@media screen and (min-width: 44em) {
+    .main--fil-actu .fil-actu {
+        max-width: 40%;
+    }
+}
