@@ -204,6 +204,9 @@ body.is-menu-opened {
     padding: calc(var(--base-spacing) * 6) 0;
     margin: 0 auto;
 }
+.content--no-padding {
+    padding: 0;
+}
 
 .content > :first-child {
     margin-top: 0;
@@ -240,6 +243,9 @@ body.is-menu-opened {
         width: calc(90ch);
         max-width: calc(100% - var(--base-spacing) * 12);
         padding: calc(var(--base-spacing) * 10) 0;
+    }
+    .content--no-padding {
+        padding: 0;
     }
 }
 
