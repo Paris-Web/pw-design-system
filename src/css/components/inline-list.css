@@ -5,6 +5,6 @@
 }
 .inline-list li {
     display: inline;
-    padding: 0.5rem;
+    padding: var(--base-spacing);
     margin: 0;
 }

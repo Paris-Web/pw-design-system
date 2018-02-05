@@ -7,6 +7,7 @@ menu: "components"
 
 ## Listes multi-colonnes
 
+{{< example >}}
 <ul class="columns-list">
     <li>
         <ul>
@@ -41,9 +42,11 @@ menu: "components"
         </ul>
     </li>
 </ul>
+{{< /example >}}
 
 ## Listes inline
 
+{{< example >}}
 <p class="normal inline-title">
     Editions précédentes&nbsp;:
 </p>
@@ -61,3 +64,4 @@ menu: "components"
     <li><a href="//www.paris-web.fr/2007/">2007</a></li>
     <li><a href="//www.paris-web.fr/2006/">2006</a></li>
 </ol>
+{{< /example >}}
