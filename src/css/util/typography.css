@@ -231,6 +231,10 @@ a.discreet:focus {
 code, pre {
   background: var(--color-ui-02);
 }
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
 
 time.date {
   color: var(--color-text-03);
