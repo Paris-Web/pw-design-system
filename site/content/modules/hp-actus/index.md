@@ -12,10 +12,11 @@ Il utilisé les modules [fil d’actualités]({{< relref "modules/fil-actualites
 ---
 
 {{< example >}}
-  <section class="hp-actus" aria-labelledby="news-title">
-    <h2 class="separation separation--primary" id="news-title">Actualités</h2>
+<section class="content content--2-cols" aria-labelledby="news-title">
+  <h2 class="separation separation--primary" id="news-title">Actualités</h2>
 
-    <div class="hp-actus__content">
+  <div class="content__wrapper">
+    <div class="content__main">
       {{< actu-phare
         titre="Lorem ipsum dolor, sit amet"
         illustration="applaudissements.jpg"
@@ -23,7 +24,9 @@ Il utilisé les modules [fil d’actualités]({{< relref "modules/fil-actualites
         url="#"
         résumé="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore. Mollit sint reprehenderit in dolor nostrud ex id in mollit consequat adipisicing exercitation."
       >}}
+    </div>
 
+    <div class="content__sidebar">
       {{< fil-actu >}}
         <li class="fil-actu__list__item">
             <a href="#" class="discreet">Etiam porta sem malesuada magna mollis euismod.</a>
@@ -43,5 +46,6 @@ Il utilisé les modules [fil d’actualités]({{< relref "modules/fil-actualites
         </li>
       {{< /fil-actu >}}
     </div>
-  </section>
+  </div>
+</section>
 {{< /example >}}

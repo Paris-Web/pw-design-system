@@ -1,8 +1,13 @@
-@media screen and (min-width: 68em) {
+@media screen and (min-width: 44em) {
     .content--2-cols .content__wrapper {
         display: flex;
     }
+    .content--2-cols .content__main {
+        flex: 2;
+        margin-right: calc(var(--base-spacing) * 3);
+    }
     .content--2-cols .content__sidebar {
-        margin-left: calc(var(--base-spacing) * 8);
+        flex: 1;
+        margin-left: calc(var(--base-spacing) * 3);
     }
 }
