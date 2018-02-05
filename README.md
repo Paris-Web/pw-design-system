@@ -38,7 +38,7 @@ Date limite pour le design system : 9 février
       conférences)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
-* [ ] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
+* [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
 * [x] 🛠️ Module - Actu' phare (#24)
 * [x] ️🛠️ Module - Liste actu' (#24)
@@ -49,7 +49,7 @@ Date limite pour le design system : 9 février
 * [ ] Page - Liste Actus
 * [ ] Page - Sponsors
 * [x] 🛠️ Page - Header (Julien)
-* [ ] 🛠️ Page - Footer (Julien)
+* [x] 🛠️ Page - Footer (Julien)
 * [ ] 🛠️ Page - Sidebar (Julien)
 * [ ] Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0
 
