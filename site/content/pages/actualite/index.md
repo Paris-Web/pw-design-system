@@ -1,15 +1,13 @@
 ---
-title: "Actualité"
+title: "Paris Web - Des vœux, des dates et des tarifs pour Paris Web 2018"
+linktitle: "Actualité"
 date: 2017-12-13T20:36:14+01:00
 menu: "pages"
 layout: "2-cols"
+pageClassModifier: "actualite"
 ---
 
-# Paris Web - Des vœux, des dates et des tarifs pour Paris Web 2018
-
-<time datetime="16 janvier 2018" pubdate="">16 janvier 2018</time>
-
-<p class="intro">
+<p class="big">
   Toute l'équipe de Paris Web est heureuse de vous souhaiter une excellente année 2018, pleine d'émerveillements, de bons moments et de partage autour de notre amour du web.
 </p>
 

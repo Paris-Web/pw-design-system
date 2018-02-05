@@ -20,5 +20,9 @@
 @import "modules/full-content.css";
 @import "modules/hero.css";
 @import "modules/kezako.css";
+@import "modules/actu-phare.css";
+@import "modules/fil-actu.css";
 @import "pages/layout.css";
+@import "pages/layout-2-cols.css";
+@import "pages/actualite.css";
 @import "styleguide/main.css";
