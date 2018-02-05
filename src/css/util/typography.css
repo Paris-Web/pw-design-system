@@ -131,6 +131,32 @@ h6,
   font-size: 0.875rem;
 }
 
+h1.separation,
+h2.separation,
+h3.separation {
+  position: relative;
+}
+h1.separation::after,
+h2.separation::after,
+h3.separation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3rem;
+  left: 0;
+}
+h1.separation::after {
+  background: var(--color-brand-01);
+  height: 0.3rem;
+  bottom: -0.2em;
+}
+h2.separation::after,
+h3.separation::after {
+  background: var(--color-brand-02);
+  height: 0.15rem;
+  bottom: -0.2em;
+}
+
 p {
   font-size: 1rem;
   font-weight: normal;

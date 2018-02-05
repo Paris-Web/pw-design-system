@@ -43,6 +43,8 @@ c’est pas très grave.
 
 ## Liens
 
+### Classiques
+
 Les liens sont toujours soulignés idéalement avec l’option
 <code>text-decoration-skip-ink: auto;</code>. La couleur du lien et du trait de soulignement est toujours la couleur <code>--color-special-blue</code>, au hover c’est <code>--color-brand-01</code>
 
@@ -50,12 +52,16 @@ Les liens sont toujours soulignés idéalement avec l’option
     <a href="">Lien classique avec du texte courant</a>
 {{< /example >}}
 
+### Titres
+
 Si les liens sont des titres, ils doivent être soulignés, couleur <code>--color-brand-01</code>, en gras et suffisamment
 gros pour ne pas avoir de confusion avec les textes normaux.
 
 {{< example >}}
     <a href="" class="title">Lien titre</a>
 {{< /example >}}
+
+### Discrets
 
 Si les liens sont des titres dans un contenu dense, ils doivent être soulignés, de la même couleur que le contenu pour ne pas alourdir la page et gêner la lecture.
 
@@ -70,16 +76,37 @@ example >}}<p class="mega">Méga - 2.5rem</p>{{< /example >}}
 
 ## Titraille
 
-{{< example >}}<h1>H1 - 2.25rem</h1>{{< /example >}} {{< example >}}<h2>H2 -
-1.75rem</h2>{{< /example >}} {{< example >}}<h3>H3 - 1.5rem</h3>{{< /example >}}
-{{< example >}}<h4>H4 - 1.125rem</h4>{{< /example >}} {{< example >}}<h5>H5 -
-1rem</h5>{{< /example >}} {{< example >}}<h6>H6 - 0.875rem</h6>{{< /example >}}
+### Standard
+
+{{< example >}}<h1>H1 - 2.25rem</h1>{{< /example >}}
+{{< example >}}<h2>H2 - 1.75rem</h2>{{< /example >}}
+{{< example >}}<h3>H3 - 1.5rem</h3>{{< /example >}}
+{{< example >}}<h4>H4 - 1.125rem</h4>{{< /example >}}
+{{< example >}}<h5>H5 - 1rem</h5>{{< /example >}}
+{{< example >}}<h6>H6 - 0.875rem</h6>{{< /example >}}
+
+Il est également possible d’appliquer ces styles sur d’autres éléments
+grâce aux classes utilitaires `hX-like`.
+
+{{< example >}}<span class="h1-like">Je suis un span .h1-like</span>{{< /example >}}
+{{< example >}}<p class="h2-like">Je suis un p .h2-like</p>{{< /example >}}
+
+
+## Séparation
+
+Certains titres ont pour but de séparer des sections logiques : au sein d’un article on reste dans la même section (et la liste de liens sur le côté est une autre section), mais deux catégories de sponsors doivent être séparées.
+
+Dans ce cas il faut utiliser cette variante `separation`, et les décorations sous les titres permettront cela.
+
+{{< example >}}<h1 class="separation">H1 - 2.25rem</h1>{{< /example >}}
+{{< example >}}<h2 class="separation">H2 - 1.75rem</h2>{{< /example >}}
+{{< example >}}<h3 class="separation">H3 - 1.5rem</h3>{{< /example >}}
 
 ## Texte courant
 
-{{< example >}}<p class="big">Big - 1.125rem</p>{{< /example >}} {{<
-example >}}<p>p - 1rem</p>{{< /example >}} {{<
-example >}}<p class="small">Small - 0.75rem</p>{{< /example >}}
+{{< example >}}<p class="big">Big - 1.125rem</p>{{< /example >}}
+{{< example >}}<p>p - 1rem</p>{{< /example >}}
+{{< example >}}<p class="small">Small - 0.75rem</p>{{< /example >}}
 
 ## Date
 

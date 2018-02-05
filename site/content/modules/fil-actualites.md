@@ -18,7 +18,7 @@ colonne de la [page de détail d’une actualité]({{< relref "pages/actualite/i
 
 {{< example >}}
     <aside class="fil-actu">
-        <h3 class="fil-actu__title">Fil d’actualités</h3>
+        <h3 class="separation fil-actu__title">Fil d’actualités</h3>
 
         <ul class="fil-actu__list">
             <li class="fil-actu__list__item">
