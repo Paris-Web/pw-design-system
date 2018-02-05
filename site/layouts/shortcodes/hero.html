@@ -1,5 +1,10 @@
-<div class="hero" style="background-image: url('{{.Site.BaseURL}}{{ .Get "image" }}')">
-    <div class="hero__title"><h1 class="giga"><span>{{ .Get "title" }}</span></h1></div>
+{{ $titleId := .Get "titleId" }}
+{{ $heroResource := .Page.Resources.GetMatch (printf "%s" (.Get "image")) }}
+{{/* An operation is required to get the url, the resize is arbitrary */}}
+{{ $hero := $heroResource.Resize "3000x" }}
+
+<div class="hero" style="background-image: url('{{ $hero.RelPermalink }}')" aria-labelledby="{{ $titleId }}">
+    <div class="hero__title"><h1 id="{{ $titleId }}" class="giga"><span>{{ .Get "title" }}</span></h1></div>
     <div class="hero__sub-title"><p class="mega"><span>{{ .Get "subTitle" }}</span></p></div>
     <div class="hero__action">
         <a href="{{ .Get "link" }}" class="btn btn-primary">
