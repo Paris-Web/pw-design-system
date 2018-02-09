@@ -1,0 +1,27 @@
+<article class="actu-item {{ if .Get "inline" }}actu-item--inline{{ end }}">
+  {{ if .Get "illustration" }}
+    {{ if .Get "inline" }}
+      {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
+      {{ $illustration := $illustrationResource.Fill "700x445" }}
+      <div class="actu-item__illustration">
+        <img src="{{ $illustration.Permalink }}" alt="" />
+      </div>
+    {{ else }}
+      {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
+      {{ $illustration := $illustrationResource.Fill "800x300" }}
+      <div class="actu-item__illustration">
+        <img src="{{ $illustration.Permalink }}" alt="" />
+      </div>
+    {{ end }}
+  {{ end }}
+  <div class="actu-item__content">
+    <h3 class="actu-item__title">
+      <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>
+    </h3>
+    <time datetime="{{ .Get "date" }}" class="date">{{ .Get "date" }}</time>
+  
+    <p class="actu-item__excerpt">
+      {{ .Get "excerpt" }}
+    </p>
+  </div>
+</article>
