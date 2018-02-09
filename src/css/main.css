@@ -15,6 +15,8 @@
 @import "components/inline-list.css";
 @import "components/columns-list.css";
 @import "components/social-link.css";
+@import "components/banner.css";
+@import "components/actions.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";
 @import "modules/full-content.css";
@@ -22,6 +24,7 @@
 @import "modules/kezako.css";
 @import "modules/actu-phare.css";
 @import "modules/fil-actu.css";
+@import "modules/quote.css";
 @import "pages/layout.css";
 @import "pages/layout-2-cols.css";
 @import "pages/actualite.css";

@@ -10,3 +10,21 @@
     flex-direction: column;
     margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
 }
+
+.call-for-papers {
+    text-align: center;
+}
+.call-for-papers h2, .call-for-papers .h2-like {
+    margin: 0;
+}
+.call-for-papers h2::after, .call-for-papers .h2-like::after {
+    display: none;
+}
+.call-for-papers svg {
+    width: 9rem;
+    height: 9rem;
+    margin: calc(var(--base-spacing)) 0;
+}
+.call-for-papers a {
+    font-weight: bold;
+}
