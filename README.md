@@ -26,19 +26,21 @@ Date limite pour le design system : 9 février
 * [ ] Favicon
 * [x] Tokens - titraille (#24)
 * [x] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
-* [ ] ️🛠️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
+* [x] ️🛠️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
       orateur.rice ?)
-* [ ] 🛠️ Composant - Citation (Julien)
+* [x] 🛠️ Composant - Citation (Julien)
 * [x] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
+* [ ] Composant - Input
 * [ ] Composant - Sponsor
 * [ ] 🛠️ Composant - Image légendée (Julien)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
 * [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
 * [x] 🛠️ Module - Actu' phare (#24)
-* [x] ️🛠️ Module - Liste actu' (#24)
+* [ ] ️🛠️ Module - Liste actu' (#24) (Julien)
 * [ ] Module - Devenir sponsor
 * [ ] 🛠️ Module - Portrait -> tous les orateurs (Julien)
+* [ ] Module - Newsletter
 * [x] 🛠️ Page - Actu (#24)
 * [ ] Page - Liste Actus
 * [ ] Page - Sponsors
