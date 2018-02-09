@@ -1,5 +1,5 @@
 ---
-title: "Résultats de la recherche : \"exemple de recherche"
+title: "Résultats de la recherche : \"exemple de recherche\""
 linktitle: "Résultat recherche"
 menu: "pages"
 layout: "page"
