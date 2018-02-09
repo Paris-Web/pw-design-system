@@ -4,10 +4,10 @@
     }
     .content--2-cols .content__main {
         flex: 2;
-        margin-right: calc(var(--base-spacing) * 3);
+        margin-right: calc(var(--base-spacing) * 2);
     }
     .content--2-cols .content__sidebar {
         flex: 1;
-        margin-left: calc(var(--base-spacing) * 3);
+        margin-left: calc(var(--base-spacing) * 2);
     }
 }

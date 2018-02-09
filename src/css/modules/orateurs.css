@@ -2,13 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: calc(var(--base-spacing) * -2);
+    margin-right: calc(var(--base-spacing) * -2);
 }
 
 .orateurs__more {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
+}
+
+.orateurs .portrait {
+    width: calc(25% - calc(var(--base-spacing) * 6));
+    min-width: 11rem;
+    margin-left: calc(var(--base-spacing) * 2);
+    margin-right: calc(var(--base-spacing) * 2);
 }
 
 .call-for-papers {

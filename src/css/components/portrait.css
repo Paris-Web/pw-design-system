@@ -1,9 +1,9 @@
 .portrait {
   position: relative;
   display: inline-block;
-  width: 12rem; /* ~140px */
+  width: 10rem; /* ~140px */
   text-align: center;
-  margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
+  margin: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 2);
 }
 .portrait--link {
   cursor: pointer;
@@ -29,6 +29,9 @@
 .portrait--link:hover .portrait__avatar svg, .portrait--link:hover .portrait__avatar img {
   transform: scale(1.1);
 }
+.portrait__name {
+  margin: 0;
+}
 .portrait .portrait__name a:before {
   content: '';
   position: absolute;
@@ -43,8 +46,8 @@
   vertical-align: bottom;
   display: flex;
   justify-content: center;
+  min-height: 2rem;
 }
-
 .portrait__links a {
   position: relative;
   z-index: 2;
