@@ -31,9 +31,9 @@ Date limite pour le design system : 9 février
 * [x] 🛠️ Composant - Citation (Julien)
 * [x] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
 * [ ] 🛠️ Composant - Input (Julien)
-* [ ] Composant - Sponsor
+* [ ] 🛠️ Composant - Sponsor (Julien)
 * [ ] 🛠️ Composant - Image légendée (Julien)
-* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
+* [ ] 🛠️ Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/) (Julien)
 * [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
 * [x] 🛠️ Module - Actu' phare (#24)
@@ -43,7 +43,7 @@ Date limite pour le design system : 9 février
 * [ ] 🛠️ Module - Newsletter (Julien)
 * [x] 🛠️ Page - Actu (#24)
 * [x] 🛠️ Page - Liste Actus (Julien)
-* [ ] Page - Sponsors
+* [ ] 🛠️ Page - Sponsors (Julien)
 * [x] 🛠️ Page - Header (Julien)
 * [x] 🛠️ Page - Footer (Julien)
 * [ ] 🛠️ Page - Sidebar (Julien)
