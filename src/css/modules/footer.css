@@ -33,6 +33,7 @@
 }
 .footer__legal p a {
     font-size: 1em;
+    text-decoration: underline;
 }
 .footer__legal section + section {
     margin-top: calc(var(--base-spacing) * 2);
