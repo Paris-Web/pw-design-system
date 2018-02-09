@@ -1,19 +1,21 @@
 <article class="actu-item {{ if .Get "inline" }}actu-item--inline{{ end }}">
-  {{ if .Get "illustration" }}
     {{ if .Get "inline" }}
-      {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
-      {{ $illustration := $illustrationResource.Fill "700x445" }}
       <div class="actu-item__illustration">
-        <img src="{{ $illustration.Permalink }}" alt="" />
+        {{ if .Get "illustration" }}
+          {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
+          {{ $illustration := $illustrationResource.Fill "700x445" }}
+          <img src="{{ $illustration.Permalink }}" alt="" />
+        {{ end }}
       </div>
     {{ else }}
-      {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
-      {{ $illustration := $illustrationResource.Fill "800x300" }}
-      <div class="actu-item__illustration">
-        <img src="{{ $illustration.Permalink }}" alt="" />
-      </div>
+      {{ if .Get "illustration" }}
+        {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
+        {{ $illustration := $illustrationResource.Fill "800x300" }}
+        <div class="actu-item__illustration">
+          <img src="{{ $illustration.Permalink }}" alt="" />
+        </div>
+      {{ end }}
     {{ end }}
-  {{ end }}
   <div class="actu-item__content">
     <h3 class="actu-item__title">
       <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>

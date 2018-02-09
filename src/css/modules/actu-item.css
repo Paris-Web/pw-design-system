@@ -48,12 +48,12 @@
     padding-top: calc(var(--base-spacing) * 6);
   }
   .actu-item--inline .actu-item__illustration {
-    flex: 1;
+    width: 25%;
     margin-right: calc(var(--base-spacing) * 2);
     margin-top: var(--base-spacing);
   }
   .actu-item--inline .actu-item__content {
-    flex: 3;
+    width: 75%;
     margin-left: calc(var(--base-spacing) * 2);
   }
   .actu-item--inline .actu-item__content > :first-child {
