@@ -1,9 +1,8 @@
 ---
 title: "Liste des actualités"
 menu: "modules"
+layout: "full"
 ---
-
-# Liste des actualités
 
 {{< example >}}
 <section class="content actu-list" aria-labelledby="news-list-title">

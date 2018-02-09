@@ -1,15 +1,14 @@
 ---
 title: "HP : actualités"
 menu: "modules"
+layout: "full"
 ---
 
-# Bloc Actualités
-
-Ce module est le bloc permettant d’afficher les actualités sur la page d’accueil.
-
-Il utilisé les modules [fil d’actualités]({{< relref "modules/fil-actualites.md" >}}) et [actualité phare]({{< relref "modules/actu-phare/index.md" >}}).
-
----
+<div class="content">
+<h1>Bloc Actualités</h1>
+<p>Ce module est le bloc permettant d’afficher les actualités sur la page d’accueil.</p>
+<p>Il utilisé les modules <a href="{{< relref "modules/fil-actualites.md" >}}">fil d’actualités</a> et <a href="{{< relref "modules/actu-phare/index.md" >}}">actualité phare</a>.</p>
+</div>
 
 {{< example >}}
 <section class="content content--2-cols" aria-labelledby="news-title">
