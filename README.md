@@ -30,7 +30,7 @@ Date limite pour le design system : 9 février
       orateur.rice ?)
 * [x] 🛠️ Composant - Citation (Julien)
 * [x] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
-* [ ] Composant - Input
+* [ ] 🛠️ Composant - Input (Julien)
 * [ ] Composant - Sponsor
 * [ ] 🛠️ Composant - Image légendée (Julien)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
