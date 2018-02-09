@@ -63,7 +63,7 @@ menu: "pages"
 
 	<div class="content__wrapper">
 		<div class="content__main">
-			{{< actu-phare
+			{{< actu-item
 				title="Devenez partenaires de Paris Web 2018 !"
 				illustration="applaudissements.jpg"
 				date="18 janvier 2018"

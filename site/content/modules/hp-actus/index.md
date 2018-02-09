@@ -17,7 +17,7 @@ Il utilisé les modules [fil d’actualités]({{< relref "modules/fil-actualites
 
   <div class="content__wrapper">
     <div class="content__main">
-      {{< actu-phare
+      {{< actu-item
         title="Lorem ipsum dolor, sit amet"
         illustration="applaudissements.jpg"
         date="18 janvier 2018"
