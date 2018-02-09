@@ -37,17 +37,17 @@ Date limite pour le design system : 9 février
 * [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
 * [x] 🛠️ Module - Actu' phare (#24)
-* [ ] ️🛠️ Module - Liste actu' (#24) (Julien)
+* [x] ️🛠️ Module - Liste actu' (#27) (Julien)
 * [ ] Module - Devenir sponsor
 * [ ] 🛠️ Module - Portrait -> tous les orateurs (Julien)
-* [ ] Module - Newsletter
+* [ ] 🛠️ Module - Newsletter (Julien)
 * [x] 🛠️ Page - Actu (#24)
-* [ ] Page - Liste Actus
+* [x] 🛠️ Page - Liste Actus (Julien)
 * [ ] Page - Sponsors
 * [x] 🛠️ Page - Header (Julien)
 * [x] 🛠️ Page - Footer (Julien)
 * [ ] 🛠️ Page - Sidebar (Julien)
-* [ ] Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0
+* [ ] 🛠️ Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0 (Julien)
 
 ### Annonce des conférences (23 avril)
 
