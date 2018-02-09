@@ -1,0 +1,16 @@
+.form-oneline {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: calc(var(--base-spacing) * 10);
+}
+
+.form-oneline__field {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+}
+.form-oneline__action .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
