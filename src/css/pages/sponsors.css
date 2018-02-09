@@ -1,0 +1,130 @@
+.sponsor-section--platine .sponsor__logo {
+    max-width: calc(100% / 12 * 10);
+    height: 12rem;
+}
+
+.sponsor-section--or .sponsor__logo {
+    max-width: 67%;
+    height: 10rem;
+}
+
+.sponsor-section--argent .sponsor__logo {
+    max-width: 50%;
+    height: 8rem;
+}
+
+.sponsor-section--bronze .sponsor__logo, .sponsor-section--autre .sponsor__logo {
+    max-width: 33%;
+    height: 5rem;
+}
+
+.sponsor {
+    margin-top: calc(var(--base-spacing) * 4);
+    margin-bottom: calc(var(--base-spacing) * 4);
+}
+.sponsor__logo img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom left;
+}
+.sponsor__description h3 {
+    margin-top: calc(var(--base-spacing) * 2);
+    margin-bottom: calc(var(--base-spacing) * 2);
+}
+.sponsor__content > :first-child {
+    margin-top: calc(var(--base-spacing) * 2);
+}
+.sponsor__content > :last-child {
+    margin-bottom: calc(var(--base-spacing) * 2);
+}
+.sponsor__link {
+    display: block;
+    margin-top: calc(var(--base-spacing) * 2);
+}
+
+@media screen and (min-width: 44em) {
+    .sponsor-section__sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(var(--base-spacing) * -4);
+        margin-right: calc(var(--base-spacing) * -4);
+    }
+    
+    .sponsor-section__sponsors > * {
+        padding-left: calc(var(--base-spacing) * 4);
+        padding-right: calc(var(--base-spacing) * 4);
+        border-right: 2px solid var(--color-ui-02);
+    }
+    .sponsor-section__sponsors > :last-child {
+        border-right: none;
+    }
+
+    .sponsor-section--platine .sponsor-section__sponsors > * {
+        width: 100%;
+        border-right: none;
+    }
+    .sponsor-section--platine .sponsor__logo {
+        max-width: 50%;
+    }
+
+    .sponsor-section--or .sponsor-section__sponsors > * {
+        width: 100%;
+        border-right: none;
+    }
+    .sponsor-section--or .sponsor__logo {
+        max-width: 33%;
+    }
+
+    .sponsor-section--argent .sponsor-section__sponsors > * {
+        width: 50%;
+    }
+    .sponsor-section--argent .sponsor-section__sponsors > :nth-child(2n) {
+        border-right: none;
+    }
+    .sponsor-section--argent .sponsor__logo {
+        max-width: 50%;
+    }
+
+    .sponsor-section--bronze .sponsor-section__sponsors > *, .sponsor-section--autre .sponsor-section__sponsors > * {
+        width: 50%;
+    }
+    .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(2n), .sponsor-section--autre .sponsor-section__sponsors > :nth-child(2n) {
+        border-right: none;
+    }
+    .sponsor-section--bronze .sponsor__logo, .sponsor-section--autre .sponsor__logo {
+        max-width: 67%;
+    }
+}
+@media screen and (min-width: 68em) {
+    .sponsor-section--platine .sponsor__logo {
+        max-width: 50%;
+    }
+
+    .sponsor-section--or .sponsor-section__sponsors > * {
+        width: 50%;
+        border-right: 2px solid var(--color-ui-02);
+    }
+    .sponsor-section--or .sponsor-section__sponsors > :nth-child(2n) {
+        border-right: none;
+    }
+    .sponsor-section--or .sponsor__logo {
+        max-width: 67%;
+    }
+
+    .sponsor-section--argent .sponsor-section__sponsors > *, .sponsor-section--bronze .sponsor-section__sponsors > *, .sponsor-section--autre .sponsor-section__sponsors > * {
+        width: 33%;
+    }
+    .sponsor-section--argent .sponsor-section__sponsors > :nth-child(2n), .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(2n), .sponsor-section--autre .sponsor-section__sponsors > :nth-child(2n) {
+        border-right: 2px solid var(--color-ui-02);
+    }
+    .sponsor-section--argent .sponsor-section__sponsors > :nth-child(3n), .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(3n), .sponsor-section--autre .sponsor-section__sponsors > :nth-child(3n) {
+        border-right: none;
+    }
+    .sponsor-section--argent .sponsor__logo {
+        max-width: 67%;
+    }
+    .sponsor-section--bronze .sponsor__logo, .sponsor-section--autre .sponsor__logo {
+        max-width: 50%;
+    }
+}

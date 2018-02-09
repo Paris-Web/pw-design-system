@@ -11,40 +11,6 @@
   overflow: auto;
   border-top: 2px solid var(--color-ui-02);
 }
-
-.styleguide .content > h1 {
-  position: relative;
-}
-
-.styleguide .content > h1::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3rem;
-  height: 0.3rem;
-  bottom: -0.2em;
-  left: 0;
-  background: var(--color-brand-01);
-}
-
-.styleguide .content > h2 {
-  position: relative;
-}
-
-.styleguide .content > h2::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3rem;
-  height: 0.15rem;
-  bottom: -0.2em;
-  left: 0;
-  background: var(--color-brand-01);
-}
-.styleguide .call-for-papers h2::after, .styleguide .call-for-papers .h2-like::after {
-  display: none;
-}
-
 .back-to-design-system {
   display: block;
   position: fixed;

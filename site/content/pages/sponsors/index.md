@@ -1,10 +1,9 @@
 ---
-title: "Sponsors"
+title: "Ils nous soutiennent"
+linktitle: "Nos partenaires"
 menu: "pages"
-layout: "sponsors"
+layout: "page"
 ---
-
-# Ils nous soutiennent
 
 Paris-Web met tous les ans tout en œuvre pour fournir une conférence de la meilleure qualité au meilleur prix. Et pour cela nous recevons l'aide de nos partenaires et soutiens.
 
@@ -15,25 +14,31 @@ En échange d’une grande visibilité sur nos supports de communication, les pa
 {{< sponsors-section
   title="Sponsor platine"
   niveau="platine"
-  logoResizeOptions="300x"
+  logoResizeOptions="600x"
 >}}
 
 {{< sponsors-section
   title="Sponsors Or"
   niveau="or"
-  logoResizeOptions="200x"
+  logoResizeOptions="450x"
 >}}
 
 {{< sponsors-section
   title="Sponsors Argent"
   niveau="argent"
-  logoResizeOptions="150x"
+  logoResizeOptions="350x"
 >}}
 
 {{< sponsors-section
   title="Sponsors Bronze"
-  niveau="argent"
-  logoResizeOptions="150x"
+  niveau="bronze"
+  logoResizeOptions="220x"
+>}}
+
+{{< sponsors-section
+  title="Autres Soutiens"
+  niveau="autre"
+  logoResizeOptions="220x"
 >}}
 
 ## Soutenez Paris Web !
