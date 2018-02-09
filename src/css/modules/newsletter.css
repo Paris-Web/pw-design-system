@@ -1,0 +1,37 @@
+#mc_embed_signup form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50ch;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+#mc_embed_signup .indicates-required {
+    display: none;
+}
+
+#mc_embed_signup h2 {
+    width: 100%;
+}
+
+#mc_embed_signup label {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--color-text-03);
+    margin-left: calc(var(--base-spacing) * 1.5);
+}
+#mc_embed_signup .mc-field-group {
+    width: calc(75% - calc(var(--base-spacing) * 10));
+    margin-right: calc(var(--base-spacing) * 2);
+}
+#mc_embed_signup form > :last-child {
+    width: calc(25% + calc(var(--base-spacing) * 8));
+}
+#mc-embedded-subscribe {
+    width: calc(100% - calc(var(--base-spacing) * 4));
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#mce-responses {
+    display: none;
+}
