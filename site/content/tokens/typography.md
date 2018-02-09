@@ -31,7 +31,7 @@ https://fonts.google.com/?query=PT+Sans
 
 ## Usage
 
-La taille de base est 16px sur écrans et 14px sur terminaux mobiles. Les tailles
+La taille de base varie entre 16px et 22px selon la taille de l'écran et est de 14px sur terminaux mobiles. Les tailles
 annexes sont relatives à cette taille de base.
 
 La hauteur de ligne vaut 1.4em sur le texte courant, mais est variable sur les

@@ -50,12 +50,12 @@
 @media (min-width: 68em){
   /* 50% de nos visiteurs sont entre 1150 et 1920px de large. */
 	:root {
-		font-size: calc( 1em + (24 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
+		font-size: calc( 1em + (22 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
 	}
 }
 @media (min-width: 120em){
 	:root {
-		font-size: 1.5em;
+		font-size: 1.37em;
 	}
 }
 
