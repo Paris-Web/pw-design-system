@@ -1,22 +1,17 @@
 blockquote {
-    position: relative;
     text-align: center;
     font-style: italic;
-    font-size: 1.5rem; 
 }
-
+blockquote p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+blockquote p:first-child {
+    font-size: 1.5rem;
+}
 blockquote cite {
     font-style: normal;
     font-size: 1.125rem;
-}
-
-blockquote cite a::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
 }
 
 .call-to-action blockquote {

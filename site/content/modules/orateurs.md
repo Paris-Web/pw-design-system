@@ -58,7 +58,7 @@ layout: "full"
 {{< example >}}
 <section class="call-for-papers banner" aria-labelledby="cfp-call">
     <div class="content">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+        <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
             <defs>
                 <circle id="a" cx="70" cy="70" r="70"/>
             </defs>
@@ -85,7 +85,10 @@ layout: "full"
         </svg>
         <h2 id="cfp-call">Et si vous présentiez une conférence&nbsp;?</h2>
         <p class="h2-like">Paris-Web a besoin d’oratrices et d’orateurs&nbsp;!</p>
-        <a class="btn btn-primary" href="#">Allez, cette année je le fais&nbsp;!</a>
+        <div class="actions">
+            <a class="btn btn-primary" href="#">Je propose un sujet</a>
+            <a href="#">Je veux en savoir plus</a>
+        </div>
     </div>
 </section>
 {{< /example >}}
