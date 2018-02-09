@@ -20,6 +20,9 @@
     color: var(--color-text-03);
     margin-left: calc(var(--base-spacing) * 1.5);
 }
+#mc_embed_signup .asterisk {
+    display: none;
+}
 #mc_embed_signup .mc-field-group {
     width: calc(75% - calc(var(--base-spacing) * 10));
     margin-right: calc(var(--base-spacing) * 2);
