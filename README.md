@@ -39,7 +39,7 @@ Date limite pour le design system : 9 février
 * [x] 🛠️ Module - Actu' phare (#24)
 * [x] ️🛠️ Module - Liste actu' (#27) (Julien)
 * [ ] Module - Devenir sponsor
-* [ ] 🛠️ Module - Portrait -> tous les orateurs (Julien)
+* [x] 🛠️ Module - Portrait -> tous les orateurs (Julien)
 * [ ] 🛠️ Module - Newsletter (Julien)
 * [x] 🛠️ Page - Actu (#24)
 * [x] 🛠️ Page - Liste Actus (Julien)
