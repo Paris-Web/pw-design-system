@@ -13,7 +13,7 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 ## Avec image
 
 {{< example >}}
-    {{< actu-phare
+    {{< actu-item
         title="Lorem ipsum dolor, sit amet"
         illustration="applaudissements.jpg"
         date="18 janvier 2018"
@@ -25,7 +25,7 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 ## Sans image
 
 {{< example >}}
-    {{< actu-phare
+    {{< actu-item
         title="Lorem ipsum dolor"
         date="18 décembre 2017"
         url="#"
@@ -36,7 +36,7 @@ Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md"
 ## Long titre
 
 {{< example >}}
-    {{< actu-phare
+    {{< actu-item
         title="Devenir membre bénévole pour Paris Web 2018, pourquoi, comment ?"
         illustration="public.jpg"
         date="15 mai 2017"
