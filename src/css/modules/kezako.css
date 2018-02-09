@@ -1,0 +1,30 @@
+.kezako {
+    min-height: calc(20vh - var(--base-spacing) * 20);
+}
+.kezako li {
+    min-width: 15ch;
+    color: var(--color-text-02);
+    flex: 1;
+}
+.kezako .icon {
+    color: var(--color-text-03);
+}
+.kezako li:nth-child(3) {
+    min-width: 100%;
+}
+
+@media screen and (min-width: 53em) {
+    .kezako li {
+        padding: 0;
+        flex: 1 1 auto;
+    }
+    .kezako li:nth-child(3) {
+        min-width: auto;
+    }
+}
+
+@media screen and (min-width: 68em) {
+    .kezako {
+        min-height: calc(25vh - var(--base-spacing) * 20);
+    }
+}

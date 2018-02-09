@@ -1,18 +1,26 @@
 .breadcrumb ol {
   list-style: none;
   padding-left: 0;
+  font-size: 0.875rem;
 }
 
 .breadcrumb li {
-  display: inline-block;
+  display: inline;
 }
 
 .breadcrumb li:not(:last-child)::after {
   content: '/';
   display: inline-block;
-  margin: 0 calc(var(--base-spacing) * 4);
+  margin: 0 calc(var(--base-spacing) * 2);
 }
 
 .breadcrumb li:last-child span {
   font-weight: bold;
+}
+
+@media screen and (min-width: 68em) {
+  .breadcrumb {
+    position: absolute;
+    top: calc(var(--base-spacing) * -10);
+  }
 }

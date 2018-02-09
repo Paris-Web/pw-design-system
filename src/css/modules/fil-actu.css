@@ -1,0 +1,31 @@
+.fil-actu {
+  max-width: 40ch;
+}
+.fil-actu__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.fil-actu__more {
+  white-space: nowrap;
+}
+
+.actu-list {
+  list-style: none;
+  padding: 0;
+}
+.actu-list__item {
+  position: relative;
+  margin: calc(var(--base-spacing) * 2) auto;
+}
+.actu-list__item > a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.actu-list__item > * {
+  display: block;
+}

@@ -17,7 +17,7 @@ menu: "modules"
             <div class="menu__head">
                 <div class="logo">
                     <a href="/">
-                        <img src="images/logo/logo.svg" style="width: 10em; height: 4.5em" alt="Paris Web" />
+                        <img src="{{< absoluteUrl "images/logo/logo.svg" >}}" style="width: 10em; height: 4.5em" alt="Paris Web" />
                     </a>
                 </div>
 

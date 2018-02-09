@@ -24,32 +24,26 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 Date limite pour le design system : 9 février
 
 * [ ] Favicon
-* [ ] Tokens - titraille (typographie)
+* [x] Tokens - titraille (#24)
 * [x] ️🛠️ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
-* [ ] ️Composant - Bandeau Call To Action (Si vous êtiez la.e prochain)
+* [ ] ️🛠️ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
       orateur.rice ?)
-* [ ] Composant - Citation
-* [ ] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
+* [ ] 🛠️ Composant - Citation (Julien)
+* [x] Composant - [Lien flèche](https://zpl.io/2ZP4WrG)
 * [ ] Composant - Sponsor
-* [ ] Composant - Partager réseaux sociaux
-* [ ] Composant - Liste de liens (liens normaux et liens de téléchargement,
-      cf page actu et page conférence, footer)
-* [ ] Composant - Image légendée
-      conférences)
+* [ ] 🛠️ Composant - Image légendée (Julien)
 * [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/)
-* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
-* [ ] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
+* [x] 🛠️ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
       accessible à tous, etc.) (Julien)
-* [ ] 🛠️ Module - Actu' phare (Pierre)
-* [ ] ️🛠️ Module - Liste actu' (Pierre)
-* [ ] Module - Header contenu (cf. page actu et page conférence)
+* [x] 🛠️ Module - Actu' phare (#24)
+* [x] ️🛠️ Module - Liste actu' (#24)
 * [ ] Module - Devenir sponsor
-* [ ] Module - Portrait -> tous les orateurs
-* [ ] 🛠️ Page - Actu (Pierre)
+* [ ] 🛠️ Module - Portrait -> tous les orateurs (Julien)
+* [x] 🛠️ Page - Actu (#24)
 * [ ] Page - Liste Actus
 * [ ] Page - Sponsors
 * [x] 🛠️ Page - Header (Julien)
-* [ ] 🛠️ Page - Footer (Julien)
+* [x] 🛠️ Page - Footer (Julien)
 * [ ] 🛠️ Page - Sidebar (Julien)
 * [ ] Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0
 
@@ -63,6 +57,10 @@ Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la d
 * [ ] Module - Liste conférences
 * [ ] Module - Tableau conférences
 * [ ] Page - Conférence
+
+### Nice to have
+
+* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
 
 ## Usage
 
