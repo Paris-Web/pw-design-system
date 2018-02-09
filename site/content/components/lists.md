@@ -65,3 +65,21 @@ menu: "components"
     <li><a href="//www.paris-web.fr/2006/">2006</a></li>
 </ol>
 {{< /example >}}
+
+## Listes à lignes
+
+<div class="line-list">
+  <p>Ligne 1</p>
+  <p>Ligne 2</p>
+  <p>Ligne 3</p>
+  <p>Ligne 4</p>
+</div>
+
+### Liste à lignes avec séparation de l'extérieur
+
+<div class="line-list line-list--full">
+  <p>Ligne 1</p>
+  <p>Ligne 2</p>
+  <p>Ligne 3</p>
+  <p>Ligne 4</p>
+</div>

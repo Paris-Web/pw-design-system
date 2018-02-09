@@ -44,3 +44,19 @@ menu: "components"
 A noter que pour l'instant nous n'avons pas de validation en JavaScript. Il y aura donc la tooltip navigateur à la soumission du formulaire.
 
 Sur le styleguide, si vous faites "Entrée" sur un input, ca va ouvrir les tootlips de code. Ce ne sera pas le cas sur le site final. Privilégiez donc le clic sur le bouton si vous voulez tester ce que ça donne.
+
+## Formulaire Rapide
+
+<form class="form-oneline" method="get" action="#" role="search">
+    <div class="form-oneline__field form-field">
+        <div class="form-field__label">
+            <label for="search">Terme de recherche</label>
+        </div>
+        <div class="form-field__input">
+            <input type="text" id="search" value="exemple de recherche" />
+        </div>
+    </div>
+    <div class="form-oneline__action">
+        <button class="btn">Rechercher</button>
+    </div>
+</form>
