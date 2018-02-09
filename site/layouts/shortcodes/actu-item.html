@@ -2,7 +2,7 @@
   {{ if .Get "illustration" }}
     {{ if .Get "inline" }}
       {{ $illustrationResource := (.Get "illustration") | .Page.Resources.GetMatch }}
-      {{ $illustration := $illustrationResource.Fill "440x280" }}
+      {{ $illustration := $illustrationResource.Fill "700x445" }}
       <div class="actu-item__illustration">
         <img src="{{ $illustration.Permalink }}" alt="" />
       </div>
