@@ -1,0 +1,20 @@
+<div class="menu__sponsors">
+    <h2>Nos partenaires</h2>
+
+    {{ with .Site.GetPage "page" "pages/sponsors/index.md" }}
+        <ul>
+            {{ $sponsorsResources := .Resources }}
+            {{ range where (.Resources.ByType "page") ".Params.niveau" "platine" }}
+                <li>
+                    {{ $glob := printf "%s/logo.*" .Params.logoDir }}
+                    {{ $logo := ($sponsorsResources.GetMatch $glob).Resize "150x" }}
+                    <a href="{{ .Params.siteUrl }}">
+                        <img width="150" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
+                    </a>
+                    </li>
+            {{ end }}
+        </ul>
+    {{ end }}
+
+    <a href="{{ .Site.BaseURL }}pages/sponsors">Voir tous nos partenaires</a>
+</div>

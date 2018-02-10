@@ -59,9 +59,7 @@ menu: "modules"
                 </ul>
             </div>
 
-            <div class="menu__links">
-                Nos partenaires
-            </div>
+            {{< sponsor-nav >}}
         </div>
     </div>
 </nav>
