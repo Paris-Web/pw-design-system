@@ -1,4 +1,4 @@
-.btn {
+input[type="button"], input[type="submit"], .btn {
   display: inline-block;
   background: var(--color-brand-02-dark);
   color: var(--color-text-inverted);
@@ -6,8 +6,8 @@
   font-size: 1rem;
   border-radius: 3px;
   border: none;
-  padding: 0.6rem 1rem;
-  margin: 0.5rem;
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 3);
+  margin: calc(var(--base-spacing) * 2);
   transition: background-color 0.25s ease;
   cursor: pointer;
   text-decoration: none;
@@ -15,18 +15,18 @@
 .btn:visited {
   color: var(--color-text-inverted);
 }
-.btn:hover,
-.btn:focus {
+input[type="button"]:hover, input[type="submit"]:hover, .btn:hover,
+input[type="button"]:focus, input[type="submit"]:focus, .btn:focus {
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
 }
-.btn:focus {
+input[type="button"]:focus, input[type="submit"]:focus, .btn:focus {
   outline-color: white;
   outline-offset: -4px;
   outline-style: solid;
   outline-width: 2px;
 }
-.btn:disabled {
+input[type="button"]:disabled, input[type="submit"]:disabled, .btn:disabled {
   opacity: 0.5;
   background: var(--color-brand-02);
 }

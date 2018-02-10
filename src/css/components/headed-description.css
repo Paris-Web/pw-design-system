@@ -1,0 +1,8 @@
+.headed-description__title {
+    margin-top: calc(var(--base-spacing) * 2);
+    margin-bottom: calc(var(--base-spacing));
+}
+.headed-description__description {
+    margin-top: 0;
+}
+  

@@ -1,0 +1,13 @@
+<article class="search-result-item">
+  <div class="search-result-item__content headed-description">
+    <h3 class="headed-description__title">
+      <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>
+    </h3>
+    <p class="search-result-item__excerpt headed-description__description">
+      {{ .Get "excerpt" }}
+    </p>
+  </div>
+  <div class="search-result-item__category">
+    <a class="discreet" href="{{ .Site.BaseURL }}{{ .Get "categoryLink" }}">{{ .Get "category" }}</a>
+  </div>
+</article>

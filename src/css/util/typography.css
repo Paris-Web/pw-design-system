@@ -238,6 +238,7 @@ code, pre {
 pre {
   max-width: 100%;
   overflow-x: auto;
+  padding: calc(var(--base-spacing) * 3);
 }
 
 time.date {
