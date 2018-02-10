@@ -254,3 +254,9 @@ time.date {
 .font-fallback .date-important {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
+
+hr {
+  border: none;
+  border-top: 2px solid var(--color-ui-02);
+  margin: calc(var(--base-spacing) * 4) 0;
+}
