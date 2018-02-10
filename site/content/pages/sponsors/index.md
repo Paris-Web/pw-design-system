@@ -41,8 +41,9 @@ En échange d’une grande visibilité sur nos supports de communication, les pa
   logoResizeOptions="220x"
 >}}
 
-## Soutenez Paris Web !
+
+<h2 class="separation">Soutenez Paris Web !</h2>
 
 Paris Web est un événement annuel unique à Paris : des conférences et des ateliers organisés par et pour les gens qui font le web dans un soucis de qualité et d'accessibilité. Vous partagez nos valeurs, et vous souhaitez profiter d’une visibilité auprès de professionnels du web ?
 
-[Découvrez ce qu’est Paris Web, pourquoi et comment nous aider.](#)
+[Découvrez ce qu’est Paris Web, pourquoi et comment nous aider.](../devenez-sponsor)
