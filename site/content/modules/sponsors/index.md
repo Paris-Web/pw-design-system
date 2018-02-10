@@ -9,27 +9,43 @@ Ce module permet l’affichage d’un ensemble de [sponsors]({{< relref "compone
 
 ---
 
-## Standard
-
-{{< sponsors-section
-  title="Sponsors Argent"
-  niveau="argent"
-  logoResizeOptions="150x"
->}}
-
-## Platine
-
+{{< example >}}
 {{< sponsors-section
   title="Sponsor platine"
   niveau="platine"
   logoResizeOptions="300x"
 >}}
+{{< /example >}}
 
-## Or
-
+{{< example >}}
 {{< sponsors-section
   title="Sponsors Or"
   niveau="or"
   logoResizeOptions="200x"
 >}}
+{{< /example >}}
+
+{{< example >}}
+{{< sponsors-section
+  title="Sponsors Argent"
+  niveau="argent"
+  logoResizeOptions="200x"
+>}}
+{{< /example >}}
+
+{{< example >}}
+{{< sponsors-section
+  title="Sponsors Bronze"
+  niveau="bronze"
+  logoResizeOptions="200x"
+>}}
+{{< /example >}}
+
+{{< example >}}
+{{< sponsors-section
+  title="Sponsors Autre"
+  niveau="autre"
+  logoResizeOptions="200x"
+>}}
+{{< /example >}}
 
