@@ -1,0 +1,20 @@
+.search-result-item h3 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 44em) {
+  .search-result-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-result-item__content {
+    width: 80%;
+    margin-right: calc(var(--base-spacing) * 2);
+  }
+  .search-result-item__category {
+    width: 20%;
+    margin-left: calc(var(--base-spacing) * 2);
+    text-align: right;
+  }
+}

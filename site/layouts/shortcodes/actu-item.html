@@ -16,13 +16,13 @@
         </div>
       {{ end }}
     {{ end }}
-  <div class="actu-item__content">
-    <h3 class="actu-item__title">
-      <a href="{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>
+  <div class="actu-item__content headed-description">
+    <h3 class="actu-item__title headed-description__title">
+      <a href="{{ .Site.BaseURL }}{{ .Get "url" }}" class="discreet" rel="bookmark prefetch">{{ .Get "title" }}</a>
     </h3>
     <time datetime="{{ .Get "date" }}" class="date">{{ .Get "date" }}</time>
   
-    <p class="actu-item__excerpt">
+    <p class="actu-item__excerpt headed-description__description">
       {{ .Get "excerpt" }}
     </p>
   </div>
