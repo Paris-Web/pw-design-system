@@ -24,7 +24,7 @@ Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour év
 Date limite pour le design system : 9 février
 
 * [ ] Favicon
-* [x] Tokens - titraille (#24)
+* [x] ✅ Tokens - titraille (#24)
 * [x] ✅ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
 * [x] ✅ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
       orateur.rice ?)
