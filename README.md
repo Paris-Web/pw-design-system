@@ -46,8 +46,9 @@ Date limite pour le design system : 9 février
 * [x] ✅ Page - Sponsors (Julien)
 * [x] ✅ Page - Header (Julien)
 * [x] ✅ Page - Footer (Julien)
-* [ ] 🛠️ Page - Sidebar (Julien)
-* [x] ✅ Page - Résultats de recherche https://www.paris-web.fr/cgi/mt/mt-search.cgi?search=html&IncludeBlogs=all&limit=100&x=0&y=0 (Julien)
+* [x] ✅ Page - Sidebar (Julien)
+* [x] ✅ Page - Résultats de recherche (Julien)
+* [ ] 🛠️ Page - Archives (Julien)
 
 ### Annonce des conférences (23 avril)
 
