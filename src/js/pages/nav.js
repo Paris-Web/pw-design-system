@@ -72,7 +72,7 @@ const listenIntersection = (element, callback) => {
     });
   }
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener("resize", () => {
     throttledSimulateIntersectionObserver();
     debouncedSimulateIntersectionObserver();
   });
