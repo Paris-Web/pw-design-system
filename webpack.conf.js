@@ -2,6 +2,7 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
+  devtool: process.env.NODE_ENV === "production" ? 'source-map' : 'cheap-module-source-map',
   module: {
     rules: [
       {

@@ -1,7 +1,10 @@
 {
-  "presets": ["env"],
-  "plugins": [
-    "syntax-object-rest-spread",
-    "transform-object-rest-spread"
-  ]
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "> 1%"]
+      }
+    }]
+  ],
+  "plugins": ["syntax-object-rest-spread", "transform-object-rest-spread"]
 }
