@@ -1,6 +1,6 @@
 ---
 title: "Gobelins"
-niveau: "argent"
+niveau: "autre"
 siteUrl: "#"
 logoDir: "gobelins"
 headless: true

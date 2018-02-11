@@ -184,6 +184,19 @@ body.is-menu-opened {
     outline: none;
 }
 
+.menu__sponsors h2 {
+    font-size: 1.125rem;
+    color: var(--color-text-03);
+}
+.menu__sponsors ul, .menu__sponsors li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.menu__sponsors li {
+    margin: calc(var(--base-spacing) * 2) 0;
+}
+
 .go-to-content:focus {
     display: block;
     position: absolute;

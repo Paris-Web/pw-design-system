@@ -1,11 +1,15 @@
-<div class="sponsor">
-  <img src="{{ .Scratch.Get "logo" }}" alt="" class="sponsor__logo" />
+<div class="sponsor sponsor--{{ .Scratch.Get "niveau" }}">
+  <div class="sponsor__logo">
+    <img src="{{ .Scratch.Get "logo" }}" alt="" />
+  </div>
   <div class="sponsor__description">
     <h3>{{- .Scratch.Get "name" -}}</h3>
 
-    {{ (.Scratch.Get "description") | markdownify }}
+    <div class="sponsor__content">
+      {{ (.Scratch.Get "description") | markdownify }}
+    </div>
 
-    <a href="{{- .Scratch.Get "siteUrl" -}}">
+    <a class="sponsor__link" href="{{- .Scratch.Get "siteUrl" -}}">
       {{- .Scratch.Get "name" -}}
     </a>
   </div>
