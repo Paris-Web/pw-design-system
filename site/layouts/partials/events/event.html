@@ -22,10 +22,10 @@
                 <dd>{{ . }}</dd>
             {{- end -}}
         </dl>
-        <dl class="event__themes">
+        <dl class="event__themes tag-list">
             {{- range (.Scratch.Get "themes") -}}
                 <dd>
-                    <span class="tag">{{ . }}</span>
+                    <a href="#" class="tag">{{ . }}</a>
                 </dd>
             {{- end -}}
         </dl>
