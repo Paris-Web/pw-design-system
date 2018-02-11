@@ -1,7 +1,7 @@
 ---
 event: true
 title: "Le secret de la correspondance numérique"
-format: "Conférence"
+format: "Atelier"
 lieu: "Grand amphithéâtre René Descartes"
 date: 2017-10-05T09:15:00+01:00
 duree: 45

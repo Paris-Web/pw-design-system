@@ -1,0 +1,10 @@
+.tag {
+    border-radius: 1rem;
+    background: var(--color-brand-02-dark);
+    color: var(--color-text-inverted);
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: 0rem calc(var(--base-spacing) * 1.5) 0.125rem;
+    line-height: 2rem;
+    min-height: 2rem;
+}
