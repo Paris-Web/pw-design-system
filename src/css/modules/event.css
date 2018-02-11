@@ -1,0 +1,10 @@
+.event {
+    display: flex;
+}
+
+.event__format {
+    width: calc(100% / 12 * 2);
+}
+.event__authors {
+    width: calc(100% / 12 * 3);
+}

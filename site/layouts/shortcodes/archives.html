@@ -1,0 +1,17 @@
+<div class="event-list">
+    {{ $archivesResources := .Page.Resources }}
+    {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
+        {{ .Scratch.Set "title" .Params.title }}
+        {{ .Scratch.Set "format" .Params.format }}
+        {{ .Scratch.Set "lieu" .Params.lieu }}
+        {{ .Scratch.Set "date" .Params.date }}
+        {{ .Scratch.Set "duree" .Params.duree }}
+        {{ .Scratch.Set "themes" .Params.themes }}
+        {{ .Scratch.Set "services" .Params.services }}
+        {{ .Scratch.Set "authors" .Params.authors }}
+        {{ .Scratch.Set "shortDescription" .Params.shortDescription }}
+        {{ .Scratch.Set "description" .Params.description }}
+
+        {{ partial "archives/archive" . }}
+    {{ end }}
+</div>
