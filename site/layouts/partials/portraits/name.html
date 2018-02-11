@@ -1,0 +1,5 @@
+{{ if .Scratch.Get "link" }}
+    <a href="{{ .Scratch.Get "link" }}" class="title">{{ .Scratch.Get "name" }}</a>
+{{ else }}
+    {{ .Scratch.Get "name" }}
+{{ end }}
