@@ -1,0 +1,11 @@
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "format" (.Get "format") }}
+{{ .Scratch.Set "lieu" (.Get "lieu") }}
+{{ .Scratch.Set "duree" (.Get "duree") }}
+{{ .Scratch.Set "themes" (split (.Get "themes") ",") }}
+{{ .Scratch.Set "services" (split (.Get "services") ",") }}
+{{ .Scratch.Set "authors" (split (.Get "authors") ",") }}
+{{ .Scratch.Set "shortDescription" .Inner }}
+{{ .Scratch.Set "description" .Inner }}
+
+{{ partial "presentations/presentation" . }}

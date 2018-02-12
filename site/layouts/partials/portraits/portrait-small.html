@@ -1,0 +1,12 @@
+<div class="portrait portrait-small {{ if .Scratch.Get "link" }}portrait--link{{ end }}">
+    <div class="portrait-small__side">
+        {{ partial "portraits/avatar.html" . }}
+    </div>
+
+    <div class="portrait-small__content">
+        <div class="portrait__name h4-like">
+            {{ partial "portraits/name.html" . }}
+        </div>
+        <div class="portrait__description">{{ .Scratch.Get "description" }}</div>
+    </div>
+</div>

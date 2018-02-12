@@ -1,0 +1,57 @@
+.presentation {
+    display: flex;
+    padding: calc(var(--base-spacing) * 4);
+}
+
+.presentation__format {
+    width: calc(100% / 12 * 2);
+    margin-right: calc(var(--base-spacing) * 2);
+    text-align: center;
+    color: var(--color-text-02);
+    margin-top: calc(var(--base-spacing) * 1);
+}
+.presentation__description {
+    margin-right: calc(var(--base-spacing) * 2);
+    margin-left: calc(var(--base-spacing) * 2);
+    width: calc(100% / 12 * 7);
+}
+.presentation__authors {
+    margin-left: calc(var(--base-spacing) * 2);
+    width: calc(100% / 12 * 3);
+}
+
+.presentation__authors > :first-child {
+    margin-top: 0;
+}
+.presentation__authors > :last-child {
+    margin-bottom: 0;
+}
+
+.presentation__description h3 {
+    margin: 0 0 var(--base-spacing) 0;
+    font-size: 1.25rem;
+}
+
+.presentation__info, .presentation__services, .presentation__themes {
+    margin: 0;
+}
+.presentation__info > *, .presentation__services > * {
+    display: inline;
+    margin: 0;
+    font-style: italic;
+}
+.presentation__info > * + *::before {
+    content: '|';
+    margin: 0 calc(var(--base-spacing) * 2);
+}
+.presentation__services > * + *::before {
+    content: ',';
+    margin: 0 calc(var(--base-spacing)) 0 0;
+}
+.presentation__themes {
+    margin: var(--base-spacing) 0;
+}
+.presentation__themes > * {
+    display: inline;
+    margin: 0;
+}
