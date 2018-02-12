@@ -25,15 +25,29 @@ menu: "pages"
 >}}
 {{< actu-item
   inline="true"
-  title="Retour d'expérience sur le sponsoring de Paris Web 2018"
-  illustration="hero.jpg"
+  title="Actu sans image"
   date="18 janvier 2018"
   url="pages/actualite"
   excerpt="Nulla cupidatat cillum adipisicing."
 >}}
 {{< actu-item
   inline="true"
-  title="Actu sans image"
+  title="Paris Web 2018 et des paillettes"
+  date="18 janvier 2018"
+  url="pages/actualite"
+  excerpt="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore."
+>}}
+{{< actu-item
+  inline="true"
+  title="Paris Web 2018 et des paillettes"
+  date="18 janvier 2018"
+  url="pages/actualite"
+  excerpt="Nulla cupidatat cillum adipisicing duis veniam adipisicing deserunt officia velit consectetur esse velit. Exercitation irure aliquip Lorem ad consequat magna quis consectetur sunt esse non. Pariatur magna velit proident elit ipsum magna ullamco eiusmod exercitation commodo in fugiat labore."
+>}}
+{{< actu-item
+  inline="true"
+  title="Retour d'expérience sur le sponsoring de Paris Web 2018"
+  illustration="hero.jpg"
   date="18 janvier 2018"
   url="pages/actualite"
   excerpt="Nulla cupidatat cillum adipisicing."

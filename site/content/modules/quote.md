@@ -11,10 +11,10 @@ layout: "full"
 <section class="banner">
     <div class="content">
         <blockquote>
-        <p>Paris Web est une conférence organisée par des gens intéressants, on y apprend tant en deux jours qu’on a besoin de l’année pour digérer.</p>
-        <footer>
-        <cite>Joachim Robert — <a href="">@joachimesque</a></cite>
-        </footer>
+            <p>Paris Web est une conférence organisée par des gens intéressants, on y apprend tant en deux jours qu’on a besoin de l’année pour digérer.</p>
+            <footer>
+            <cite>Joachim Robert — <a href="">@joachimesque</a></cite>
+            </footer>
         </blockquote>
     </div>
 </section>
