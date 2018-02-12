@@ -1,4 +1,4 @@
-<div class="event-list">
+<div class="presentation-list">
     {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
         {{ .Scratch.Set "title" .Params.title }}
         {{ .Scratch.Set "format" .Params.format }}
@@ -10,6 +10,6 @@
         {{ .Scratch.Set "authors" .Params.authors }}
         {{ .Scratch.Set "shortDescription" .Params.shortDescription }}
 
-        {{ partial "events/event" . }}
+        {{ partial "presentations/presentation" . }}
     {{ end }}
 </div>

@@ -1,3 +1,0 @@
-.event-list > :nth-child(2n + 1) {
-    background: var(--color-ui-02);
-}

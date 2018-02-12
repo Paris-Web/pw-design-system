@@ -21,3 +21,5 @@ layout: "page"
     <a href="#11">11</a>
     <a href="#next" rel="next">Suivant &gt;</a>
 </div>
+
+(NB : Il serait top d'avoir de la recherche et/ou du filtre par thème sur cette page.)
