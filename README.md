@@ -19,7 +19,7 @@ Les points avec ⚠️ sont les points à préciser avant de passer à l'intégr
 Les points avec 🛠️ sont les points en cours de réalisation.
 Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour éviter de se marcher dessus.
 
-### Appel à orateurs + Inscriptions (26 février)
+### Appel à orateurs + Inscriptions (14 février)
 
 Date limite pour le design system : 9 février
 
@@ -49,6 +49,10 @@ Date limite pour le design system : 9 février
 * [x] ✅ Page - Sidebar (Julien)
 * [x] ✅ Page - Résultats de recherche (Julien)
 * [ ] 🛠️ Page - Archives (Julien)
+* [ ] Page - Index programme -> ex. https://stage.paris-web.fr/2017/ (pas vu sur le design system o_O)
+* [ ] Page - Programme journalier -> ex. : https://stage.paris-web.fr/2017/05.php (c’est, de loin, le gabarit le plus velu de tout le système)
+* [ ] Page - Programme journalier imprimable -> ex. https://stage.paris-web.fr/2017/05-impression.php
+* [ ] Page - Présentations par type -> ex. https://stage.paris-web.fr/2017/conferences/
 
 ### Annonce des conférences (23 avril)
 
