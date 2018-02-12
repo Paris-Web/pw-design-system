@@ -49,7 +49,8 @@
     margin: 0 calc(var(--base-spacing)) 0 0;
 }
 .presentation__themes {
-    margin: var(--base-spacing) 0;
+    display: block;
+    margin: var(--base-spacing) calc(-1 * var(--base-spacing));
 }
 .presentation__themes > * {
     display: inline;

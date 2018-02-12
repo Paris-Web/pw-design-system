@@ -1,0 +1,10 @@
+<div class="filters">
+    <span class="filters__title">Filtrer par&nbsp;:</span>
+    <ul class="filters__list tag-list">
+        {{ $active := .Get "active" }}
+        {{ $filters := split (.Get "filters") "," }}
+        {{ range $filters }}
+            <li><a class="tag tag--togglable {{ if eq . $active }}tag--active{{ end }}" href="#{{ . }}">{{ . }}</a></li>
+        {{ end }}
+    </ul>
+</div>

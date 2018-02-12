@@ -1,0 +1,12 @@
+.filters {
+    margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * -2) calc(var(--base-spacing) * 6);
+}
+
+.filters__title {
+    margin: 0 calc(var(--base-spacing));
+    padding: 0 calc(var(--base-spacing) * 3);
+}
+
+.filters .filters__list {
+    display: inline;
+}

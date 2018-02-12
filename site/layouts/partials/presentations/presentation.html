@@ -28,7 +28,7 @@
         <dl class="presentation__themes tag-list">
             {{- range (.Scratch.Get "themes") -}}
                 <dd>
-                    <a href="#" class="tag">{{ . }}</a>
+                    <a href="{{ $.Site.BaseURL }}pages/programme" class="tag">{{ . }}</a>
                 </dd>
             {{- end -}}
         </dl>
