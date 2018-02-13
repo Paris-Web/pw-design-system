@@ -108,12 +108,20 @@
   margin-right: calc(var(--base-spacing) * 2);
 }
 .portrait-small__side .portrait__avatar {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-bottom: 0;
 }
 .portrait-small__content {
   min-width: 15ch;
 }
 .portrait-small__content .portrait__name {
   margin-bottom: var(--base-spacing);
+}
+
+@media screen and (min-width: 44em) {
+  .portrait-small__side .portrait__avatar {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
 }

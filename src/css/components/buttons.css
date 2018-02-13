@@ -76,6 +76,6 @@ input[type="button"]:disabled, input[type="submit"]:disabled, .btn:disabled {
 }
 
 .btn-small {
-  padding: 0.3rem 1rem;
+  padding: var(--base-spacing) calc(var(--base-spacing) * 3) calc(var(--base-spacing) + 0.1rem);
   font-size: 1rem;
 }

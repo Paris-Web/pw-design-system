@@ -35,6 +35,9 @@
 @import "modules/newsletter.css";
 @import "modules/presentation-list.css";
 @import "modules/presentation.css";
+@import "modules/filters.css";
+@import "modules/tabs.css";
+@import "modules/schedule.css";
 @import "pages/layout.css";
 @import "pages/layout-2-cols.css";
 @import "pages/actualite.css";
