@@ -30,3 +30,9 @@
 .back-to-design-system:hover, .back-to-design-system:focus, .back-to-design-system:active {
   background: var(--color-brand-02);
 }
+
+@media print {
+  .back-to-design-system {
+    display: none;
+  }
+}

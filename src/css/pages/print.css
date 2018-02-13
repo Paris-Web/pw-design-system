@@ -1,0 +1,82 @@
+@media print {
+  :root {
+    font-size: 1rem;
+  }
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  } /* Black prints faster: h5bp.com/s */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+    overflow-wrap: break-word;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+    overflow-wrap: break-word;
+  }
+  .ignore-print-links a:after,
+  .ignore-print-abbr abbr[title]:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  } /* Don't show links for images, or javascript/internal links */
+  .ignore-print-abbr abbr {
+    text-decoration: none;
+  }
+
+  thead {
+    display: table-header-group;
+  } /* h5bp.com/t */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .header {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__about .date {
+    display: none;
+  }
+  .header a[href]:after {
+    content: "";
+  }
+  .content {
+    padding-top: calc(var(--base-spacing) * 10);
+  }
+  .content > h1:first-child {
+      position: absolute;
+      top: calc(var(--base-spacing) * 4);
+  }
+  .footer {
+    display: none;
+  }
+}
