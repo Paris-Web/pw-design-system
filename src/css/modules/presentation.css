@@ -9,8 +9,8 @@
     padding-left: calc(var(--base-spacing) * 2);
 }
 .presentation__format svg {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.5rem;
+    width: 2.5rem;
     max-width: 100%;
 }
 
@@ -52,34 +52,42 @@
     margin-bottom: calc(var(--base-spacing) * -2);
 }
 
-@media screen and (min-width: 44em) {
+.presentation--closed .presentation__description p, .presentation--closed .presentation__services {
+    display: none;
+}
+
+.presentation__expand {
+    display: block;
+    margin: 0 auto calc(var(--base-spacing) * -2);
+}
+
+@media screen and (min-width: 53em) {
     .presentation {
         display: flex;
         padding: calc(var(--base-spacing) * 4);
     }
     
     .presentation__format {
-        flex: 1;
+        width: calc(100% / 12 * 1.5);
         padding-right: calc(var(--base-spacing) * 2);
         text-align: center;
         color: var(--color-ui-06);
-        margin-top: calc(var(--base-spacing) * 1);
     }
     .presentation__format svg {
-        height: 4em;
-        width: 4em;
+        height: 3.5rem;
+        width: 3.5rem;
     }
 
     .presentation__description {
         padding-right: calc(var(--base-spacing) * 2);
         padding-left: calc(var(--base-spacing) * 2);
-        flex: 8;
+        width: calc(100% / 12 * 7);
     }
 
     .presentation__authors {
         padding-left: calc(var(--base-spacing) * 2);
         margin-bottom: 0;
-        flex: 3;
+        width: calc(100% / 12 * 3.5);
         flex-direction: column;
     }
     .presentation__authors > * {
@@ -90,5 +98,12 @@
     }
     .presentation__authors > :last-child {
         margin-bottom: 0;
+    }
+
+    .presentation--closed {
+        align-items: center;
+    }
+    .presentation--closed .presentation__format {
+        margin-top: 0;
     }
 }
