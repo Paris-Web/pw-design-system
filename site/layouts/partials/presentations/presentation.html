@@ -1,11 +1,11 @@
 <article class="presentation">
     <div class="presentation__format">
         {{ if or (eq (.Scratch.Get "format") "Conférence") (eq (.Scratch.Get "format") "Mini-conf") }}
-            <svg role="img" aria-hidden="true" class="icon" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg role="img" alt="{{ .Scratch.Get "format" }}" class="icon" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M29.935 52.278C19.333 51.216 11 42.263 11 31.45h4.029c0 9.31 7.66 16.927 17.021 16.927 9.34 0 16.921-7.594 16.921-16.927H53c0 10.895-8.362 19.879-19.036 20.847V63h-4.029V52.278zM41.518 9.415V31.45c0 5.308-4.13 9.415-9.468 9.415s-9.467-4.107-9.467-9.415V9.415C22.583 4.107 26.713 0 32.05 0c5.338 0 9.468 4.107 9.468 9.415z"/>
             </svg>
         {{ else if eq (.Scratch.Get "format") "Atelier" }}
-            <svg role="img" aria-hidden="true" class="icon" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg role="img" alt="{{ .Scratch.Get "format" }}" class="icon" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M55.385 43.173L42.389 26.406V9.96h2.406V6.35H19.524v3.61h2.407v16.446L8.935 43.173a8.097 8.097 0 0 0-1.685 4.974c0 4.413 3.61 8.103 8.103 8.103h33.694c4.413 0 8.103-3.61 8.103-8.103 0-1.845-.642-3.61-1.765-4.974zM25.622 27.69V9.96h13.156v17.73l10.51 13.478H15.112l10.51-13.478zm8.343-3.37a3.209 3.209 0 1 0 0-6.418 3.209 3.209 0 0 0 0 6.418zm-5.134 15.404a2.888 2.888 0 1 0 0-5.777 2.888 2.888 0 0 0 0 5.777z"/>
             </svg>
         {{ end }}
