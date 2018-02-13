@@ -37,7 +37,7 @@
 }
 .presentation__themes {
     display: block;
-    margin: var(--base-spacing) calc(-1 * var(--base-spacing));
+    margin: var(--base-spacing) calc(-1 * var(--base-spacing)) calc(2 * var(--base-spacing));
 }
 .presentation__themes > * {
     display: inline;
