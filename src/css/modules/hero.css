@@ -67,6 +67,7 @@
     left: calc(-1 * var(--hero-padding));
     right: calc(-1 * var(--hero-padding));
     background: var(--color-brand-03);
+    opacity: 0.85;
 }
 .hero__title > *::before {
     top: 0.25em;

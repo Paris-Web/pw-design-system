@@ -22,6 +22,7 @@
 @import "components/form-oneline.css";
 @import "components/headed-description.css";
 @import "components/pagination.css";
+@import "components/tag.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";
 @import "modules/full-content.css";
@@ -32,6 +33,11 @@
 @import "modules/search-result-item.css";
 @import "modules/quote.css";
 @import "modules/newsletter.css";
+@import "modules/presentation-list.css";
+@import "modules/presentation.css";
+@import "modules/filters.css";
+@import "modules/tabs.css";
+@import "modules/schedule.css";
 @import "pages/layout.css";
 @import "pages/layout-2-cols.css";
 @import "pages/actualite.css";

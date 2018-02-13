@@ -1,0 +1,40 @@
+.tag, .tag:visited {
+    display: inline-block;
+    border-radius: 1rem;
+    background: var(--color-brand-02-dark);
+    color: var(--color-text-inverted);
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: 0 calc(var(--base-spacing) * 1.5) 0.1rem;
+    text-decoration: none;
+    margin: 0 calc(var(--base-spacing));
+}
+.tag:hover, .tag:focus {
+    color: var(--color-text-inverted);
+    background: var(--color-brand-02-darker);
+}
+
+.tag.tag--togglable {
+    font-size: 1rem;
+    border-radius: 0.1rem;
+    padding: calc(var(--base-spacing) * 1) calc(var(--base-spacing) * 3) calc(var(--base-spacing) + 0.1rem);
+}
+
+.tag.tag--togglable {
+    background: transparent;
+    color: var(--color-brand-02-darker);
+}
+.tag.tag--togglable:hover, .tag.tag--togglable.tag--active {
+    background: var(--color-brand-02-dark);
+    color: var(--color-text-inverted);
+}
+
+.tag-list {
+    display: inline-block;
+    padding: 0;
+    margin: 0 calc(var(--base-spacing) * -1);
+}
+.tag-list > * {
+    display: inline;
+    margin: 0;
+}

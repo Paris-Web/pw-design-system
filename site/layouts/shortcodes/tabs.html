@@ -1,0 +1,7 @@
+<ul class="tabs">
+    {{ $active := .Get "active" }}
+    {{ $tabs := split (.Get "tabs") "," }}
+    {{ range $tabs }}
+        <li class="h3-like tab {{ if eq . $active }}tab--active{{ end }}"><a href="#{{ . }}">{{ . }}</a></li>
+    {{ end }}
+</ul>
