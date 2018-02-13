@@ -51,6 +51,9 @@
     flex-wrap: wrap;
     margin-bottom: calc(var(--base-spacing) * -2);
 }
+.presentation__authors > * {
+    margin-top: 0;
+}
 
 .presentation--closed .presentation__description p, .presentation--closed .presentation__services {
     display: none;
