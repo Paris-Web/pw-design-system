@@ -49,9 +49,9 @@ Date limite pour le design system : 9 février
 * [x] ✅ Page - Sidebar (Julien)
 * [x] ✅ Page - Résultats de recherche (Julien)
 * [ ] 🛠️ Page - Archives (Julien)
-* [ ] 🛠️ Page - [Index programme](https://stage.paris-web.fr/2017/) (Julien)
-* [ ] Page - [Programme journalier](https://stage.paris-web.fr/2017/05.php)
-* [ ] Page - [Programme journalier imprimable](https://stage.paris-web.fr/2017/05-impression.php)
+* [x] ✅ Page - [Index programme](https://stage.paris-web.fr/2017/) (Julien)
+* [x] ✅ Page - [Programme journalier](https://stage.paris-web.fr/2017/05.php)
+* [ ] 🛠️ Page - [Programme journalier imprimable](https://stage.paris-web.fr/2017/05-impression.php)
 * [ ] Page - [Présentations par type](https://stage.paris-web.fr/2017/conferences/)
 
 ### Annonce des conférences (23 avril)
