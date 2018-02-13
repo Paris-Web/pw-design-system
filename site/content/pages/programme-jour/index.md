@@ -1,5 +1,6 @@
 ---
 title: "Programme 2017 "
+linktitle: "Programme 2017 jour"
 menu: "pages"
 layout: "page"
 ---
