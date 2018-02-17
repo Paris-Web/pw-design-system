@@ -5,7 +5,7 @@
 
 {{ partial "template/nav" . }}
 
-<main class="main{{ if isset .Params "pageclassmodifier" }} main--{{ .Params.pageclassmodifier }}{{ end }}" id="main" tabindex="-1">
+<main class="main{{ if isset .Params "pageclassmodifier" }} main--{{ .Params.pageclassmodifier }}{{ end }}" id="main">
   {{ block "main" . }}
     {{ .Content }}
   {{ end }}
