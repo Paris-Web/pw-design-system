@@ -1,6 +1,6 @@
 @media print {
   :root {
-    font-size: 1rem;
+    font-size: 0.34cm;
   }
   * {
     box-shadow: none !important;
@@ -70,11 +70,11 @@
     content: "";
   }
   .content {
-    padding-top: calc(var(--base-spacing) * 10);
+    padding-top: 1.5cm;
   }
   .content > h1:first-child {
       position: absolute;
-      top: calc(var(--base-spacing) * 4);
+      top: 0.5cm;
   }
   .footer {
     display: none;
