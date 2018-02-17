@@ -12,7 +12,7 @@ layout: "full"
     title="Paris Web 2018"
     titleId="main-title"
     subTitle="La conférence francophone des gens qui font du web"
-    image="paysage.jpg"
+    image="background.jpg"
     link="#"
     action="Découvrir les archives"
 >}}{{</ example >}}
