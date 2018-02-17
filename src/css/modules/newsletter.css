@@ -47,6 +47,7 @@
 #mc-embedded-subscribe-form #mc-embedded-subscribe {
     width: calc(100% - calc(var(--base-spacing) * 4));
     margin: 0;
+    border: none;
 }
 #mc-embedded-subscribe-form #mce-responses {
     display: none;
