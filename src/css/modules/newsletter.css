@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     max-width: 50ch;
     margin: 0 auto;
+    padding: 0;
     align-items: flex-end;
 }
 
@@ -36,19 +37,17 @@
     clear: none;
     width: calc(25% + calc(var(--base-spacing) * 8));
 }
-#mc-embedded-subscribe {
-    width: calc(100% - calc(var(--base-spacing) * 4));
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#mce-responses {
-    display: none;
-}
-
 #mc_embed_signup #mc-embedded-subscribe-form .mc-field-group input {
     border: 1px solid #c3c3ce;
     border-bottom: 3px solid #058fd6;
     border-radius: 3px;
     padding: 0.45rem 0.45rem;
     width: 100%;
+}
+#mc-embedded-subscribe-form #mc-embedded-subscribe {
+    width: calc(100% - calc(var(--base-spacing) * 4));
+    margin: 0;
+}
+#mc-embedded-subscribe-form #mce-responses {
+    display: none;
 }
