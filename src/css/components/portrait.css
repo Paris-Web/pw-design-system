@@ -65,13 +65,9 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  max-width: 80ch;
 }
 .portrait-long__side {
   text-align: center;
-}
-.portrait-long__side, .portrait-long__content {
-  max-width: 52ch;
 }
 .portrait-long .portrait__name {
   margin-top: 0;

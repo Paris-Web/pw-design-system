@@ -22,7 +22,7 @@
 .presentation__info, .presentation__services, .presentation__themes {
     margin: 0;
 }
-.presentation__info > *, .presentation__services > * {
+.presentation__info > * {
     display: inline;
     margin: 0;
     font-style: italic;
@@ -30,10 +30,6 @@
 .presentation__info > * + *::before {
     content: '|';
     margin: 0 calc(var(--base-spacing) * 2);
-}
-.presentation__services > * + *::before {
-    content: ',';
-    margin: 0 calc(var(--base-spacing)) 0 0;
 }
 .presentation__themes {
     display: block;

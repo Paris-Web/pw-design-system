@@ -1,0 +1,20 @@
+.presentation-info {
+  display: flex;
+  margin: 0 calc(var(--base-spacing) * -4);
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.presentation-info > li {
+  display: block;
+  padding: 0 calc(var(--base-spacing) * 4);
+  margin: calc(var(--base-spacing)) 0;
+}
+
+.presentation-info__value {
+    font-weight: bold;
+}
+
+.presentation-info .presentation-services {
+  display: inline;
+}

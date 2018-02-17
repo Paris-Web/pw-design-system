@@ -199,6 +199,9 @@ p.big {
 p.small {
   font-size: 0.75rem;
 }
+.important {
+  font-weight: bold;
+}
 
 a {
   text-decoration-style: underline;
