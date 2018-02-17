@@ -5,9 +5,11 @@
     </div>
 
     <div class="portrait-long__content">
+        {{ if ne (.Scratch.Get "hideName") "true" }}
         <div class="portrait__name h3-like">
             {{ partial "portraits/name.html" . }}
         </div>
+        {{ end }}
         <div class="portrait__description">
             {{ .Scratch.Get "description" }}
         </div>

@@ -40,7 +40,7 @@
         {{ $self := . }}
         {{ range (.Scratch.Get "authors") }}
             {{ $self.Scratch.Set "name" . }}
-            {{ $self.Scratch.Set "link" "#" }}
+            {{ $self.Scratch.Set "link" "pages/orateur" }}
             {{ $self.Scratch.Set "description" "" }}
             {{ partial "portraits/portrait-small" $self }}
         {{ end }}
