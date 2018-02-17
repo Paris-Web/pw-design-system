@@ -207,6 +207,7 @@ a {
   text-decoration-style: underline;
   text-decoration-skip-ink: auto;
   color: var(--color-special-blue);
+  transition: color 0.15s ease-in-out;
 }
 a:visited {
   color: var(--color-brand-03);
