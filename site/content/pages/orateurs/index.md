@@ -5,154 +5,89 @@ menu: "pages"
 layout: "page"
 ---
 
-{{< lineup >}}
-    {{< portrait name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux. Et qui a une bio très intéressante." link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+<div class="line-list">
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente l'atelier « <a href="{{< absoluteUrl "pages/presentation" >}}">Refaisons Paris Web !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux. Et qui a une bio très intéressante. Du style intéressante plus plus."
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
+    {{< portrait-long
+        link="pages/orateur"
+        avatar=""
+        name="Camille Exemple"
+        twitter="https://www.twitter.com/CamilleExemple"
+        github="https://www.github.com/CamilleExemple"
+        website="https://www.camilleexemple.com/" >}}
+        <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
+        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>
+    {{< /portrait-long >}}
 
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-
-    {{< portrait
-    name="Camille Exemple"
-    description="Pixelliste avec lien et réseaux"
-    link="pages/orateur"
-    twitter="https://www.twitter.com/CamilleExample"
-    github="https://www.github.com/CamilleExample"
-    website="https://www.camilleexemple.com/" >}}
-{{< /lineup >}}
+</div>
