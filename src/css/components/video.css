@@ -1,6 +1,6 @@
 .video {
     display: block;
     width: 100%;
-    min-height: 59vh;
+    height: 59vh;
     margin: calc(var(--base-spacing) * 2) 0;
 }

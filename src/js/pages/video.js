@@ -1,6 +1,8 @@
 import debounce from "../util/debounce";
 
 const recalculateSize = video => {
+  video.style.width = '100%';
+  video.style.height = 'auto';
   const width = video.getBoundingClientRect().width
   const height = width / 16 * 9;
 
