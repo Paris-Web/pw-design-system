@@ -38,7 +38,7 @@ Date limite pour le design system : 9 février
       accessible à tous, etc.) (Julien)
 * [x] ✅ Module - Actu' phare (#24)
 * [x] ✅ Module - Liste actu' (#27) (Julien)
-* [ ] Module - Devenir sponsor
+* [ ] 🛠️ Module - Devenir sponsor
 * [x] ✅ Module - Portrait -> tous les orateurs (Julien)
 * [x] ✅ Module - Newsletter (Julien)
 * [x] ✅ Page - Actu (#24)
@@ -48,7 +48,7 @@ Date limite pour le design system : 9 février
 * [x] ✅ Page - Footer (Julien)
 * [x] ✅ Page - Sidebar (Julien)
 * [x] ✅ Page - Résultats de recherche (Julien)
-* [ ] 🛠️ Page - Archives (Julien)
+* [x] ✅ Page - Archives (Julien)
 * [x] ✅ Page - [Index programme](https://stage.paris-web.fr/2017/) (Julien)
 * [x] ✅ Page - [Programme journalier](https://stage.paris-web.fr/2017/05.php)
 * [ ] 🛠️ Page - [Programme journalier imprimable](https://stage.paris-web.fr/2017/05-impression.php)
@@ -58,12 +58,12 @@ Date limite pour le design system : 9 février
 
 Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la deadline, pour éviter d'accumuler le retard. Il y aura bien assez de choses à faire ailleurs)
 
-* [ ] Composant - Tags
-* [ ] Composant - Tabs
-* [ ] Composant - Info Conférence (cf. page conférence + liste/tableau
-* [ ] Module - Liste conférences
-* [ ] Module - Tableau conférences
-* [ ] Page - Conférence
+* [x] ✅ Composant - Tags
+* [x] ✅ Composant - Tabs
+* [ ] 🛠️ Composant - Info Conférence (cf. page conférence + liste/tableau
+* [x] ✅ Module - Liste conférences
+* [x] ✅ Module - Tableau conférences
+* [ ] 🛠️ Page - Conférence
 
 ### Nice to have
 
