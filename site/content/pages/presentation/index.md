@@ -5,34 +5,24 @@ menu: "pages"
 layout: "page"
 ---
 
-<p>Par <a href="{{< absoluteUrl "pages/orateur" >}}" class="discreet important">Camille Exemple</a> (Conférence Sponsor)</p>
+{{< video
+    author="Camille Exemple"
+    date="jeudi 9<abbr title=\"heure\">h</abbr>15"
+    type="Conférence Sponsor"
+    format="Conférence"
+    language="Anglais"
+    subtitles="Français"
+    services="<abbr title=\"Langue des Signes Française\">LSF</abbr>,Vélotypie"
+    themes="UX,Outils,Prototypage,ViePrivée"
+    video="https://player.vimeo.com/video/194192874"
+>}}
 
-<ul class="presentation-info">
-    <!-- Ici c'est le format Atelier/Conférence -->
-    <li>Conférence&nbsp;: <span class="presentation-info__value">45 minutes</span></li>
-    <li>
-        Services&nbsp;:
-        <dl class="presentation-services presentation-info__value">
-            <dd><abbr title="Langue des Signes Française">LSF</abbr></dd>
-            <dd>Vélotypie</dd>
-        </dl>
-    </li>
-    <li>Langue&nbsp;: <span class="presentation-info__value">Anglais</span></li>
-    <li>Sous-titres&nbsp;: <span class="presentation-info__value">Français</span></li>
-</ul>
+<h2>
+    {{< icon icon="attachment" >}}
+    Liens connexes
+</h2>
 
-<dl class="tag-list">
-    <dd><a href="{{< absoluteUrl "pages/programme" >}}" class="tag">UX</a></dd>
-    <dd><a href="{{< absoluteUrl "pages/programme" >}}" class="tag">Outils</a></dd>
-    <dd><a href="{{< absoluteUrl "pages/programme" >}}" class="tag">Prototypage</a></dd>
-    <dd><a href="{{< absoluteUrl "pages/programme" >}}" class="tag">Vie Privée</a></dd>
-</dl>
-
-<iframe class="video" src="https://player.vimeo.com/video/194192874" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<h2>Liens connexes</h2>
-
-<ul>
+<ul class="link-list">
 <li><a href="#transcription">Transcription<a/></li>
 <li><a href="#pdf">Slides (PDF)</a></li>
 <li><a href="#code">Code</a></li>

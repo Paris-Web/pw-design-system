@@ -1,3 +1,8 @@
+.presentation-services {
+    margin: 0;
+    padding: 0;
+}
+
 .presentation-services > * {
     display: inline;
     margin: 0;

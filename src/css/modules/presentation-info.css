@@ -5,14 +5,19 @@
   flex-wrap: wrap;
 }
 
-.presentation-info > li {
+.presentation-info__item {
   display: block;
   padding: 0 calc(var(--base-spacing) * 4);
   margin: calc(var(--base-spacing)) 0;
 }
 
+.presentation-info__label,
 .presentation-info__value {
-    font-weight: bold;
+  display: inline;
+}
+.presentation-info__value {
+  margin: 0;
+  font-weight: bold;
 }
 
 .presentation-info .presentation-services {
