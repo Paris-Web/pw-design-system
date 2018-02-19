@@ -1,0 +1,51 @@
+.sponsor-table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--base-spacing) * -2);
+}
+
+.sponsor-column {
+    min-width: 20ch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 2);
+}
+.sponsor-content {
+    flex: 1;
+}
+
+.sponsor-level, .sponsor-content, .sponsor-price {
+    margin: 0;
+    padding: calc(var(--base-spacing) * 1);
+}
+
+.sponsor-level {
+    text-align: center;
+    color: var(--color-brand-01);
+    margin-bottom: calc(var(--base-spacing) * 1.2);
+}
+
+.sponsor-content {
+    border-top: calc(var(--base-spacing) * 1) solid var(--color-ui-02);
+    border-bottom: calc(var(--base-spacing) * 1) solid var(--color-ui-02);
+}
+.sponsor-price {
+    margin-top: calc(var(--base-spacing) * 1.2);
+    color: var(--color-brand-02-dark);
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+      sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.sponsor-content li {
+    margin: calc(var(--base-spacing) * 2) 0;
+}
+
+@media screen and (min-width: 53.7em) {
+    .sponsor-table {
+        margin: calc(var(--base-spacing) * 8) calc(var(--base-spacing) * 4);
+    }
+}
