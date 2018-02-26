@@ -199,11 +199,15 @@ p.big {
 p.small {
   font-size: 0.75rem;
 }
+.important {
+  font-weight: bold;
+}
 
 a {
   text-decoration-style: underline;
   text-decoration-skip-ink: auto;
   color: var(--color-special-blue);
+  transition: color 0.15s ease-in-out;
 }
 a:visited {
   color: var(--color-brand-03);

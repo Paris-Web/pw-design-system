@@ -12,7 +12,7 @@
         <button aria-label="Voir plus d'informations" style="display:none" class="btn btn-ghost btn-small presentation__expand js-presentation-expand">[...]</button>
     </div>
     <div class="presentation__description">
-        <h3><a class="discreet" href="#">{{- .Scratch.Get "title" -}}</a></h3>
+        <h3><a class="discreet" href="{{ $.Site.BaseURL }}pages/presentation">{{- .Scratch.Get "title" -}}</a></h3>
         
         <dl class="presentation__info">
             {{ $date := .Scratch.Get "date" }}
@@ -20,7 +20,7 @@
             <!-- And there should be no space between those <dd> -->
             <dd>{{ $date.Year }}</dd><dd>{{ .Scratch.Get "format" }}</dd><dd>15 minutes</dd>
         </dl>
-        <dl class="presentation__services">
+        <dl class="presentation__services presentation-services">
             <!-- Care, some services can have some a11y HTML in it (<abbr title="Langue des signes française">LSF</abbr>) -->
             {{- range (.Scratch.Get "services") -}}
                 <dd>{{ . }}</dd>
@@ -40,7 +40,7 @@
         {{ $self := . }}
         {{ range (.Scratch.Get "authors") }}
             {{ $self.Scratch.Set "name" . }}
-            {{ $self.Scratch.Set "link" "#" }}
+            {{ $self.Scratch.Set "link" "pages/orateur" }}
             {{ $self.Scratch.Set "description" "" }}
             {{ partial "portraits/portrait-small" $self }}
         {{ end }}

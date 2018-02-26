@@ -68,18 +68,32 @@ menu: "components"
 
 ## Listes à lignes
 
+{{< example >}}
 <div class="line-list">
   <p>Ligne 1</p>
   <p>Ligne 2</p>
   <p>Ligne 3</p>
   <p>Ligne 4</p>
 </div>
+{{< /example >}}
 
 ### Liste à lignes avec séparation de l'extérieur
 
+{{< example >}}
 <div class="line-list line-list--full">
   <p>Ligne 1</p>
   <p>Ligne 2</p>
   <p>Ligne 3</p>
   <p>Ligne 4</p>
 </div>
+{{< /example >}}
+
+## {{< icon icon="attachment" >}} Liste de liens externes
+
+{{< example >}}
+<ul class="link-list">
+<li><a href="#transcription">Transcription<a/></li>
+<li><a href="#pdf">Slides (PDF)</a></li>
+<li><a href="#code">Code</a></li>
+</ul>
+{{< /example >}}

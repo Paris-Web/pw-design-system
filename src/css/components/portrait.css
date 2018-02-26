@@ -5,9 +5,6 @@
   text-align: center;
   margin: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 2);
 }
-.portrait--link {
-  cursor: pointer;
-}
 .portrait__avatar {
   height: 9rem; /* ~140px */
   width: 9rem;
@@ -65,17 +62,16 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  max-width: 80ch;
 }
 .portrait-long__side {
   text-align: center;
 }
-.portrait-long__side, .portrait-long__content {
-  max-width: 52ch;
-}
 .portrait-long .portrait__name {
   margin-top: 0;
   margin-bottom: calc(var(--base-spacing) * 4);
+}
+.portrait-long .portrait__name a:before {
+  content: none;
 }
 .portrait-long .portrait__description {
   text-align: left;

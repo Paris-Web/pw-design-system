@@ -15,6 +15,7 @@
 @import "components/inline-list.css";
 @import "components/columns-list.css";
 @import "components/line-list.css";
+@import "components/link-list.css";
 @import "components/social-link.css";
 @import "components/banner.css";
 @import "components/actions.css";
@@ -23,6 +24,7 @@
 @import "components/headed-description.css";
 @import "components/pagination.css";
 @import "components/tag.css";
+@import "components/video.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";
 @import "modules/full-content.css";
@@ -35,6 +37,8 @@
 @import "modules/newsletter.css";
 @import "modules/presentation-list.css";
 @import "modules/presentation.css";
+@import "modules/presentation-info.css";
+@import "modules/presentation-services.css";
 @import "modules/filters.css";
 @import "modules/tabs.css";
 @import "modules/schedule.css";

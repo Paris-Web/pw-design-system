@@ -67,7 +67,7 @@ menu: "pages"
 				title="Devenez partenaires de Paris Web 2018 !"
 				illustration="applaudissements.jpg"
 				date="18 janvier 2018"
-				url="#"
+				url="pages/actualite"
 				excerpt="Augmentez votre visibilité professionnelle en devenant partenaire de Paris Web 2018."
 			>}}
 		</div>
