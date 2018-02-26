@@ -33,6 +33,7 @@ layout: "page"
 <div class="sponsor-table">
 <div class="sponsor-column bronze">
 <h2 class="sponsor-level">Bronze</h2>
+<div class="sponsor-price">2 000 €</div>
 <div class="sponsor-content">
 <ul>
 <li>Votre logo et description sur notre <a href="partenaires.php">page partenaires</a></li>
@@ -41,10 +42,10 @@ layout: "page"
 <li>Annonces orales pendant l'événement</li>
 </ul>
 </div>
-<div class="sponsor-price">2 000 €</div>
 </div>
 <div class="sponsor-column silver">
 <h2 class="sponsor-level">Silver</h2>
+<div class="sponsor-price">4 500 €</div>
 <div class="sponsor-content">
 <ul>
 <li>Votre logo et description sur notre <a href="partenaires.php">page partenaires</a></li>
@@ -56,10 +57,10 @@ layout: "page"
 
 </ul>
 </div>
-<div class="sponsor-price">4 500 €</div>
 </div>
 <div class="sponsor-column gold">
 <h2 class="sponsor-level">Gold</h2>
+<div class="sponsor-price">6 500 €</div>
 <div class="sponsor-content">
 <ul>
 <li>Votre logo et description sur notre <a href="partenaires.php">page partenaires</a></li>
@@ -72,10 +73,10 @@ layout: "page"
 <li>2 minutes de présentation libre sur scène</li>
 </ul>
 </div>
-<div class="sponsor-price">6 500 €</div>
 </div>
 <div class="sponsor-column platinum">
 <h2 class="sponsor-level">Platinum</h2>
+<div class="sponsor-price">9 000 €</div>
 <div class="sponsor-content">
 <ul>
 <li>Votre logo et description sur notre <a href="partenaires.php">page partenaires</a></li>
@@ -89,7 +90,6 @@ layout: "page"
 <li>2 x 2 minutes de présentation libre sur scène</li>
 </ul>
 </div>
-<div class="sponsor-price">9 000 €</div>
 </div>
 </div>
 </div>
