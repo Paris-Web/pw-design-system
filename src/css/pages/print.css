@@ -70,11 +70,11 @@
     content: "";
   }
   .content {
-    padding-top: 1.5cm;
+    padding-top: 2cm;
   }
   .content > h1:first-child {
-      position: absolute;
-      top: 0.5cm;
+    position: absolute;
+    top: 0.5cm;
   }
   .footer {
     display: none;
