@@ -1,4 +1,5 @@
-.actu-item__illustration, .actu-item__illustration img {
+.actu-item__illustration,
+.actu-item__illustration img {
   display: block;
   max-width: 100%;
 }
@@ -8,7 +9,7 @@
   max-width: 60ch;
 }
 .actu-item__title a:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -50,5 +51,4 @@
   .actu-item--inline .actu-item__content > :last-child {
     margin-bottom: 0;
   }
-
 }

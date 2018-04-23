@@ -1,54 +1,54 @@
 #mc_embed_signup #mc-embedded-subscribe-form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50ch;
-    margin: 0 auto;
-    padding: 0;
-    align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50ch;
+  margin: 0 auto;
+  padding: 0;
+  align-items: flex-end;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form .indicates-required {
-    display: none;
+  display: none;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form h2 {
-    width: 100%;
-    font-size: 1.75rem;
-    margin: calc(var(--base-spacing) * 8) 0 calc(var(--base-spacing) * 3) 0;
+  width: 100%;
+  font-size: 1.75rem;
+  margin: calc(var(--base-spacing) * 8) 0 calc(var(--base-spacing) * 3) 0;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form label {
-    font-size: 0.875rem;
-    font-weight: bold;
-    color: var(--color-text-03);
-    margin-left: calc(var(--base-spacing) * 1.5);
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--color-text-03);
+  margin-left: calc(var(--base-spacing) * 1.5);
 }
 #mc_embed_signup #mc-embedded-subscribe-form .asterisk {
-    display: none;
+  display: none;
 }
 #mc_embed_signup #mc-embedded-subscribe-form .mc-field-group {
-    clear: none;
-    padding-bottom: 0;
-    min-height: 0;
-    width: calc(75% - calc(var(--base-spacing) * 10));
-    margin-right: calc(var(--base-spacing) * 2);
+  clear: none;
+  padding-bottom: 0;
+  min-height: 0;
+  width: calc(75% - calc(var(--base-spacing) * 10));
+  margin-right: calc(var(--base-spacing) * 2);
 }
 #mc_embed_signup #mc-embedded-subscribe-form > :last-child {
-    clear: none;
-    width: calc(25% + calc(var(--base-spacing) * 8));
+  clear: none;
+  width: calc(25% + calc(var(--base-spacing) * 8));
 }
 #mc_embed_signup #mc-embedded-subscribe-form .mc-field-group input {
-    border: 1px solid #c3c3ce;
-    border-bottom: 3px solid #058fd6;
-    border-radius: 3px;
-    padding: 0.45rem 0.45rem;
-    width: 100%;
+  border: 1px solid #c3c3ce;
+  border-bottom: 3px solid #058fd6;
+  border-radius: 3px;
+  padding: 0.45rem 0.45rem;
+  width: 100%;
 }
 #mc-embedded-subscribe-form #mc-embedded-subscribe {
-    width: calc(100% - calc(var(--base-spacing) * 4));
-    margin: 0;
-    border: none;
+  width: calc(100% - calc(var(--base-spacing) * 4));
+  margin: 0;
+  border: none;
 }
 #mc-embedded-subscribe-form #mce-responses {
-    display: none;
+  display: none;
 }

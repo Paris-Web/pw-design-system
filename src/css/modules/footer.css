@@ -1,108 +1,108 @@
 .footer {
-    color: var(--color-text-inverted);
-    background: var(--color-text-02);
-    padding: calc(var(--base-spacing) * 6) 0;
+  color: var(--color-text-inverted);
+  background: var(--color-text-02);
+  padding: calc(var(--base-spacing) * 6) 0;
 }
 
 .footer a {
-    color: var(--color-text-inverted);
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.125em;
-    font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
-      sans-serif;
-    padding: calc(2 * var(--base-spacing));
-    margin: calc(-2 * var(--base-spacing));
-    display: inline-block;
+  color: var(--color-text-inverted);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.125em;
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
+  padding: calc(2 * var(--base-spacing));
+  margin: calc(-2 * var(--base-spacing));
+  display: inline-block;
 }
 .font-fallback .footer a {
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
-.footer a:hover, .footer a:focus {
-    text-decoration: underline;
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
 }
 
 .footer-title img {
-    width: 5em;
-    display: block;
+  width: 5em;
+  display: block;
 }
 
 .footer__legal p {
-    font-size: 0.8rem;
-    margin: 0;
+  font-size: 0.8rem;
+  margin: 0;
 }
 .footer__legal p a {
-    font-size: 1em;
-    text-decoration: underline;
+  font-size: 1em;
+  text-decoration: underline;
 }
 .footer__legal section + section {
-    margin-top: calc(var(--base-spacing) * 2);
+  margin-top: calc(var(--base-spacing) * 2);
 }
 
 .footer__legal .full-content__side {
-    margin-top: var(--base-spacing);
+  margin-top: var(--base-spacing);
 }
 .footer-previous-editions {
-    margin-bottom: calc(var(--base-spacing) * 2)
+  margin-bottom: calc(var(--base-spacing) * 2);
 }
 
 @media screen and (min-width: 44em) {
-    .footer__description {
-        display: flex;
-        align-items: center;
-    }
-    .footer__description > * {
-        margin: 0;
-    }
-    .footer__description > :first-child {
-        width: 22%;
-        margin-right: 2%;
-    }
-    .footer__description > :last-child {
-        width: calc((22 * 3 + 4 * 2) * 1%);
-        margin-left: 2%;
-    }
+  .footer__description {
+    display: flex;
+    align-items: center;
+  }
+  .footer__description > * {
+    margin: 0;
+  }
+  .footer__description > :first-child {
+    width: 22%;
+    margin-right: 2%;
+  }
+  .footer__description > :last-child {
+    width: calc((22 * 3 + 4 * 2) * 1%);
+    margin-left: 2%;
+  }
 }
 
 @media screen and (min-width: 68em) {
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .footer__description {
-        width: 20%;
-        flex-direction: column;
-    }
-    .footer__description > :first-child {
-        width: 100%;
-        margin-right: 0;
-    }
-    .footer__description > :last-child {
-        width: 100%;
-        margin-left: 0;
-    }
-    .footer__description img {
-        width: 5em;
-        display: block;
-        margin-bottom: calc(var(--base-spacing) * 2);
-    }
+  .footer__description {
+    width: 20%;
+    flex-direction: column;
+  }
+  .footer__description > :first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__description > :last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer__description img {
+    width: 5em;
+    display: block;
+    margin-bottom: calc(var(--base-spacing) * 2);
+  }
 
-    .full-content__main.footer__main {
-        /* Magic value that alignes the links with the description */
-        margin-top: 4rem;
-    }
+  .full-content__main.footer__main {
+    /* Magic value that alignes the links with the description */
+    margin-top: 4rem;
+  }
 
-    .footer__links {
-        display: flex;
-    }
-    .footer__links__pages {
-        width: 78%;
-    }
-    .footer__links__follow {
-        width: 20%;
-        margin-left: 2%;
-        margin-top: var(--base-spacing);
-    }
-    
+  .footer__links {
+    display: flex;
+  }
+  .footer__links__pages {
+    width: 78%;
+  }
+  .footer__links__follow {
+    width: 20%;
+    margin-left: 2%;
+    margin-top: var(--base-spacing);
+  }
 }

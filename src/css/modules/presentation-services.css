@@ -1,14 +1,14 @@
 .presentation-services {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .presentation-services > * {
-    display: inline;
-    margin: 0;
-    font-style: italic;
+  display: inline;
+  margin: 0;
+  font-style: italic;
 }
 .presentation-services > * + *::before {
-    content: ',';
-    margin: 0 calc(var(--base-spacing)) 0 0;
+  content: ",";
+  margin: 0 calc(var(--base-spacing)) 0 0;
 }

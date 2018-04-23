@@ -18,7 +18,7 @@
   margin: calc(var(--base-spacing) * 2) auto;
 }
 .actu-list__item > a:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;

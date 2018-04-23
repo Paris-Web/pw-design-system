@@ -1,20 +1,21 @@
 .pagination {
-    margin: calc(var(--base-spacing) * 10) 0;
-    text-align: center;
+  margin: calc(var(--base-spacing) * 10) 0;
+  text-align: center;
 }
 .pagination > * {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: bold;
-    color: var(--color-text-03);
-    padding: 0 calc(var(--base-spacing) * 2);
-    line-height: calc(var(--base-spacing) * 6);
-    min-width: calc(var(--base-spacing) * 6);
-    min-height: calc(var(--base-spacing) * 6);
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  color: var(--color-text-03);
+  padding: 0 calc(var(--base-spacing) * 2);
+  line-height: calc(var(--base-spacing) * 6);
+  min-width: calc(var(--base-spacing) * 6);
+  min-height: calc(var(--base-spacing) * 6);
 }
-.pagination a:hover, .pagination .active {
-    text-decoration: none;
-    background: var(--color-text-03);
-    color: var(--color-text-inverted);
-    border-radius: calc(var(--base-spacing) * 3);
+.pagination a:hover,
+.pagination .active {
+  text-decoration: none;
+  background: var(--color-text-03);
+  color: var(--color-text-inverted);
+  border-radius: calc(var(--base-spacing) * 3);
 }

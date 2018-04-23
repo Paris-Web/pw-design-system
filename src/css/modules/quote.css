@@ -1,19 +1,19 @@
 blockquote {
-    font-style: italic;
+  font-style: italic;
 }
 
 .banner blockquote {
-    text-align: center;
+  text-align: center;
 }
 .banner blockquote p {
-    font-size: 1.5rem;
-    margin: 0;
+  font-size: 1.5rem;
+  margin: 0;
 }
 .banner blockquote cite {
-    font-style: normal;
-    font-size: 1.125rem;
+  font-style: normal;
+  font-size: 1.125rem;
 }
 
 .call-to-action blockquote {
-    margin: 0;
+  margin: 0;
 }

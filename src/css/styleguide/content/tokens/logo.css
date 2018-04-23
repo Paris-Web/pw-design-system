@@ -24,8 +24,6 @@
 .dark .styleguide-example__rendered:hover .styleguide-example__toggle {
   color: var(--color-ui-02);
 }
-.dark
-  .styleguide-example__rendered:hover
-  .styleguide-example__toggle:hover {
+.dark .styleguide-example__rendered:hover .styleguide-example__toggle:hover {
   color: var(--color-ui-01);
 }

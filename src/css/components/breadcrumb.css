@@ -9,7 +9,7 @@
 }
 
 .breadcrumb li:not(:last-child)::after {
-  content: '/';
+  content: "/";
   display: inline-block;
   margin: 0 calc(var(--base-spacing) * 2);
 }

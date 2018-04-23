@@ -1,62 +1,66 @@
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans'), local('PTSans-Regular'),
-      url('/fonts/PTSans-Regular.woff2') format('woff2'),
-      url('/fonts/PTSans-Regular.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("/fonts/PTSans-Regular.woff2") format("woff2"),
+    url("/fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans Italic'), local('PTSans-Italic'),
-      url('/fonts/PTSans-Italic.woff2') format('woff2'),
-      url('/fonts/PTSans-Italic.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans Italic"), local("PTSans-Italic"),
+    url("/fonts/PTSans-Italic.woff2") format("woff2"),
+    url("/fonts/PTSans-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-      url('/fonts/PTSans-Bold.woff2') format('woff2'),
-      url('/fonts/PTSans-Bold.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url("/fonts/PTSans-Bold.woff2") format("woff2"),
+    url("/fonts/PTSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans Narrow';
-  src: local('PT Sans Narrow'), local('PTSans-Narrow'),
-      url('/fonts/PTSans-Narrow.woff2') format('woff2'),
-      url('/fonts/PTSans-Narrow.woff') format('woff');
+  font-family: "PT Sans Narrow";
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
+    url("/fonts/PTSans-Narrow.woff2") format("woff2"),
+    url("/fonts/PTSans-Narrow.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans Narrow';
-  src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'),
-      url('/fonts/PTSans-NarrowBold.woff2') format('woff2'),
-      url('/fonts/PTSans-NarrowBold.woff') format('woff');
+  font-family: "PT Sans Narrow";
+  src: local("PT Sans Narrow Bold"), local("PTSans-NarrowBold"),
+    url("/fonts/PTSans-NarrowBold.woff2") format("woff2"),
+    url("/fonts/PTSans-NarrowBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
-:root { font-size: 0.9em;  }
-@media (min-width: 44em){
-	:root { font-size: 1em;  }
+:root {
+  font-size: 0.9em;
 }
-@media (min-width: 68em){
+@media (min-width: 44em) {
+  :root {
+    font-size: 1em;
+  }
+}
+@media (min-width: 68em) {
   /* 50% de nos visiteurs sont entre 1150 et 1920px de large. */
-	:root {
-		font-size: calc( 1em + (22 - 16) * ( (100vw - 1150px) / ( 1920 - 1150) ));
-	}
+  :root {
+    font-size: calc(1em + (22 - 16) * ((100vw - 1150px) / (1920 - 1150)));
+  }
 }
-@media (min-width: 120em){
-	:root {
-		font-size: 1.37em;
-	}
+@media (min-width: 120em) {
+  :root {
+    font-size: 1.37em;
+  }
 }
 
 html,
@@ -105,7 +109,8 @@ h6,
   font-weight: bold;
 }
 
-.font-fallback .normal, .normal {
+.font-fallback .normal,
+.normal {
   font-size: 1em;
   font-weight: normal;
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -236,7 +241,8 @@ a.discreet:focus {
   color: var(--color-brand-01);
 }
 
-code, pre {
+code,
+pre {
   background: var(--color-ui-02);
 }
 pre {
@@ -251,7 +257,7 @@ time.date {
 
 .date-important {
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
-  sans-serif;
+    sans-serif;
   text-transform: uppercase;
   color: var(--color-text-03);
   font-weight: bold;

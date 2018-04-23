@@ -16,21 +16,23 @@
   border-radius: 5rem;
   display: block;
 }
-.portrait__avatar svg, .portrait__avatar img {
+.portrait__avatar svg,
+.portrait__avatar img {
   width: 100%;
   height: 100%;
   transform: scale(1);
   transform-origin: center center;
   transition: transform 0.3s ease;
 }
-.portrait--link:hover .portrait__avatar svg, .portrait--link:hover .portrait__avatar img {
+.portrait--link:hover .portrait__avatar svg,
+.portrait--link:hover .portrait__avatar img {
   transform: scale(1.1);
 }
 .portrait__name {
   margin: 0;
 }
 .portrait .portrait__name a:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -52,7 +54,8 @@
 
 .portrait svg text {
   font-size: 36px;
-  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
 }
 .font-fallback .portrait svg text {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;

@@ -1,13 +1,14 @@
 .line-list > * {
-    padding-bottom: calc(var(--base-spacing) * 6);
-    padding-top: calc(var(--base-spacing) * 6);
-    margin-top: 0;
-    margin-bottom: 0;
+  padding-bottom: calc(var(--base-spacing) * 6);
+  padding-top: calc(var(--base-spacing) * 6);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.line-list > * + *, .line-list--full > :first-child {
-    border-top: 2px solid var(--color-ui-02);
+.line-list > * + *,
+.line-list--full > :first-child {
+  border-top: 2px solid var(--color-ui-02);
 }
 .line-list--full > :last-child {
-    border-bottom: 2px solid var(--color-ui-02);
+  border-bottom: 2px solid var(--color-ui-02);
 }
