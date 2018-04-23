@@ -21,6 +21,6 @@
 @media screen and (min-width: 68em) {
   .breadcrumb {
     position: absolute;
-    top: calc(var(--base-spacing) * -10);
+    margin-top: calc(var(--base-spacing) * -10);
   }
 }

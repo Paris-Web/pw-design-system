@@ -251,7 +251,8 @@ body.is-menu-opened {
   padding: calc(var(--base-spacing) * 6) 0;
 }
 
-.content > :first-child {
+.content > :first-child:not(.breadcrumb),
+.content > .breadcrumb ~ :nth-child(2) {
   margin-top: 0;
   padding-top: 0;
 }
