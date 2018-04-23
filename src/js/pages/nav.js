@@ -3,18 +3,29 @@ import throttle from "../util/throttle";
 
 const listenButtons = () => {
   let previouslyFocusedElement;
+
+  const handleCloseMenu = event => {
+    const keyCode = event.keyCode;
+    if (keyCode === 27) {
+      closeMenu();
+    }
+  };
+
   const onCloseMenuTransitionEnd = () => {
     document.querySelector("#menu").classList.remove("menu--visible");
     document
       .querySelector("#menu .menu__content")
       .removeEventListener("transitionend", onCloseMenuTransitionEnd);
   };
+
   const openMenu = () => {
     previouslyFocusedElement = document.activeElement;
     document.body.classList.add("is-menu-opened");
     document.querySelector("#menu").classList.add("menu--opened");
     document.querySelector("#menu").classList.add("menu--visible");
     document.querySelector("#menu .menu__content").focus();
+
+    document.body.addEventListener("keydown", handleCloseMenu);
   };
 
   const closeMenu = () => {
@@ -23,6 +34,9 @@ const listenButtons = () => {
     document
       .querySelector("#menu .menu__content")
       .addEventListener("transitionend", onCloseMenuTransitionEnd);
+
+    document.body.removeEventListener("keydown", handleCloseMenu);
+
     previouslyFocusedElement.focus();
   };
 
