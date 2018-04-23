@@ -1,90 +1,100 @@
 .presentation-schedule {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .s-scheduleChart {
-    border-collapse: separate;
-    border-spacing: calc(var(--base-spacing) * 1.5);
-    margin: calc(var(--base-spacing) * 2) calc(-1.5 * var(--base-spacing));
+  border-collapse: separate;
+  border-spacing: calc(var(--base-spacing) * 1.5);
+  margin: calc(var(--base-spacing) * 2) calc(-1.5 * var(--base-spacing));
 }
-.s-scheduleChart td, .s-scheduleChart th {
-    border: 0;
-    padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
+.s-scheduleChart td,
+.s-scheduleChart th {
+  border: 0;
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
 }
 .s-scheduleChart td {
-    vertical-align: top;
+  vertical-align: top;
 }
 .s-scheduleChart td p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .s-scheduleChart td a {
-    color: var(--color-text-01);
-    font-weight: bold;
+  color: var(--color-text-01);
+  font-weight: bold;
 }
 
 .s-scheduleChart-break {
-    background: var(--color-ui-02);
+  background: var(--color-ui-02);
 }
 .s-scheduleChart .s-scheduleChart-break a {
-    text-decoration: none;
-    color: var(--color-text-03);
+  text-decoration: none;
+  color: var(--color-text-03);
+  pointer-events: none;
 }
 
 .s-scheduleChart .s-scheduleChart-firstRoom {
-    border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-01-light);
+  border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-01-light);
 }
 .s-scheduleChart .s-scheduleChart-secondRoom {
-    border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-02-light);
+  border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-02-light);
 }
 .s-scheduleChart .s-scheduleChart-thirdRoom {
-    border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-03-light);
+  border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-03-light);
 }
 .s-scheduleChart .s-scheduleChart-thirdRoom:empty {
-    border-left: calc(var(--base-spacing) * 1) solid var(--color-ui-02);
+  border-left: calc(var(--base-spacing) * 1) solid var(--color-ui-02);
 }
 
 .s-scheduleChart th.s-scheduleChart-firstRoom {
-    color: var(--color-text-inverted);
-    border: none;
-    background: linear-gradient(to left, var(--color-brand-01-light), var(--color-brand-01));
+  color: var(--color-text-inverted);
+  border: none;
+  background: linear-gradient(
+    to left,
+    var(--color-brand-01-light),
+    var(--color-brand-01)
+  );
 }
 .s-scheduleChart th.s-scheduleChart-secondRoom {
-    color: var(--color-text-inverted);
-    border: none;
-    background: linear-gradient(to left, var(--color-brand-02), var(--color-brand-02-dark));
+  color: var(--color-text-inverted);
+  border: none;
+  background: linear-gradient(
+    to left,
+    var(--color-brand-02),
+    var(--color-brand-02-dark)
+  );
 }
 .s-scheduleChart th.s-scheduleChart-thirdRoom {
-    background: var(--color-ui-02);
-    border-left: none;
+  background: var(--color-ui-02);
+  border-left: none;
 }
 .s-scheduleChart th.s-scheduleChart-thirdRoom:empty {
-    border-left: none;
+  border-left: none;
 }
 .s-scheduleChart th.s-scheduleChart-thirdRoom::before {
-    content: 'Annexe';
+  content: "Annexe";
 }
 .s-scheduleChart .s-conf-author {
-    display: block;
+  display: block;
 }
 .s-scheduleChart .s_badge_notice {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: calc(var(--base-spacing)) 0;
-    font-style: italic; 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: calc(var(--base-spacing)) 0;
+  font-style: italic;
 }
 .s-scheduleChart .s_badge_notice li {
-    display: inline;
+  display: inline;
 }
 .s-scheduleChart .s_badge_notice li + li::before {
-    content: '|';
-    margin: 0 calc(var(--base-spacing) * 2);
+  content: "|";
+  margin: 0 calc(var(--base-spacing) * 2);
 }
 
 .s-scheduleChart .s-scheduleChart-hours {
-    padding: 0 calc(var(--base-spacing) * 2) 0 0;
-    text-align: center;
+  padding: 0 calc(var(--base-spacing) * 2) 0 0;
+  text-align: center;
 }
