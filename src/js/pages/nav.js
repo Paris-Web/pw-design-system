@@ -1,21 +1,76 @@
 import debounce from "../util/debounce";
 import throttle from "../util/throttle";
 
-const listenButtons = () => {
-  let previouslyFocusedElement;
+const getFocusableElementsWithin = target =>
+  target.querySelectorAll(
+    "a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, *[tabindex], *[contenteditable]"
+  );
 
-  const handleCloseMenu = event => {
-    const keyCode = event.keyCode;
-    if (keyCode === 27) {
-      closeMenu();
+const captureFocusChangeWithin = target => {
+  const focusableElements = getFocusableElementsWithin(target);
+
+  const isNext = event => event.keyCode === 9 && !event.shiftKey;
+  const isPrevious = event => event.keyCode === 9 && event.shiftKey;
+  const isLastFocusable = target =>
+    focusableElements[focusableElements.length - 1] === target;
+  const isFirstFocusable = target => focusableElements[0] === target;
+
+  return event => {
+    if (isNext(event) && isLastFocusable(event.target)) {
+      event.preventDefault();
+      focusableElements[0].focus();
+    } else if (isPrevious(event) && isFirstFocusable(event.target)) {
+      event.preventDefault();
+      focusableElements[focusableElements.length - 1].focus();
     }
   };
+};
+
+const closeMenuOnEsc = closeMenu => event => {
+  const keyCode = event.keyCode;
+  if (keyCode === 27) {
+    closeMenu();
+  }
+};
+
+const listenButtons = () => {
+  let previouslyFocusedElement;
+  let handleKeydown;
 
   const onCloseMenuTransitionEnd = () => {
     document.querySelector("#menu").classList.remove("menu--visible");
     document
       .querySelector("#menu .menu__content")
       .removeEventListener("transitionend", onCloseMenuTransitionEnd);
+  };
+  const listenKeyboardEvents = () => {
+    const handleCloseMenu = closeMenuOnEsc(closeMenu);
+    const handleFocusChange = captureFocusChangeWithin(
+      document.querySelector("#menu .menu__content")
+    );
+    handleKeydown = event => {
+      handleCloseMenu(event);
+      handleFocusChange(event);
+    };
+    document.body.addEventListener("keydown", handleKeydown);
+  };
+  const removeKeyboardEvents = () => {
+    document.body.removeEventListener("keydown", handleKeydown);
+  };
+
+  const handleResize = debounce(() => {
+    requestAnimationFrame(() => {
+      const styles = getComputedStyle(document.querySelector(".header"));
+      if (styles.display === "none") {
+        closeMenu(false);
+      }
+    });
+  }, 100);
+  const listenResizeEvent = () => {
+    window.addEventListener("resize", handleResize);
+  };
+  const removeResizeEvent = () => {
+    window.removeEventListener("resize", handleResize);
   };
 
   const openMenu = () => {
@@ -24,20 +79,23 @@ const listenButtons = () => {
     document.querySelector("#menu").classList.add("menu--opened");
     document.querySelector("#menu").classList.add("menu--visible");
     document.querySelector("#menu .menu__content").focus();
-
-    document.body.addEventListener("keydown", handleCloseMenu);
+    listenKeyboardEvents();
+    listenResizeEvent();
   };
 
-  const closeMenu = () => {
+  const closeMenu = (shouldFocusPreviousElement = true) => {
     document.body.classList.remove("is-menu-opened");
     document.querySelector("#menu").classList.remove("menu--opened");
     document
       .querySelector("#menu .menu__content")
       .addEventListener("transitionend", onCloseMenuTransitionEnd);
 
-    document.body.removeEventListener("keydown", handleCloseMenu);
+    removeKeyboardEvents();
+    removeResizeEvent();
 
-    previouslyFocusedElement.focus();
+    if (shouldFocusPreviousElement) {
+      previouslyFocusedElement.focus();
+    }
   };
 
   document.querySelector(".js-open-menu").addEventListener("click", openMenu);
