@@ -341,8 +341,8 @@ body.is-menu-opened {
     padding: calc(var(--base-spacing) * 10) 0;
   }
   .max-content {
-    width: 80vw;
-    margin-left: calc((80ch + 8vw - 80vw) / 2);
+    width: 79vw;
+    margin-left: calc((80ch + 8vw - 79vw) / 2);
   }
   .main > .content:first-child {
     padding-top: calc(7vh + 1.2em);
@@ -350,6 +350,7 @@ body.is-menu-opened {
 
   body {
     position: relative;
+    overflow-y: scroll;
   }
   body.is-footer-visible .nav .menu {
     position: absolute;
