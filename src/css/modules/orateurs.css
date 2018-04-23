@@ -17,6 +17,7 @@
   min-width: 11rem;
   margin-left: calc(var(--base-spacing) * 2);
   margin-right: calc(var(--base-spacing) * 2);
+  margin-bottom: calc(var(--base-spacing) * 6);
 }
 
 .call-for-papers {
