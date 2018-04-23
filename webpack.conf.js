@@ -2,7 +2,10 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
-  devtool: process.env.NODE_ENV === "production" ? 'source-map' : 'cheap-module-source-map',
+  devtool:
+    process.env.NODE_ENV === "production"
+      ? "source-map"
+      : "cheap-module-source-map",
   module: {
     rules: [
       {
@@ -41,7 +44,8 @@ export default {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: ["./js/app"]
+    app: ["./js/app"],
+    styleguide: ["./js/styleguide"]
   },
   output: {
     path: path.join(__dirname, "dist"),
