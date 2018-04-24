@@ -10,64 +10,7 @@ faisant parti du Design System de Paris Web.
 La brique utilisée pour le moment est [Hugo](https://gohugo.io/). C'est un
 générateur de site statique.
 
-Attention, ce n'est pour l'instant qu'un POC afin de décider ensemble si cela
-est vraiement pertinent à utiliser ou non. Tous les retours sont les bienvenus.
-
-## Roadmap
-
-Les points avec ⚠️ sont les points à préciser avant de passer à l'intégration.
-Les points avec 🛠️ sont les points en cours de réalisation.
-Veiller à mettre à jour la roadmap sur master avant de commencer qqch pour éviter de se marcher dessus.
-
-### Appel à orateurs + Inscriptions (14 février)
-
-Date limite pour le design system : 9 février
-
-* [ ] Favicon
-* [x] ✅ Tokens - titraille (#24)
-* [x] ✅ Composant - Hero ([#8](https://github.com/Paris-Web/pw-design-system/pull/8) - Julien)
-* [x] ✅ Composant - Bandeau Call To Action (Si vous êtiez la.e prochain) (Julien)
-      orateur.rice ?)
-* [x] ✅ Composant - Citation (Julien)
-* [x] ✅ Composant - [Lien flèche](https://zpl.io/2ZP4WrG) (Pierre)
-* [x] ✅ Composant - Input (Julien)
-* [x] ✅ Composant - Sponsor (Julien)
-* [ ] 🛠️ Composant - Image légendée (Julien)
-* [x] ✅ Composant - [Pagination](https://zpl.io/aNBq6yZ) (markup et styles - http://www.a11ymatters.com/pattern/pagination/) (Julien)
-* [x] ✅ Module - Kesako (2 jours de conférences, 1 journée d'atelier,
-      accessible à tous, etc.) (Julien)
-* [x] ✅ Module - Actu' phare (#24)
-* [x] ✅ Module - Liste actu' (#27) (Julien)
-* [ ] 🛠️ Module - Devenir sponsor
-* [x] ✅ Module - Portrait -> tous les orateurs (Julien)
-* [x] ✅ Module - Newsletter (Julien)
-* [x] ✅ Page - Actu (#24)
-* [x] ✅ Page - Liste Actus (Julien)
-* [x] ✅ Page - Sponsors (Julien)
-* [x] ✅ Page - Header (Julien)
-* [x] ✅ Page - Footer (Julien)
-* [x] ✅ Page - Sidebar (Julien)
-* [x] ✅ Page - Résultats de recherche (Julien)
-* [x] ✅ Page - Archives (Julien)
-* [x] ✅ Page - [Index programme](https://stage.paris-web.fr/2017/) (Julien)
-* [x] ✅ Page - [Programme journalier](https://stage.paris-web.fr/2017/05.php)
-* [ ] 🛠️ Page - [Programme journalier imprimable](https://stage.paris-web.fr/2017/05-impression.php)
-* [ ] Page - [Présentations par type](https://stage.paris-web.fr/2017/conferences/)
-
-### Annonce des conférences (23 avril)
-
-Date limite pour le design system : 2 mars (ca ne sert à rien de repousser la deadline, pour éviter d'accumuler le retard. Il y aura bien assez de choses à faire ailleurs)
-
-* [x] ✅ Composant - Tags
-* [x] ✅ Composant - Tabs
-* [ ] 🛠️ Composant - Info Conférence (cf. page conférence + liste/tableau
-* [x] ✅ Module - Liste conférences
-* [x] ✅ Module - Tableau conférences
-* [ ] 🛠️ Page - Conférence
-
-### Nice to have
-
-* [ ] Composant - [Pagination](https://zpl.io/aNBq6yZ) (logique d’affichage)
+Toute aide est la bienvenue, quelle que soit la forme ! Remarques, PRs ou toute autre formes de contributions seront appréciées.
 
 ## Usage
 
@@ -91,7 +34,7 @@ Pour faire tourner une instance locale du site, executez la commande suivante :
 npm start
 ```
 
-Vous pouvez ensuite aller sur http://localhost:3000/ \_- a moins que votre
+Vous pouvez ensuite aller sur http://localhost:3000/ - a moins que votre
 navigateur ne se soit ouvert tout seul.
 
 ### Static build
@@ -102,12 +45,18 @@ Pour compiler le site, executez la commande suivante :
 npm run build
 ```
 
+Les fichiers seront ensuite disponibles dans le dossier `/dist`.
+
+Parmi ces fichiers, les fichiers `app.js` et `css/main.css` sont les fichiers qui pourront être utilisés directement sur le site de Paris Web.
+
 ### Déploiement
 
 Pour déployer le site exécuter le script `./scripts/deploy.sh`.
 
 Note : il faut avoir un accès SSH autorisé à la machine hébergeant le site. Voir
-https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informations
+https://wiki.paris-web.fr/display/association/Sites+web pour plus d'informations.
+
+Cependant, cela ne devrait pas être utilisé au jour le jour. En effet, une intégration CricleCI a été mise en place et permet de déployer chaque commit. L'URL n'est pour l'instant pas publique, il faut que nous nous en occupions.
 
 ## Structure
 
