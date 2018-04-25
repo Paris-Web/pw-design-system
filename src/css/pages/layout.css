@@ -85,7 +85,7 @@ body.is-menu-opened {
   opacity: 0;
   will-change: transition, opacity;
   transform: translateX(-50%) scale(1.1);
-  padding: 7vh 0;
+  padding: 7vh 0 3vh 0;
   text-align: center;
   overflow-y: auto;
   max-width: 380px;
@@ -221,10 +221,6 @@ body.is-menu-opened {
   outline: none;
 }
 
-.menu__sponsors h2 {
-  font-size: 1.125rem;
-  color: var(--color-text-03);
-}
 .menu__sponsors ul,
 .menu__sponsors li {
   display: block;
@@ -233,6 +229,12 @@ body.is-menu-opened {
 }
 .menu__sponsors li {
   margin: calc(var(--base-spacing) * 2) 0;
+}
+.menu__sponsors img {
+  max-width: calc(var(--base-spacing) * 22);
+}
+.menu__sponsors > a {
+  display: block;
 }
 
 .go-to-content:focus {

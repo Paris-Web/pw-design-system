@@ -1,6 +1,4 @@
 <div class="menu__sponsors">
-    <h2>Nos partenaires</h2>
-
     {{ with .Site.GetPage "page" "pages/sponsors/index.md" }}
         <ul>
             {{ $sponsorsResources := .Resources }}
@@ -16,5 +14,6 @@
         </ul>
     {{ end }}
 
-    <a href="{{ .Site.BaseURL }}pages/sponsors">Voir tous nos partenaires</a>
+    <a href="{{ .Site.BaseURL }}pages/sponsors">Tous nos partenaires</a>
+    <a href="{{ .Site.BaseURL }}pages/devenez-sponsor">Soutenez Paris Web</a>
 </div>
