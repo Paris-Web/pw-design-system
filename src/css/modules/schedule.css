@@ -75,9 +75,6 @@
 .s-scheduleChart th.s-scheduleChart-thirdRoom:empty {
   border-left: none;
 }
-.s-scheduleChart th.s-scheduleChart-thirdRoom::before {
-  content: "Annexe";
-}
 .s-scheduleChart .s-conf-author {
   display: block;
 }
