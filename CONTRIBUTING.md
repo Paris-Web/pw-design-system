@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-Pour installer le projet, cf. README.md.
+Pour installer le projet, se référer au README.md.
 
 ## Règles de contribution
 
@@ -14,9 +14,9 @@ Pour installer le projet, cf. README.md.
 
 Si vous avez des doutes sur la démarche à suivre, n'hésitez pas à contacter une des personnes suivantes qui se feront une joie de vous aider, que ce soit pour ajouter de nouveaux composants, en modifier ou suivre le processus de Pull Request&nbsp;:
 
-* Julien Pradet
+* [@JulienPradet](https://github.com/JulienPradet) ([Twitter](https://twitter.com/JulienPradet))
 
-Si certains souhaitent s'ajouter à la liste, n'hésitez pas à faire un commit. Le but est simplement de recenser les gens prêts à aider les autres à contribuer. Il n'y a pas de grand gourou. Si vous souhaitez être ajouté à la liste mais n'êtes pas sûr de pouvoir aider, contactez l'une des personnes de cette liste qui vous montrera toutes les ficelles.
+Le but de cette liste est simplement de recenser les gens prêts à aider les autres à contribuer. Il n'y a pas de grand gourou. Si vous souhaitez être ajouté à la liste mais n'êtes pas sûr de pouvoir aider ou comment aider, contactez l'une des personnes de cette liste qui vous montrera toutes les ficelles.
 
 ## Modification des présentes règles
 

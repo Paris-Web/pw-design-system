@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "pw-design-system",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "Le Design System utilisé par Paris Web.",
+  "repository": "Paris-Web/pw-design-system",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -11,7 +11,6 @@
     "start": "gulp server",
     "lint": "eslint src"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
