@@ -181,7 +181,8 @@ body.is-menu-opened {
 
 .menu__links a:hover::before,
 .menu__links a:focus::before,
-.menu__links a.active::before {
+.menu__links a.active::before,
+.menu__links a.special::before {
   content: "";
   position: absolute;
   width: 80%;
@@ -189,30 +190,48 @@ body.is-menu-opened {
   left: 0;
   top: 0;
 }
+.menu__links a.special::before {
+  background: var(--color-brand-01);
+}
 .menu__links a.active::before {
   background: var(--color-brand-02);
 }
+.menu__links a.special:hover::before,
+.menu__links a.special:focus::before {
+  background: var(--color-brand-01-dark);
+}
 .menu__links a:hover::before,
-.menu__links a:focus::before {
+.menu__links a:focus::before,
+.menu__links a.active:hover::before,
+.menu__links a.active:focus::before {
   background: var(--color-brand-02-dark);
 }
 
 .menu__links a:hover,
 .menu__links a:focus,
-.menu__links a.active {
+.menu__links a.active,
+.menu__links a.special {
   color: var(--color-text-inverted);
 }
 .menu__links a:hover > span,
 .menu__links a:focus > span,
-.menu__links a.active > span {
+.menu__links a.active > span,
+.menu__links a.special > span {
   position: relative;
   z-index: 1;
+}
+.menu__links a.special:hover > span,
+.menu__links a.special:focus > span {
+  background: var(--color-brand-01-dark);
 }
 .menu__links a:hover > span,
 .menu__links a:focus > span,
 .menu__links a.active:hover > span,
 .menu__links a.active:focus > span {
   background: var(--color-brand-02-dark);
+}
+.menu__links a.special > span {
+  background: var(--color-brand-01);
 }
 .menu__links a.active > span {
   background: var(--color-brand-02);
