@@ -33,31 +33,21 @@ const closeMenuOnEsc = closeMenu => event => {
   }
 };
 
-const listenButtons = () => {
-  let previouslyFocusedElement;
-  let handleKeydown;
+const listenMenuKeyboardEvents = (menuElement, closeMenu) => {
+  const handleCloseMenu = closeMenuOnEsc(closeMenu);
+  const handleFocusChange = captureFocusChangeWithin(menuElement);
+  const handleKeydown = event => {
+    handleCloseMenu(event);
+    handleFocusChange(event);
+  };
+  document.body.addEventListener("keydown", handleKeydown);
 
-  const onCloseMenuTransitionEnd = () => {
-    document.querySelector("#menu").classList.remove("menu--visible");
-    document
-      .querySelector("#menu .menu__content")
-      .removeEventListener("transitionend", onCloseMenuTransitionEnd);
-  };
-  const listenKeyboardEvents = () => {
-    const handleCloseMenu = closeMenuOnEsc(closeMenu);
-    const handleFocusChange = captureFocusChangeWithin(
-      document.querySelector("#menu .menu__content")
-    );
-    handleKeydown = event => {
-      handleCloseMenu(event);
-      handleFocusChange(event);
-    };
-    document.body.addEventListener("keydown", handleKeydown);
-  };
-  const removeKeyboardEvents = () => {
+  return () => {
     document.body.removeEventListener("keydown", handleKeydown);
   };
+};
 
+const listenMenuCloseOnResize = closeMenu => {
   const handleResize = debounce(() => {
     requestAnimationFrame(() => {
       const styles = getComputedStyle(document.querySelector(".header"));
@@ -66,21 +56,23 @@ const listenButtons = () => {
       }
     });
   }, 100);
-  const listenResizeEvent = () => {
-    window.addEventListener("resize", handleResize);
-  };
-  const removeResizeEvent = () => {
+  window.addEventListener("resize", handleResize);
+
+  return () => {
     window.removeEventListener("resize", handleResize);
   };
+};
 
-  const openMenu = () => {
-    previouslyFocusedElement = document.activeElement;
-    document.body.classList.add("is-menu-opened");
-    document.querySelector("#menu").classList.add("menu--opened");
-    document.querySelector("#menu").classList.add("menu--visible");
-    document.querySelector("#menu .menu__content").focus();
-    listenKeyboardEvents();
-    listenResizeEvent();
+const listenButtons = () => {
+  let previouslyFocusedElement;
+  let removeMenuKeyboardEvents;
+  let removeMenuCloseOnResize;
+
+  const onCloseMenuTransitionEnd = () => {
+    document.querySelector("#menu").classList.remove("menu--visible");
+    document
+      .querySelector("#menu .menu__content")
+      .removeEventListener("transitionend", onCloseMenuTransitionEnd);
   };
 
   const closeMenu = (shouldFocusPreviousElement = true) => {
@@ -90,24 +82,29 @@ const listenButtons = () => {
       .querySelector("#menu .menu__content")
       .addEventListener("transitionend", onCloseMenuTransitionEnd);
 
-    removeKeyboardEvents();
-    removeResizeEvent();
+    removeMenuKeyboardEvents();
+    removeMenuCloseOnResize();
 
     if (shouldFocusPreviousElement) {
       previouslyFocusedElement.focus();
     }
   };
 
-  document.querySelector(".js-open-menu").addEventListener("click", openMenu);
+  const openMenu = () => {
+    previouslyFocusedElement = document.activeElement;
+    document.body.classList.add("is-menu-opened");
+    document.querySelector("#menu").classList.add("menu--opened");
+    document.querySelector("#menu").classList.add("menu--visible");
+    document.querySelector("#menu .menu__content").focus();
+    removeMenuKeyboardEvents = listenMenuKeyboardEvents(
+      document.querySelector("#menu .menu__content"),
+      closeMenu
+    );
+    removeMenuCloseOnResize = listenMenuCloseOnResize(closeMenu);
+  };
 
-  const closeButtons = document.querySelectorAll(".js-close-menu");
-  for (var i = 0; i < closeButtons.length; i++) {
-    closeButtons[i].addEventListener("click", event => {
-      event.preventDefault();
-      event.stopPropagation();
-      closeMenu();
-    });
-  }
+  document.querySelector(".js-open-menu").addEventListener("click", openMenu);
+  document.querySelector(".js-close-menu").addEventListener("click", closeMenu);
 };
 
 const listenIntersection = (element, callback) => {
