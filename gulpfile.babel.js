@@ -52,10 +52,7 @@ gulp.task("css", () => {
           }
         ]),
         cssnext({
-          browsers: [
-            'last 2 versions',
-            '> 1%'
-          ]
+          browsers: ["> 0.25%"]
         })
       ])
     )

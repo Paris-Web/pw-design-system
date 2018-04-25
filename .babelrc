@@ -1,10 +1,13 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["last 2 versions", "> 1%"]
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["> 0.25%"]
+        }
       }
-    }]
+    ]
   ],
   "plugins": ["syntax-object-rest-spread", "transform-object-rest-spread"]
 }

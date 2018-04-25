@@ -3,9 +3,7 @@ import path from "path";
 
 export default {
   devtool:
-    process.env.NODE_ENV === "production"
-      ? "source-map"
-      : "cheap-module-source-map",
+    process.env.NODE_ENV === "production" ? "none" : "cheap-module-source-map",
   module: {
     rules: [
       {
@@ -21,7 +19,6 @@ export default {
       }
     ]
   },
-
   plugins: [
     new webpack.ProvidePlugin({
       fetch: "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"

@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
-    "build": "gulp build",
+    "build": "NODE_ENV=production gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
     "lint": "eslint src"
