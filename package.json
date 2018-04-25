@@ -41,7 +41,7 @@
     "rgb-hex": "^2.1.0",
     "url-loader": "^0.5.7",
     "webfontloader": "^1.6.28",
-    "webpack": "3.6.0",
+    "webpack": "^4.6.0",
     "whatwg-fetch": "^1.0.0"
   }
 }

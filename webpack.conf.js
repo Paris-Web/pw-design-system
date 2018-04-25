@@ -2,6 +2,7 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
     process.env.NODE_ENV === "production" ? "none" : "cheap-module-source-map",
   module: {
@@ -28,16 +29,8 @@ export default {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production")
       }
     })
-  ].concat(
-    process.env.NODE_ENV === "production"
-      ? [
-          new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: { warnings: false }
-          })
-        ]
-      : []
-  ),
+  ],
+  performance: process.env.NODE_ENV === "production" ? {} : false,
 
   context: path.join(__dirname, "src"),
   entry: {
@@ -48,6 +41,5 @@ export default {
     path: path.join(__dirname, "dist"),
     publicPath: process.env.HUGO_BASEURL || "/",
     filename: "[name].js"
-  },
-  externals: [/^vendor\/.+\.js$/]
+  }
 };
