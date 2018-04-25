@@ -1,9 +1,5 @@
-/*
- * Everything except styleguide/main.css should be usable
- * for ParisWeb's site.
- * TODO : Split gulp tasks in order to have to generated bundles
- */
 @import "util/reset.css";
+@import "util/fixes.css";
 @import "util/colors.css";
 @import "util/typography.css";
 @import "util/grid.css";

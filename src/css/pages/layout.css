@@ -179,7 +179,6 @@ body.is-menu-opened {
   padding: 0 calc(var(--base-spacing) * 2);
 }
 
-.menu__links a:hover::before,
 .menu__links a:focus::before,
 .menu__links a.active::before {
   content: "";
@@ -192,25 +191,19 @@ body.is-menu-opened {
 .menu__links a.active::before {
   background: var(--color-brand-02);
 }
-.menu__links a:hover::before,
 .menu__links a:focus::before {
   background: var(--color-brand-02-dark);
 }
-
-.menu__links a:hover,
 .menu__links a:focus,
 .menu__links a.active {
   color: var(--color-text-inverted);
 }
-.menu__links a:hover > span,
 .menu__links a:focus > span,
 .menu__links a.active > span {
   position: relative;
   z-index: 1;
 }
-.menu__links a:hover > span,
 .menu__links a:focus > span,
-.menu__links a.active:hover > span,
 .menu__links a.active:focus > span {
   background: var(--color-brand-02-dark);
 }
@@ -219,6 +212,31 @@ body.is-menu-opened {
 }
 .menu__links a:focus {
   outline: none;
+}
+
+@media (pointer: fine) {
+  .menu__links a:hover::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .menu__links a:hover::before {
+    background: var(--color-brand-02-dark);
+  }
+  .menu__links a:hover {
+    color: var(--color-text-inverted);
+  }
+  .menu__links a:hover > span {
+    position: relative;
+    z-index: 1;
+  }
+  .menu__links a:hover > span,
+  .menu__links a.active:hover > span {
+    background: var(--color-brand-02-dark);
+  }
 }
 
 .menu__sponsors h2 {
