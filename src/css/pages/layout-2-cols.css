@@ -10,4 +10,12 @@
     flex: 1;
     margin-left: calc(var(--base-spacing) * 2);
   }
+  .content--2-cols .content__sidebar > * {
+    padding-left: calc(var(--base-spacing) * 4);
+    border-left: 2px solid #e7e5ef;
+  }
+  .content--2-cols .content__sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }

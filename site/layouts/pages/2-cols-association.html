@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="content content--2-cols">
+    <h1 class="separation separation--primary">
+      {{ .Title }}
+    </h1>
+
+    <div class="content__wrapper">
+      <div class="content__main">
+        {{ .Content }}
+      </div>
+
+      <aside class="content__sidebar">
+        <div>
+            <h3 class="separation">Plus sur l’association</h3>
+            <ul>
+                <li><strong>L’association Paris-Web</strong></li>
+                <li><a class="discreet" rel="bookmark" href=".">Les membres</a></li>
+                <li><a class="discreet" rel="bookmark" href=".">Les statuts de l'association</a></li>
+            </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+{{ end }}
