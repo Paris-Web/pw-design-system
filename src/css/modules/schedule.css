@@ -1,17 +1,22 @@
 .presentation-schedule {
-  width: 100%;
+  width: calc(100% + 3 * var(--base-spacing));
   overflow-x: auto;
+  margin-left: calc(-1.5 * var(--base-spacing));
+  margin-right: calc(-1.5 * var(--base-spacing));
 }
 
 .s-scheduleChart {
   border-collapse: separate;
   border-spacing: calc(var(--base-spacing) * 1.5);
-  margin: calc(var(--base-spacing) * 2) calc(-1.5 * var(--base-spacing));
+  margin: calc(var(--base-spacing) * 2) 0;
 }
-.s-scheduleChart td,
-.s-scheduleChart th {
-  border: 0;
+.s-scheduleChart tr td,
+.s-scheduleChart tr th {
+  border: none;
   padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
+}
+.s-scheduleChart tr th:after {
+  content: none;
 }
 .s-scheduleChart td {
   vertical-align: top;

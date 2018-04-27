@@ -1,0 +1,42 @@
+table {
+  border-collapse: collapse;
+  margin: calc(var(--base-spacing) * 2) calc(-1.5 * var(--base-spacing));
+}
+td,
+th {
+  border: 0;
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
+}
+td {
+  vertical-align: top;
+}
+td p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+td a {
+  color: var(--color-text-01);
+  font-weight: bold;
+}
+
+tr:first-child th {
+  position: relative;
+  padding-bottom: calc(var(--base-spacing) * 4);
+}
+tr:first-child th:after {
+  position: absolute;
+  bottom: calc(var(--base-spacing));
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  margin-left: calc(var(--base-spacing) * 2);
+  margin-right: calc(var(--base-spacing) * 2);
+  height: calc(var(--base-spacing) * 1);
+  background: var(--color-ui-02);
+}
+th:not(:first-child),
+td:not(:first-child) {
+  border-left: calc(var(--base-spacing) * 0.5) solid var(--color-ui-02);
+}
