@@ -1,4 +1,6 @@
 <div class="menu__sponsors">
+    <div class="menu__sponsors__title h2-like">Nos partenaires</div>
+
     {{ with .Site.GetPage "page" "pages/sponsors/index.md" }}
         <ul>
             {{ $sponsorsResources := .Resources }}

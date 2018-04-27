@@ -221,6 +221,11 @@ body.is-menu-opened {
   outline: none;
 }
 
+.menu__sponsors__title {
+  font-size: 1.125rem;
+  color: var(--color-text-03);
+}
+
 .menu__sponsors ul,
 .menu__sponsors li {
   display: block;
@@ -231,7 +236,7 @@ body.is-menu-opened {
   margin: calc(var(--base-spacing) * 2) 0;
 }
 .menu__sponsors img {
-  max-width: calc(var(--base-spacing) * 22);
+  max-width: calc(var(--base-spacing) * 20);
 }
 .menu__sponsors > a {
   display: block;
