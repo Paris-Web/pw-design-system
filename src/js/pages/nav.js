@@ -104,7 +104,11 @@ const listenButtons = () => {
   };
 
   document.querySelector(".js-open-menu").addEventListener("click", openMenu);
-  document.querySelector(".js-close-menu").addEventListener("click", closeMenu);
+
+  const closeButtons = document.querySelectorAll(".js-close-menu");
+  for (let i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].addEventListener("click", closeMenu);
+  }
 };
 
 const listenIntersection = (element, callback) => {
