@@ -4,7 +4,7 @@
 .kezako li {
   min-width: 15ch;
   color: var(--color-text-02);
-  flex: 1;
+  width: 30%;
 }
 .kezako .icon {
   color: var(--color-text-03);
@@ -14,9 +14,6 @@
 }
 .kezako a:hover .icon--question, .kezako a:focus .icon--question {
   background: var(--color-brand-01-dark);
-}
-.kezako li {
-  width: 30%;
 }
 
 @media screen and (min-width: 53em) {
