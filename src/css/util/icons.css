@@ -24,6 +24,17 @@ svg.icon * {
   width: 1.2em;
 }
 
+.icon.icon--question {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  background: var(--color-brand-01);
+  color: var(--color-ui-01) !important;
+  border-radius: 2rem;
+  margin: 0 auto 0.6rem;
+}
+
 .icon-link {
   display: inline-block;
   color: var(--color-text-03);

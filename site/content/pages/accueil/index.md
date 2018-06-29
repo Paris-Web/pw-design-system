@@ -57,7 +57,7 @@ menu: "pages"
     </li>
     <li>
         <a href="" class="social-link social-link--big social-link--important title">
-            <span role="img" aria-hidden="true" style="width: 3rem;height: 3rem;font-size: 3rem;line-height: 3rem;background: #e11a81;color: white;border-radius: 2rem;margin: 0 auto 0.6rem;">?</span>
+            <span role="img" aria-hidden="true" class="icon icon--question">?</span>
             <span style="text-decoration: underline;">Pourquoi venir<br>à Paris Web</span>
         </a>
     </li>

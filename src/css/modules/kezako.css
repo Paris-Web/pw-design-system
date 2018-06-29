@@ -9,6 +9,12 @@
 .kezako .icon {
   color: var(--color-text-03);
 }
+.kezako a .icon--question {
+  transition: background-color 0.15s ease-in-out;
+}
+.kezako a:hover .icon--question, .kezako a:focus .icon--question {
+  background: var(--color-brand-01-dark);
+}
 .kezako li {
   width: 30%;
 }
