@@ -1,6 +1,6 @@
 <div class="sponsor sponsor--{{ .Scratch.Get "niveau" }}">
   <div class="sponsor__logo">
-    <img src="{{ .Scratch.Get "logo" }}" alt="" />
+    <img width="{{ replace (.Scratch.Get "logoWidth") "x" "px" }}" src="{{ .Scratch.Get "logo" }}" alt="" />
   </div>
   <div class="sponsor__description">
     <h3>{{- .Scratch.Get "name" -}}</h3>

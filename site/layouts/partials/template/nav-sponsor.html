@@ -6,12 +6,12 @@
             {{ $sponsorsResources := .Resources }}
             {{ range where (.Resources.ByType "page") ".Params.niveau" "platine" }}
                 <li>
-                    {{ $glob := printf "%s/logo.*" .Params.logoDir }}
-                    {{ $logo := ($sponsorsResources.GetMatch $glob).Resize "150x" }}
                     <a href="{{ .Params.siteUrl }}">
-                        <img width="150" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
+                        {{ $glob := printf "%s/nav-logo.png" .Params.logoDir }}
+                        {{ $logo := ($sponsorsResources.GetMatch $glob).Resize "150x" }}
+                        <img width="150px" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
                     </a>
-                    </li>
+                </li>
             {{ end }}
         </ul>
     {{ end }}

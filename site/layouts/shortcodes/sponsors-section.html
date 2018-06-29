@@ -7,10 +7,16 @@
     {{ $sponsorsResources := .Page.Resources }}
     {{ range where (.Page.Resources.ByType "page") ".Params.niveau" $niveau }}
       {{ $glob := printf "%s/logo.*" .Params.logoDir }}
-      {{ $logo := ($sponsorsResources.GetMatch $glob).Resize $resizeOptions }}
+      {{ if eq .Params.logoType "svg" }}
+        {{ $logo := $sponsorsResources.GetMatch $glob }}
+        {{ .Scratch.Set "logo" $logo.Permalink }}
+      {{ else }}
+        {{ $logo := ($sponsorsResources.GetMatch $glob).Resize $resizeOptions }}
+        {{ .Scratch.Set "logo" $logo.Permalink }}
+      {{ end }}
+      {{ .Scratch.Set "logoWidth" $resizeOptions }}
 
       {{ .Scratch.Set "name" .Title }}
-      {{ .Scratch.Set "logo" $logo.Permalink }}
       {{/* For some reasons I can’t understand, `.Content` so I used frontmatter */}}
       {{ .Scratch.Set "description" .Params.description }}
       {{ .Scratch.Set "siteUrl" .Params.siteUrl }}
