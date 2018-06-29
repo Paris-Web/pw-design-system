@@ -4,7 +4,7 @@
 .kezako li {
   min-width: 15ch;
   color: var(--color-text-02);
-  width: 30%;
+  flex: 1 0 30%;
 }
 .kezako .icon {
   color: var(--color-text-03);
