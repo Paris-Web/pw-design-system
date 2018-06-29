@@ -9,14 +9,14 @@
 .kezako .icon {
   color: var(--color-text-03);
 }
-.kezako li:nth-child(3) {
-  min-width: 100%;
+.kezako li {
+  width: 30%;
 }
 
 @media screen and (min-width: 53em) {
   .kezako li {
     padding: 0;
-    flex: 1 1 auto;
+    flex: 1;
   }
   .kezako li:nth-child(3) {
     min-width: auto;

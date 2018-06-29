@@ -29,5 +29,6 @@ menu: "tokens"
         <li>{{< example >}}{{< icon icon="big-heart" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-code" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-thumbsup" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-question" >}}{{< /example >}}</li>
     </ul>
 </div>

@@ -12,7 +12,7 @@
 
 .inline-list--full {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
