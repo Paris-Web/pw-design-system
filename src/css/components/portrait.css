@@ -124,8 +124,3 @@
     width: 4.5rem;
   }
 }
-
-/* Disable portrait__links temporarly */
-.portrait__links {
-  display: none;
-}
