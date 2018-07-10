@@ -1,0 +1,22 @@
+.page-404 {
+  text-align: center;
+}
+.page-404 h1 {
+  margin: 0;
+}
+.page-404 h1 img {
+  display: block;
+  width: 100%;
+  max-height: 12em;
+}
+
+.page-404--solutions {
+  text-align: left;
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.page-404--solutions h2 {
+  margin-top: 2em;
+  text-align: center;
+}
