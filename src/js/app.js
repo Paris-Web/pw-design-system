@@ -11,9 +11,16 @@ import initNavigation from "./pages/nav";
 import initSponsorSections from "./pages/sponsors";
 import initPresentations from "./pages/presentations";
 import initVideos from "./pages/video";
+import { register, unregister } from "./service-worker/client/registration";
 
 initTypography();
 initNavigation();
 initSponsorSections();
 initPresentations();
 initVideos();
+
+if (/serviceworker=on/.test(window.location.search)) {
+  register();
+} else {
+  unregister();
+}

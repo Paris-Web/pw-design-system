@@ -35,7 +35,8 @@ export default {
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],
-    styleguide: ["./js/styleguide"]
+    styleguide: ["./js/styleguide"],
+    ["service-worker"]: ["./js/service-worker/worker/index.js"]
   },
   output: {
     path: path.join(__dirname, "dist"),
