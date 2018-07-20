@@ -28,6 +28,7 @@
   color: var(--color-brand-02-darker);
 }
 .tag.tag--togglable:hover,
+.tag.tag--togglable:focus,
 .tag.tag--togglable.tag--active {
   background: var(--color-brand-02-dark);
   color: var(--color-text-inverted);
