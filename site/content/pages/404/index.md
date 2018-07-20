@@ -1,13 +1,14 @@
 ---
-title: "404"
+title: "La page demandée n’existe pas"
+linktitle: "404"
 date: 2017-12-13T20:36:14+01:00
 menu: "pages"
-layout: "single"
+layout: "404"
 ---
 
 <div class="content">
 <section class="page-404">
-    <h1><img src="404.svg" alt="La page demandée n'existe pas" /></h1>
+    <img src="404.svg" alt="La page demandée n'existe pas" />
 
     <p class="h2-like">
         Oups…<br/>
@@ -16,6 +17,7 @@ layout: "single"
     </p>
 
     <a href="" class="btn btn--primary">Retourner à la page d'accueil</a>
+
 </section>
 
 <section class="page-404 page-404--solutions">

@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <div class="content">
+    <div class="breadcrumb">
+        <p class="screen-reader">Vous êtes ici :</p>
+        <ol>
+          <li>
+            <a href="{{.Site.BaseURL}}pages/accueil">Accueil</a>
+          </li>
+          <li>
+            <a href="{{.Site.BaseURL}}pages/actualites">Actualités</a>
+          </li>
+          <li>
+            <span aria-current="page">
+            {{ .Title }}
+          </span>
+        </li>
+      </ol>
+    </div>
+
+    <h1 class="separation separation--primary">
+      {{ .Title }}
+    </h1>
+
+    {{ .Content }}
+  </div>
+{{ end }}
