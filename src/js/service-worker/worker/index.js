@@ -1,4 +1,5 @@
 import serviceWorkerUpdateEvents from "./handleServiceWorkerUpdate";
+import offlineFirstAssets from "./offlineFirstAssets";
 
 const ServiceWorker = (handledEvents = {}) => {
   const fuseEvents = (eventsA, eventsB) => {
@@ -47,4 +48,7 @@ const ServiceWorker = (handledEvents = {}) => {
   };
 };
 
-new ServiceWorker().register(serviceWorkerUpdateEvents).init();
+new ServiceWorker()
+  .register(serviceWorkerUpdateEvents)
+  .register(offlineFirstAssets)
+  .init();
