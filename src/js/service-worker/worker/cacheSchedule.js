@@ -38,6 +38,9 @@ const cacheSchedule = () => {
         if (/^http/.test(url)) {
           url = new URL(url).pathname;
         }
+        if (/^\//.test(url)) {
+          url = url.substring(1);
+        }
         url = process.env.PUBLIC_URL + url;
       }
       const request = new Request(url, { mode: "no-cors" });
