@@ -19,6 +19,7 @@ const listenServiceWorkerUpdate = ({
       // Registration was successful
       registration.addEventListener("updatefound", () => {
         const installingWorker = registration.installing;
+        const activeWorker = registration.active;
 
         installingWorker.addEventListener("statechange", () => {
           if (installingWorker.state === "installed") {
@@ -27,6 +28,12 @@ const listenServiceWorkerUpdate = ({
             }
           }
         });
+
+        if (!installingWorker || activeWorker) {
+          navigator.serviceWorker.addEventListener("controllerchange", () => {
+            window.location.reload();
+          });
+        }
       });
 
       if (registration.waiting) {

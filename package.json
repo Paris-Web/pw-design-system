@@ -9,13 +9,15 @@
     "build": "NODE_ENV=production gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "crawl": "node scripts/crawlSchedule"
   },
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^7.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
@@ -34,7 +36,10 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.11",
     "hugo-bin": "^0.22.0",
+    "idb-keyval": "^3.0.5",
     "imports-loader": "^0.7.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jsdom": "^11.11.0",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^10.0.0",
     "postcss-url": "^7.3.0",

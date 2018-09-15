@@ -19,8 +19,15 @@ initSponsorSections();
 initPresentations();
 initVideos();
 
-if (/serviceworker=on/.test(window.location.search)) {
-  register();
-} else {
-  unregister();
+if ("serviceWorker" in navigator) {
+  // eslint-disable-next-line
+  import("./service-worker/client/registration").then(
+    ({ register, unregister }) => {
+      if (/serviceworker=on/.test(window.location.search)) {
+        register();
+      } else {
+        unregister();
+      }
+    }
+  );
 }

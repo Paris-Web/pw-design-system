@@ -11,7 +11,6 @@ export default {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader?name=/[hash].[ext]"
       },
-      { test: /\.json$/, loader: "json-loader" },
       {
         loader: "babel-loader",
         test: /\.js?$/,
@@ -22,7 +21,8 @@ export default {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
+      fetch:
+        "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
     }),
     new webpack.DefinePlugin({
       "process.env": {
@@ -42,5 +42,12 @@ export default {
     path: path.join(__dirname, "dist"),
     publicPath: process.env.HUGO_BASEURL || "/",
     filename: "[name].js"
+  },
+  node: {
+    dgram: "empty",
+    fs: "empty",
+    net: "empty",
+    tls: "empty",
+    child_process: "empty"
   }
 };
