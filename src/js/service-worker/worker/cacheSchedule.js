@@ -34,6 +34,9 @@ const cacheSchedule = () => {
     };
 
     const cacheUrl = url => {
+      if (process.env.ENV === "styleguide") {
+        url = process.env.PUBLIC_URL + new URL(url).pathname;
+      }
       const request = new Request(url, { mode: "no-cors" });
 
       return fetch(request)
