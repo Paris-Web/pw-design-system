@@ -86,6 +86,31 @@ Cela a été implémenté dans la page Logo si vous voulez voir ce que cela donn
 {{< /example >}}
 ```
 
+## Gestion du Service Worker
+
+Pour le moment, le développement du service worker n'est pas fini.
+
+Cependant, pour y accéder il faut :
+
+- Désactiver BrowserSync (en l'enlevant du gulpfile), sans quoi vous allez avoir les mises à jour et ne pourrez pas tester vos service workers
+- Lancer la compilation des fichiers (`npm start`)
+- Lancer un serveur pour accéder aux fichiers compilés (`cd dist && php -S localhost:3000`)
+- ajouter `?serviceworker=on` dans l'URL pour enregistrer le service worker
+
+Les fonctionnalités du Service Worker :
+
+- Gestion des mises à jour du Service Worker : si celui-ci a changé une notification sera affichée pour proposer de mettre à jour le Service Worker
+- Mise en cache des assets généraux (js/css/fonts/etc.)
+- Ajout d'un bouton dans la page `/pages/programme` qui ne s'affiche que quand le serviceworker est activé (via le paramètre d'URL `?serviceworker=on`). Lorsque celui est cliqué, le programme est mis en cache et est ensuite disponible en hors ligne.
+
+Reste à faire :
+
+- S'occuper du style de la notification de mise à jour
+- S'occuper du style du bouton de mise en cache du programme
+- Afficher une notification quand le programme a fini d'être mis en cache
+- Ajouter un start url convaincant (soit le programme, soit le mémo de Paris Web)
+- Empêcher l'ajout à l'écran d'accueil à la première visite, mais par contre, la mettre en place quand on fait la mise en cache du programme ou quand on visite la page programme. (cf. https://developers.google.com/web/fundamentals/app-install-banners/)
+
 ## Merci
 
 [Victor Hugo](https://github.com/netlify/victor-hugo) (cf.
