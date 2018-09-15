@@ -6,7 +6,7 @@ export const register = () => {
   listenServiceWorkerUpdate({
     serviceWorker:
       process.env.ENV === "styleguide"
-        ? "/styleguide-service-worker.js"
+        ? process.env.PUBLIC_URL + "styleguide-service-worker.js"
         : "/service-worker.js",
     onWaiting: updateServiceWorker => {
       displayUpdateNotification(updateServiceWorker);
