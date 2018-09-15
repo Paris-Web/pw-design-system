@@ -3,7 +3,7 @@ const cacheSchedule = () => {
     const getSchedule = () => {
       return fetch(
         process.env.ENV === "styleguide"
-          ? "/styleguide-schedule.json"
+          ? process.env.PUBLIC_URL + "styleguide-schedule.json"
           : "/schedule.json"
       ).then(response => response.json());
     };
