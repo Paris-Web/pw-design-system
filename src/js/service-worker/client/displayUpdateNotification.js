@@ -1,4 +1,5 @@
 let isAlreadyShown = false;
+
 export default updateServiceWorker => {
   if (!isAlreadyShown) {
     isAlreadyShown = true;

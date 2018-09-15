@@ -1,4 +1,5 @@
 import serviceWorkerUpdateEvents from "./handleServiceWorkerUpdate";
+import offlineScheduleEvents from "./offlineSchedule";
 import offlineFirstAssets from "./offlineFirstAssets";
 
 const ServiceWorker = (handledEvents = {}) => {
@@ -50,5 +51,6 @@ const ServiceWorker = (handledEvents = {}) => {
 
 new ServiceWorker()
   .register(serviceWorkerUpdateEvents)
+  .register(offlineScheduleEvents)
   .register(offlineFirstAssets)
   .init();
