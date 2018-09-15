@@ -4,7 +4,10 @@ import offlineSchedule from "./offlineSchedule";
 
 export const register = () => {
   listenServiceWorkerUpdate({
-    serviceWorker: "/service-worker.js",
+    serviceWorker:
+      process.env.ENV === "styleguide"
+        ? "/styleguide-service-worker.js"
+        : "/service-worker.js",
     onWaiting: updateServiceWorker => {
       displayUpdateNotification(updateServiceWorker);
     },

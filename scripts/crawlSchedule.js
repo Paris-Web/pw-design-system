@@ -2,8 +2,18 @@ const fs = require("fs");
 const { JSDOM } = require("jsdom");
 const fetch = require("isomorphic-fetch");
 
-const mainPage = "http://localhost:4000/pages/programme/";
-const byDayPages = ["http://localhost:4000/pages/programme-jour"];
+var mainPage, byDayPages;
+if (process.env.ENV === "styleguide") {
+  mainPage = "http://localhost:4000/pages/programme/";
+  byDayPages = ["http://localhost:4000/pages/programme-jour"];
+} else {
+  mainPage = "https://www.paris-web.fr/2018/";
+  byDayPages = [
+    "https://www.paris-web.fr/2018/04.php",
+    "https://www.paris-web.fr/2018/05.php",
+    "https://www.paris-web.fr/2018/06.php"
+  ];
+}
 
 const toArray = nodeList => {
   const array = [];
@@ -68,10 +78,14 @@ const crawlSchedule = () => {
     .then(presentations => presentations);
 };
 
+const schedulePath =
+  process.env.ENV === "styleguide"
+    ? "dist/styleguide-schedule.json"
+    : "dist/schedule.json";
 const saveSchedule = schedule => {
   return new Promise((resolve, reject) => {
     fs.writeFile(
-      "dist/schedule.json",
+      schedulePath,
       JSON.stringify({ mainPage, byDayPages, schedule }),
       err => {
         if (err) {
@@ -83,4 +97,8 @@ const saveSchedule = schedule => {
   });
 };
 
-crawlSchedule().then(saveSchedule);
+crawlSchedule()
+  .then(saveSchedule)
+  .then(() => {
+    console.log(`Schedule saved at ${schedulePath}`);
+  });

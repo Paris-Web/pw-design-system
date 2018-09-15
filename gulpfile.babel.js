@@ -62,9 +62,7 @@ gulp.task("css", () => {
 
 // Compile Javascript
 gulp.task("js", cb => {
-  const myConfig = Object.assign({}, webpackConfig);
-
-  webpack(myConfig, (err, stats) => {
+  webpack(webpackConfig, (err, stats) => {
     if (err) throw new gutil.PluginError("webpack", err);
     gutil.log(
       "[webpack]",

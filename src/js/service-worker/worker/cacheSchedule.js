@@ -1,7 +1,11 @@
 const cacheSchedule = () => {
   return caches.open("schedule").then(cache => {
     const getSchedule = () => {
-      return fetch("/schedule.json").then(response => response.json());
+      return fetch(
+        process.env.ENV === "styleguide"
+          ? "/styleguide-schedule.json"
+          : "/schedule.json"
+      ).then(response => response.json());
     };
 
     const cacheScheduleByPriority = schedule => {
