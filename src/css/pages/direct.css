@@ -1,0 +1,59 @@
+.header--direct .header__about,
+.direct {
+  max-width: 928px;
+  width: 80%;
+  margin: auto;
+}
+
+.header--direct {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+.header--direct .header__about {
+  padding: calc(var(--base-spacing) * 6) 0;
+}
+.header--direct .header__about,
+.header--direct .logo {
+  text-align: center;
+}
+.header--direct .header__slogan {
+  flex-grow: 3;
+  color: var(--color-text-03);
+  margin: 0;
+}
+.header--direct .header__back {
+  display: block;
+  font-weight: bold;
+  margin-top: calc(var(--base-spacing) * 3);
+}
+
+.direct {
+  padding: calc(var(--base-spacing) * 6) 0;
+}
+.direct__video {
+  height: 80vh;
+}
+.direct__footer {
+  display: flex;
+  align-items: stretch;
+}
+.direct__footer > * {
+  flex: 1;
+}
+
+@media screen and (min-width: 44em) {
+  .header--direct .logo {
+    text-align: left;
+  }
+  .header--direct .header__back {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 53.7em) {
+  .header--direct .header__about {
+    text-align: left;
+  }
+}
