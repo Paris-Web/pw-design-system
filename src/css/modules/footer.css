@@ -23,8 +23,9 @@
   text-decoration: underline;
 }
 
-.footer-title img {
+.footer__description img {
   width: 5em;
+  max-width: 100%;
   display: block;
 }
 
@@ -86,8 +87,6 @@
     margin-left: 0;
   }
   .footer__description img {
-    width: 5em;
-    display: block;
     margin-bottom: calc(var(--base-spacing) * 2);
   }
 

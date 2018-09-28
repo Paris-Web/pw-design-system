@@ -28,6 +28,10 @@
 .portrait--link:hover .portrait__avatar img {
   transform: scale(1.1);
 }
+.portrait--sponsor .portrait__avatar,
+.portrait--sponsor .portrait__avatar img {
+  border-radius: 0;
+}
 .portrait__name {
   margin: 0;
 }

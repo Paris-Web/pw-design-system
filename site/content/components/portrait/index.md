@@ -85,6 +85,20 @@ menu: "components"
             {{< /portrait-long >}}
         {{< /example >}}
     </dd>
+    <dd>
+        {{< example >}}
+            {{< portrait-long
+                link="#"
+                avatar="acme.jpg"
+                sponsor="true"
+                name="ACME Corp"
+                twitter="https://www.twitter.com/AcmeCorp"
+                website="https://www.acmecorp.com/" >}}
+                Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.
+            {{< /portrait-long >}}
+        {{< /example >}}
+    </dd>
 </dl>
 
 ## Portrait court

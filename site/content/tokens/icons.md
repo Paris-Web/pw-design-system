@@ -13,6 +13,7 @@ menu: "tokens"
 * {{< example >}}{{< icon icon="github" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="twitter" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="linkedin" >}}{{< /example >}}
+* {{< example >}}{{< icon icon="mastodon" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="web" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="left-arrow" >}}{{< /example >}}
 

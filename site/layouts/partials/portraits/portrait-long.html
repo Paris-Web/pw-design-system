@@ -1,4 +1,4 @@
-<div class="portrait portrait-long {{ if .Scratch.Get "link" }}portrait--link{{ end }}">
+<div class="portrait portrait-long {{ if .Scratch.Get "link" }}portrait--link{{ end }} {{ if .Scratch.Get "sponsor" }}portrait--sponsor{{ end }}">
     <div class="portrait-long__side">
         {{ partial "portraits/avatar.html" . }}
         {{ partial "portraits/social.html" . }}

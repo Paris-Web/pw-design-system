@@ -13,7 +13,7 @@
 .tag:hover,
 .tag:focus {
   color: var(--color-text-inverted);
-  background: var(--color-brand-02-darker);
+  background: var(--color-brand-01);
 }
 
 .tag.tag--togglable {
