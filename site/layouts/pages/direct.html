@@ -1,0 +1,91 @@
+{{ partial "header" . }}
+
+<a class="back-to-design-system" href="{{ .Site.BaseURL }}">Revenir au Design System</a>
+<a class="go-to-content screen-reader screen-reader-focusable" href="#main">Aller au contenu</a>
+
+<header class="header header--direct" role="banner" tabindex="-1">
+  <div class="header__about">
+    <div class="logo">
+      <a href="{{.Site.BaseURL}}">
+        <img src="{{.Site.BaseURL}}images/logo/logo.svg" role="img" width="178" height="80" alt="Retourner à la page d'accueil" title="Retourner à la page d'accueil"
+        />
+      </a>
+    </div>
+
+    <h1 class="header__slogan h3-like">
+      <span class="date-important">Du
+        <time datetime="2018-10-04T09:00">4</time> au
+        <time datetime="2018-10-06T18:00">6 octobre 2018</time>
+      </span>
+      <br /> Suivez les conférence en direct
+    </h1>
+
+    <a href="#" class="header__back btn btn-ghost">Retour au site</a>
+  </div>
+</header>
+
+<main class="direct" id="main" tabindex="-1">
+  <div class="direct__video">
+    {{ .Content }}
+  </div>
+
+  <div class="direct__titre">
+    <p>Vous regardez le flux
+      <strong>Amphitorium Descarte</strong>
+      <a href="#" class="btn btn-small">Voir le flux Amphitorium Pascal</a>
+    </p>
+  </div>
+
+  <div class="direct__footer">
+    <section>
+      <h2 class="separation">Sponsors</h2>
+      <ul class="direct__footer__sponsors direct__footer__sponsors--platine">
+        <li class="direct__footer__sponsor ">
+          {{ $logo := (.Page.Resources.GetMatch "sponsors/delicious-insights.svg") }}
+          <a href="{{ $logo.Params.url }}" title="{{ $logo.Title }}">
+            <img
+              src="{{ $logo.RelPermalink }}"
+              alt="Logo de {{ $logo.Title }}" />
+          </a>
+        </li>
+      </ul>
+      <ul class="direct__footer__sponsors">
+        <li class="direct__footer__sponsor">
+          {{ $logo := (.Page.Resources.GetMatch "sponsors/scaleway.svg") }}
+          <a href="{{ $logo.Params.url }}" title="{{ $logo.Title }}">
+            <img
+              src="{{ $logo.RelPermalink }}"
+              alt="Logo de {{ $logo.Title }}" />
+          </a>
+        </li>
+        <li class="direct__footer__sponsor">
+          {{ $logo := (.Page.Resources.GetMatch "sponsors/redirectionio.svg") }}
+          <a href="{{ $logo.Params.url }}" title="{{ $logo.Title }}">
+            <img
+              src="{{ $logo.RelPermalink }}"
+              alt="Logo de {{ $logo.Title }}" />
+          </a>
+        </li>
+      </ul>
+      <ul class="direct__footer__sponsoring-links">
+        <li><a href="{{ .Site.BaseURL }}pages/sponsors">Tous nos partenaires</a></li>
+        <li><a href="{{ .Site.BaseURL }}pages/devenez-sponsor">Soutenez Paris Web !</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="separation">Revoir les conférences</h2>
+      <ul>
+        <li><a href="#">Auditorium Descartes - 5/10 matin</a></li>
+        <li><a href="#">Auditorium Pascal - 5/10 matin</a></li>
+        <li><a href="#">Auditorium Descartes - 5/10 après-midi</a></li>
+        <li><a href="#">Auditorium Pascal- 5/10 après-midi</a></li>
+        <li><a href="#">Auditorium Descartes - 6/10 matin</a></li>
+        <li><a href="#">Auditorium Pascal - 6/10 matin</a></li>
+        <li><a href="#">Auditorium Descartes - 6/10 après-midi</a></li>
+        <li><a href="#">Auditorium Pascal - 6/10 après-midi</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+{{ partial "footer" . }}

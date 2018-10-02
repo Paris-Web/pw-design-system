@@ -1,0 +1,98 @@
+.header--direct .header__about,
+.direct {
+  max-width: 928px;
+  width: 80%;
+  margin: auto;
+}
+
+.header--direct {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+.header--direct .header__about {
+  padding: calc(var(--base-spacing) * 6) 0;
+}
+.header--direct .header__about,
+.header--direct .logo {
+  text-align: center;
+}
+.header--direct .header__slogan {
+  flex-grow: 3;
+  color: var(--color-text-03);
+  margin: 0;
+}
+.header--direct .header__back {
+  display: block;
+  font-weight: bold;
+  margin-top: calc(var(--base-spacing) * 3);
+  text-align: center;
+}
+
+.direct {
+  padding: calc(var(--base-spacing) * 6) 0;
+}
+.direct__video {
+  height: 80vh;
+}
+.direct__titre {
+  text-align: center;
+}
+.direct__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.direct__footer > * {
+  flex: 1;
+}
+.direct__footer .separation {
+  margin-bottom: calc(var(--base-spacing) * 6);
+}
+.direct__footer__sponsors {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.direct__footer__sponsors--platine {
+  margin-bottom: calc(var(--base-spacing) * 6);
+}
+.direct__footer__sponsor {
+  flex: 1;
+  text-align: center;
+}
+.direct__footer__sponsor img {
+  max-width: 90%;
+}
+.direct__footer__sponsors--platine .direct__footer__sponsor img {
+  height: 5rem;
+}
+
+.direct__footer__sponsoring-links {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (min-width: 44em) {
+  .header--direct .logo {
+    text-align: left;
+  }
+  .header--direct .header__back {
+    margin-top: 0;
+  }
+  .direct__titre {
+    text-align: left;
+  }
+  .direct__footer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 68em) {
+  .header--direct .header__about {
+    text-align: left;
+  }
+}
