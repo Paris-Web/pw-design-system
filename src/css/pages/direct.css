@@ -35,6 +35,9 @@
 .direct__video {
   height: 80vh;
 }
+.direct__titre {
+  text-align: center;
+}
 .direct__footer {
   display: flex;
   flex-direction: column;
@@ -79,6 +82,9 @@
   }
   .header--direct .header__back {
     margin-top: 0;
+  }
+  .direct__titre {
+    text-align: left;
   }
   .direct__footer {
     flex-direction: row;
