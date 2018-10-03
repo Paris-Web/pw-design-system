@@ -101,34 +101,26 @@ menu: "pages"
 	</div>
 </section>
 
-## Live (nouveau)
+<div class="content">
+<h2>Pendant la conférence</h2>
+<p>Remplacer le Kezako par le module ci dessous</p>
+</div>
 
-Pendant la conférence
-
-```html
-<section class="background-highlight" aria-labelledby="live">
-  <div class="w1140p center">
-  <h2 id="live">Suivez le direct !</h2>
-  <li class="grid-3-small-1">
-    <ul>
-      <h3>Salle Moebius</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam ex nostrum eos, iste ab possimus perspiciatis veritatis voluptas.</p>
-      <button>Voir le direct!</button>
-    </ul>
-    <ul>
-      <h3>Salle Blin</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam ex nostrum eos, iste ab possimus perspiciatis veritatis voluptas.</p>
-      <button>Voir le direct!</button>
-    </ul>
-    <ul>
-      <h3>Twitter</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam ex nostrum eos, iste ab possimus perspiciatis veritatis voluptas.</p>
-      <button>Voir le direct!</button>
-    </ul>
-  </li>
-  </div>
+<section class="direct-link">
+    <main>
+        <h2>Suivez le direct !</h2>
+        <ul class="direct-link__list">
+            <li><a class="btn" href="{{< relref "pages/direct/index.md" >}}">Amphithéâtre René Descartes</a></li>
+            <li><a class="btn" href="{{< relref "pages/direct/index.md" >}}">Auditorium Blaise Pascal</a></li>
+        </ul>
+    </main>
+    <aside>
+        <p>
+            Afin de coordonner l’activité bouillonnante sur les réseaux et pour que tout le monde puisse s’y retrouver, voici le tag à utiliser et à suivre :
+            <strong class="h1-like">#ParisWeb</strong>
+        </p>
+    </aside>
 </section>
-```
 
 ## Après (nouveau)
 
