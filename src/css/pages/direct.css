@@ -1,5 +1,5 @@
 .header--direct .header__about,
-.direct {
+.direct:not(.main) {
   max-width: 928px;
   width: 80%;
   margin: auto;
@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-.direct {
+.direct.direct:not(.main) {
   padding: calc(var(--base-spacing) * 6) 0;
 }
 .direct__video {
