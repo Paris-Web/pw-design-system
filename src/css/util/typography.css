@@ -152,14 +152,13 @@ h6,
   display: inline;
 }
 
-.separation,
-.separation,
 .separation {
   position: relative;
 }
-.separation::after,
-.separation::after,
-.separation::after {
+.separation:empty {
+  display: none;
+}
+.separation:not(:empty)::after {
   content: "";
   display: block;
   position: absolute;
