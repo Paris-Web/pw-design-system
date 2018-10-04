@@ -40,12 +40,15 @@
 @media screen and (min-width: 44em) {
     .direct-link {
         flex-direction: row;
-        min-height: calc(20vh - var(--base-spacing) * 20);
+        min-height: 25vh;
         width: calc(90ch + 8vw);
         max-width: calc(100% - var(--base-spacing) * 12);
         margin: 0 auto;
+        padding-top:  calc(var(--base-spacing) * 6);
+        padding-bottom:  calc(var(--base-spacing) * 6);
     }
     .direct-link aside {
+        margin-top: 0;
         border-top: none;
         border-left: 2px solid var(--color-ui-02);
         padding-top: 0;
