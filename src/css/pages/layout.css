@@ -2,6 +2,10 @@
   outline: 0;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
