@@ -51,6 +51,14 @@ svg.icon * {
 .icon-link:visited .icon {
   color: var(--color-text-03);
 }
+.icon-link:active .icon,
+.icon-link.active .icon {
+  color: var(--color-brand-01-dark);
+}
+.icon-link:hover .icon,
+.icon-link:focus .icon {
+  color: var(--color-brand-01);
+}
 .icon.icon--attachment {
   width: 0.75em;
   height: 0.75em;
