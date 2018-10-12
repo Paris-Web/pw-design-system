@@ -1,13 +1,17 @@
+:root {
+  --portrait-max-width: 10rem;
+  --portrait-avatar-width: 9rem;
+}
 .portrait {
   position: relative;
   display: inline-block;
-  width: 10rem; /* ~140px */
+  width: var(--portrait-max-width); /* ~140px */
   text-align: center;
   margin: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 2);
 }
 .portrait__avatar {
-  height: 9rem; /* ~140px */
-  width: 9rem;
+  height: var(--portrait-avatar-width); /* ~140px */
+  width: var(--portrait-avatar-width);
   border-radius: 5rem;
   margin: 0 auto var(--base-spacing);
   overflow: hidden;
@@ -45,10 +49,15 @@
   z-index: 1;
 }
 .portrait__links {
+  position: absolute;
+  width: var(--portrait-avatar-width);
+  top: calc(var(--portrait-avatar-width) - 1.4rem - var(--base-spacing) * 2);
+  right: calc((var(--portrait-max-width) - var(--portrait-avatar-width)) / 2);
+  left: calc((var(--portrait-max-width) - var(--portrait-avatar-width)) / 2);
   margin: 0 auto;
   vertical-align: bottom;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 2rem;
 }
 .portrait__links a {
@@ -72,6 +81,7 @@
 }
 .portrait-long__side {
   text-align: center;
+  position: relative;
 }
 .portrait-long .portrait__name {
   margin-top: 0;
@@ -82,6 +92,10 @@
 }
 .portrait-long .portrait__description {
   text-align: left;
+}
+.portrait-long__side .portrait__links {
+  right: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 44em) {

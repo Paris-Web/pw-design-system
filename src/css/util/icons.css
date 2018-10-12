@@ -18,6 +18,10 @@ svg.icon * {
 .icon.icon--social {
   height: 1.4rem;
   width: 1.4rem;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background-color: var(--color-ui-01);
+  border: 1px solid var(--color-ui-01);
 }
 .icon.icon--left-arrow {
   height: 0.8em;
