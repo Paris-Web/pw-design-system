@@ -2,7 +2,6 @@
   background: var(--color-ui-02);
 }
 
-
 .presentation-grid {
   display: flex;
   justify-content: center;
@@ -12,6 +11,12 @@
 }
 
 .presentation-grid > * {
-  width: calc(25% - calc(var(--base-spacing) * 4));
+  max-width: 15rem;
   margin: calc(var(--base-spacing) * 2);
+}
+
+@media screen and (min-width: 53em) {
+  .presentation-grid > * {
+    width: calc(25% - calc(var(--base-spacing) * 4));
+  }
 }
