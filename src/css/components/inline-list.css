@@ -4,10 +4,14 @@
   margin: 0;
 }
 
-.inline-list li {
+.inline-list > * {
   display: inline;
   padding: var(--base-spacing);
   margin: 0;
+}
+
+.inline-list--no-spacing {
+  margin: 0 calc(var(--base-spacing) * -1);
 }
 
 .inline-list--full {
@@ -17,7 +21,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.inline-list--full li {
+.inline-list--full > * {
   display: block;
   text-align: center;
 }

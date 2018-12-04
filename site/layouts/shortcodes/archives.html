@@ -1,15 +1,14 @@
-<div class="presentation-list">
+<div class="presentation-grid">
     {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
+        {{ .Scratch.Set "authors" (.Params.authors) }}
         {{ .Scratch.Set "title" .Params.title }}
         {{ .Scratch.Set "format" .Params.format }}
-        {{ .Scratch.Set "lieu" .Params.lieu }}
-        {{ .Scratch.Set "date" .Params.date }}
-        {{ .Scratch.Set "duree" .Params.duree }}
-        {{ .Scratch.Set "themes" .Params.themes }}
+        {{ .Scratch.Set "duration" .Params.duration }}
+        {{ .Scratch.Set "thumbnail" .Params.thumbnail }}
         {{ .Scratch.Set "services" .Params.services }}
-        {{ .Scratch.Set "authors" .Params.authors }}
-        {{ .Scratch.Set "shortDescription" .Params.shortDescription }}
+        {{ .Scratch.Set "language" .Params.language }}
+        {{ .Scratch.Set "subtitles" .Params.subtitles }}
 
-        {{ partial "presentations/presentation" . }}
+        {{ partial "presentations/presentation-preview" . }}
     {{ end }}
 </div>

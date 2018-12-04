@@ -1,0 +1,29 @@
+<section class="presentation-preview">
+    <div class="presentation-preview__media thumbnail">
+        <img class="thumbnail__media" src="{{ .Scratch.Get "thumbnail" }}" />
+        <span class="thumbnail__description">
+            <span class="thumbnail__format">{{ .Scratch.Get "format" }}</span>
+            <span class="thumbnail__duration">{{ safeHTML (.Scratch.Get "duration") }}</span>
+        </span>
+    </div>
+    <div class="presentation-preview__content">
+        <h3 class="h4-like"><a class="discreet" href="#">{{ .Scratch.Get "title" }}</a></h3>
+        <div>
+            {{ $list := .Scratch.Get "authors" }}
+            {{ $len := len $list }}
+            {{- range $index, $element := $list -}}
+                <a class="discreet" href="#">{{ . }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
+            {{- end -}}
+        </div>
+        <div>
+            <dl class="presentation-services">
+                {{- range (.Scratch.Get "services") -}}
+                <dd>{{ . | safeHTML }}</dd>
+                {{- end -}}
+                <dd>{{ .Scratch.Get "language" }}</dd>
+                {{ .Scratch.Get "subititles"}}
+                <dd><abbr title="sous-titré">S‑T</abbr>&nbsp;{{ .Scratch.Get "subtitles" }}</dd>
+            </dl>
+        </div>
+    </div>
+</section>
