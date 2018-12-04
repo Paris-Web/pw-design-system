@@ -4,6 +4,8 @@ menu: "pages"
 layout: "page"
 ---
 
+{{< filters filters="accessibilité,API,architecture d'information,audit,back-end,back-office,bienveillance,big data,collaboration,CSP,CSS,design,direction artistique,développement,e-commerce,e-mail,ergonomie,expérimentation,formation,front-end,gestion de contenus,handicap,histoire,IA,inclusion,international,intégration,IoT,JavaScript,mobile,méthodologie,métier,Node.js,outils,parité,performance,prospective,publication,PWA,qualité,retour d'expérience,RGAA,réflexion,spécifications,sécurité,test utilisateur,typographie,UI,UX,vie privée,webfonts,Webpack,éco-conception,écologie,éthique" active="vie privée" >}}
+
 {{< archives >}}
 
 <div class="pagination">
@@ -21,5 +23,3 @@ layout: "page"
     <a href="#11">11</a>
     <a href="#next" rel="next">Suivant &gt;</a>
 </div>
-
-(NB : Il serait top d'avoir de la recherche et/ou du filtre par thème sur cette page.)

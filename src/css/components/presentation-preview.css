@@ -1,0 +1,11 @@
+.presentation-preview {
+    max-width: 30ch;
+}
+
+.presentation-preview__content {
+    margin-top: calc(var(--base-spacing) * 2);
+}
+
+.presentation-preview__content > * {
+    margin: 0;
+}

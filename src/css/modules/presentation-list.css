@@ -1,3 +1,17 @@
 .presentation-list > :nth-child(2n + 1) {
   background: var(--color-ui-02);
 }
+
+
+.presentation-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: calc(var(--base-spacing) * -2);
+  margin-right: calc(var(--base-spacing) * -2);
+}
+
+.presentation-grid > * {
+  width: calc(25% - calc(var(--base-spacing) * 4));
+  margin: calc(var(--base-spacing) * 2);
+}
