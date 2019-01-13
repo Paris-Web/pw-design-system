@@ -1,14 +1,67 @@
-<div class="presentation-grid">
-    {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
-        {{ .Scratch.Set "authors" (.Params.authors) }}
-        {{ .Scratch.Set "title" .Params.title }}
-        {{ .Scratch.Set "format" .Params.format }}
-        {{ .Scratch.Set "duration" .Params.duration }}
-        {{ .Scratch.Set "thumbnail" .Params.thumbnail }}
-        {{ .Scratch.Set "services" .Params.services }}
-        {{ .Scratch.Set "language" .Params.language }}
-        {{ .Scratch.Set "subtitles" .Params.subtitles }}
+<form>
+  <div class="form-oneline form-oneline--inline">
+    <div class="form-oneline__field form-field">
+      <div class="form-field__label">
+        <label for="search">Terme de recherche</label>
+      </div>
+      <div class="form-field__input">
+        <input type="text" id="search" placeholder="mot-clés, orateur/oratrice, tags, année, &hellip;" />
+      </div>
+    </div>
+    <div class="form-oneline__action">
+      <button class="btn">Rechercher</button>
+    </div>
+  </div>
 
-        {{ partial "presentations/presentation-preview" . }}
-    {{ end }}
+  <div class="filters filters--oneline js-toggle-container" data-class-toggle="filters--opened">
+      <button type="button" class="filters__title js-toggle-btn">
+          Filtres
+          <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
+              <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
+          </svg>
+      </button>
+      <ul class="filters__list">
+        {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
+            {{ .Scratch.Set "name" .Params.name }}
+            {{ .Scratch.Set "options" .Params.options }}
+            {{ .Scratch.Set "type" .Params.type }}
+
+            <li class="filter">
+                <button type="button" class="filter__title js-toggle-btn">
+                    {{ .Scratch.Get "name" }}
+                    <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
+                        <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
+                    </svg>
+                </button>
+                <div class="filter__values">
+                    {{ if (eq (.Scratch.Get "type") "range") }}
+                        de <input class="input-year" type="number" value="2009" /> à <input class="input-year" type="number" value="2018" />
+                    {{ else }}
+                        {{ range (.Scratch.Get "options") }}
+                            <label class="form-field form-field--checkbox">
+                                <input type="checkbox" value="{{ . }}" />
+                                <span>{{ . | safeHTML }}</span>
+                            </label>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </li>
+        {{ end }}
+    </ul>
+  </div>
+</form>
+
+<div class="presentation-grid">
+  {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
+    {{ .Scratch.Set "authors" (.Params.authors) }}
+    {{ .Scratch.Set "title" .Params.title }}
+    {{ .Scratch.Set "format" .Params.format }}
+    {{ .Scratch.Set "duration" .Params.duration }}
+    {{ .Scratch.Set "thumbnail" .Params.thumbnail }}
+    {{ .Scratch.Set "services" .Params.services }}
+    {{ .Scratch.Set "language" .Params.language }}
+    {{ .Scratch.Set "subtitles" .Params.subtitles }}
+
+    {{ partial "presentations/presentation-preview" . }}
+{{ end }}
 </div>
