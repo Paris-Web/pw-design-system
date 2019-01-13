@@ -25,3 +25,23 @@ input:disabled {
 input:invalid {
   border-bottom-color: var(--color-special-red);
 }
+
+.input-year {
+  width: 4.5em;
+}
+
+.form-field--checkbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-field--checkbox input {
+  width: auto;
+  margin-left: 0;
+  margin-right: calc(var(--base-spacing) * 2);
+  align-self: center;
+}
+
+.form-field--checkbox input:checked + * {
+  font-weight: bold;
+}
