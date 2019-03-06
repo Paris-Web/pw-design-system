@@ -31,7 +31,7 @@
                 </summary>
                 <div class="filter__values">
                     {{ if (eq (.Scratch.Get "type") "range") }}
-                        de <input class="input-year" type="number" value="2009" /> à <input class="input-year" type="number" value="2018" />
+                        de <input class="input-year" type="number" value="2009" min="2009" max="2019" /> à <input class="input-year" type="number" value="2018" min="2009" max="2019" />
                     {{ else }}
                         {{ range (.Scratch.Get "options") }}
                             <label class="form-field form-field--checkbox">
