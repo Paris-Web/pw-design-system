@@ -5,7 +5,7 @@
   margin: calc(var(--base-spacing) * 10) 0;
 }
 .form-oneline--inline {
-  margin: calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
+  margin: calc(var(--base-spacing) * 3) 0;
 }
 
 .form-oneline__field {
@@ -22,4 +22,6 @@
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  padding-top: calc(0.6rem - 1px);
+  padding-bottom: calc(0.6rem - 3px);
 }
