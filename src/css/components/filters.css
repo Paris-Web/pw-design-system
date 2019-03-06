@@ -50,6 +50,11 @@
     overflow-y: auto;
     padding:  0 calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
     flex: 1;
+    max-height: 0;
+    transition: max-height .2s ease-in-out;
+    overflow: hidden;
+}
+details[open] .filter__values {
     max-height: 11em;
 }
 .filter__values > * {
