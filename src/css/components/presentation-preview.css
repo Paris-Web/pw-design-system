@@ -9,3 +9,21 @@
 .presentation-preview__content > * {
     margin: 0;
 }
+
+.presentation-preview__media {
+    overflow: hidden;
+}
+
+.presentation-preview__media:focus-within, 
+.presentation-preview__link:focus {
+    outline: var(--color-brand-01) solid 3px ;
+}
+
+.presentation-preview__link img {
+    transition: transform .2s ease-in-out;
+}
+.presentation-preview__link:hover img,
+.presentation-preview__link:active img,
+.presentation-preview__link:focus img {
+    transform: scale(1.1);
+}
