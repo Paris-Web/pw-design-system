@@ -13,13 +13,8 @@
     </div>
   </div>
 
-  <div class="filters filters--oneline js-toggle-container" data-class-toggle="filters--opened">
-      <button type="button" class="filters__title js-toggle-btn">
-          Filtres
-          <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
-              <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
-          </svg>
-      </button>
+  <div class="filters filters--oneline">
+      <p class="filters__title">Filtres</p>
       <ul class="filters__list">
         {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
             {{ .Scratch.Set "name" .Params.name }}
@@ -27,12 +22,13 @@
             {{ .Scratch.Set "type" .Params.type }}
 
             <li class="filter">
-                <button type="button" class="filter__title js-toggle-btn">
-                    {{ .Scratch.Get "name" }}
-                    <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
-                        <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
-                    </svg>
-                </button>
+              <details>
+                <summary class="filter__title">
+                  {{ .Scratch.Get "name" }}
+                  <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
+                      <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
+                  </svg>
+                </summary>
                 <div class="filter__values">
                     {{ if (eq (.Scratch.Get "type") "range") }}
                         de <input class="input-year" type="number" value="2009" /> à <input class="input-year" type="number" value="2018" />
@@ -45,6 +41,7 @@
                         {{ end }}
                     {{ end }}
                 </div>
+              </details>
             </li>
         {{ end }}
     </ul>

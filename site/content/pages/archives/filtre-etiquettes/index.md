@@ -1,7 +1,7 @@
 ---
 order: 0
 filter: true
-name: "Etiquettes"
+name: "Étiquettes"
 options:
   - "Accessibilité"
   - "UX"
