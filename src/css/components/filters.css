@@ -45,7 +45,6 @@
     user-select: none;
 }
 .filter__values {
-    overflow-y: auto;
     padding:  0 calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
     flex: 1;
     max-height: 0;
@@ -56,7 +55,8 @@ details[open] {
     height: 100%;
 }
 details[open] .filter__values {
-    max-height: 11em;
+     max-height: 11em;
+     overflow-y: auto;
     /* 100 height minus .filter__title padding and line-height */
     height: calc(100% - 2 * .9rem - 1.4rem);
 }
