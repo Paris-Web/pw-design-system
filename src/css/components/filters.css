@@ -64,6 +64,9 @@ details[open] .filter__values {
     margin-top: var(--base-spacing);
     margin-bottom: var(--base-spacing);
 }
+details > summary::-webkit-details-marker {
+  display: none;
+}
 .filter__title .icon {
     margin-left: calc(var(--base-spacing) * 2);
     display: inline;
