@@ -1,3 +1,10 @@
+:root {
+  --sponsor-or-height: 160px;
+  --sponsor-argent-height: 140px;
+  --sponsor-autre-height: 120px;
+  --sponsor-bronze-height: 100px;
+}
+
 .sponsor-section {
   margin-bottom: 3rem;
 }
@@ -13,33 +20,36 @@
   max-width: 67%;
 }
 .sponsor--or .sponsor__logo img {
-  max-height: 10rem;
+  max-height: var(--sponsor-or-height);
 }
 
 .sponsor--argent .sponsor__logo {
   max-width: 50%;
 }
 .sponsor--argent .sponsor__logo img {
-  max-height: 8rem;
+  max-height: var(--sponsor-argent-height);
 }
 
 .sponsor--autre .sponsor__logo {
   max-width: 33%;
 }
 .sponsor--autre .sponsor__logo img {
-  max-height: 5rem;
+  max-height: var(--sponsor-autre-height);
 }
 
 .sponsor--bronze .sponsor__logo {
   max-width: 25%;
 }
 .sponsor--bronze .sponsor__logo img {
-  max-height: 4rem;
+  max-height: var(--sponsor-bronze-height);
 }
 
 .sponsor {
   margin-top: calc(var(--base-spacing) * 8);
   margin-bottom: calc(var(--base-spacing) * 8);
+}
+.sponsor__logo {
+  display: block;
 }
 .sponsor__logo img {
   display: block;
@@ -107,10 +117,27 @@
   .sponsor-section--platine .sponsor__logo {
     height: auto;
     max-width: 67%;
-    margin: 0 auto;
+    margin-bottom: calc(var(--base-spacing) * 2);
   }
+
+  .sponsor--argent .sponsor__logo img {
+    height: var(--sponsor-argent-height);
+  }
+  .sponsor--autre .sponsor__logo img {
+    height: var(--sponsor-autre-height);
+  }
+  .sponsor--bronze .sponsor__logo img {
+    height: var(--sponsor-bronze-height);
+  }
+
   .sponsor-section--or .sponsor__logo {
     max-width: 50%;
+  }
+  .sponsor-section--or .sponsor__logo img,
+  .sponsor-section--argent .sponsor__logo img,
+  .sponsor-section--bronze .sponsor__logo img,
+  .sponsor-section--autre .sponsor__logo img {
+    width: 100%;
   }
   .sponsor-section--argent .sponsor__logo,
   .sponsor-section--bronze .sponsor__logo,
@@ -154,11 +181,13 @@
     align-items: center;
     height: 100%;
     padding-right: calc(var(--base-spacing) * 4);
+    width: 33%;
   }
   .sponsor--platine .sponsor__logo img {
     max-height: 12rem;
     height: 100%;
     object-position: center;
+    width: 100%;
   }
   .sponsor--platine .sponsor__description {
     width: 67%;
@@ -173,6 +202,10 @@
   .sponsor-section--or .sponsor-section__sponsors > :last-child {
     border-right: none;
   }
+  .sponsor--or .sponsor__logo img {
+    height: var(--sponsor-or-height);
+  }
+
   .sponsor-section--or .sponsor__logo,
   .sponsor-section--argent .sponsor__logo,
   .sponsor-section--bronze .sponsor__logo,
