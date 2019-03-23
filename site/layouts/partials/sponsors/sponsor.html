@@ -1,16 +1,18 @@
 <div class="sponsor sponsor--{{ .Scratch.Get "niveau" }}">
   <div class="sponsor__logo">
-    <img width="{{ replace (.Scratch.Get "logoWidth") "x" "px" }}" src="{{ .Scratch.Get "logo" }}" alt="" />
+    <img src="{{ .Scratch.Get "logo" }}" alt="{{ if eq (.Scratch.Get "hideDescription") "true" }}{{- .Scratch.Get "name" -}}{{ end }}" />
   </div>
-  <div class="sponsor__description">
-    <h3>{{- .Scratch.Get "name" -}}</h3>
+  {{ if not (eq (.Scratch.Get "hideDescription") "true") }}
+    <div class="sponsor__description">
+      <h3>{{- .Scratch.Get "name" -}}</h3>
 
-    <div class="sponsor__content">
-      {{ (.Scratch.Get "description") | markdownify }}
+      <div class="sponsor__content">
+        {{ (.Scratch.Get "description") | markdownify }}
+      </div>
+
+      <a class="sponsor__link" href="{{- .Scratch.Get "siteUrl" -}}">
+        {{- .Scratch.Get "name" -}}
+      </a>
     </div>
-
-    <a class="sponsor__link" href="{{- .Scratch.Get "siteUrl" -}}">
-      {{- .Scratch.Get "name" -}}
-    </a>
-  </div>
+  {{ end }}
 </div>

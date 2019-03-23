@@ -1,0 +1,17 @@
+.call-to-action__actions {
+  text-align: center;
+}
+
+@media screen and (min-width: 60ch) {
+  .call-to-action {
+    display: flex;
+    align-items: center;
+  }
+  .call-to-action__actions {
+    text-align: right;
+    min-width: 20ch;
+  }
+  .call-to-action__actions > :last-child {
+    margin-right: 0;
+  }
+}
