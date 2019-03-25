@@ -13,8 +13,8 @@ layout: "full"
     <main>
         <h2>Suivez le direct !</h2>
         <ul class="direct-link__list">
-            <li><a class="btn" href="{{< relref "pages/direct/index.md" >}}">Amphithéâtre René Descartes</a></li>
-            <li><a class="btn" href="{{< relref "pages/direct/index.md" >}}">Auditorium Blaise Pascal</a></li>
+            <li><a class="btn" href="{{< relref "/pages/direct/index.md" >}}">Amphithéâtre René Descartes</a></li>
+            <li><a class="btn" href="{{< relref "/pages/direct/index.md" >}}">Auditorium Blaise Pascal</a></li>
         </ul>
     </main>
     <aside>

@@ -6,7 +6,7 @@ menu: "modules"
 # Actualité phare
 
 Le module d’actualité phare a pour but l’affichage d’une actualité à mettre en avant.
-Elle est utilisée sur la [page d’accueil]({{< relref "pages/accueil/index.md" >}}).
+Elle est utilisée sur la [page d’accueil]({{< relref "/pages/accueil/index.md" >}}).
 
 ---
 

@@ -1,7 +1,7 @@
-import webpack from "webpack";
-import path from "path";
+const webpack = require("webpack");
+const path = require("path");
 
-export default {
+module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
     process.env.NODE_ENV === "production" ? "none" : "cheap-module-source-map",

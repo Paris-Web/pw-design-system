@@ -6,3 +6,5 @@ if (!window.performance.now) {
         return new Date().getTime();
     }
 }
+
+import ('details-element-polyfill')

@@ -8,8 +8,8 @@ menu: "modules"
 Le module de fil d’actualité est un encart autonome ayant pour but l’affichage des dernières actualités
 publiées sur le site. Il permet également un accès direct à la page [page de liste des actualités](#).
 
-Il est utilisé sur la [page d’accueil]({{< relref "pages/accueil/index.md" >}}) ainsi que dans la seconde
-colonne de la [page de détail d’une actualité]({{< relref "pages/actualite/index.md" >}}).
+Il est utilisé sur la [page d’accueil]({{< relref "/pages/accueil/index.md" >}}) ainsi que dans la seconde
+colonne de la [page de détail d’une actualité]({{< relref "/pages/actualite/index.md" >}}).
 
 ---
 
