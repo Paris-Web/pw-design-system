@@ -4,7 +4,9 @@ const path = require("path");
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
-    process.env.NODE_ENV === "production" ? "none" : "cheap-module-source-map",
+    process.env.NODE_ENV === "production"
+      ? "source-map"
+      : "cheap-module-source-map",
   module: {
     rules: [
       {
@@ -26,7 +28,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production")
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production"),
+        ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
+        ALGOLIA_SEARCH_ONLY_API_KEY: JSON.stringify(
+          process.env.ALGOLIA_SEARCH_ONLY_API_KEY
+        )
       }
     })
   ],
@@ -35,6 +41,7 @@ module.exports = {
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],
+    archives: ["./js/archives"],
     styleguide: ["./js/styleguide"]
   },
   output: {

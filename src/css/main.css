@@ -30,6 +30,7 @@
 @import "components/thumbnail.css";
 @import "components/video.css";
 @import "components/filters.css";
+@import "modules/algolia.css";
 @import "modules/direct-link.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";

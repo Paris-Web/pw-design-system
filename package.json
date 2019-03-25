@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "algoliasearch": "^3.32.1",
     "browser-sync": "^2.26.3",
     "css-loader": "^2.1.1",
     "eslint": "^5.15.3",
@@ -24,6 +25,7 @@
     "gulp-watch": "^5.0.1",
     "hugo-bin": "^0.42.0",
     "imports-loader": "^0.8.0",
+    "instantsearch.js": "^3.2.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
     "rgb-hex": "^2.1.0",
@@ -41,6 +43,7 @@
     "babel-loader": "^8.0.5",
     "caniuse-db": "^1.0.30000951",
     "details-element-polyfill": "^2.3.1",
+    "dotenv": "^7.0.0",
     "postcss-url": "^8.0.0",
     "url-loader": "^1.1.2"
   }

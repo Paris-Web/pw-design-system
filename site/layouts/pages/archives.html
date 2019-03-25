@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div class="content">
+    <h1 class="separation separation--primary">
+      {{ .Title }}
+    </h1>
+
+    {{ .Content }}
+  </div>
+
+  <script src="{{.Site.BaseURL}}archives.js"></script>
+{{ end }}

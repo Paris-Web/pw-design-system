@@ -1,6 +1,7 @@
 ---
 order: 0
 filter: true
+id: "themes"
 name: "Étiquettes"
 options:
   - "Accessibilité"
