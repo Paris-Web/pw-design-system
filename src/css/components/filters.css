@@ -1,113 +1,117 @@
 .filters.filters--oneline {
-    display: block;
-    border-top: 1px solid var(--color-ui-03);
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 0;
-    border-bottom: 1px solid var(--color-ui-03);
-    margin-bottom: calc(var(--base-spacing) * 4);
+  display: block;
+  border-top: 1px solid var(--color-ui-03);
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid var(--color-ui-03);
+  margin-bottom: calc(var(--base-spacing) * 4);
 }
 
 .filters.filters--oneline .filters__title {
-    flex: 1;
-    display: block;
-    text-align: left;
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 3);
-    width: 100%;
-    text-transform: uppercase;
+  flex: 1;
+  display: block;
+  text-align: left;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 3);
+  width: 100%;
+  text-transform: uppercase;
 }
 .filters.filters--oneline .filters__list {
-    flex: 6;
-    padding: 0;
-    margin: 0;
+  flex: 6;
+  padding: 0;
+  margin: 0;
 }
 
 .filters.filters--oneline .filters__list > * {
-    flex: 1;
+  flex: 1;
 }
 
 .filter {
-    display: flex;
-    flex-direction: column;
+  display: block;
+}
+.filter__container {
+  display: flex;
+  flex-direction: column;
 }
 .filter__title {
-    display: block;
-    text-align: left;
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 3);
-    margin: 0;
-    cursor: pointer;
-    user-select: none;
+  display: block;
+  text-align: left;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 3);
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
 }
 .filter__values {
-    padding:  0 calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
-    flex: 1;
-    max-height: 0;
-    transition: max-height .2s ease-in-out;
-    overflow: hidden;
+  padding: 0 calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
+  flex: 1 1 auto;
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+  overflow: hidden;
 }
 details[open] {
-    height: 100%;
+  height: 100%;
 }
 details[open] .filter__values {
-     max-height: 11em;
-     overflow-y: auto;
-    /* 100 height minus .filter__title padding and line-height */
-    height: calc(100% - 2 * .9rem - 1.4rem);
+  max-height: 11em;
+  overflow-y: auto;
 }
 .filter__values > * {
-    margin-top: var(--base-spacing);
-    margin-bottom: var(--base-spacing);
+  margin-top: var(--base-spacing);
+  margin-bottom: var(--base-spacing);
 }
 details > summary::-webkit-details-marker {
   display: none;
 }
 .filter__title .icon {
-    margin-left: calc(var(--base-spacing) * 2);
-    display: inline;
-    transition: transform .1s ease-in-out;
+  margin-left: calc(var(--base-spacing) * 2);
+  display: inline;
+  transition: transform 0.1s ease-in-out;
 }
 
 details[open] .filter__title .icon {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
-
 @media screen and (min-width: 44em) {
-    .filters.filters--oneline {
-        display: flex;
-        align-items: flex-start;
-    }
-    .filters.filters--oneline .filters__title {
-        padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 2);
-    }
-    .filters.filters--oneline.filters--opened .filters__title {
-        border-bottom: 1px solid var(--color-ui-03);
-    }
-    .filters.filters--oneline .filters__list {
-        flex: 6;
-        display: flex;
-        align-items: stretch;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .filters.filters--oneline .filters__list > * {
-        margin-left: -1px;
-    }
-    .filters details:not([open]) .filter__title {
-        font-weight: normal;
-    }
-    .filter__values {
-        padding: 0 calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 2);
-    }
-    .filter:first-child .filter__values, .filter + .filter .filter__values {
-        border-left: 1px solid var(--color-ui-03);
-        border-right: 1px solid var(--color-ui-03);
-    }
-
+  .filters.filters--oneline {
+    display: flex;
+    align-items: flex-start;
+  }
+  .filters.filters--oneline .filters__title {
+    padding: calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 2);
+  }
+  .filters.filters--oneline.filters--opened .filters__title {
+    border-bottom: 1px solid var(--color-ui-03);
+  }
+  .filters.filters--oneline .filters__list {
+    flex: 6;
+    display: flex;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .filters.filters--oneline .filters__list > * {
+    margin-left: -1px;
+  }
+  .filters details:not([open]) .filter__title {
+    font-weight: normal;
+  }
+  .filter__container {
+    border-left: 1px solid var(--color-ui-03);
+    border-right: 1px solid var(--color-ui-03);
+  }
+  .filter__title {
+    margin-left: -1px;
+    margin-right: -1px;
+    background: white;
+  }
+  .filter__values {
+    padding: 0 calc(var(--base-spacing) * 3) calc(var(--base-spacing) * 2);
+  }
 }
