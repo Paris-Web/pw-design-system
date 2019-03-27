@@ -1,10 +1,9 @@
 import algoliasearch from "algoliasearch/lite";
 import instantsearch from "instantsearch.js";
 import refinementList from "instantsearch.js/es/widgets/refinement-list/refinement-list";
-import connectMenu from "instantsearch.js/es/connectors/menu/connectMenu";
+import pagination from "instantsearch.js/es/widgets/pagination/pagination";
 import connectRange from "instantsearch.js/es/connectors/range/connectRange";
 import connectHits from "instantsearch.js/es/connectors/hits/connectHits";
-import pagination from "instantsearch.js/es/widgets/pagination/pagination";
 import connectSearchBox from "instantsearch.js/es/connectors/search-box/connectSearchBox";
 import throttle from "../util/throttle";
 
@@ -47,20 +46,6 @@ search.addWidget(
   })
 );
 
-const hiddenMenu = connectMenu(options => {
-  const item = options.items.find(
-    item => item.label === "Conférences" && !item.isRefined
-  );
-  if (item) {
-    options.refine(item.label);
-  }
-});
-search.addWidget(
-  hiddenMenu({
-    attribute: "type"
-  })
-);
-
 const filtersTemplates = {
   item: `
       <label class="form-field form-field--checkbox">
@@ -97,47 +82,47 @@ search.addWidget(
   })
 );
 
-// const rangeInput = connectRange((options, isFirstRender) => {
-//   if (isFirstRender) {
-//     const { widgetParams, range, start, refine } = options;
-//     const container = document.querySelector(widgetParams.container);
+const rangeInput = connectRange((options, isFirstRender) => {
+  if (isFirstRender) {
+    const { widgetParams, range, start, refine } = options;
+    const container = document.querySelector(widgetParams.container);
 
-//     const attributes = `min="${range.min}" max="${range.max}"`;
-//     container.innerHTML = `
-//       <div>
-//           de
-//           <input class="input-year input-year--min" type="number" value="${
-//             Number.isFinite(start.min) ? start.min : widgetParams.min
-//           }" ${attributes} />
-//           à
-//           <input class="input-year input-year--max" type="number" value="${
-//             Number.isFinite(start.max) ? start.max : widgetParams.max
-//           }" ${attributes} />
-//       </div>
-//     `;
+    const attributes = `min="${range.min}" max="${range.max}"`;
+    container.innerHTML = `
+      <div>
+          de
+          <input class="input-year input-year--min" type="number" value="${
+            Number.isFinite(start.min) ? start.min : widgetParams.min
+          }" ${attributes} />
+          à
+          <input class="input-year input-year--max" type="number" value="${
+            Number.isFinite(start.max) ? start.max : widgetParams.max
+          }" ${attributes} />
+      </div>
+    `;
 
-//     const min = container.querySelector(".input-year--min");
-//     const max = container.querySelector(".input-year--max");
-//     min.addEventListener("change", () => {
-//       refine([
-//         Number.isFinite(min.value) ? min.value : undefined,
-//         Number.isFinite(max.value) ? max.value : undefined
-//       ]);
-//     });
-//     max.addEventListener("change", () => {
-//       refine([min.value, max.value]);
-//     });
-//   }
-// });
+    const min = container.querySelector(".input-year--min");
+    const max = container.querySelector(".input-year--max");
+    min.addEventListener("change", () => {
+      refine([
+        Number.isFinite(min.value) ? min.value : undefined,
+        Number.isFinite(max.value) ? max.value : undefined
+      ]);
+    });
+    max.addEventListener("change", () => {
+      refine([min.value, max.value]);
+    });
+  }
+});
 
-// search.addWidget(
-//   rangeInput({
-//     container: "#year",
-//     attribute: "year",
-//     min: 2009,
-//     max: new Date().getFullYear()
-//   })
-// );
+search.addWidget(
+  rangeInput({
+    container: "#year",
+    attribute: "year",
+    min: 2009,
+    max: new Date().getFullYear()
+  })
+);
 
 const hits = connectHits(options => {
   const { widgetParams, hits } = options;
@@ -146,46 +131,56 @@ const hits = connectHits(options => {
     container.classList.add("presentation-preview");
 
     container.innerHTML = `
-        <section class="presentation-preview">
-            <div class="presentation-preview__media thumbnail">
-                <a href="#" class="presentation-preview__link">
-                    <img class="thumbnail__media" src="${hit.image ||
-                      "https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png"}" />
+        <div class="presentation-preview__media thumbnail">
+            <a href="${hit.url}" class="presentation-preview__link">
+                <img class="thumbnail__media" src="${hit.image ||
+                  "https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png"}" />
+            </a>
+            <span class="thumbnail__description">
+                <span class="thumbnail__format">${hit.type}</span>
+                <span class="thumbnail__duration">${hit.duration}</span>
+            </span>
+        </div>
+        <div class="presentation-preview__content">
+            <h3 class="h4-like">
+                <a class="discreet" href="${hit.url}">
+                    ${hit.title}
                 </a>
-                <span class="thumbnail__description">
-                    <span class="thumbnail__format">${hit.type}</span>
-                    <span class="thumbnail__duration">${hit.duration}</span>
-                </span>
+            </h3>
+            <div>
+                ${hit.speakers
+                  .map(({ name, url }) => {
+                    return `<a class="discreet" href="${url}">${name}</a>`;
+                  })
+                  .join(", ")}
             </div>
-            <div class="presentation-preview__content">
-                <h3 class="h4-like">
-                    <a class="discreet" href="#">
-                        ${hit.title}
-                    </a>
-                </h3>
-                <div>
-                    ${hit.speakers
-                      .split(", ")
-                      .map(speaker => {
-                        return `<a class="discreet" href="#">${speaker}</a>`;
-                      })
-                      .join(", ")}
-                </div>
-                <div>
-                    <dl class="presentation-services">
-                        <dd>TODO Services</dd>
-                        <dd>TODO Language</dd>
-                        <dd>TODO Subtitles</dd>
-                    </dl>
-                </div>
+            <div>
+                <dl class="presentation-services">
+                    ${hit.services
+                      .map(service => `<dd>${service}</dd>`)
+                      .join("")}
+                </dl>
             </div>
-        </section>
+        </div>
     `;
 
     return container;
   };
 
   requestAnimationFrame(() => {
+    if (options.results) {
+      const countContainer = document.querySelector(
+        widgetParams.countContainer
+      );
+      const count = options.results.nbHits;
+      countContainer.innerHTML =
+        count > 0
+          ? `
+        ${options.results.nbHits} conférences
+      `
+          : "Aucune conférence ne correspond à votre recherche.";
+    }
+
     const container = document.querySelector(widgetParams.container);
     container.innerHTML = "";
     hits.forEach(hit => {
@@ -196,7 +191,8 @@ const hits = connectHits(options => {
 
 search.addWidget(
   hits({
-    container: "#hits"
+    container: "#hits",
+    countContainer: "#hits-count"
   })
 );
 
@@ -217,5 +213,11 @@ search.addWidget(
     }
   })
 );
+
+document
+  .querySelector("#search-filters")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+  });
 
 search.start();

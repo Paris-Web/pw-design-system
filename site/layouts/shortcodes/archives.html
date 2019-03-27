@@ -1,4 +1,4 @@
-<form>
+<form id="search-filters">
   <div class="form-oneline form-oneline--inline">
     <div class="form-oneline__field form-field">
       <div class="form-field__label">
@@ -23,33 +23,31 @@
   </p>
 
   <div class="filters filters--oneline">
-      <p class="filters__title">Filtres</p>
-      <ul class="filters__list">
-        {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
-            {{ .Scratch.Set "id" .Params.id }}
-            {{ .Scratch.Set "name" .Params.name }}
-            {{ .Scratch.Set "options" .Params.options }}
-            {{ .Scratch.Set "type" .Params.type }}
+    <p class="filters__title">Filtres</p>
+    <ul class="filters__list">
+      {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
+        {{ .Scratch.Set "id" .Params.id }}
+        {{ .Scratch.Set "name" .Params.name }}
+        {{ .Scratch.Set "options" .Params.options }}
+        {{ .Scratch.Set "type" .Params.type }}
 
-            <li class="filter">
-              <details class="filter__container">
-                <summary class="filter__title">
-                  {{ .Scratch.Get "name" }}
-                  <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
-                      <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
-                  </svg>
-                </summary>
-                <div class="filter__values" id="{{ .Scratch.Get "id" }}">
-                    {{ if (eq (.Scratch.Get "type") "range") }}
-                        <div>de <input class="input-year" type="number" value="2009" min="2009" max="2019" /> à <input class="input-year" type="number" value="2018" min="2009" max="2019" /></div>
-                    {{ end }}
-                </div>
-              </details>
-            </li>
-        {{ end }}
+        <li class="filter">
+          <details class="filter__container">
+            <summary class="filter__title">
+              {{ .Scratch.Get "name" }}
+              <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
+                  <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
+              </svg>
+            </summary>
+            <div class="filter__values" id="{{ .Scratch.Get "id" }}"></div>
+          </details>
+        </li>
+      {{ end }}
     </ul>
   </div>
 </form>
+
+<div id="hits-count"></div>
 
 <div id="hits" class="presentation-grid"></div>
 

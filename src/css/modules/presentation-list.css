@@ -11,13 +11,13 @@
 }
 
 .presentation-grid > * {
-  max-width: 25rem;
+  width: 17rem;
   margin: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 2);
 }
 
 @media screen and (min-width: 53em) {
   .presentation-grid {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .presentation-grid > * {
     width: calc(33.3% - calc(var(--base-spacing) * 4));
