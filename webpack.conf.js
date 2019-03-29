@@ -23,9 +23,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      fetch: "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
-    }),
     new webpack.DefinePlugin({
       "process.env": {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production"),
@@ -40,13 +37,23 @@ module.exports = {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: ["./js/app"],
-    archives: ["./js/archives"],
-    styleguide: ["./js/styleguide"]
+    app: [require.resolve("@babel/polyfill/noConflict"), "./js/app"],
+    archives: [require.resolve("@babel/polyfill/noConflict"), "./js/archives"],
+    "admin-archives": [
+      require.resolve("@babel/polyfill/noConflict"),
+      "./js/admin-archives"
+    ],
+    styleguide: [
+      require.resolve("@babel/polyfill/noConflict"),
+      "./js/styleguide"
+    ]
   },
   output: {
     path: path.join(__dirname, "dist"),
     publicPath: process.env.HUGO_BASEURL || "/",
     filename: "[name].js"
+  },
+  node: {
+    fs: "empty"
   }
 };

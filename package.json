@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "algoliasearch": "^3.32.1",
+    "atomic-algolia": "^0.3.17",
     "browser-sync": "^2.26.3",
     "css-loader": "^2.1.1",
     "eslint": "^5.15.3",

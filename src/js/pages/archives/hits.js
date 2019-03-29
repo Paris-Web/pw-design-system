@@ -9,8 +9,11 @@ const hits = connectHits(options => {
     container.innerHTML = `
           <div class="presentation-preview__media thumbnail">
               <a href="${hit.url}" class="presentation-preview__link">
-                  <img class="thumbnail__media" src="${hit.image ||
-                    "https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png"}" />
+                  <img class="thumbnail__media" src="${
+                    hit.video && hit.video.link
+                      ? hit.video.link
+                      : "http://localhost:3000/images/logo/logo.svg"
+                  }" />
               </a>
               <span class="thumbnail__description">
                   <span class="thumbnail__format">${hit.type}</span>
