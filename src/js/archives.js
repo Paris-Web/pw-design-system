@@ -1,1 +1,3 @@
-import "./pages/archives";
+import initArchives from "./pages/archives";
+
+initArchives();

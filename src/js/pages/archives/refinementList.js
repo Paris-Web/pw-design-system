@@ -1,25 +1,43 @@
-import baseRefinementList from "instantsearch.js/es/widgets/refinement-list/refinement-list";
+import connectRefinementList from "instantsearch.js/es/connectors/refinement-list/connectRefinementList";
+import { html, render } from "lit-html";
+import { unsafeHTML } from "lit-html/directives/unsafe-html";
 
-const filtersTemplates = {
-  item: `
-        <label class="form-field form-field--checkbox">
-          <input
-            type="checkbox"
-            value="{{value}}"
-            {{#isRefined}}checked{{/isRefined}}
-          />
-          <span>
-            {{{highlighted}}}
-            <span class="{{cssClasses.count}}">({{#helpers.formatNumber}}{{count}}{{/helpers.formatNumber}})</span>
-          </span>
-        </label>
-      `
+const makeChangeHandler = refine => ({
+  handleEvent(e) {
+    refine(e.target.value);
+  }
+});
+
+const renderItem = changeHandler => item => {
+  return html`
+    <label class="form-field form-field--checkbox">
+      <input
+        type="checkbox"
+        value="${item.value}"
+        ?checked=${item.isRefined}
+        @change=${changeHandler}
+      />
+      <span>
+        ${unsafeHTML(item.label)}
+        <span>(${item.count})</span>
+      </span>
+    </label>
+  `;
 };
 
+const renderItems = changeHandler => list => html`
+  ${list.map(renderItem(changeHandler))}
+`;
+
 const refinementList = widgetParams =>
-  baseRefinementList({
+  connectRefinementList(options => {
+    const container = document.querySelector(options.widgetParams.container);
+    render(
+      renderItems(makeChangeHandler(options.refine))(options.items),
+      container
+    );
+  })({
     limit: 100,
-    templates: filtersTemplates,
     sortBy: ["name:asc"],
     ...widgetParams
   });

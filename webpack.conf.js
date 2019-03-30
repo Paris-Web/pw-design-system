@@ -37,16 +37,10 @@ module.exports = {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: [require.resolve("@babel/polyfill/noConflict"), "./js/app"],
-    archives: [require.resolve("@babel/polyfill/noConflict"), "./js/archives"],
-    "admin-archives": [
-      require.resolve("@babel/polyfill/noConflict"),
-      "./js/admin-archives"
-    ],
-    styleguide: [
-      require.resolve("@babel/polyfill/noConflict"),
-      "./js/styleguide"
-    ]
+    app: ["./js/app"],
+    archives: ["./js/archives"],
+    "admin-archives": ["./js/admin-archives"],
+    styleguide: ["./js/styleguide"]
   },
   output: {
     path: path.join(__dirname, "dist"),

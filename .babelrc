@@ -4,12 +4,11 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": ["> 0.25%"]
+          "browsers": ["> 0.25%"],
+          "esmodules": true
         }
       }
     ]
   ],
-  "plugins": [
-    "@babel/plugin-syntax-dynamic-import"
-  ]
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
 }
