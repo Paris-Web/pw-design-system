@@ -12,11 +12,11 @@ const hits = connectHits(options => {
                   <img class="thumbnail__media" src="${
                     hit.video && hit.video.link
                       ? hit.video.link
-                      : "http://localhost:3000/images/logo/logo.svg"
+                      : "../../images/placeholder-conf.svg"
                   }" />
               </a>
               <span class="thumbnail__description">
-                  <span class="thumbnail__format">${hit.type}</span>
+                  <span class="thumbnail__format">${hit.year}</span>
                   <span class="thumbnail__duration">${hit.duration}</span>
               </span>
           </div>
