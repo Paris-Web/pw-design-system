@@ -5,6 +5,7 @@ import refinementList from "./refinementList";
 import rangeInput from "./rangeInput";
 import hits from "./hits";
 import pagination from "./pagination";
+import poweredBy from "./poweredBy";
 
 const initArchives = () => {
   const searchClient = algoliasearch(
@@ -30,14 +31,16 @@ const initArchives = () => {
   search.addWidget(
     refinementList({
       container: "#themes",
-      attribute: "themes"
+      attribute: "themes",
+      title: "Étiquettes"
     })
   );
 
   search.addWidget(
     refinementList({
       container: "#duration",
-      attribute: "duration"
+      attribute: "duration",
+      title: "Durée"
     })
   );
 
@@ -60,6 +63,12 @@ const initArchives = () => {
   search.addWidget(
     pagination({
       container: "#pagination"
+    })
+  );
+
+  search.addWidget(
+    poweredBy({
+      container: "#powered-by-algolia"
     })
   );
 

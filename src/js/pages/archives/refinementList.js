@@ -1,6 +1,7 @@
 import connectRefinementList from "instantsearch.js/es/connectors/refinement-list/connectRefinementList";
 import { html, render } from "lit-html";
 import { unsafeHTML } from "lit-html/directives/unsafe-html";
+import filterDetails from "./filterDetails";
 
 const makeChangeHandler = refine => ({
   handleEvent(e) {
@@ -25,15 +26,35 @@ const renderItem = changeHandler => item => {
   `;
 };
 
-const renderItems = changeHandler => list => html`
-  ${list.map(renderItem(changeHandler))}
-`;
+const renderItems = changeHandler => (title, isRefined, clearHandler, list) =>
+  filterDetails(
+    title,
+    isRefined,
+    clearHandler,
+    html`
+      ${list.map(renderItem(changeHandler))}
+    `
+  );
 
 const refinementList = widgetParams =>
   connectRefinementList(options => {
+    const clearHandler = {
+      handleEvent(event) {
+        event.preventDefault();
+        console.log(
+          "TODO https://github.com/algolia/instantsearch.js/issues/2874"
+        );
+      }
+    };
+
     const container = document.querySelector(options.widgetParams.container);
     render(
-      renderItems(makeChangeHandler(options.refine))(options.items),
+      renderItems(makeChangeHandler(options.refine))(
+        options.widgetParams.title,
+        options.items.some(({ isRefined }) => isRefined),
+        clearHandler,
+        options.items
+      ),
       container
     );
   })({
