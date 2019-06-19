@@ -28,6 +28,6 @@
 
 @media screen and (min-width: 68em) {
   .kezako {
-    min-height: calc(25vh - var(--base-spacing) * 20);
+    min-height: calc(25vh - var(--base-spacing) * 20 - var(--arrow-width));
   }
 }
