@@ -62,6 +62,19 @@ menu: "pages"
         </a>
     </li>
   </ul>
+  <div class="positive__arrow"></div>
+</section>
+
+<section class="banner">
+    <div class="content">
+        <blockquote>
+            <p>Paris Web est une conférence organisée par des gens intéressants, on y apprend tant en deux jours qu’on a besoin de l’année pour digérer.</p>
+            <footer>
+            <cite>Joachim Robert — <a href="">@joachimesque</a></cite>
+            </footer>
+        </blockquote>
+    </div>
+    <div class="negative__arrow"></div>
 </section>
 
 <section class="content content--2-cols" aria-labelledby="news-title">
