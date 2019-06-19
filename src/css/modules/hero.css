@@ -7,7 +7,7 @@
   background-position: center center;
   background-size: cover;
   box-sizing: border-box;
-  padding: calc(var(--hero-padding)) 0;
+  padding: calc(var(--hero-padding)) 0 calc(var(--hero-padding) + var(--arrow-width));
   height: 100%;
   min-height: 70vh;
   overflow: hidden;
