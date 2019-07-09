@@ -5,7 +5,7 @@
 .negative__arrow {
   position: absolute;
   height: var(--arrow-width);
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -33,7 +33,7 @@
   position: absolute;
   z-index: 3;
   left: calc(50% - var(--arrow-width));
-  bottom: calc(- var(--arrow-width));
+  bottom: calc(1px - var(--arrow-width));
   width: 0;
   border-left: var(--arrow-width) solid transparent;
   border-right: var(--arrow-width) solid transparent;
