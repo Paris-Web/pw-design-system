@@ -1,0 +1,14 @@
+details {
+  margin-bottom: calc(var(--base-spacing) * 3);
+}
+details[open] {
+  margin-bottom: calc(var(--base-spacing) * 9);
+}
+
+details summary {
+  cursor: pointer;
+}
+
+details summary ~ * {
+  margin-left: calc(var(--base-spacing) * 5);
+}
