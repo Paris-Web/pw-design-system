@@ -65,7 +65,7 @@
 
 html,
 body {
-  background: #fff;
+  background: var(--color-ui-01);
   color: var(--color-text-01);
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
