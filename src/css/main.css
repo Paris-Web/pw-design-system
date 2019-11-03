@@ -9,6 +9,7 @@
 @import "util/grid.css";
 @import "util/screen-reader.css";
 @import "util/icons.css";
+@import "components/block-arrows.css";
 @import "components/breadcrumb.css";
 @import "components/portrait.css";
 @import "components/buttons.css";

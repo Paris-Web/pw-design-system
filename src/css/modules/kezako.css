@@ -9,6 +9,13 @@
 .kezako .icon {
   color: var(--color-text-03);
 }
+.kezako a .icon.icon__link {
+  transition: color 0.15s ease-in-out;
+  color: var(--color-brand-01);
+}
+.kezako a:hover .icon__link, .kezako a:focus .icon__link {
+  color: var(--color-brand-01-dark);
+}
 .kezako a .icon--question {
   transition: background-color 0.15s ease-in-out;
 }
@@ -28,6 +35,6 @@
 
 @media screen and (min-width: 68em) {
   .kezako {
-    min-height: calc(25vh - var(--base-spacing) * 20);
+    min-height: calc(25vh - var(--base-spacing) * 20 - var(--arrow-width));
   }
 }
