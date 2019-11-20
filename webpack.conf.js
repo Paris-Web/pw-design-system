@@ -25,11 +25,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production"),
-        ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
-        ALGOLIA_SEARCH_ONLY_API_KEY: JSON.stringify(
-          process.env.ALGOLIA_SEARCH_ONLY_API_KEY
-        )
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production")
       }
     })
   ],
@@ -38,16 +34,11 @@ module.exports = {
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],
-    archives: ["./js/archives"],
-    "admin-archives": ["./js/admin-archives"],
     styleguide: ["./js/styleguide"]
   },
   output: {
     path: path.join(__dirname, "dist"),
     publicPath: process.env.HUGO_BASEURL || "/",
     filename: "[name].js"
-  },
-  node: {
-    fs: "empty"
   }
 };

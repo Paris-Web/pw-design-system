@@ -4,8 +4,7 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": ["> 0.25%"],
-          "esmodules": true
+          "browsers": ["> 0.25%"]
         }
       }
     ]

@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const gulp = require("gulp");
 const { spawn } = require("child_process");
 const hugoBin = require("hugo-bin");
