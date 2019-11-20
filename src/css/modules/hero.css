@@ -1,5 +1,8 @@
-.hero {
+:root {
   --hero-padding: calc(var(--base-spacing) * 6);
+}
+
+.hero {
   position: relative;
   display: flex;
   flex-direction: column;
