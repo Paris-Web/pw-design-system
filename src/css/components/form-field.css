@@ -10,7 +10,7 @@
 
 input {
   border: 1px solid var(--color-ui-03);
-  border-bottom: 3px solid var(--color-brand-02);
+  border-bottom: 3px solid var(--color-brand-02-light);
   border-radius: 3px;
   line-height: 1.4;
   padding: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 1.5);
@@ -24,6 +24,9 @@ input:disabled {
 }
 input:invalid {
   border-bottom-color: var(--color-special-red);
+}
+input:active, input:focus {
+  border-bottom-color: var(--color-brand-02-dark);
 }
 
 .input-year {
