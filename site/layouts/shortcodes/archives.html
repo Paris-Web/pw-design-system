@@ -45,34 +45,18 @@
 </div>
 
 <div id="hits" class="presentation-grid">
-  <section class="presentation-preview">
-    <div class="presentation-preview__media thumbnail">
-      <a class="presentation-preview__link" href="https://www.paris-web.fr/2018/conferences/le-w3c-pour-les-developeurs-web.php">
-        <img class="thumbnail__media" src="https://i.vimeocdn.com/video/732355433_640.jpg">
-      </a>
-      <span class="thumbnail__description">
-        <span class="thumbnail__format">2018</span>
-        <span class="thumbnail__duration">30 <abbr title="minutes">mn</abbr></span>
-      </span>
-    </div>
-    <div class="presentation-preview__content">
-      <h3 class="h4-like">
-        <a class="discreet" href="https://www.paris-web.fr/2018/conferences/le-w3c-pour-les-developeurs-web.php">
-          Le W3C pour les développeurs Web
-        </a>
-      </h3>
-      <div>
-        <a class="discreet" href="https://www.paris-web.fr/orateurs/dominique-hazael-massieux.php">Dominique Hazael-Massieux</a>
-      </div>
-      <div>
-        <dl class="presentation-services">
-          <dd><abbr title="Langue des signes française">LSF</abbr></dd>
-          <dd>Français</dd>
-        </dl>
-      </div>
-    </div>
-  </section>
+  {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
+    {{ .Scratch.Set "authors" (.Params.authors) }}
+    {{ .Scratch.Set "title" .Params.title }}
+    {{ .Scratch.Set "date" (.Date.Format "2006") }}
+    {{ .Scratch.Set "duration" .Params.duration }}
+    {{ .Scratch.Set "thumbnail" .Params.thumbnail }}
+    {{ .Scratch.Set "services" .Params.services }}
+    {{ .Scratch.Set "language" .Params.language }}
+    {{ .Scratch.Set "subtitles" .Params.subtitles }}
 
+    {{ partial "presentations/presentation-preview" . }}
+  {{ end }}
 </div>
 
 <div id="pagination">

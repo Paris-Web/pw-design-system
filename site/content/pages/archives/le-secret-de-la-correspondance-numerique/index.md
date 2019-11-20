@@ -6,7 +6,7 @@ lieu: "Grand amphithéâtre René Descartes"
 date: 2017-10-05T09:15:00+01:00
 thumbnail: https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png
 duree: 45
-duration: "<time datetime=\"45m 0s\">45:00</time>"
+duration: "<time datetime=\"45m 0s\">45 <abbr title=\"minutes\">min.</abbr></time>"
 themes:
   - éthique
   - histoire

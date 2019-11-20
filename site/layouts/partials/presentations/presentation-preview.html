@@ -3,7 +3,7 @@
         <a href="#" class="presentation-preview__link">
             <img class="thumbnail__media" src="{{ .Scratch.Get "thumbnail" }}" />
             <span class="thumbnail__description">
-                <span class="thumbnail__format">{{ .Scratch.Get "format" }}</span>
+                <span class="thumbnail__date">{{ .Scratch.Get "date" }}</span>
                 <span class="thumbnail__duration">{{ safeHTML (.Scratch.Get "duration") }}</span>
             </span>
         </a>
