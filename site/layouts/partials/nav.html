@@ -104,20 +104,6 @@
                                 {{ end }}
                             </ul>
                         </li>
-                        <li>
-                            Outils
-                            <ul>
-                                {{ range .Site.Menus.outils }}
-                                <li>
-                                    <a class="h3-like {{if or ($currentPage.IsMenuCurrent " outils " .) ($currentPage.HasMenuCurrent "outils " .) }} active{{end}}" href="{{.URL}}">
-                                        <span>
-                                            {{ .Name }}
-                                        </span>
-                                    </a>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
