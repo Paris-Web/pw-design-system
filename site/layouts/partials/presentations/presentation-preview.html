@@ -1,6 +1,6 @@
 <section class="presentation-preview">
     <div class="presentation-preview__media thumbnail">
-        <a href="#" class="presentation-preview__link">
+        <a href="{{ $.Site.BaseURL }}pages/presentation-archive" class="presentation-preview__link">
             <img class="thumbnail__media" src="{{ .Scratch.Get "thumbnail" }}" />
             <span class="thumbnail__description">
                 <span class="thumbnail__date">{{ .Scratch.Get "date" }}</span>
@@ -9,12 +9,12 @@
         </a>
     </div>
     <div class="presentation-preview__content">
-        <h3 class="h4-like"><a class="discreet" href="#">{{ .Scratch.Get "title" }}</a></h3>
+        <h3 class="h4-like"><a class="discreet" href="{{ $.Site.BaseURL }}pages/presentation-archive">{{ .Scratch.Get "title" }}</a></h3>
         <div>
             {{ $list := .Scratch.Get "authors" }}
             {{ $len := len $list }}
             {{- range $index, $element := $list -}}
-                <a class="discreet" href="#">{{ . }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
+                <a class="discreet" href="{{ $.Site.BaseURL }}pages/presentation-archive">{{ . }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
             {{- end -}}
         </div>
         <div>

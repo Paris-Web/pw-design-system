@@ -5,7 +5,7 @@ menu: "pages"
 layout: "page"
 ---
 
-{{< video
+{{< video-archive
     author="Camille Exemple"
     date="jeudi 9<abbr title=\"heure\">h</abbr>15"
     edition="2017"
