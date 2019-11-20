@@ -19,6 +19,7 @@
   color: var(--color-text-01);
   font-weight: bold;
   pointer-events: none;
+  font-size: 0.8rem;
 }
 
 .thumbnail__description > * {
@@ -28,8 +29,8 @@
 }
 
 .thumbnail__description > :first-child {
-  border-top-right-radius: 15px;
+  border-top-right-radius: 10px;
 }
 .thumbnail__description > :last-child {
-  border-top-left-radius: 15px;
+  border-top-left-radius: 10px;
 }
