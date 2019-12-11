@@ -1,12 +1,12 @@
 ---
 event: true
-title: "Le secret de la correspondance numérique"
-format: "Atelier"
+title: "Les secrets des PWAs"
+format: "Conférence"
 lieu: "Grand amphithéâtre René Descartes"
 date: 2017-10-05T09:15:00+01:00
 thumbnail: https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png
 duree: 45
-duration: "<time datetime=\"45m 0s\">45 <abbr title=\"minutes\">min.</abbr></time>"
+duration: "<time datetime=\"50m 0s\">50 <abbr title=\"minutes\">min.</abbr></time>"
 themes:
   - éthique
   - histoire
@@ -15,11 +15,10 @@ themes:
 services:
   - "<abbr title=\"Langue des Signes Française\">LSF</abbr>"
   - Vélotypie
-language: Français
+language: Anglais
 subtitles: Français
 authors:
-  - "Laurent Chemla"
-  - "Julien Dubedout"
+  - "Julien Pradet"
 shortDescription: |
   Le secret de la correspondance numérique: comment retrouver la valeur de la vie privée et échapper à la conjuration du cabinet noir.
 description: |

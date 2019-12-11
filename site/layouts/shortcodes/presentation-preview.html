@@ -1,0 +1,10 @@
+{{ .Scratch.Set "authors" (split (.Get "authors") ",") }}
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "format" (.Get "format") }}
+{{ .Scratch.Set "duration" (.Get "duration") }}
+{{ .Scratch.Set "thumbnail" (.Get "thumbnail") }}
+{{ .Scratch.Set "services" (split (.Get "services") ",") }}
+{{ .Scratch.Set "language" (.Get "language") }}
+{{ .Scratch.Set "subtitles" (.Get "subtitles") }}
+
+{{ partial "presentations/presentation-preview" . }}

@@ -1,11 +1,11 @@
 ---
 title: "La crypto pour les devs : Petit état des lieux des outils d'aujourd'hui et des techniques de demain"
-linktitle: "Présentation"
+linktitle: "Présentation (Archive)"
 menu: "pages"
 layout: "page"
 ---
 
-{{< video
+{{< video-archive
     author="Camille Exemple"
     date="jeudi 9<abbr title=\"heure\">h</abbr>15"
     edition="2017"

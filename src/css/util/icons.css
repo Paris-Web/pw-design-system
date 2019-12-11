@@ -27,6 +27,10 @@ svg.icon * {
   height: 0.8em;
   width: 1.2em;
 }
+.icon.icon--down-arrow {
+  height: 0.6em;
+  width: 0.6em;
+}
 
 .icon.icon--question {
   width: 3rem;

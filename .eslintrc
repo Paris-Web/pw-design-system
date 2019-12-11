@@ -8,5 +8,11 @@
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
+  },
+  "globals": {
+    "process": "readonly",
+    "__dirname": "readonly",
+    "module": "readonly",
+    "require": "readonly"
   }
 }

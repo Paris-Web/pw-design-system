@@ -4,7 +4,9 @@ const path = require("path");
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
-    process.env.NODE_ENV === "production" ? "none" : "cheap-module-source-map",
+    process.env.NODE_ENV === "production"
+      ? "source-map"
+      : "cheap-module-source-map",
   module: {
     rules: [
       {
@@ -21,9 +23,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      fetch: "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
-    }),
     new webpack.DefinePlugin({
       "process.env": {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production")

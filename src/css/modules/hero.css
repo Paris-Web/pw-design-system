@@ -1,5 +1,10 @@
-.hero {
+:root {
   --hero-padding: calc(var(--base-spacing) * 6);
+  --hero-padding-large: calc(var(--base-spacing) * 10);
+}
+
+
+.hero {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -104,14 +109,13 @@
 
 @media screen and (min-width: 44em) {
   .hero {
-    --hero-padding: calc(var(--base-spacing) * 10);
-    padding: calc(var(--hero-padding)) 0;
+    padding: calc(var(--hero-padding-large)) 0;
   }
 
   .hero__title,
   .hero__sub-title,
   .hero__action {
-    padding: 0 var(--hero-padding) 0 calc(var(--hero-padding) * 1.5);
+    padding: 0 var(--hero-padding-large) 0 calc(var(--hero-padding-large) * 1.5);
   }
   .hero__sub-title {
     margin-top: calc(var(--base-spacing) * 6);

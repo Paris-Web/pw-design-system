@@ -27,6 +27,10 @@
 @import "components/tag.css";
 @import "components/table.css";
 @import "components/video.css";
+@import "components/presentation-preview.css";
+@import "components/thumbnail.css";
+@import "components/video.css";
+@import "components/filters.css";
 @import "modules/direct-link.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";

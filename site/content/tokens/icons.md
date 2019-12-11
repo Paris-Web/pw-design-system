@@ -16,6 +16,7 @@ menu: "tokens"
 * {{< example >}}{{< icon icon="mastodon" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="web" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="left-arrow" >}}{{< /example >}}
+* {{< example >}}{{< icon icon="down-arrow" >}}{{< /example >}}
 
 ## Grandes icones
 
