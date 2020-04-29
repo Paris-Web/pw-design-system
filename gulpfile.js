@@ -94,7 +94,7 @@ const js = () => {
       resolve();
     });
   });
-};
+}
 gulp.task("js", js);
 
 // Development server with browsersync

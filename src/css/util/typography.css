@@ -201,9 +201,8 @@ p {
 p.big {
   font-size: 1.125rem;
 }
-p.small,
-p small {
-  font-size: 0.80rem;
+p.small {
+  font-size: 0.75rem;
 }
 .important {
   font-weight: bold;
@@ -271,20 +270,4 @@ hr {
   border: none;
   border-top: 2px solid var(--color-ui-02);
   margin: calc(var(--base-spacing) * 4) 0;
-}
-
-.align-left {
-  text-align: left;
-}
-.align-right {
-  text-align: right;
-}
-.align-center {
-  text-align: center;
-}
-
-.inline-image {
-  display: inline-block;
-  margin: 0 .3rem;
-  vertical-align: text-bottom;
 }

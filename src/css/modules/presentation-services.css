@@ -8,13 +8,7 @@
   margin: 0;
   font-style: italic;
 }
-.presentation-services > *::after {
-  content: ", ";
-}
-.presentation-services > *:last-child::after {
-  content: none;
-}
-
-.presentation-services > * {
-  word-wrap: nowrap;
+.presentation-services > * + *::before {
+  content: ",";
+  margin: 0 calc(var(--base-spacing)) 0 0;
 }
