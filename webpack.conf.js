@@ -27,6 +27,7 @@ module.exports = {
       "process.env": {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production"),
         ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
+        ALGOLIA_ADMIN_KEY: JSON.stringify(process.env.ALGOLIA_ADMIN_KEY),
         ALGOLIA_SEARCH_ONLY_API_KEY: JSON.stringify(
           process.env.ALGOLIA_SEARCH_ONLY_API_KEY
         )

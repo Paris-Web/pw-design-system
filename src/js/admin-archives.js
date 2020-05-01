@@ -1,7 +1,10 @@
 import updateArchives from "./outils/updateArchives";
+import classnames from "classnames";
 
 const setLoading = loading => {
-  // document.querySelectorAll('.js-submit-button, ')
+  const button = document.querySelector('.js-submit-button');
+  button.disabled = loading;
+  button.textContent = loading ? "Chargement…" : "Mettre à jour les conférences";
 };
 
 const displayResult = result => {

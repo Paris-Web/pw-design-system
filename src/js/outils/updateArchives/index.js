@@ -3,13 +3,15 @@ import algoliaAtomicUpdate from "atomic-algolia/lib/update";
 
 const updateArchives = (indexName, appId, adminApiKey) => {
   return fetchConferences().then(conferences => {
-    process.env.ALGOLIA_ADMIN_KEY = adminApiKey;
+    if (process.env.ALGOLIA_ADMIN_KEY !== adminApiKey) {
+      return "BAD ALGOLIA_ADMIN_KEY";
+    };
 
     return new Promise((resolve, reject) => {
       algoliaAtomicUpdate(
         indexName,
         conferences,
-        { algoliaAppId: appId, algoliaAdminKey: adminApiKey },
+        { verbose: true },
         (err, res) => {
           if (err) {
             reject(err);
