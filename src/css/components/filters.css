@@ -74,6 +74,9 @@
   transition: max-height 0.2s ease-in-out;
   overflow: hidden;
 }
+.filter__values:empty {
+  padding: 0;
+}
 .filter__values > * {
   margin: var(--base-spacing) 0;
 }
@@ -86,6 +89,7 @@
 .filter__container[open] .filter__values {
   max-height: 11em;
   overflow-y: auto;
+  height: calc(100% - 2 * .9rem - 1.4rem);
 }
 .filter__container > summary::-webkit-details-marker {
   display: none;
