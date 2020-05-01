@@ -1,0 +1,8 @@
+.ais-RefinementList-list {
+  margin: 0;
+  padding: 0;
+}
+.ais-RefinementList-item {
+  display: block;
+  margin: var(--base-spacing) 0;
+}
