@@ -1,6 +1,6 @@
 ---
 title: "La crypto pour les devs : Petit état des lieux des outils d'aujourd'hui et des techniques de demain"
-linktitle: "Présentation (Archive)"
+linktitle: "Présentation"
 menu: "pages"
 layout: "page"
 ---
