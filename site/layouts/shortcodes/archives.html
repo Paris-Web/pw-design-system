@@ -29,28 +29,66 @@
     </div>
   </div>
 
-  <div class="filters filters--oneline">
+  <div class="filters filters--oneline" hidden>
     <p class="filters__title">Filtres</p>
     <ul class="filters__list">
-      {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
-        {{ .Scratch.Set "id" .Params.id }}
-        {{ .Scratch.Set "name" .Params.name }}
-        {{ .Scratch.Set "options" .Params.options }}
-        {{ .Scratch.Set "type" .Params.type }}
-
-        <li class="filter" id="{{ .Scratch.Get "id" }}">
-        </li>
-      {{ end }}
+        <li class="filter" id="themes"></li>
+        <li class="filter" id="duration"></li>
+        <li class="filter" id="year"></li>
     </ul>
   </div>
 </form>
 
 <div id="hits-count"></div>
 
-<div id="hits" class="presentation-grid"></div>
+<div id="hits" class="presentation-grid">
+  {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
+    {{ .Scratch.Set "authors" (.Params.authors) }}
+    {{ .Scratch.Set "title" .Params.title }}
+    {{ .Scratch.Set "date" (.Date.Format "2006") }}
+    {{ .Scratch.Set "duration" .Params.duration }}
+    {{ .Scratch.Set "thumbnail" .Params.thumbnail }}
+    {{ .Scratch.Set "services" .Params.services }}
+    {{ .Scratch.Set "language" .Params.language }}
+    {{ .Scratch.Set "subtitles" .Params.subtitles }}
 
-<div id="pagination"></div>
+    {{ partial "presentations/presentation-preview" . }}
+  {{ end }} 
+</div>
 
-<p class="align-right">
+<div id="pagination">
+  <ul class="pagination">
+    <li class="pagination__item pagination__item--disabled">
+      <span aria-label="Première page">&lt;&lt;</span>
+    </li>
+    <li class="pagination__item pagination__item--disabled">
+      <span>
+        <span aria-hidden="true">&lt;</span>
+        Précédent
+      </span>
+    </li>
+    <li class="pagination__item pagination__item--active">
+      <a href="#1" aria-current="page">1</a>
+    </li>
+    <li class="pagination__item"><a href="#2">2</a></li>
+    <li class="pagination__item"><a href="#3">3</a></li>
+    <li class="pagination__item"><span>…</span></li>
+    <li class="pagination__item"><a href="#10">10</a></li>
+    <li class="pagination__item"><a href="#11">11</a></li>
+    <li class="pagination__item">
+      <a href="#next" rel="next">
+        Suivant
+        <span aria-hidden="true">&gt;</span>
+      </a>
+    </li>
+    <li class="pagination__item">
+      <a href="#end">
+        <span aria-label="Dernière page">&gt;&gt;</span>
+      </a>
+    </li>
+  </ul> 
+</div>
+
+<p class="align-right" hidden>
   <small id="powered-by-algolia"></small>
 </p>
