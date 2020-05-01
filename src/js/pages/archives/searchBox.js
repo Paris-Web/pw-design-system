@@ -28,17 +28,20 @@ const searchBox = connectSearchBox((options, isFirstRender) => {
       clearButton.removeAttribute("hidden");
     }
 
-    clearButton.addEventListener("click", function(event) {
+    const handleInputClear = () => {
       refine.cancel();
       options.clear();
-      input.value = "";
       clearButton.setAttribute("hidden", "hidden");
+    }
+
+    clearButton.addEventListener("click", function(event) {
+      input.value = "";
+      input.focus();
+      handleInputClear();
     })
     input.addEventListener("keyup", function(event) {
       if (event.target.value === "") {
-        refine.cancel();
-        options.clear();
-        clearButton.setAttribute("hidden", "hidden");
+        handleInputClear();
       } else {
         refine(event.target.value);
         clearButton.removeAttribute("hidden");
