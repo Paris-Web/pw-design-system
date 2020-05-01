@@ -1,11 +1,14 @@
 import connectRange from "instantsearch.js/es/connectors/range/connectRange";
 import { render, html } from "lit-html";
 import filterDetails from "./filterDetails";
+import classnames from "classnames";
 
 const rangeInput = connectRange(options => {
   const { widgetParams, range, refine } = options;
 
   const container = document.querySelector(widgetParams.container);
+  const min = container.querySelector(".input-year--min");
+  const max = container.querySelector(".input-year--max");
 
   const [valueMin, valueMax] = options.start;
   const { min: rangeMin, max: rangeMax } = options.range;
@@ -26,8 +29,6 @@ const rangeInput = connectRange(options => {
 
   const changeHandler = {
     handleEvent() {
-      const min = container.querySelector(".input-year--min");
-      const max = container.querySelector(".input-year--max");
       refine(
         [
           Number.isNaN(Number(min.value)) ? undefined : Number(min.value),
@@ -40,7 +41,14 @@ const rangeInput = connectRange(options => {
   const clearHandler = {
     handleEvent(event) {
       event.preventDefault();
-      options.clear();
+      min.value = rangeMin;
+      max.value = rangeMax;
+      refine(
+        [
+          rangeMin,
+          rangeMax
+        ].sort()
+      );
     }
   };
 
@@ -53,7 +61,7 @@ const rangeInput = connectRange(options => {
         <div>
           de
           <input
-            class="input-year input-year--min"
+            class="input-year input-year--min${range.min !== values.min ? " input-year--is-refined" : ""}"
             type="number"
             min="${range.min}"
             max="${range.max}"
@@ -62,7 +70,7 @@ const rangeInput = connectRange(options => {
           />
           à
           <input
-            class="input-year input-year--max"
+            class="input-year input-year--max${range.max !== values.max ? " input-year--is-refined" : ""}"
             type="number"
             min="${range.min}"
             max="${range.max}"

@@ -48,3 +48,7 @@ input:active, input:focus {
 .form-field--checkbox input:checked + * {
   font-weight: bold;
 }
+
+input.input-year.input-year--is-refined {
+  font-weight: bold;
+}

@@ -38,16 +38,26 @@ const renderItems = changeHandler => (title, isRefined, clearHandler, list) =>
 
 const refinementList = widgetParams =>
   connectRefinementList(options => {
+    const container = document.querySelector(options.widgetParams.container);
+
     const clearHandler = {
       handleEvent(event) {
         event.preventDefault();
-        console.log(
-          "TODO https://github.com/algolia/instantsearch.js/issues/2874"
-        );
+        
+        container
+          .querySelectorAll("input:checked")
+          .forEach(input => {input.checked = false})
+
+        options
+          .items
+          .map(item => {
+            if(item.isRefined) {
+              options.refine(item.value);
+            };
+          });
       }
     };
 
-    const container = document.querySelector(options.widgetParams.container);
     render(
       renderItems(makeChangeHandler(options.refine))(
         options.widgetParams.title,

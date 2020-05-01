@@ -6,11 +6,22 @@ const filterDetails = (title, isRefined, clearHandler, children) => {
     "filter__title--is-refined": isRefined
   });
 
-  console.log(title, isRefined);
-
   return html`
-    <details class="filter__container" ?open=${isRefined}>
+    <details class="filter__container">
       <summary class="${classes}">
+        <svg
+          class="icon icon--down-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="9"
+          height="6"
+          viewBox="0 0 9 6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"
+          />
+        </svg>
+        ${title}
         ${isRefined
           ? html`
               <button
@@ -36,19 +47,6 @@ const filterDetails = (title, isRefined, clearHandler, children) => {
               </button>
             `
           : null}
-        ${title}
-        <svg
-          class="icon icon--down-arrow"
-          xmlns="http://www.w3.org/2000/svg"
-          width="9"
-          height="6"
-          viewBox="0 0 9 6"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"
-          />
-        </svg>
       </summary>
       <div class="filter__values">
         ${children}
