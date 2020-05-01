@@ -1,4 +1,4 @@
-<form id="search-filters">
+<form id="search-filters" action="/pages/archives/" method="get">
   <div class="form-oneline form-oneline--inline">
     <div class="form-oneline__field form-field">
       <div class="form-field__label">
@@ -25,21 +25,21 @@
       </div>
     </div>
     <div class="form-oneline__action">
-      <button class="btn">Rechercher</button>
+      <button class="btn" type="submit">Rechercher</button>
     </div>
-  </div>
-
-  <div class="filters filters--oneline" hidden>
-    <p class="filters__title">Filtres</p>
-    <ul class="filters__list">
-        <li class="filter" id="themes"></li>
-        <li class="filter" id="duration"></li>
-        <li class="filter" id="year"></li>
-    </ul>
   </div>
 </form>
 
-<div id="hits-count"></div>
+<div class="filters filters--oneline js-visible" hidden>
+  <p class="filters__title">Filtres</p>
+  <ul class="filters__list">
+      <li class="filter" id="themes"></li>
+      <li class="filter" id="duration"></li>
+      <li class="filter" id="year"></li>
+  </ul>
+</div>
+
+<div id="hits-count">Il y a eu 34 résultats</div>
 
 <div id="hits" class="presentation-grid">
   {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
@@ -89,6 +89,6 @@
   </ul> 
 </div>
 
-<p class="align-right" hidden>
+<p class="align-right js-visible" hidden>
   <small id="powered-by-algolia"></small>
 </p>

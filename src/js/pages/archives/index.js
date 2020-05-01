@@ -13,6 +13,16 @@ const initArchives = () => {
     process.env.ALGOLIA_SEARCH_ONLY_API_KEY
   );
 
+  document
+    .querySelector(".js-visible")
+    .removeAttribute("hidden");
+
+  document
+    .querySelector("#search-filters")
+    .addEventListener("submit", function(event) {
+      event.preventDefault();
+    });
+
   const search = instantsearch({
     indexName: "www_programmes",
     routing: true,
@@ -71,12 +81,6 @@ const initArchives = () => {
       container: "#powered-by-algolia"
     })
   );
-
-  document
-    .querySelector("#search-filters")
-    .addEventListener("submit", function(event) {
-      event.preventDefault();
-    });
 
   search.start();
 };
