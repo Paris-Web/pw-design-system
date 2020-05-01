@@ -6,7 +6,7 @@ lieu: "Auditorium Blaise Pascal"
 date: 2017-10-05T10:10:00+01:00
 thumbnail: https://i.vimeocdn.com/filter/overlay?src0=https://i.vimeocdn.com/video/732320900_640.jpg&src1=http://f.vimeocdn.com/p/images/crawler_play.png
 duree: 15
-duration: "<time datetime=\"30m 0s\">30 <abbr title=\"minutes\">min.</abbr></time>"
+duration: "<time datetime=\"15m 0s\">15:00</time>"
 themes:
   - retour d'expérience
   - vie privée

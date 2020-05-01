@@ -18,6 +18,7 @@
   align-items: flex-end;
   color: var(--color-text-01);
   font-weight: bold;
+  text-transform: uppercase;
   pointer-events: none;
   font-size: 0.8rem;
 }
