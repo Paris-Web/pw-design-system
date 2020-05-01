@@ -17,5 +17,4 @@ layout: "full"
             </footer>
         </blockquote>
     </div>
-    <div class="negative__arrow"></div>
 </section>

@@ -283,7 +283,6 @@ body.is-menu-opened {
 .content {
   margin: 0 calc(var(--base-spacing) * 3);
   padding: calc(var(--base-spacing) * 6) 0;
-  position: relative;
 }
 
 .content > :first-child:not(.breadcrumb),

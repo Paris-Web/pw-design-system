@@ -29,18 +29,18 @@ menu: "modules"
     </li>
     <li>
         <span class="social-link social-link--big">
+            {{< icon icon="big-heart" >}}
+            Accessibilité
+        </span>
+    </li>
+    <li>
+        <span class="social-link social-link--big">
             {{< icon icon="big-thumbsup" >}}
             Qualité web
         </span>
     </li>
     <li>
-        <a href="#" class="social-link social-link--big social-link--important title">
-            {{< icon icon="big-heart" >}}
-            <span style="text-decoration: underline;">Accessibilité</span>
-        </a>
-    </li>
-    <li>
-        <a href="#" class="social-link social-link--big social-link--important title">
+        <a href="" class="social-link social-link--big social-link--important title">
             {{< icon icon="big-question" >}}
             <span style="text-decoration: underline;">Pourquoi venir<br>à Paris Web</span>
         </a>
