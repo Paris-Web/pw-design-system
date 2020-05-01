@@ -34,9 +34,20 @@ const makePage = (pageNumber, { createURL, currentPage }) => {
   const classes = classnames("pagination__item", {
     "pagination__item--active": currentPage === pageNumber
   });
+  const link =
+    pageNumber === currentPage
+      ? html`
+          <a href="${createURL(pageNumber)}" aria-current="page"
+            >${pageNumber + 1}</a
+          >
+        `
+      : html`
+          <a href="${createURL(pageNumber)}">${pageNumber + 1}</a>
+        `;
+
   return html`
     <li class="${classes}">
-      <a href="${createURL(pageNumber)}">${pageNumber + 1}</a>
+      ${link}
     </li>
   `;
 };
