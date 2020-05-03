@@ -1,5 +1,4 @@
 import updateArchives from "./outils/updateArchives";
-import classnames from "classnames";
 
 const setLoading = loading => {
   const button = document.querySelector('.js-submit-button');

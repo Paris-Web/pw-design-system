@@ -5,7 +5,7 @@ const updateArchives = (indexName, appId, adminApiKey) => {
   return fetchConferences().then(conferences => {
     if (process.env.ALGOLIA_ADMIN_KEY !== adminApiKey) {
       return "BAD ALGOLIA_ADMIN_KEY";
-    };
+    }
 
     return new Promise((resolve, reject) => {
       algoliaAtomicUpdate(

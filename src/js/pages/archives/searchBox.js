@@ -34,12 +34,12 @@ const searchBox = connectSearchBox((options, isFirstRender) => {
       clearButton.setAttribute("hidden", "hidden");
     }
 
-    clearButton.addEventListener("click", function(event) {
+    clearButton.addEventListener("click", () => {
       input.value = "";
       input.focus();
       handleInputClear();
     })
-    input.addEventListener("keyup", function(event) {
+    input.addEventListener("keyup", (event) => {
       if (event.target.value === "") {
         handleInputClear();
       } else {

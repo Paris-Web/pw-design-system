@@ -1,7 +1,6 @@
 import connectRange from "instantsearch.js/es/connectors/range/connectRange";
 import { render, html } from "lit-html";
 import filterDetails from "./filterDetails";
-import classnames from "classnames";
 
 const rangeInput = connectRange(options => {
   const { widgetParams, range, refine } = options;

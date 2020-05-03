@@ -53,7 +53,7 @@ const refinementList = widgetParams =>
           .map(item => {
             if(item.isRefined) {
               options.refine(item.value);
-            };
+            }
           });
       }
     };
