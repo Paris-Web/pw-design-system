@@ -7,7 +7,7 @@ menu: "pages"
 {{< hero
     title="Paris Web"
     titleId="main-title"
-    subTitle="Ouvrez grand le web du 10 au 12 octobre 2019"
+    subTitle="un web de qualité et accessible au plus grand nombre"
     image="hero.jpg"
     link="#"
     action="Découvrez le programme"

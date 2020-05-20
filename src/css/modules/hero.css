@@ -82,10 +82,10 @@
 .hero__sub-title > *::before {
   content: "";
   position: absolute;
-  left: calc(-2 * var(--hero-padding));
+  left: calc(-3 * var(--hero-padding));
   right: calc(-1 * var(--hero-padding));
-  top: -0.5rem;
-  bottom: -0.5rem;
+  top: -0.66rem;
+  bottom: -0.66rem;
   background: var(--color-brand-03-dark);
   opacity: 0.9;
   -webkit-backface-visibility: hidden;
@@ -127,7 +127,7 @@
     max-width: 62ch;
   }
   .hero__sub-title {
-    max-width: 72ch;
+    max-width: 80ch;
   }
 }
 
