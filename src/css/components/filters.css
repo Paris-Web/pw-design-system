@@ -40,6 +40,7 @@
   flex-direction: column;
 }
 .filter__title {
+  position: relative;
   display: block;
   text-align: left;
   border: none;
@@ -49,6 +50,30 @@
   margin: 0;
   cursor: pointer;
   user-select: none;
+}
+.filter__clear {
+  background: var(--color-ui-02);
+  color: var(--color-text-02);
+  border: none;
+  border-radius: 2px;
+  transition: color 0.25s ease, background 0.25s ease;
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(var(--base-spacing) * 2);
+  cursor: pointer;
+  padding: 0;
+}
+.filter__clear:hover,
+.filter__clear:focus {
+  background: var(--color-brand-02-darker);
+  color: var(--color-text-inverted);
+}
+.filter__clear > .icon {
+  height: 0.55em;
+  width: 0.55em;
 }
 .filter__values {
   padding: 0 calc(var(--base-spacing) * 3) 0 calc(var(--base-spacing) * 6);
@@ -77,13 +102,13 @@
 .filter__container > summary::-webkit-details-marker {
   display: none;
 }
-.filter__title .icon {
-  margin-left: calc(var(--base-spacing) * 2);
+.filter__title > .icon {
+  margin-right: calc(var(--base-spacing) * 2);
   display: inline;
   transition: transform 0.1s ease-in-out;
 }
 
-.filter__container[open] .filter__title .icon {
+.filter__container[open] .filter__title > .icon {
   transform: rotate(-180deg);
 }
 
@@ -110,6 +135,9 @@
   }
   .filters details:not([open]) .filter__title {
     font-weight: normal;
+  }
+  .filters details:not([open]) .filter__title.filter__title--is-refined {
+    font-weight: bold;
   }
 
   .filter:last-child {

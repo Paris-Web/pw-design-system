@@ -1,4 +1,4 @@
-<form id="search-filters">
+<form id="search-filters" action="/pages/archives/" method="get">
   <div class="form-oneline form-oneline--inline">
     <div class="form-oneline__field form-field">
       <div class="form-field__label">
@@ -6,43 +6,40 @@
       </div>
       <div class="form-field__input" id="searchbox">
         <input type="text" id="search" placeholder="mot-clés, orateur/oratrice, tags, année, &hellip;" />
+        <button class="filter__clear" type="button" id="clearSearch" hidden>
+          <svg
+            class="icon icon--close"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            viewBox="0 0 15 15"
+            role="img"
+            aria-label="Supprimer la recherche en cours"
+          >
+            <path
+              fill="#000"
+              d="M7.5 9.397l-4.94 5.145c-.585.61-1.535.61-2.12 0a1.609 1.609 0 0 1 0-2.21L5.078 7.5.439 2.667a1.609 1.609 0 0 1 0-2.21 1.458 1.458 0 0 1 2.122 0L7.5 5.604 12.44.458a1.458 1.458 0 0 1 2.12 0c.586.61.586 1.6 0 2.21L9.922 7.5l4.64 4.833c.585.61.585 1.6 0 2.21-.586.61-1.536.61-2.122 0L7.5 9.396z"
+            />
+          </svg>
+        </button>
       </div>
     </div>
     <div class="form-oneline__action">
-      <button class="btn">Rechercher</button>
+      <button class="btn" type="submit">Rechercher</button>
     </div>
-  </div>
-
-  <div class="filters filters--oneline">
-    <p class="filters__title">Filtres</p>
-    <ul class="filters__list">
-      {{ range ((where (sort (.Page.Resources.ByType "page") ".Params.order" "asc") ".Params.filter" true)) }}
-        {{ .Scratch.Set "id" .Params.id }}
-        {{ .Scratch.Set "name" .Params.name }}
-        {{ .Scratch.Set "options" .Params.options }}
-        {{ .Scratch.Set "type" .Params.type }}
-
-        <li class="filter">
-          <details class="filter__container">
-            <summary class="filter__title">
-              {{ .Scratch.Get "name" }}
-              <svg class="icon icon--down-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6">
-                  <path fill-rule="evenodd" d="M4.857 5.452h-.819L0 .959l.936-.9 3.079 2.718.421 1.075.351-1.075L7.866 0l.924.901z"/>
-              </svg>
-            </summary>
-            <div class="filter__values" id="{{ .Scratch.Get "id" }}">
-              {{ .Content }}
-            </div>
-          </details>
-        </li>
-      {{ end }}
-    </ul>
   </div>
 </form>
 
-<div id="hits-count">
-  1 conférence
+<div class="filters filters--oneline js-visible" hidden>
+  <p class="filters__title">Filtres</p>
+  <ul class="filters__list">
+      <li class="filter" id="themes"></li>
+      <li class="filter" id="duration"></li>
+      <li class="filter" id="year"></li>
+  </ul>
 </div>
+
+<div id="hits-count">Il y a eu 34 résultats</div>
 
 <div id="hits" class="presentation-grid">
   {{ range where (.Page.Resources.ByType "page") ".Params.event" true }}
@@ -91,3 +88,7 @@
     </li>
   </ul>
 </div>
+
+<p class="align-right js-visible" hidden>
+  <small id="powered-by-algolia"></small>
+</p>

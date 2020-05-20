@@ -12,6 +12,7 @@
   margin-top: 0;
   margin-bottom: 0;
   flex: 1;
+  position: relative;
 }
 .form-oneline__action .btn {
   margin: 0;
@@ -25,4 +26,14 @@
   border-bottom-right-radius: 0;
   padding-top: calc(0.6rem - 1px);
   padding-bottom: calc(0.6rem - 3px);
+}
+
+.form-oneline__field .filter__clear {
+  position: absolute;
+  right: calc(var(--base-spacing) * 2);
+  bottom: calc(var(--base-spacing) * 2.5);
+}
+
+.form-oneline__field .filter__clear[hidden] {
+  display: none;
 }

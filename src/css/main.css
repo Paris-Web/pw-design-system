@@ -9,6 +9,7 @@
 @import "util/grid.css";
 @import "util/screen-reader.css";
 @import "util/icons.css";
+@import "util/helpers.css";
 @import "components/block-arrows.css";
 @import "components/breadcrumb.css";
 @import "components/portrait.css";
@@ -31,6 +32,7 @@
 @import "components/thumbnail.css";
 @import "components/video.css";
 @import "components/filters.css";
+@import "modules/algolia.css";
 @import "modules/direct-link.css";
 @import "modules/orateurs.css";
 @import "modules/footer.css";
