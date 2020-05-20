@@ -187,9 +187,6 @@ body.is-menu-opened {
   padding: 0 calc(var(--base-spacing) * 2);
 }
 
-.menu__links a::before,
-.menu__links a::before,
-.menu__links a::before,
 .menu__links a::before {
   content: "";
   position: absolute;
