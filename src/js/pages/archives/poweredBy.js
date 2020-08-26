@@ -8,7 +8,7 @@ export default connectPoweredBy(options => {
       Recherche par
       <a href="${options.url}">
         <img
-          src="../../images/logo-algolia.svg"
+          src="https://www.paris-web.fr/images/logo-algolia.svg"
           class="inline-image"
           height="20"
           alt="Algolia"
