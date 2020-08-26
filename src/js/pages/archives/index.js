@@ -14,8 +14,10 @@ const initArchives = () => {
   );
 
   document
-    .querySelector(".js-visible")
-    .removeAttribute("hidden");
+    .querySelectorAll(".js-visible")
+    .forEach((el) => {
+      el.removeAttribute("hidden");
+    });
 
   document
     .querySelector("#search-filters")
