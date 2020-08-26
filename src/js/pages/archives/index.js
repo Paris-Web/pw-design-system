@@ -58,7 +58,7 @@ const initArchives = () => {
     rangeInput({
       container: "#year",
       attribute: "year",
-      min: 2009,
+      min: 2006,
       max: new Date().getFullYear()
     })
   );

@@ -14,7 +14,7 @@ const hits = connectHits(options => {
               class="thumbnail__media"
               src="${hit.video && hit.video.link
                 ? hit.video.link
-                : "../../images/placeholder-conf.svg"}"
+                : "https://www.paris-web.fr/images/placeholder-conf.svg"}"
             />
           </a>
           <span class="thumbnail__description">
