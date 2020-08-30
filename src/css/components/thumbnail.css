@@ -8,6 +8,7 @@
 }
 
 .thumbnail__description {
+  border: 2px solid var(--color-ui-02);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -24,8 +25,7 @@
 }
 
 .thumbnail__description > * {
-  background: white;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  background: var(--color-ui-02);
   padding: var(--base-spacing) calc(var(--base-spacing) * 2);
 }
 
