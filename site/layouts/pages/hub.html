@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ $.Site.Title }}</title>
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/styleguide.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{.Site.BaseURL}}apple-touch-icon.png?2020">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}favicon-32x32.png?2020">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}favicon-16x16.png?2020">
+    <link rel="icon shortcut" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
+    <link rel="icon" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
+    <link rel="manifest" href="{{.Site.BaseURL}}site.webmanifest?2020">
+    <link rel="mask-icon" href="{{.Site.BaseURL}}safari-pinned-tab.svg?2020" color="#e11a81">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="styleguide hub">
+  <a class="back-to-design-system" href="{{ .Site.BaseURL }}">Revenir au Design System</a>
+  <a class="go-to-content screen-reader screen-reader-focusable" href="#main">
+    Aller au contenu
+  </a>
+
+  <header class="header--hub" role="banner" tabindex="-1">
+    <div class="logo">
+      <img src="{{.Site.BaseURL}}images/hub-2020/logo-pw2020.svg" role="img" width="200" height="140" />
+    </div>
+  </header>
+
+  <main class="main--hub" id="main" tabindex="-1">
+    <div class="hub--bienvenue">
+      <img src="{{.Site.BaseURL}}images/hub-2020/hero.svg" alt="" class="hub--bienvenue--hero" aria-hidden />
+      <h1 class="visuallyhidden">Paris Web 2020</h1>
+      <div class="hub--bienvenue--texte">
+        <p class="big">
+          Bienvenue aux conférences en ligne de l'édition 2020 de Paris Web&nbsp;!
+        </p>
+        <p class="big">
+          Vous trouverez ici tous les contenus et outils pour suivre les conférences, poser vos questions aux orateurs et oratrices intervenant cette année et échanger avec toute la communauté.
+        </p>
+        <p class="big">
+          N'hésitez pas à partager votre expérience et les moments forts de l'événement sur vos réseaux favoris avec le hastag #ParisWeb&nbsp;!
+        </p>
+      </div>
+    </div>
+    <div class="hub--grid">
+      <div class="hub--grid--menu">
+        <aside class="hub--grid--sticky">
+          <div class="hub--box">
+            <h2 class="visuallyhidden">Liens</h2>
+            <h3 class="half-bottom-margin no-top-margin">Sur cette page</h3>
+            <ul class="link-list">
+              <li class="big">
+                <a href="#conference">Visionner la conférence en cours</a>
+              </li>
+              <li class="big">
+                <a href="#programme">Consulter le programme</a>
+              </li>
+              <li class="big">
+                <a href="#communaute">Discuter avec la communauté</a>
+              </li>
+            </ul>
+            <h3 class="half-bottom-margin">Liens externes</h3>
+            <ul class="link-list">
+              <li class="big">
+                <a href="#">Obtenir de l’aide</a>
+              </li>
+              <li class="big">
+                <a href="#">Voir le code de conduite</a>
+              </li>
+            </ul>
+            <a class="btn btn-small btn-fluid btn-no-margin" href="#">
+              S’inscrire aux ateliers
+            </a>
+          </div>
+          <div class="hub--box menu--soutien">
+            <a class="menu--soutien--img" href="#">
+              <img src="{{.Site.BaseURL}}images/hub-2020/tshirts.png" class="img--boutique" alt="" aria-hidden />
+              <span class="btn btn-small btn-primary btn-fluid btn-no-margin">
+                Découvrir la boutique
+              </span>
+            </a>
+            <a class="btn btn-small btn-fluid btn-no-margin" href="#">
+              Soutenir Paris Web
+            </a>
+          </div>
+        </aside>
+      </div>
+      <div class="hub--grid--content">
+        <section class="hub--box" id="conference">
+          <h2 class="no-top-margin">Conférence <small>avant l'événement</small></h2>
+          <p>Les conférences seront diffusées directement sur cette page le jeudi 1 et le vendredi 2 octobre.</p>
+          <p>Chaque conférence sera sous-titrée en français (y compris les conférences en anglais) et suivie d'une session de questions/réponses en direct avec l'oratrice ou l'orateur.</p>
+          <p>Pour les sessions de questions/réponses, nous avons décidé d'utiliser Zoom et ces sessions seront directement accessibles depuis votre navigateur.</p>
+        </section>
+
+        <section class="hub--box" id="conference--">
+          <h2 class="no-top-margin">Conférence <small>pendant l'événement</small></h2>
+          <p class="no-top-margin no-bottom-margin">
+            Conférence jeudi 10h30, durée: 30 minutes
+          </p>
+          <h3 class="no-top-margin half-bottom-margin">
+            Des propriétés personnalisées très, très personnalisées
+          </h3>
+
+          <div class="portrait portrait-small portrait--link">
+            <div class="portrait-small__side">
+              <div class="portrait__avatar portrait__avatar--small">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 140 140"><defs><circle id="a" cx="70" cy="70" r="70"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#C5C3CE" xlink:href="#a"/><g mask="url(#b)"><g transform="translate(8.596 23.333)"><path fill="#FFF" fill-rule="nonzero" d="M51.579 1.228h19.895v7.737H51.579zm-8.597 66.316h36.842v5.281H42.982zm-9.824-56.491h56.737v56.123H33.158z"/><path fill="#423F4A" fill-rule="nonzero" d="M75.035 74.912s40.526 4.983 44.456 5.596c3.93.613 4.298 2.07 4.298 3.066v39.724H0V83.574c0-.996.368-2.453 4.298-3.066s42.246-5.596 42.246-5.596"/><g fill-rule="nonzero"><path fill="#FFF" d="M46.667 74.196c0 1.121 6.536 2.045 14.675 2.045 8.139 0 14.798-.924 14.798-2.045v-1.647H46.667v1.647z"/><path fill="#423F4A" d="M61.404 81.053c-5.94 0-15.965-1.158-15.965-5.275V71.43h31.93v4.348c0 4.245-10.025 5.275-15.965 5.275zM47.79 74.298v1.48c.371.9 5.322 2.702 13.49 2.702s13.118-1.802 13.49-2.83v-1.352H47.79z"/></g><path fill="#423F4A" fill-rule="nonzero" d="M85.474 8.35h-12.65V3.194C72.825 1.351 71.352 0 69.633 0H53.667c-1.842 0-3.193 1.474-3.193 3.193v5.158H37.702c-3.93 0-7 3.193-7 7v46.298c0 3.93 3.193 7 7 7h4.175v2.333c0 1.843 1.474 3.193 3.193 3.193h32.79c1.842 0 3.193-1.473 3.193-3.193V68.65h4.42c3.93 0 7-3.193 7-7V15.351c0-3.93-3.192-7-7-7zM53.175 3.07c0-.245.246-.491.492-.491h15.965c.245 0 .368.246.368.491v5.158H53.175V3.07zm25.299 67.912c0 .246-.246.492-.492.492H45.193c-.246 0-.491-.246-.491-.492V68.65H78.35v2.333h.123zm11.175-9.333a4.141 4.141 0 01-4.175 4.176H37.825a4.141 4.141 0 01-4.176-4.176V15.351a4.141 4.141 0 014.176-4.176h47.649a4.141 4.141 0 014.175 4.176v46.298z"/><circle cx="51.456" cy="33.035" r="3.561" fill="#423F4A" fill-rule="nonzero"/><circle cx="73.561" cy="33.035" r="3.561" fill="#423F4A" fill-rule="nonzero"/><path stroke="#423F4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M73.316 49.368c-12.404 5.281-21.737-.245-21.737-.245"/></g></g></g></svg>          
+              </div>
+            </div>
+
+            <div class="portrait-small__content">
+              <div class="portrait__name h4-like">
+                <a href="/#" class="title">Camille Exemple</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="hub--video">
+            {{ .Content }}
+          </div>
+        </section>
+
+        <section class="hub--box" id="programme">
+          <h2 class="no-top-margin">Programme</h2>
+
+        </section>
+
+        <section class="hub--box" id="partenaires">
+          <h2 class="no-top-margin">Partenaires</h2>
+
+        </section>
+
+        <section class="hub--box" id="communaute">
+          <h2 class="no-top-margin">Communauté</h2>
+          <p class="big">La force de Paris Web depuis 15 ans, c'est vous, la communauté. Pour vous permettre d'échanger à tout moment de l'événement et même au-delà, nous vous proposons deux espaces d'échange.</p>
+        </section>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer class="footer--hub">
+    <div class="logo">
+      <img src="{{.Site.BaseURL}}images/logo/2019/logo-rond.svg" alt="" />
+    </div>
+    <div class="text">
+      <p class="small">Depuis 2006, Paris Web est le rendez-vous incontournable des professionnels francophones du Web. Les conférences et ateliers Paris Web sont organisés par l’association à but non lucratif Paris-Web.</p>
+    </div>
+    <div>
+      <ul class="link-list">
+        <li>
+          <a href="#">Qui sommes-nous ?</a>
+        </li>
+        <li>
+          <a href="#">Nous contacter</a>
+        </li>
+        <li>
+          <a href="#">Le site paris-web.fr</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="link-list">
+        <li>
+          <a href="#">Aide</a>
+        </li>
+        <li>
+          <a href="#">Code de conduite</a>
+        </li>
+        <li>
+          <a href="#">Partenaires</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+{{ partial "footer" . }}

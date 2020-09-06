@@ -98,15 +98,19 @@ h1,
 h2,
 .h2-like,
 h3,
-.h3-like,
+.h3-like {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
+  font-weight: bold;
+}
+
 h4,
 .h4-like,
 h5,
 .h5-like,
 h6,
 .h6-like {
-  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
-    sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -147,6 +151,19 @@ h5,
 h6,
 .h6-like {
   font-size: 0.875rem;
+}
+
+h2.half-bottom-margin,
+.h2-like.half-bottom-margin,
+h3.half-bottom-margin,
+.h3-like.half-bottom-margin {
+  margin-bottom: calc(var(--base-spacing) * 1.5);
+}
+.no-top-margin {
+  margin-top: 0;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
 }
 
 .inline-title {
@@ -198,11 +215,11 @@ p {
     font-size: 2.5rem;
   }
 }
-p.big {
+.big {
   font-size: 1.125rem;
 }
-p.small,
-p small {
+.small,
+small {
   font-size: 0.80rem;
 }
 .important {

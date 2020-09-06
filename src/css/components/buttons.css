@@ -13,6 +13,7 @@ input[type="submit"],
   transition: background-color 0.25s ease;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 .btn:visited {
   color: var(--color-text-inverted);
@@ -89,4 +90,12 @@ input[type="submit"]:disabled,
   padding: var(--base-spacing) calc(var(--base-spacing) * 3)
     calc(var(--base-spacing) + 0.1rem);
   font-size: 1rem;
+}
+
+.btn-fluid {
+  width: 100%;
+}
+
+.btn-no-margin {
+  margin: 0;
 }
