@@ -109,6 +109,10 @@ main.main--hub {
   margin-top: calc(var(--base-spacing) * 4);
 }
 
+.hub--grid--content .hub--box {
+  scroll-margin-top: calc(var(--base-spacing) * 6);
+}
+
 .hub--video {
   position: relative;
   padding-top: calc(9/16 * 100%);
