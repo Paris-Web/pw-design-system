@@ -71,7 +71,8 @@ input[type="submit"]:disabled,
   background: var(--color-ui-01);
 }
 
-.btn-ghost {
+.btn-ghost,
+.btn-ghost:visited {
   color: var(--color-brand-02-darker);
   background: transparent;
   transition: color 0.25s ease;
