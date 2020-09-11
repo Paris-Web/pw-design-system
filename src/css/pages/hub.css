@@ -28,10 +28,29 @@ main.main--hub {
   padding: 0 calc(var(--base-spacing) * 3);
 }
 
+.hub--details .hub--details--hiddenSummary {
+  display: none;
+}
+.hub--details[open] .hub--details--show-on-open {
+  display: inline;
+}
+.hub--details:not([open]) .hub--details--show-on-closed {
+  display: inline;
+}
+
+.hub--welcome--container summary {
+  margin-bottom: calc(var(--base-spacing) * 4);
+  display: block;
+  text-align: right;
+}
+
+.hub--welcome--container {
+  margin: calc(var(--base-spacing) * 12) auto calc(var(--base-spacing) * 16);
+}
+
 .hub--welcome {
   background-color: var(--color-ui-01);
   border-bottom: 2px solid var(--color-ui-03);
-  margin: calc(var(--base-spacing) * 12) auto calc(var(--base-spacing) * 16);
 }
 
 .hub--welcome .hub--welcome--hero {
@@ -103,6 +122,33 @@ main.main--hub {
   position: absolute;
 }
 
+.hub--program details summary h3 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hub--program details summary:hover h3 {
+  color: var(--color-brand-01);
+}
+
+.hub--program--item, .hub--program--break {
+  margin: 0 0 calc(var(--base-spacing) * 6) calc(var(--base-spacing) * 4);
+}
+
+.hub--program--item {
+  padding: calc(var(--base-spacing) * 1) 0 calc(var(--base-spacing) * 1) calc(var(--base-spacing) * 4);
+  border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-01-light);
+}
+
+.hub--program--break {
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
+  background: var(--color-ui-02);
+}
+
+.hub--program--time {
+  color: var(--color-brand-01);
+}
+
 .sponsor-section .sponsor {
   display: flex;
   align-items: center;
@@ -129,7 +175,7 @@ footer.footer--hub {
     padding: 0 calc(var(--base-spacing) * 6);
   }
 
-  .hub--welcome {
+  .hub--welcome--container {
     max-width: calc((100% - calc(var(--base-spacing) * 8)) / 3 * 2);
   }
 
@@ -146,7 +192,7 @@ footer.footer--hub {
 
   .hub--grid--sticky {
     position: sticky;
-    top: calc(var(--base-spacing) * 8);
+    top: calc(var(--base-spacing) * 6);
   }
 
   .hub--box {
@@ -183,21 +229,30 @@ footer.footer--hub {
     flex: 2 0 33%;
   }
 
-  .hub--dual--blocks {
+  .hub--dualBlocks {
     display:  flex;
     align-items: stretch;
   }
 
-  .hub--dual--blocks > * {
+  .hub--dualBlocks > * {
     flex: 1 1 calc(50% - (var(--base-spacing) * 4 + 2px) / 2);
   }
 
-  .hub--dual--blocks > hr {
+  .hub--dualBlocks > hr {
     flex:  0 1 2px;
     border-top: none;
     border-left: 2px solid var(--color-ui-02);
-    margin: 0 calc(var(--base-spacing) * 6);
+    margin: 0 calc(var(--base-spacing) * 4);
   }
+
+  .hub--program--bonus .hub--program--time {
+    color: var(--color-brand-02);
+  }
+  .hub--program--item hr {
+    border-color: var(--color-brand-02);
+  }
+
+
 }
 
 

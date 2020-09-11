@@ -24,28 +24,35 @@
     Aller au contenu
   </a>
 
-  <header class="header--hub" role="banner" tabindex="-1">
+  <header class="header--hub" role="banner">
     <div class="logo">
       <img src="{{.Site.BaseURL}}images/hub-2020/logo-pw2020.svg" width="200" height="140" alt="" />
     </div>
   </header>
 
   <main class="main--hub" id="main" tabindex="-1">
-    <div class="hub--welcome">
-      <img src="{{.Site.BaseURL}}images/hub-2020/hero.svg" alt="" class="hub--welcome--hero" aria-hidden />
-      <h1 class="visuallyhidden">Paris Web 2020</h1>
-      <div class="hub--welcome--texte">
-        <p class="big">
-          Bienvenue aux conférences en ligne de l’édition 2020 de Paris Web&nbsp;!
-        </p>
-        <p class="big">
-          Vous trouverez ici tous les contenus et outils pour suivre les conférences, poser vos questions aux orateurs et oratrices intervenant cette année et échanger avec toute la communauté.
-        </p>
-        <p class="big">
-          N'hésitez pas à partager votre expérience et les moments forts de l’événement sur vos réseaux favoris avec le hastag #ParisWeb&nbsp;!
-        </p>
-      </div>
-    </div>
+    <details open class="hub--details hub--welcome--container">
+      <summary>
+        <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-open">Cacher ce message</span>
+        <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-closed">Montrer le message de bienvenue</span>
+      </summary>
+      <div class="hub--welcome">
+        <img src="{{.Site.BaseURL}}images/hub-2020/hero.svg" alt="" class="hub--welcome--hero" aria-hidden />
+        <h1 class="visuallyhidden">Paris Web 2020</h1>
+        <div class="hub--welcome--texte">
+          <p class="big">
+            Bienvenue aux conférences en ligne de l’édition 2020 de Paris Web&nbsp;!
+          </p>
+          <p class="big">
+            Vous trouverez ici tous les contenus et outils pour suivre les conférences, poser vos questions aux orateurs et oratrices intervenant cette année et échanger avec toute la communauté.
+          </p>
+          <p class="big">
+            N'hésitez pas à partager votre expérience et les moments forts de l’événement sur vos réseaux favoris avec le hastag #ParisWeb&nbsp;!
+          </p>
+        </div>
+      </div>      
+    </details>
+
     <div class="hub--grid">
       <div class="hub--grid--menu">
         <aside class="hub--grid--sticky">
@@ -127,9 +134,561 @@
           </div>
         </section>
 
-        <section class="hub--box" id="programme">
+        <section class="hub--box hub--program" id="programme">
           <h2 class="no-top-margin">Programme</h2>
 
+          <details open class="hub--details">
+            <summary>
+              <h3>
+                Jeudi 1er octobre
+                <small class="hub--details--hiddenSummary hub--details--show-on-open">
+                  masquer le programme
+                </small>
+                <small class="hub--details--hiddenSummary hub--details--show-on-closed">
+                  afficher le programme
+                </small>
+              </h3>
+            </summary>
+
+            <div class="hub--program--day">
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    09h30 – 10h20
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Communiquer à distance de manière accessible
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Sylvie Duchateau</a><br>
+                    <i>conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 10h30
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Sylvie Duchateau</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    10h30 – 11h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Des propriétés personnalisées très, très personnalisées
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Gaël Poupard</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 11h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Gaël Poupard</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    11h10 – 12h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Against an Increasingly User-Hostile Web
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Parimal Satyal</a><br>
+                    <i>conférence | 50 minutes</i><br>
+                    <i>anglais, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 11h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Parimal Satyal</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--break">
+                Pause déjeuner
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    13h30 – 14h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Oh mes cookies !
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Laurie-Anne Bourdain</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 14h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Laurie-Anne Bourdain</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    14h10 – 15h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Le recrutement dans la tech, contradictions et illusions
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Marie Holzer</a><br>
+                    <i>Conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 15h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Marie Holzer</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    15h10 – 15h40
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Trucs et astuces pour construire une Single Page App accessible
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Maël Brunet</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 15h50
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Maël Brunet</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    15h50 – 16h40
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      “Fake” Green Tech&nbsp;: comprendre l'intérêt d'un Numérique Responsable
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Romuald Priol</a><br>
+                    <i>Conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 16h50
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Romuald Priol</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    16h50 – 17h20
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Pourquoi les développeur·ses ont besoin d'une formation aux questions d'éthique : exemple de l'informatique de santé
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Marion Magné</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 17h30
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Marion Magné</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hub--details">
+            <summary>
+              <h3>
+                Vendredi 2 octobre
+                <small class="hub--details--hiddenSummary hub--details--show-on-open">
+                  masquer le programme
+                </small>
+                <small class="hub--details--hiddenSummary hub--details--show-on-closed">
+                  afficher le programme
+                </small>
+              </h3>
+            </summary>
+
+            <div class="hub--program--day">
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    09h30 – 10h20
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Un grand pouvoir implique de grandes accessibilités
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Matthias Dugué</a><br>
+                    <i>conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 10h30
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Matthias Dugué</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    10h30 – 11h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Peut-on réellement faire du marketing éthique ?
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Alex Carmona</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 11h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Alex Carmona</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    11h10 – 12h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Pairing is caring
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Syamala Umamaheswaran</a> et
+                    <a href="#" class="discreet">Virginie Caplet</a><br>
+                    <i>conférence | 50 minutes</i><br>
+                    <i>anglais, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 11h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Syamala Umamaheswaran et Virginie Caplet</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--break">
+                Pause déjeuner
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    13h30 – 14h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Les animations d'aujourd'hui avec WAAPI
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Louis Hoebregts</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 14h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Louis Hoebregts</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    14h10 – 15h00
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Y a-t-il de la place pour l'éthique dans l'open source ?
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Tobie Langel</a><br>
+                    <i>Conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 15h10
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Tobie Langel</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    15h10 – 15h40
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Le langage détermine qui est attiré par l’industrie web
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Nadia Fischer</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 15h50
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Nadia Fischer</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    15h50 – 16h40
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Et maintenant, on fait quoi ?
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Maïtané Lenoir</a><br>
+                    <i>Conférence | 50 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 16h50
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Maïtané Lenoir</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+
+              <div class="hub--program--item hub--dualBlocks">
+                <div class="hub--program--conference">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    16h50 – 17h20
+                  </p>
+                  <h4 class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">
+                      Peut-on garder une URL secrète ?
+                    </a>
+                  </h4>
+                  <p class="no-top-margin no-bottom-margin">
+                    <a href="#" class="discreet">Tim Carry</a><br>
+                    <i>Mini-conf | 30 minutes</i><br>
+                    <i>français, sous-titré</i>
+                  </p>
+                </div>
+                <hr>
+                <div class="hub--program--bonus">
+                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                    à partir de 17h30
+                  </p>
+                  <p class="no-top-margin">
+                    <span class="h4-like">Questions/réponses</span>
+                    <br>
+                    <span class="h5-like">avec Tim Carry</span>
+                  </p>
+                  <a href="#" class="btn btn-no-margin btn-small disabled">
+                    Rejoindre cette session
+                  </a>
+                </div>
+              </div>
+            </div>
+          </details>
         </section>
 
         <section class="hub--box" id="partenaires">
@@ -179,14 +738,12 @@
               </article>
             </div>
           </div>
-
-
         </section>
 
         <section class="hub--box" id="communaute">
           <h2 class="no-top-margin">Communauté</h2>
           <p class="big">La force de Paris Web depuis 15 ans, c’est vous, la communauté. Pour vous permettre d’échanger à tout moment de l’événement et même au-delà, nous vous proposons deux espaces d’échange.</p>
-          <div class="hub--dual--blocks">
+          <div class="hub--dualBlocks">
             <div>
               <p>Grâce au Slack créé spécialement pour cette édition dématérialisée, venez retrouver les autres membres de la communauté et échangez avec elleux à toute heure du jour ou de la nuit, avant, pendant et après l’événement&nbsp;!</p>
               <p>Vous trouverez notamment un canal dédié à chaque conférence, pour vous permettre d’échanger plus longuement avec chaque orateur et oratrice&nbsp;! 😃</p>
