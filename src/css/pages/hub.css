@@ -114,6 +114,8 @@ main.main--hub {
   display:  block;
   width: 100%;
   height: auto;
+  max-width: 18rem;
+  margin: 0 auto;
 }
 .menu--soutien > * + * {
   margin-top: calc(var(--base-spacing) * 4);
