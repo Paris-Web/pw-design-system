@@ -184,6 +184,18 @@ footer.footer--hub {
   padding: 0;
 }
 
+@media (min-width: 44em) and (max-width: calc(68em - 1px)) {
+  .hub--grid--menu .hub--grid--sticky {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .hub--grid--menu .hub--box.hub--box {
+    margin: 0 calc(var(--base-spacing) * 4);
+  }
+}
+
 @media (min-width: 68em) {
   main.main--hub {
     padding: 0 calc(var(--base-spacing) * 6);
