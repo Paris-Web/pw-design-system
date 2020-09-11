@@ -28,18 +28,18 @@ main.main--hub {
   padding: 0 calc(var(--base-spacing) * 6);
 }
 
-.hub--bienvenue {
+.hub--welcome {
   background-color: var(--color-ui-01);
   border-bottom: 2px solid var(--color-ui-03);
   max-width: calc((100% - calc(var(--base-spacing) * 8)) / 3 * 2);
   margin: calc(var(--base-spacing) * 12) auto calc(var(--base-spacing) * 16);
 }
 
-.hub--bienvenue .hub--bienvenue--hero {
+.hub--welcome .hub--welcome--hero {
   width: 100%;
 }
 
-.hub--bienvenue .hub--bienvenue--texte {
+.hub--welcome .hub--welcome--texte {
   padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 6);
   position: relative;
 }
@@ -54,12 +54,10 @@ main.main--hub {
 .hub--grid--menu {
   position: relative;
 }
+
 .hub--grid--sticky {
   position: sticky;
   top: calc(var(--base-spacing) * 8);
-}
-.hub--grid--content {
-
 }
 
 .hub--box {
