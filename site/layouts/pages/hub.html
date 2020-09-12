@@ -31,7 +31,7 @@
   </header>
 
   <main class="main--hub" id="main" tabindex="-1">
-    <details open class="hub--details hub--welcome--container">
+    <details open class="hub--details hub--welcome--container" id="details_welcome">
       <summary>
         <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-open">Cacher ce message</span>
         <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-closed">Montrer le message de bienvenue</span>
@@ -153,15 +153,15 @@
         <section class="hub--box hub--program" id="programme">
           <h2 class="no-top-margin">Programme</h2>
 
-          <details open class="hub--details">
+          <details open class="hub--details" id="details_programme_jeudi">
             <summary>
               <h3>
                 Jeudi 1er octobre
                 <small class="hub--details--hiddenSummary hub--details--show-on-open">
-                  masquer le programme
+                  masquer
                 </small>
                 <small class="hub--details--hiddenSummary hub--details--show-on-closed">
-                  afficher le programme
+                  afficher
                 </small>
               </h3>
             </summary>
@@ -250,7 +250,7 @@
                 <hr>
                 <div class="hub--program--bonus">
                   <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de 11h10
+                    à partir de 12h10
                   </p>
                   <p class="no-top-margin">
                     <span class="h4-like">Questions/réponses</span>
@@ -429,15 +429,15 @@
             </div>
           </details>
 
-          <details class="hub--details">
+          <details class="hub--details" id="details_programme_vendredi">
             <summary>
               <h3>
                 Vendredi 2 octobre
                 <small class="hub--details--hiddenSummary hub--details--show-on-open">
-                  masquer le programme
+                  masquer
                 </small>
                 <small class="hub--details--hiddenSummary hub--details--show-on-closed">
-                  afficher le programme
+                  afficher
                 </small>
               </h3>
             </summary>
@@ -527,7 +527,7 @@
                 <hr>
                 <div class="hub--program--bonus">
                   <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de 11h10
+                    à partir de 12h10
                   </p>
                   <p class="no-top-margin">
                     <span class="h4-like">Questions/réponses</span>
@@ -818,5 +818,7 @@
       </ul>
     </div>
   </footer>
+
+  <script src="{{.Site.BaseURL}}hub.js"></script>
 
 {{ partial "footer" . }}

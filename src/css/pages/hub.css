@@ -67,6 +67,10 @@ main.main--hub {
   text-align: right;
 }
 
+.hub--welcome--container summary::-webkit-details-marker {
+  display:none;
+}
+
 .hub--welcome--container {
   margin: calc(var(--base-spacing) * 12) auto calc(var(--base-spacing) * 16);
 }

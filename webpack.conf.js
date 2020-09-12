@@ -41,6 +41,7 @@ module.exports = {
     app: ["./js/app"],
     archives: ["./js/archives"],
     "admin-archives": ["./js/admin-archives"],
+    hub: ["./js/hub"],
     styleguide: ["./js/styleguide"]
   },
   output: {
