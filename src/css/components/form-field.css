@@ -1,6 +1,9 @@
 .form-field {
   margin: calc(var(--base-spacing) * 4) 0;
 }
+.form-field--button {
+  margin: calc(var(--base-spacing) * 8) 0;
+}
 .form-field__label {
   margin: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 1.5);
   color: var(--color-text-03);
@@ -16,6 +19,13 @@ input {
   padding: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 1.5);
   width: 100%;
   background: var(--color-ui-01);
+}
+.form-field__input--primary input {
+  border-bottom-color: var(--color-brand-01);
+}
+.form-field__input--primary input:active,
+.form-field__input--primary input:focus {
+  border-bottom-color: var(--color-brand-01-dark);
 }
 input:disabled {
   cursor: auto;

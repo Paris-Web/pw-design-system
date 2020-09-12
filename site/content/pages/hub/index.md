@@ -1,5 +1,5 @@
 ---
-title: "Hub 2020"
+title: "Hub 2020 - Main page"
 menu: "pages"
 layout: "hub"
 ---
