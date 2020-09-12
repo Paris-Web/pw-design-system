@@ -11,9 +11,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}favicon-32x32.png?2020">
     <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}favicon-16x16.png?2020">
     <link rel="icon shortcut" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
-    <link rel="icon" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
-    <link rel="manifest" href="{{.Site.BaseURL}}site.webmanifest?2020">
-    <link rel="mask-icon" href="{{.Site.BaseURL}}safari-pinned-tab.svg?2020" color="#e11a81">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -30,726 +27,730 @@
     </div>
   </header>
 
+
+
   <main class="main--hub" id="main" tabindex="-1">
-    <details open class="hub--details hub--welcome--container" id="details_welcome">
-      <summary>
-        <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-open">Cacher ce message</span>
-        <span class="btn btn-no-margin btn-small btn-ghost hub--details--hiddenSummary hub--details--show-on-closed">Montrer le message de bienvenue</span>
-      </summary>
-      <div class="hub--welcome">
-        <img src="{{.Site.BaseURL}}images/hub-2020/hero.svg" alt="" class="hub--welcome--hero" aria-hidden />
-        <h1 class="visuallyhidden">Paris Web 2020</h1>
-        <div class="hub--welcome--texte">
-          <p class="big">
-            Bienvenue aux conférences en ligne de l’édition 2020 de Paris Web&nbsp;!
-          </p>
-          <p class="big">
-            Vous trouverez ici tous les contenus et outils pour suivre les conférences, poser vos questions aux orateurs et oratrices intervenant cette année et échanger avec toute la communauté.
-          </p>
-          <p class="big">
-            N'hésitez pas à partager votre expérience et les moments forts de l’événement sur vos réseaux favoris avec le hastag #ParisWeb&nbsp;!
+    <section class="hub--box hub--auth" id="auth-block">
+      <div class="hub--dualBlocks">
+        <div>
+          <h2 class="no-top-margin">Authentifiez-vous</h2>
+          <form action="">
+            <p>Une adresse e-mail d’authentification vous a été communiquée par e-mail.</p>
+            <div class="form-field">
+              <div class="form-field__label">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="form-field__input form-field__input--primary">
+                <input name="email" id="email" type="email" />
+              </div>
+            </div>
+
+            <div class="form-field form-field--button">
+              <button type="submit" class="btn btn-primary btn-no-margin btn-fluid">
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+        <hr>
+        <div>
+          <h3 class="no-top-margin no-bottom-margin">Pas encore inscrit·e&nbsp;?</h3>
+          <p>En vous inscrivant à l’édition de Paris Web 2020, vous accéderez au salon de discussion sur Slack ainsi qu’aux sessions de questions/réponses avec les orateurs et oratrices.</p>
+          <a href="https://www.helloasso.com/associations/paris-web/evenements/paris-web-2020/" class="btn btn-no-margin btn-fluid">
+            Je m’inscris sans hésiter&nbsp;!
+          </a>
+          <p>Besoin d’aide&nbsp;?
+            <a href="https://www.paris-web.fr/aide/">Consultez l’aide</a> ou
+            <a href="https://www.paris-web.fr/contact/">contactez Paris Web</a>.
           </p>
         </div>
-      </div>      
-    </details>
-
-    <div class="hub--grid">
-      <div class="hub--grid--menu">
-        <aside class="hub--grid--sticky">
-          <div class="hub--box">
-            <h2 class="visuallyhidden">Liens</h2>
-            <h3 class="half-bottom-margin no-top-margin">Sur cette page</h3>
-            <ul class="link-list">
-              <li class="big">
-                <a href="#conference">Visionner la conférence en cours</a>
-              </li>
-              <li class="big">
-                <a href="#programme">Consulter le programme</a>
-              </li>
-              <li class="big">
-                <a href="#communaute">Discuter avec la communauté</a>
-              </li>
-            </ul>
-            <h3 class="half-bottom-margin">Liens externes</h3>
-            <ul class="link-list">
-              <li class="big">
-                <a href="#">Obtenir de l’aide</a>
-              </li>
-              <li class="big">
-                <a href="#">Voir le code de conduite</a>
-              </li>
-            </ul>
-            <a class="btn btn-small btn-fluid btn-no-margin" href="#">
-              S’inscrire aux ateliers
-            </a>
-          </div>
-          <div class="hub--box menu--soutien">
-            <a class="menu--soutien--img" href="#">
-              <img src="{{.Site.BaseURL}}images/hub-2020/tshirts.png" class="img--boutique" alt="" aria-hidden />
-              <span class="btn btn-small btn-primary btn-fluid btn-no-margin">
-                Découvrir la boutique
-              </span>
-            </a>
-            <a class="btn btn-small btn-fluid btn-no-margin" href="#">
-              Soutenir Paris Web
-            </a>
-          </div>
-        </aside>
       </div>
-      <div class="hub--grid--content">
-        <section class="hub--box" id="conference">
-          <h2 class="no-top-margin">Conférence <small>avant l’événement</small></h2>
-          <p>Les conférences seront diffusées directement sur cette page le jeudi 1 et le vendredi 2 octobre.</p>
-          <p>Chaque conférence sera sous-titrée en français (y compris les conférences en anglais) et suivie d’une session de questions/réponses en direct avec l’oratrice ou l’orateur.</p>
-          <p>Pour les sessions de questions/réponses, nous avons décidé d’utiliser Zoom et ces sessions seront directement accessibles depuis votre navigateur.</p>
-        </section>
+    </section>
 
-        <section class="hub--box" id="conference">
-          <h2 class="no-top-margin">Conférence <small>pendant l’événement</small></h2>
+    <div id="content-block" >
+      <details open class="hub--details hub--welcome--container" id="details_welcome">
+        <summary>
+          <span class="btn btn-no-margin btn-small btn-link hub--details--hiddenSummary hub--details--show-on-open">Cacher ce message</span>
+          <span class="btn btn-no-margin btn-small btn-link hub--details--hiddenSummary hub--details--show-on-closed">Montrer le message de bienvenue</span>
+        </summary>
+        <div class="hub--welcome">
+          <img src="{{.Site.BaseURL}}images/hub-2020/hero.svg" alt="" class="hub--welcome--hero" aria-hidden />
+          <h1 class="visuallyhidden">Paris Web 2020</h1>
+          <div class="hub--welcome--texte">
+            <p class="big">
+              Bienvenue aux conférences en ligne de l’édition 2020 de Paris Web&nbsp;!
+            </p>
+            <p class="big">
+              Vous trouverez ici tous les contenus et outils pour suivre les conférences, poser vos questions aux orateurs et oratrices intervenant cette année et échanger avec toute la communauté.
+            </p>
+            <p class="big">
+              N'hésitez pas à partager votre expérience et les moments forts de l’événement sur vos réseaux favoris avec le hastag #ParisWeb&nbsp;!
+            </p>
+          </div>
+        </div>      
+      </details>
 
-          <div class="hub--dualBlocks">
-            <div>
-              <p class="no-top-margin no-bottom-margin">
-                En ce moment
-              </p>
-              <p class="h3-like no-top-margin half-bottom-margin">
-                Des propriétés personnalisées très, très personnalisées
-              </p>
-              <div class="portrait portrait-small portrait--link">
-                <div class="portrait-small__side">
-                  <div class="portrait__avatar portrait__avatar--small">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 140 140"><defs><circle id="a" cx="70" cy="70" r="70"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#C5C3CE" xlink:href="#a"/><g mask="url(#b)"><g transform="translate(8.6 23.3)"><path fill="#FFF" fill-rule="nonzero" d="M51.6 1.2h19.9V9h-20zM43 67.5h36.8v5.3H43zm-9.8-56.4h56.7v56H33.2z"/><path fill="#423F4A" fill-rule="nonzero" d="M75 75s40.6 4.9 44.5 5.5c4 .6 4.3 2 4.3 3v39.8H0V83.6c0-1 .4-2.5 4.3-3l42.2-5.7"/><g fill-rule="nonzero"><path fill="#FFF" d="M46.7 74.2c0 1.1 6.5 2 14.6 2 8.2 0 14.8-.9 14.8-2v-1.7H46.7v1.7z"/><path fill="#423F4A" d="M61.4 81c-6 0-16-1.1-16-5.2v-4.4h32v4.4c0 4.2-10 5.3-16 5.3zm-13.6-6.7v1.5c.4.9 5.3 2.7 13.5 2.7s13.1-1.8 13.5-2.8v-1.4h-27z"/></g><path fill="#423F4A" fill-rule="nonzero" d="M85.5 8.3H72.8V3.3c0-1.8-1.4-3.2-3.2-3.2h-16a3.2 3.2 0 00-3.1 3.2v5.2H37.7a7 7 0 00-7 7v46.2c0 4 3.2 7 7 7h4.2V71c0 1.8 1.5 3.2 3.2 3.2h32.8c1.8 0 3.2-1.5 3.2-3.2v-2.3h4.4c3.9 0 7-3.2 7-7V15.4c0-4-3.2-7-7-7zM53.2 3.1c0-.3.2-.5.5-.5h16c.2 0 .3.2.3.5v5.1H53.2V3.1zM78.5 71c0 .2-.3.5-.5.5H45.2c-.3 0-.5-.3-.5-.5v-2.3h33.6V71h.2zm11.1-9.4a4.1 4.1 0 01-4.1 4.2H37.8a4.1 4.1 0 01-4.2-4.2V15.4a4.1 4.1 0 014.2-4.2h47.7a4.1 4.1 0 014.1 4.2v46.2z"/><circle cx="51.5" cy="33" r="3.6" fill="#423F4A" fill-rule="nonzero"/><circle cx="73.6" cy="33" r="3.6" fill="#423F4A" fill-rule="nonzero"/><path stroke="#423F4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M73.3 49.4C61 54.6 51.6 49 51.6 49"/></g></g></g></svg>                  </div>
+      <div class="hub--grid">
+        <div class="hub--grid--menu">
+          <aside class="hub--grid--sticky">
+            <div class="hub--box">
+              <h2 class="visuallyhidden">Liens</h2>
+              <h3 class="half-bottom-margin no-top-margin">Sur cette page</h3>
+              <ul class="link-list">
+                <li class="big">
+                  <a href="#conference">Visionner la conférence en cours</a>
+                </li>
+                <li class="big">
+                  <a href="#programme">Consulter le programme</a>
+                </li>
+                <li class="big">
+                  <a href="#communaute">Discuter avec la communauté</a>
+                </li>
+              </ul>
+              <h3 class="half-bottom-margin">Liens externes</h3>
+              <ul class="link-list">
+                <li class="big">
+                  <a href="https://www.paris-web.fr/aide/">Obtenir de l’aide</a>
+                </li>
+                <li class="big">
+                  <a href="https://www.paris-web.fr/code-de-conduite.php">Voir le code de conduite</a>
+                </li>
+              </ul>
+              <a class="btn btn-small btn-fluid btn-no-margin" href="https://www.helloasso.com/associations/paris-web/evenements/paris-web-2020/">
+                S’inscrire aux ateliers
+              </a>
+            </div>
+            <div class="hub--box menu--soutien">
+              <a class="menu--soutien--img" href="https://shop.spreadshirt.fr/paris-web/">
+                <img src="{{.Site.BaseURL}}images/hub-2020/tshirts.png" class="img--boutique" alt="" aria-hidden />
+                <span class="btn btn-small btn-primary btn-fluid btn-no-margin">
+                  Découvrir la boutique
+                </span>
+              </a>
+              <a class="btn btn-small btn-fluid btn-no-margin" href="https://www.paris-web.fr/soutenez-paris-web.php">
+                Soutenir Paris Web
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="hub--grid--content">
+          <section class="hub--box" id="conference">
+            <h2 class="no-top-margin">Conférence</h2>
+            <p>Les conférences seront diffusées directement sur cette page le jeudi 1 et le vendredi 2 octobre.</p>
+            <p>Chaque conférence sera sous-titrée en français (y compris les conférences en anglais) et suivie d’une session de questions/réponses en direct avec l’oratrice ou l’orateur.</p>
+            <p>Pour les sessions de questions/réponses, nous avons décidé d’utiliser Zoom et ces sessions seront directement accessibles depuis votre navigateur.</p>
+          </section>
+
+          <section class="hub--box" id="conference">
+            <h2 class="no-top-margin">Conférence</h2>
+
+            <div class="hub--video">
+              {{ .Content }}
+            </div>
+          </section>
+
+          <section class="hub--box hub--program" id="programme">
+            <h2 class="no-top-margin">Programme</h2>
+
+            <details open class="hub--details hub--details--program" id="details_programme_jeudi">
+              <summary>
+                <h3>
+                  Jeudi 1er octobre
+                  <small class="hub--details--hiddenSummary hub--details--show-on-open">
+                    masquer
+                  </small>
+                  <small class="hub--details--hiddenSummary hub--details--show-on-closed">
+                    afficher
+                  </small>
+                </h3>
+              </summary>
+
+              <div class="hub--program--day">
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 09:30:00">09<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/communiquer-a-distance-de-maniere-accessible.php">Communiquer à distance de manière accessible</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/sylvie-duchateau.php">Sylvie Duchateau</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Sylvie Duchateau</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small">
+                      Rejoindre cette session
+                    </a>
+                  </div>
                 </div>
 
-                <div class="portrait-small__content">
-                  <div class="portrait__name h4-like">
-                    <a href="/#" class="title">Gaël Poupard</a>
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 10:30:00">10<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/des-proprietes-personnalisees-tres-tres-personnalisees.php">Des propriétés personnalisées très, très personnalisées</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/gael-poupard.php">Gaël Poupard</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Gaël Poupard</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 11:10:00">11<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/against-an-increasingly-user-hostile-web.php">Against an Increasingly User-Hostile Web</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/parimal-satyal.php">Parimal Satyal</a><br>
+                      conférence, 50 minutes<br>
+                      anglais, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Parimal Satyal</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--break">
+                  Pause déjeuner
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 13:30:00">13<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/oh-mes-cookies.php">Oh mes cookies&nbsp;!</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/laurie-anne-bourdain.php">Laurie-Anne Bourdain</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Laurie-Anne Bourdain</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 14:10:00">14<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/le-recrutement-dans-la-tech-contradictions-et-illusions.php">Le recrutement dans la tech, contradictions et illusions</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/marie-holzer.php">Marie Holzer</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Marie Holzer</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 15:10:00">15<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/trucs-et-astuces-pour-construire-une-single-page-app-accessible.php">Trucs et astuces pour construire une Single Page App accessible</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/mael-brunet.php">Maël Brunet</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Maël Brunet</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 15:50:00">15<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/fake-green-tech-comprendre-linteret-dun-numerique-responsable.php">“Fake” Green Tech&nbsp;: comprendre l’intérêt d’un Numérique Responsable</a>
+                      </a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/romuald-priol.php">Romuald Priol</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Romuald Priol</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 16:50:00">16<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/pourquoi-les-developpeureuses-ont-besoin-dune-formation-aux-questions-dethique-exemple-de-linformati.php">Pourquoi les développeur·ses ont besoin d’une formation aux questions d’éthique&nbsp;: exemple de l’informatique de santé</a>
+                      </a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/marion-magne.php">Marion Magné</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Marion Magné</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-            <hr />
-            <div>
-              <p class="no-top-margin no-bottom-margin">
-                Conférence suivante
-              </p>
-              <p class="h4-like no-top-margin half-bottom-margin">
-                 Against an Increasingly User-Hostile Web 
-              </p>
-              <p class="h5-like no-top-margin half-bottom-margin">
-                 Parimal Satyal
-              </p>
-            </div>
-          </div>
+            </details>
 
+            <details class="hub--details hub--details--program" id="details_programme_vendredi">
+              <summary>
+                <h3>
+                  Vendredi 2 octobre
+                  <small class="hub--details--hiddenSummary hub--details--show-on-open">
+                    masquer
+                  </small>
+                  <small class="hub--details--hiddenSummary hub--details--show-on-closed">
+                    afficher
+                  </small>
+                </h3>
+              </summary>
 
-
-
-          <div class="hub--video">
-            {{ .Content }}
-          </div>
-        </section>
-
-        <section class="hub--box hub--program" id="programme">
-          <h2 class="no-top-margin">Programme</h2>
-
-          <details open class="hub--details hub--details--program" id="details_programme_jeudi">
-            <summary>
-              <h3>
-                Jeudi 1er octobre
-                <small class="hub--details--hiddenSummary hub--details--show-on-open">
-                  masquer
-                </small>
-                <small class="hub--details--hiddenSummary hub--details--show-on-closed">
-                  afficher
-                </small>
-              </h3>
-            </summary>
-
-            <div class="hub--program--day">
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 09:30:00">09<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/communiquer-a-distance-de-maniere-accessible.php">Communiquer à distance de manière accessible</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/sylvie-duchateau.php">Sylvie Duchateau</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Sylvie Duchateau</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 10:30:00">10<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/des-proprietes-personnalisees-tres-tres-personnalisees.php">Des propriétés personnalisées très, très personnalisées</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/gael-poupard.php">Gaël Poupard</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Gaël Poupard</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 11:10:00">11<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/against-an-increasingly-user-hostile-web.php">Against an Increasingly User-Hostile Web</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/parimal-satyal.php">Parimal Satyal</a><br>
-                    conférence, 50 minutes<br>
-                    anglais, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Parimal Satyal</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--break">
-                Pause déjeuner
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 13:30:00">13<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/oh-mes-cookies.php">Oh mes cookies&nbsp;!</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/laurie-anne-bourdain.php">Laurie-Anne Bourdain</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Laurie-Anne Bourdain</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 14:10:00">14<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/le-recrutement-dans-la-tech-contradictions-et-illusions.php">Le recrutement dans la tech, contradictions et illusions</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/marie-holzer.php">Marie Holzer</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Marie Holzer</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 15:10:00">15<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/trucs-et-astuces-pour-construire-une-single-page-app-accessible.php">Trucs et astuces pour construire une Single Page App accessible</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/mael-brunet.php">Maël Brunet</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Maël Brunet</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 15:50:00">15<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/fake-green-tech-comprendre-linteret-dun-numerique-responsable.php">“Fake” Green Tech&nbsp;: comprendre l’intérêt d’un Numérique Responsable</a>
-                    </a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/romuald-priol.php">Romuald Priol</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Romuald Priol</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 16:50:00">16<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/pourquoi-les-developpeureuses-ont-besoin-dune-formation-aux-questions-dethique-exemple-de-linformati.php">Pourquoi les développeur·ses ont besoin d’une formation aux questions d’éthique&nbsp;: exemple de l’informatique de santé</a>
-                    </a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/marion-magne.php">Marion Magné</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Marion Magné</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-            </div>
-          </details>
-
-          <details class="hub--details hub--details--program" id="details_programme_vendredi">
-            <summary>
-              <h3>
-                Vendredi 2 octobre
-                <small class="hub--details--hiddenSummary hub--details--show-on-open">
-                  masquer
-                </small>
-                <small class="hub--details--hiddenSummary hub--details--show-on-closed">
-                  afficher
-                </small>
-              </h3>
-            </summary>
-
-            <div class="hub--program--day">
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 09:30:00">09<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/un-grand-pouvoir-implique-de-grandes-accessibilites.php">Un grand pouvoir implique de grandes accessibilités</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/matthias-dugue.php">Matthias Dugué</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Matthias Dugué</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 10:30:00">10<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/peut-on-reellement-faire-du-marketing-ethique.php">Peut-on réellement faire du marketing éthique&nbsp;?</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/alex-carmona.php">Alex Carmona</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Alex Carmona</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 11:10:00">11<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/pairing-is-caring.php">Pairing is caring</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/syamala-umamaheswaran.php">Syamala Umamaheswaran</a> et
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/virginie-caplet.php">Virginie Caplet</a><br>
-                    conférence, 50 minutes<br>
-                    anglais, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Syamala Umamaheswaran et Virginie Caplet</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--break">
-                Pause déjeuner
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 13:30:00">13<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/les-animations-daujourdhui-avec-waapi.php">Les animations d’aujourd’hui avec WAAPI</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/louis-hoebregts.php">Louis Hoebregts</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Louis Hoebregts</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 14:10:00">14<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/is-there-room-for-ethics-in-open-source.php">Y a-t-il de la place pour l’éthique dans l’open source&nbsp;?</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/tobie-langel.php">Tobie Langel</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Tobie Langel</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 15:10:00">15<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/le-langage-determine-qui-est-attire-par-lindustrie-web.php">Le langage détermine qui est attiré par l’industrie web</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/nadia-fischer.php">Nadia Fischer</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Nadia Fischer</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 15:50:00">15<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/et-maintenant-on-fait-quoi.php">Et maintenant, on fait quoi&nbsp;?</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a href="#" class="discreet h5-like"><a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/maitane-lenoir.php">Maïtané Lenoir</a><br>
-                    conférence, 50 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Maïtané Lenoir</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-
-              <div class="hub--program--item hub--dualBlocks">
-                <div class="hub--program--conference">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    <time datetime="2020-10-01 16:50:00">16<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <h4 class="no-top-margin no-bottom-margin">
-                    <a class="discreet" href="https://www.paris-web.fr/2020/conferences/peut-on-garder-une-url-secrete.php">Peut-on garder une URL secrète&nbsp;?</a>
-                  </h4>
-                  <p class="no-top-margin no-bottom-margin">
-                    <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/tim-carry.php">Tim Carry</a><br>
-                    mini-conférence, 30 minutes<br>
-                    français, sous-titré
-                  </p>
-                </div>
-                <hr>
-                <div class="hub--program--bonus">
-                  <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
-                    à partir de <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
-                  </p>
-                  <p class="no-top-margin">
-                    <span class="h4-like">Questions/réponses</span>
-                    <br>
-                    <span class="h5-like">avec Tim Carry</span>
-                  </p>
-                  <a href="#" class="btn btn-no-margin btn-small disabled">
-                    Rejoindre cette session
-                  </a>
-                </div>
-              </div>
-            </div>
-          </details>
-        </section>
-
-        <section class="hub--box" id="partenaires">
-          <h2 class="no-top-margin">Partenaires</h2>
-          <p class="big">Nous tenons à remercier nos partenaires pour leur soutien, tout particulièrement en cette année si spéciale&nbsp;!</p>
-
-          <div id="" class="sponsor-section sponsor-section--bronze">
-            <div class="sponsor-section__sponsors">
-              <article class="sponsor sponsor--bronze" id="editions-eyrolles">
-                <div class="sponsor__logo">
-                  <a class="sponsor__link" href="https://www.editions-eyrolles.com/">
-                    <img src="https://www.paris-web.fr/img/partenaires/eyrolles.png" alt="Éditions Eyrolles" width="240" height="74">
-                  </a>
+              <div class="hub--program--day">
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 09:30:00">09<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/un-grand-pouvoir-implique-de-grandes-accessibilites.php">Un grand pouvoir implique de grandes accessibilités</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/matthias-dugue.php">Matthias Dugué</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
                   </div>
-              </article>
-
-              <article class="sponsor sponsor--bronze" id="gandi">
-                <div class="sponsor__logo">
-                  <a class="sponsor__link" href="https://www.gandi.net/">
-                    <img src="https://www.paris-web.fr/img/partenaires/2019/gandi.svg" alt="Gandi" width="150" height="42">
-                  </a>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 10:20:00">10<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Matthias Dugué</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
                 </div>
-              </article>
 
-              <article class="sponsor sponsor--bronze" id="supinternet">
-                <div class="sponsor__logo">
-                  <a class="sponsor__link" href="https://www.supinternet.fr">
-                    <img src="https://www.paris-web.fr/img/partenaires/2019/supinternet.png" alt="SUP'Internet" width="300" height="201">
-                  </a>
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 10:30:00">10<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/peut-on-reellement-faire-du-marketing-ethique.php">Peut-on réellement faire du marketing éthique&nbsp;?</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/alex-carmona.php">Alex Carmona</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 11:00:00">11<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Alex Carmona</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
                 </div>
-              </article>
 
-              <article class="sponsor sponsor--bronze" id="balsamiq">
-                <div class="sponsor__logo">
-                  <a class="sponsor__link" href="https://balsamiq.com/">
-                    <img src="https://www.paris-web.fr/img/partenaires/2019/balsamiq.svg" alt="Balsamiq" width="244" height="70">
-                  </a>
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 11:10:00">11<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/pairing-is-caring.php">Pairing is caring</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/syamala-umamaheswaran.php">Syamala Umamaheswaran</a> et
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/virginie-caplet.php">Virginie Caplet</a><br>
+                      conférence, 50 minutes<br>
+                      anglais, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 12:00:00">12<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Syamala Umamaheswaran et Virginie Caplet</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
                 </div>
-              </article>
 
-              <article class="sponsor sponsor--bronze" id="authot">
-                <div class="sponsor__logo">
-                  <a class="sponsor__link" href="http://www.authot.com/">
-                    <img src="https://www.paris-web.fr/img/partenaires/2019/authot.png" alt="Authôt" width="250" height="75">
-                  </a>
+                <div class="hub--program--break">
+                  Pause déjeuner
                 </div>
-              </article>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 13:30:00">13<abbr title="heures">h</abbr>30</time> – <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/les-animations-daujourdhui-avec-waapi.php">Les animations d’aujourd’hui avec WAAPI</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/louis-hoebregts.php">Louis Hoebregts</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 14:00:00">14<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Louis Hoebregts</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 14:10:00">14<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/is-there-room-for-ethics-in-open-source.php">Y a-t-il de la place pour l’éthique dans l’open source&nbsp;?</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/tobie-langel.php">Tobie Langel</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 15:00:00">15<abbr title="heures">h</abbr>00</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Tobie Langel</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 15:10:00">15<abbr title="heures">h</abbr>10</time> – <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/le-langage-determine-qui-est-attire-par-lindustrie-web.php">Le langage détermine qui est attiré par l’industrie web</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/nadia-fischer.php">Nadia Fischer</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 15:40:00">15<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Nadia Fischer</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 15:50:00">15<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/et-maintenant-on-fait-quoi.php">Et maintenant, on fait quoi&nbsp;?</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a href="#" class="discreet h5-like"><a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/maitane-lenoir.php">Maïtané Lenoir</a><br>
+                      conférence, 50 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 16:40:00">16<abbr title="heures">h</abbr>40</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Maïtané Lenoir</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+
+                <div class="hub--program--item hub--dualBlocks">
+                  <div class="hub--program--conference">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      <time datetime="2020-10-01 16:50:00">16<abbr title="heures">h</abbr>50</time> – <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <h4 class="no-top-margin no-bottom-margin">
+                      <a class="discreet" href="https://www.paris-web.fr/2020/conferences/peut-on-garder-une-url-secrete.php">Peut-on garder une URL secrète&nbsp;?</a>
+                    </h4>
+                    <p class="no-top-margin no-bottom-margin">
+                      <a class="h5-like discreet" href="https://www.paris-web.fr/orateurs/tim-carry.php">Tim Carry</a><br>
+                      mini-conférence, 30 minutes<br>
+                      français, sous-titré
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="hub--program--bonus">
+                    <p class="hub--program--time h3-like no-top-margin no-bottom-margin">
+                      à partir de <time datetime="2020-10-01 17:20:00">17<abbr title="heures">h</abbr>20</time>
+                    </p>
+                    <p class="no-top-margin">
+                      <span class="h4-like">Questions/réponses</span>
+                      <br>
+                      <span class="h5-like">avec Tim Carry</span>
+                    </p>
+                    <a href="#" class="btn btn-no-margin btn-small disabled">
+                      Rejoindre cette session
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <section class="hub--box" id="partenaires">
+            <h2 class="no-top-margin">Partenaires</h2>
+            <p class="big">Nous tenons à remercier nos partenaires pour leur soutien, tout particulièrement en cette année si spéciale&nbsp;!</p>
+
+            <div id="" class="sponsor-section sponsor-section--bronze">
+              <div class="sponsor-section__sponsors">
+                <article class="sponsor sponsor--bronze" id="editions-eyrolles">
+                  <div class="sponsor__logo">
+                    <a class="sponsor__link" href="https://www.editions-eyrolles.com/">
+                      <img src="https://www.paris-web.fr/img/partenaires/eyrolles.png" alt="Éditions Eyrolles" width="240" height="74">
+                    </a>
+                    </div>
+                </article>
+
+                <article class="sponsor sponsor--bronze" id="gandi">
+                  <div class="sponsor__logo">
+                    <a class="sponsor__link" href="https://www.gandi.net/">
+                      <img src="https://www.paris-web.fr/img/partenaires/2019/gandi.svg" alt="Gandi" width="150" height="42">
+                    </a>
+                  </div>
+                </article>
+
+                <article class="sponsor sponsor--bronze" id="supinternet">
+                  <div class="sponsor__logo">
+                    <a class="sponsor__link" href="https://www.supinternet.fr">
+                      <img src="https://www.paris-web.fr/img/partenaires/2019/supinternet.png" alt="SUP'Internet" width="300" height="201">
+                    </a>
+                  </div>
+                </article>
+
+                <article class="sponsor sponsor--bronze" id="balsamiq">
+                  <div class="sponsor__logo">
+                    <a class="sponsor__link" href="https://balsamiq.com/">
+                      <img src="https://www.paris-web.fr/img/partenaires/2019/balsamiq.svg" alt="Balsamiq" width="244" height="70">
+                    </a>
+                  </div>
+                </article>
+
+                <article class="sponsor sponsor--bronze" id="authot">
+                  <div class="sponsor__logo">
+                    <a class="sponsor__link" href="http://www.authot.com/">
+                      <img src="https://www.paris-web.fr/img/partenaires/2019/authot.png" alt="Authôt" width="250" height="75">
+                    </a>
+                  </div>
+                </article>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="hub--box" id="communaute">
-          <h2 class="no-top-margin">Communauté</h2>
-          <p class="big">La force de Paris Web depuis 15 ans, c’est vous, la communauté. Pour vous permettre d’échanger à tout moment de l’événement et même au-delà, nous vous proposons deux espaces d’échange.</p>
-          <div class="hub--dualBlocks">
-            <div>
-              <p>Grâce au Slack créé spécialement pour cette édition dématérialisée, venez retrouver les autres membres de la communauté et échangez avec elleux à toute heure du jour ou de la nuit, avant, pendant et après l’événement&nbsp;!</p>
-              <p>Vous trouverez notamment un canal dédié à chaque conférence, pour vous permettre d’échanger plus longuement avec chaque orateur et oratrice&nbsp;! 😃</p>
-              <a href="https://parisweb2020.slack.com/" class="btn btn-link btn-no-margin btn-fluid">
-                Discuter avec la communauté
-              </a>
+          <section class="hub--box" id="communaute">
+            <h2 class="no-top-margin">Communauté</h2>
+            <p class="big">La force de Paris Web depuis 15 ans, c’est vous, la communauté. Pour vous permettre d’échanger à tout moment de l’événement et même au-delà, nous vous proposons deux espaces d’échange.</p>
+            <div class="hub--dualBlocks">
+              <div>
+                <p>Grâce au Slack créé spécialement pour cette édition dématérialisée, venez retrouver les autres membres de la communauté et échangez avec elleux à toute heure du jour ou de la nuit, avant, pendant et après l’événement&nbsp;!</p>
+                <p>Vous trouverez notamment un canal dédié à chaque conférence, pour vous permettre d’échanger plus longuement avec chaque orateur et oratrice&nbsp;! 😃</p>
+                <a href="https://parisweb2020.slack.com/" class="btn btn-link btn-no-margin btn-fluid">
+                  Discuter avec la communauté
+                </a>
+              </div>
+              <hr />
+              <div>
+                <p>En plus de Slack, chaque conférence sera suivie d’une session questions/réponses en direct avec l’oratrice ou l’orateur.</p>
+                <p>Ces moments seront naturellement éphémères mais ne seront pas limités aux 5 à 10 minutes habituellement allouées dans l’agenda de la journée. Vous pourrez profiter de ces moments pour échanger en direct et plus longuement. Imaginez ces sessions comme les discussions que vous pouvez avoir dans les couloirs pendant les pauses. 😉</p>
+                <a href="#programme" class="btn btn-link btn-no-margin btn-fluid">
+                  Consulter le programme
+                </a>
+              </div>
             </div>
-            <hr />
-            <div>
-              <p>En plus de Slack, chaque conférence sera suivie d’une session questions/réponses en direct avec l’oratrice ou l’orateur.</p>
-              <p>Ces moments seront naturellement éphémères mais ne seront pas limités aux 5 à 10 minutes habituellement allouées dans l’agenda de la journée. Vous pourrez profiter de ces moments pour échanger en direct et plus longuement. Imaginez ces sessions comme les discussions que vous pouvez avoir dans les couloirs pendant les pauses. 😉</p>
-              <a href="#programme" class="btn btn-link btn-no-margin btn-fluid">
-                Consulter le programme
-              </a>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        
       </div>
-      
     </div>
+
   </main>
 
   <footer class="footer--hub">
@@ -777,7 +778,7 @@
     <div>
       <ul class="link-list">
         <li>
-          <a href="#">Aide</a>
+          <a href="https://www.paris-web.fr/aide/">Aide</a>
         </li>
         <li>
           <a href="https://www.paris-web.fr/code-de-conduite.php">Code de conduite</a>

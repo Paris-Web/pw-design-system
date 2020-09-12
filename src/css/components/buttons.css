@@ -75,20 +75,29 @@ input[type="submit"]:disabled,
 }
 
 .btn-ghost,
-.btn-ghost:visited {
+.btn-link,
+.btn-ghost:visited,
+.btn-link:visited {
   color: var(--color-brand-02-darker);
   background: transparent;
   transition: color 0.25s ease;
 }
 .btn-ghost:hover,
-.btn-ghost:focus {
+.btn-link:hover,
+.btn-ghost:focus,
+.btn-link:focus {
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
 }
 .btn-ghost.disabled,
-.btn-ghost:disabled {
+.btn-link.disabled,
+.btn-ghost:disabled,
+.btn-link:disabled {
   color: var(--color-brand-02-darker);
   background: transparent;
+}
+.btn-link {
+  text-decoration: underline;
 }
 
 .btn-small {

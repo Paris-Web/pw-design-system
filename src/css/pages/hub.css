@@ -49,6 +49,8 @@ main.main--hub {
   margin: 0 auto;
   max-width: 1440px;
   padding: 0 calc(var(--base-spacing) * 3);
+  min-height: calc(100vh - (var(--base-spacing) * 20) - 166px);
+  /*               100   -   header height   -   footer height */
 }
 
 .hub--details .hub--details--hiddenSummary {
@@ -71,7 +73,8 @@ main.main--hub {
 
 .hub--details--program > summary:focus,
 .hub--details--program > summary:hover {
-  outline: solid var(--color-brand-02) 2px;
+  outline: solid var(--color-brand-01) 2px;
+  cursor: pointer;
 }
 
 .hub--welcome--container summary {
@@ -201,6 +204,10 @@ main.main--hub {
   justify-content: center;
 }
 
+.hub--auth {
+  margin: calc(var(--base-spacing) * 16) auto;
+}
+
 footer.footer--hub {
   background-color: var(--color-ui-01);
   margin: calc(var(--base-spacing) * 12) auto 0;
@@ -258,8 +265,13 @@ footer.footer--hub {
     padding: 0 calc(var(--base-spacing) * 6);
   }
 
+  .hub--auth {
+    margin: calc(var(--base-spacing) * 16) auto;
+    max-width: calc((100vw - calc(var(--base-spacing) * 8)) / 3 * 2);
+  }
+
   .hub--welcome--container {
-    max-width: calc((100% - calc(var(--base-spacing) * 8)) / 3 * 2);
+    max-width: calc((100vw - calc(var(--base-spacing) * 8)) / 3 * 2);
   }
 
   .hub--grid {
@@ -291,7 +303,7 @@ footer.footer--hub {
 
   footer.footer--hub {
     display: flex;
-    max-width: calc((100% - calc(var(--base-spacing) * 8)) / 3 * 2);
+    max-width: calc((100vw - calc(var(--base-spacing) * 8)) / 3 * 2);
     align-items: center;
     text-align: left;
   }

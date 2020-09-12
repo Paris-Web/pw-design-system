@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ $.Site.Title }}</title>
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/styleguide-hub.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{.Site.BaseURL}}apple-touch-icon.png?2020">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}favicon-32x32.png?2020">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}favicon-16x16.png?2020">
+    <link rel="icon shortcut" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
+    <link rel="icon" type="image/x-icon" href="{{.Site.BaseURL}}favicon.ico?2020">
+    <link rel="manifest" href="{{.Site.BaseURL}}site.webmanifest?2020">
+    <link rel="mask-icon" href="{{.Site.BaseURL}}safari-pinned-tab.svg?2020" color="#e11a81">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="styleguide hub">
+  <a class="back-to-design-system" href="{{ .Site.BaseURL }}">Revenir au Design System</a>
+  <a class="go-to-content screen-reader screen-reader-focusable" href="#main">
+    Aller au contenu
+  </a>
+
+  <header class="header--hub" role="banner">
+    <div class="logo">
+      <img src="{{.Site.BaseURL}}images/hub-2020/logo-pw2020.svg" width="200" height="140" alt="" />
+    </div>
+  </header>
+
+  <main class="main--hub" id="main" tabindex="-1">
+    <section class="hub--box hub--auth">
+      <div class="hub--dualBlocks">
+        <div>
+          <h2 class="no-top-margin">Authentifiez-vous</h2>
+          <form action="#">
+            <div class="form-field">
+              <div class="form-field__label">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="form-field__input form-field__input--primary">
+                <input name="email" id="email" type="email" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <div class="form-field__label">
+                <label for="password">Mot de passe</label>
+              </div>
+              <div class="form-field__input form-field__input--primary">
+                <input name="password" id="password" type="password" />
+              </div>
+            </div>
+
+            <p>Il y a une erreur dans votre mot de passe.</p>
+
+            <div class="form-field form-field--button">
+              <button type="submit" class="btn btn-primary btn-no-margin btn-fluid">
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+        <hr>
+        <div>
+          <h3 class="no-top-margin no-bottom-margin">Pas encore inscrit·e&nbsp;?</h3>
+          <p>En vous inscrivant à l’édition de Paris Web 2020, vous accéderez au salon de discussion sur Slack ainsi qu’aux sessions de questions/réponses avec les orateurs et oratrices.</p>
+          <a href="https://www.helloasso.com/associations/paris-web/evenements/paris-web-2020/" class="btn btn-no-margin">
+            Je m’inscris sans hésiter&nbsp;!
+          </a>
+          <h3 class="no-bottom-margin">Besoin d’aide&nbsp;?</h3>
+          <p>L’email/mot de passe vous a été communiqué lors de votre inscription, magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p>
+          <a href="#" class="btn-small btn btn-no-margin btn-link">
+            Accéder aux rubriques d’aide
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer--hub">
+    <div class="logo">
+      <a href="https://www.paris-web.fr/">
+        <img src="{{.Site.BaseURL}}images/logo/2019/logo-rond.svg" alt="Visiter le site paris-web.fr" />
+      </a>
+    </div>
+    <div class="text">
+      <p class="small">Depuis 2006, Paris Web est le rendez-vous incontournable des professionnels francophones du Web. Les conférences et ateliers Paris Web sont organisés par l’association à but non lucratif Paris Web.</p>
+    </div>
+    <div>
+      <ul class="link-list">
+        <li>
+          <a href="https://www.paris-web.fr/association/">Qui sommes-nous&nbsp;?</a>
+        </li>
+        <li>
+          <a href="https://www.paris-web.fr/contact/">Nous contacter</a>
+        </li>
+        <li>
+          <a href="https://www.paris-web.fr/">Le site paris-web.fr</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="link-list">
+        <li>
+          <a href="#">Aide</a>
+        </li>
+        <li>
+          <a href="https://www.paris-web.fr/code-de-conduite.php">Code de conduite</a>
+        </li>
+        <li>
+          <a href="https://www.paris-web.fr/partenaires.php">Partenaires</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="{{.Site.BaseURL}}hub.js"></script>
+
+{{ partial "footer" . }}
