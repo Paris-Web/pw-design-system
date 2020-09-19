@@ -129,6 +129,11 @@
   width: 3.5rem;
   margin-bottom: 0;
 }
+.portrait-small__side .portrait__avatar.portrait__avatar--small {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0;
+}
 .portrait-small__content {
   min-width: 15ch;
 }
@@ -140,5 +145,9 @@
   .portrait-small__side .portrait__avatar {
     height: 4.5rem;
     width: 4.5rem;
+  }
+  .portrait-small__side .portrait__avatar.portrait__avatar--small {
+    height: 3rem;
+    width: 3rem;
   }
 }

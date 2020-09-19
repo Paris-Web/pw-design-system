@@ -13,6 +13,7 @@ input[type="submit"],
   transition: background-color 0.25s ease;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 .btn:visited {
   color: var(--color-text-inverted);
@@ -36,6 +37,7 @@ input[type="submit"]:focus,
 }
 input[type="button"]:disabled,
 input[type="submit"]:disabled,
+.btn.disabled,
 .btn:disabled {
   opacity: 0.5;
   background: var(--color-brand-02);
@@ -48,6 +50,7 @@ input[type="submit"]:disabled,
 .btn-primary:focus {
   background: var(--color-brand-01-dark);
 }
+.btn-primary.disabled,
 .btn-primary:disabled {
   background: var(--color-brand-01);
 }
@@ -65,28 +68,48 @@ input[type="submit"]:disabled,
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
 }
+.btn-inverted.disabled,
 .btn-inverted:disabled {
   color: var(--color-text-03);
   background: var(--color-ui-01);
 }
 
-.btn-ghost {
+.btn-ghost,
+.btn-link,
+.btn-ghost:visited,
+.btn-link:visited {
   color: var(--color-brand-02-darker);
   background: transparent;
   transition: color 0.25s ease;
 }
 .btn-ghost:hover,
-.btn-ghost:focus {
+.btn-link:hover,
+.btn-ghost:focus,
+.btn-link:focus {
   color: var(--color-text-inverted);
   background: var(--color-brand-02-darker);
 }
-.btn-ghost:disabled {
+.btn-ghost.disabled,
+.btn-link.disabled,
+.btn-ghost:disabled,
+.btn-link:disabled {
   color: var(--color-brand-02-darker);
   background: transparent;
+}
+.btn-link {
+  text-decoration: underline;
 }
 
 .btn-small {
   padding: var(--base-spacing) calc(var(--base-spacing) * 3)
     calc(var(--base-spacing) + 0.1rem);
   font-size: 1rem;
+}
+
+.btn-fluid {
+  width: 100%;
+}
+
+.btn-no-margin {
+  margin: 0;
 }
