@@ -61,6 +61,19 @@ main.main--hub {
   display: inline;
 }
 
+.hub--details--program > summary {
+  padding-left: var(--base-spacing); 
+  margin-left: var(--base-spacing * -1); 
+  margin-right: var(--base-spacing * -1);
+  outline: solid var(--color-ui-01) 2px;
+  transition: outline .2s ease;
+}
+
+.hub--details--program > summary:focus,
+.hub--details--program > summary:hover {
+  outline: solid var(--color-brand-02) 2px;
+}
+
 .hub--welcome--container summary {
   margin-bottom: calc(var(--base-spacing) * 4);
   display: block;
