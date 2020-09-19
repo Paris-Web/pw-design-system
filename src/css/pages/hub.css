@@ -67,7 +67,6 @@ main.main--hub {
   padding-left: var(--base-spacing); 
   margin-left: var(--base-spacing * -1); 
   margin-right: var(--base-spacing * -1);
-  outline: solid var(--color-ui-01) 2px;
   transition: outline .2s ease;
 }
 
