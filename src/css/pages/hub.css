@@ -67,7 +67,6 @@ main.main--hub {
   padding-left: var(--base-spacing); 
   margin-left: var(--base-spacing * -1); 
   margin-right: var(--base-spacing * -1);
-  transition: outline .2s ease;
 }
 
 .hub--details--program > summary:focus,
