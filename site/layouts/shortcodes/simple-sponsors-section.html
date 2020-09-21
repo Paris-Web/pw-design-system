@@ -1,0 +1,26 @@
+{{ $niveau := .Get "niveau" }}
+{{ $resizeOptions := .Get "logoResizeOptions" }}
+<div class="simpleSponsor-section simpleSponsor-section--{{ $niveau }}">
+  <h2 class="separation">{{ .Get "title" }}</h2>
+
+  <div class="simpleSponsor-section__sponsors">
+    {{ $sponsorsResources := .Page.Resources }}
+    {{ range where (.Page.Resources.ByType "page") ".Params.niveau" $niveau }}
+      {{ $glob := printf "%s/logo.*" .Params.logoDir }}
+      {{ if eq .Params.logoType "svg" }}
+        {{ $logo := $sponsorsResources.GetMatch $glob }}
+        {{ .Scratch.Set "logo" $logo.Permalink }}
+      {{ else }}
+        {{ $logo := ($sponsorsResources.GetMatch $glob).Resize $resizeOptions }}
+        {{ .Scratch.Set "logo" $logo.Permalink }}
+      {{ end }}
+      {{ .Scratch.Set "logoWidth" $resizeOptions }}
+
+      {{ .Scratch.Set "name" .Title }}
+      {{/* For some reasons I can’t understand, `.Content` so I used frontmatter */}}
+      {{ .Scratch.Set "siteUrl" .Params.siteUrl }}
+      {{ .Scratch.Set "niveau" $niveau }}
+      {{ partial "simple-sponsors/simple-sponsor" . }}
+    {{ end }}
+  </div>
+</div>
