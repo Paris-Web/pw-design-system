@@ -206,12 +206,6 @@ main.main--hub {
   color: var(--color-brand-01);
 }
 
-.sponsor-section .sponsor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .hub--auth {
   margin: calc(var(--base-spacing) * 16) auto;
 }
