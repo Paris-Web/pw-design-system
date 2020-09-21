@@ -161,12 +161,15 @@ main.main--hub {
   padding-top: calc(9/16 * 100%);
 }
 
-.hub--video > * {
+.hub--video > iframe {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   position: absolute;
+}
+.hub--video > iframe.disabled {
+  display: none;
 }
 
 .hub--program details summary h3 {
@@ -185,6 +188,13 @@ main.main--hub {
 .hub--program--item {
   padding: calc(var(--base-spacing) * 1) 0 calc(var(--base-spacing) * 1) calc(var(--base-spacing) * 4);
   border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-01-light);
+}
+
+.hub--program--item[aria-current="true"] {
+  background-color: var(--color-ui-02);
+}
+.hub--program--item[aria-current="true"] hr {
+  border-color: var(--color-ui-03);
 }
 
 .hub--program--break {
@@ -241,7 +251,8 @@ footer.footer--hub {
   .hub--program--bonus .hub--program--time {
     color: var(--color-brand-02);
   }
-  .hub--program--item hr {
+  .hub--program--item hr,
+  .hub--program--item[aria-current="true"] hr {
     border-color: var(--color-brand-02);
   }
 }
@@ -336,4 +347,8 @@ a:hover .btn,
 a:focus .btn {
   color: var(--color-text-inverted);
   background: var(--color-brand-01-dark);
+}
+
+.btn.disabled {
+  pointer-events: none;
 }
