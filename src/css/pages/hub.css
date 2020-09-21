@@ -159,6 +159,8 @@ main.main--hub {
 .hub--video {
   position: relative;
   padding-top: calc(9/16 * 100%);
+  margin-top: calc(var(--base-spacing) * 4);
+  background-color: var(--color-ui-06);
 }
 
 .hub--video > iframe {
