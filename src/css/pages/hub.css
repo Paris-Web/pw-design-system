@@ -42,6 +42,7 @@ header.header--hub .logo {
   bottom: calc(var(--base-spacing) * -8);
 }
 header.header--hub .logo img {
+  max-width: calc(var(--base-spacing) * 48);
   max-height: calc(var(--base-spacing) * 24);
 }
 
@@ -345,6 +346,10 @@ a:focus .btn {
   background: var(--color-brand-01-dark);
 }
 
-.btn.disabled {
+a.disabled, a.disabled:hover {
+  color: var(--color-text);
+}
+
+.btn.disabled, a.disabled {
   pointer-events: none;
 }
