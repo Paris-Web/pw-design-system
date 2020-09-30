@@ -347,7 +347,7 @@ a:focus .btn {
 }
 
 a.disabled, a.disabled:hover {
-  color: var(--color-text);
+  color: var(--color-text-01);
 }
 
 .btn.disabled, a.disabled {
