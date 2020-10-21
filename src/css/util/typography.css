@@ -302,7 +302,7 @@ hr {
 
 .inline-image {
   display: inline-block;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   vertical-align: text-bottom;
 }
 
@@ -322,7 +322,7 @@ mark::before {
   height: 100%;
   z-index: -1;
   transform: rotate(-2deg);
-  opacity: .5;
+  opacity: 0.5;
   transition: opacity 0.15s ease-in-out;
 }
 mark:nth-of-type(2)::before {
