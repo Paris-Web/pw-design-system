@@ -10,8 +10,12 @@ const hits = connectHits(options => {
                   ? hit.video.link
                   : hit.image !== ""
                     ? hit.image
-                    : "https://www.paris-web.fr/images/placeholder-conf.svg"
+                    : "https://www.paris-web.fr/images/placeholder-conf.svg";
     
+    const title = hit._highlightResult.title.matchLevel !== "none"
+                  ? hit._highlightResult.title.value
+                  : hit.title;
+
     return html`
       <section class="presentation-preview">
         <div class="presentation-preview__media thumbnail">
@@ -29,14 +33,24 @@ const hits = connectHits(options => {
         <div class="presentation-preview__content">
           <h3 class="h4-like">
             <a class="discreet" href="${hit.url}">
-              ${unsafeHTML(hit.title)}
+              ${unsafeHTML(title)}
             </a>
           </h3>
           <div>
-            ${hit.speakers.map(({ name, url }) => {
+            ${hit.speakers.map(({ name, url }, index, array) => {
+              const displayName = hit._highlightResult.speakers[index].name.matchLevel !== "none"
+                                  ? hit._highlightResult.speakers[index].name.value
+                                  : name
               return html`
-                <a class="discreet" href="${url}">${unsafeHTML(name)}</a>
-              `;
+                <a class="discreet" href="${url}">${
+                  unsafeHTML(displayName)
+                }</a>${
+                  array.length > 1 && index !== array.length - 1
+                    ? index < array.length - 2
+                      ? ", "
+                      : " et "
+                    : ""
+                }`;
             })}
           </div>
           <div>
