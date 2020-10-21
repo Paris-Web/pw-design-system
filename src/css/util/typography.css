@@ -308,7 +308,7 @@ hr {
 
 mark {
   background: transparent;
-  display:  inline-block;
+  display: inline-block;
   position: relative;
   z-index: 1;
 }

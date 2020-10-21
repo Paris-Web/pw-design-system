@@ -7,10 +7,10 @@ menu: "components"
 
 <ul class="pagination">
     <li class="pagination__item pagination__item--disabled">
-        <a href="#start" rel="prev"><span aria-label="Début"><<</span></a>
+        <a href="#start" rel="prev"><span aria-label="Début">&lt;&lt;</span></a>
     </li>
     <li class="pagination__item pagination__item--disabled">
-        <a href="#prev" rel="prev"><span aria-hidden="true"><</span> Précédent</a>
+        <a href="#prev" rel="prev"><span aria-hidden="true">&lt;</span> Précédent</a>
     </li>
     <li class="pagination__item pagination__item--active" aria-current="page">
         <a href="#1" class="active">1</a>
@@ -46,9 +46,9 @@ menu: "components"
         <a href="#11">11</a>
     </li>
     <li class="pagination__item">
-        <a href="#next" rel="next">Suivant <span aria-hidden="true">></span></a>
+        <a href="#next" rel="next">Suivant <span aria-hidden="true">&gt;</span></a>
     </li>
     <li class="pagination__item">
-        <a href="#end" rel="next"><span aria-label="Fin">>></span></a>
+        <a href="#end" rel="next"><span aria-label="Fin">&gt;&gt;</span></a>
     </li>
 </ul>
