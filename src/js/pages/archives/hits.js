@@ -6,15 +6,19 @@ const hits = connectHits(options => {
   const { widgetParams, hits } = options;
 
   const renderHit = hit => {
+    const image = hit.video && hit.video.link
+                  ? hit.video.link
+                  : hit.image !== ""
+                    ? hit.image
+                    : "https://www.paris-web.fr/images/placeholder-conf.svg"
+    
     return html`
       <section class="presentation-preview">
         <div class="presentation-preview__media thumbnail">
           <a href="${hit.url}" class="presentation-preview__link">
             <img
               class="thumbnail__media"
-              src="${hit.video && hit.video.link
-                ? hit.video.link
-                : "https://www.paris-web.fr/images/placeholder-conf.svg"}"
+              src="${image}"
             />
           </a>
           <span class="thumbnail__description">
