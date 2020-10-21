@@ -1,16 +1,18 @@
 import connectHits from "instantsearch.js/es/connectors/hits/connectHits";
 import { html, render } from "lit-html";
 import { unsafeHTML } from "lit-html/directives/unsafe-html.js";
+import commaListSeparator from "../../util/comma-list-separator";
 
 const hits = connectHits(options => {
   const { widgetParams, hits } = options;
 
   const renderHit = hit => {
-    const image = hit.video && hit.video.link
+    let image = hit.video && hit.video.link
                   ? hit.video.link
-                  : hit.image !== ""
-                    ? hit.image
-                    : "https://www.paris-web.fr/images/placeholder-conf.svg";
+                  : hit.image;
+    if (!image) {
+      image = "https://www.paris-web.fr/images/placeholder-conf.svg";
+    }
     
     const title = hit._highlightResult.title.matchLevel !== "none"
                   ? hit._highlightResult.title.value
@@ -38,19 +40,14 @@ const hits = connectHits(options => {
           </h3>
           <div>
             ${hit.speakers.map(({ name, url }, index, array) => {
-              const displayName = hit._highlightResult.speakers[index].name.matchLevel !== "none"
-                                  ? hit._highlightResult.speakers[index].name.value
-                                  : name
+              const higlightedNameResult = hit._highlightResult.speakers[index].name;
+              const displayName = higlightedNameResult.matchLevel !== "none"
+                                  ? higlightedNameResult.value
+                                  : name;
               return html`
                 <a class="discreet" href="${url}">${
                   unsafeHTML(displayName)
-                }</a>${
-                  array.length > 1 && index !== array.length - 1
-                    ? index < array.length - 2
-                      ? ", "
-                      : " et "
-                    : ""
-                }`;
+                }</a>${commaListSeparator(index, array)}`;
             })}
           </div>
           <div>
