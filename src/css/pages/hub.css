@@ -65,8 +65,8 @@ main.main--hub {
 }
 
 .hub--details--program > summary {
-  padding-left: var(--base-spacing); 
-  margin-left: var(--base-spacing * -1); 
+  padding-left: var(--base-spacing);
+  margin-left: var(--base-spacing * -1);
   margin-right: var(--base-spacing * -1);
 }
 
@@ -128,7 +128,7 @@ main.main--hub {
   width: 100%;
   height: var(--base-spacing);
   background: rgb(117,83,171);
-  background: linear-gradient(to right, rgb(225,26,129) 0%, rgb(5,143,214) 100%); 
+  background: linear-gradient(to right, rgb(225,26,129) 0%, rgb(5,143,214) 100%);
 }
 
 .hub--grid--menu .hub--box:not(:last-child),
@@ -309,7 +309,6 @@ footer.footer--hub {
 
   footer.footer--hub {
     display: flex;
-    max-width: calc((100vw - calc(var(--base-spacing) * 8)) / 3 * 2);
     align-items: center;
     text-align: left;
   }
@@ -346,7 +345,7 @@ a:focus .btn {
   background: var(--color-brand-01-dark);
 }
 
-a.disabled, a.disabled:hover {
+a:not(.btn).disabled, a:not(.btn).disabled:hover {
   color: var(--color-text-01);
 }
 

@@ -5,8 +5,7 @@ layout: "direct"
 ---
 
 <iframe
-  class="disabled"
-  data-enabled-at-start="2020-10-01 09:30:00"
+  data-enabled-at-start="2020-10-01 09:10:00"
   data-enabled-at-end="2020-10-01 12:59:00"
   width="100%"
   height="100%"
