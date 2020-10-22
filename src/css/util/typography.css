@@ -302,6 +302,42 @@ hr {
 
 .inline-image {
   display: inline-block;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   vertical-align: text-bottom;
+}
+
+mark {
+  background: transparent;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+mark::before {
+  background-color: var(--color-special-yellow);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(-2deg);
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+mark:nth-of-type(2)::before {
+  transform: rotate(1deg);
+}
+mark:nth-of-type(3)::before {
+  transform: rotate(-3deg);
+}
+mark:nth-of-type(4)::before {
+  transform: rotate(0deg);
+}
+mark:nth-of-type(5)::before {
+  transform: rotate(-1deg);
+}
+a:hover mark::before,
+a:focus mark::before {
+  opacity: 1;
 }

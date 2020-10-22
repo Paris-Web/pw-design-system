@@ -39,3 +39,7 @@
 .presentation-preview__link:focus img {
   transform: scale(1.1);
 }
+
+.presentation-preview__media:hover + .presentation-preview__content h3 a  {
+  color: var(--color-brand-01);
+}
