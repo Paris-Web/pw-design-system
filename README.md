@@ -30,7 +30,7 @@ Pour faire tourner une instance locale du site, executez la commande suivante :
 npm start
 ```
 
-Vous pouvez ensuite aller sur http://localhost:3000/ - à moins que votre navigateur ne se soit ouvert tout seul.
+Vous pouvez ensuite aller sur http://localhost:3000/
 
 ### Static build
 
@@ -42,7 +42,7 @@ npm run build
 
 Les fichiers seront ensuite disponibles dans le dossier `/dist`.
 
-Parmi ces fichiers, les fichiers `app.js` et `css/main.css` sont les fichiers qui pourront être utilisés directement sur le site de Paris Web.
+Parmi ces fichiers, les fichiers `js/app.js` et `css/main.css` sont les fichiers qui pourront être utilisés directement sur le site de Paris Web. Les fichiers `js/hub.js` et `css/hub.css` sont utilisés pour le Hub.
 
 ### Déploiement
 
