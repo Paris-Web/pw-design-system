@@ -9,12 +9,8 @@ html {
 }
 
 ::selection {
-  color: var(--color-ui-01);
+  color: var(--color-text-inverted);
   background-color: var(--color-brand-01);
-}
-
-body.hub {
-  background-color: var(--color-ui-02);
 }
 
 .go-to-content:focus {
@@ -27,23 +23,28 @@ body.hub {
 
 header.header--hub {
   display: block;
-  background-color: var(--color-ui-01);
-  border-bottom: 2px solid var(--color-ui-03);
+  background-color: var(--color-background-block);
+  border-bottom: 2px solid var(--color-background-block-shadow);
   height: calc(var(--base-spacing) * 20);
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 5); 
 }
 
 header.header--hub .logo {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: calc(var(--base-spacing) * -8);
+  margin-bottom: calc(var(--base-spacing) * -10);
 }
+
 header.header--hub .logo img {
   max-width: calc(var(--base-spacing) * 48);
   max-height: calc(var(--base-spacing) * 24);
+}
+
+header.header--hub .toggle-switch label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--base-spacing);
 }
 
 main.main--hub {
@@ -72,7 +73,7 @@ main.main--hub {
 
 .hub--details--program > summary:focus,
 .hub--details--program > summary:hover {
-  outline: solid var(--color-brand-01) 2px;
+  outline: solid var(--color-link-hover) 2px;
   cursor: pointer;
 }
 
@@ -91,8 +92,8 @@ main.main--hub {
 }
 
 .hub--welcome {
-  background-color: var(--color-ui-01);
-  border-bottom: 2px solid var(--color-ui-03);
+  background-color: var(--color-background-block);
+  border-bottom: 2px solid var(--color-background-block-shadow);
 }
 
 .hub--welcome .hub--welcome--hero {
@@ -109,8 +110,8 @@ main.main--hub {
 }
 
 .hub--box {
-  background-color: var(--color-ui-01);
-  border-bottom: 2px solid var(--color-ui-03);
+  background-color: var(--color-background-block);
+  border-bottom: 2px solid var(--color-background-block-shadow);
   padding: calc(var(--base-spacing) * 4);
   position: relative;
 }
@@ -127,8 +128,8 @@ main.main--hub {
   left: 0;
   width: 100%;
   height: var(--base-spacing);
-  background: rgb(117,83,171);
-  background: linear-gradient(to right, rgb(225,26,129) 0%, rgb(5,143,214) 100%);
+  background: var(--color-brand-03);
+  background: var(--gradient);
 }
 
 .hub--grid--menu .hub--box:not(:last-child),
@@ -161,7 +162,7 @@ main.main--hub {
   position: relative;
   padding-top: calc(9/16 * 100%);
   margin-top: calc(var(--base-spacing) * 6);
-  background-color: var(--color-ui-06);
+  background-color: var(--color-background-video);
 }
 
 .hub--video > iframe {
@@ -193,8 +194,12 @@ main.main--hub {
   border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-01-light);
 }
 
+.hub--program--item:not(.hub--dualBlocks):nth-of-type(odd) {
+  border-color: var(--color-brand-02-light);
+}
+
 .hub--program--item[aria-current="true"] {
-  background-color: var(--color-ui-02);
+  background-color: var(--color-background-block-alternate);
 }
 .hub--program--item[aria-current="true"] hr {
   border-color: var(--color-ui-03);
@@ -202,11 +207,25 @@ main.main--hub {
 
 .hub--program--break {
   padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 4);
-  background: var(--color-ui-02);
+  background: var(--color-background-block-alternate);
 }
 
 .hub--program--time {
-  color: var(--color-brand-01);
+  color: var(--color-program-title);
+}
+
+.hub--program--item:not(.hub--dualBlocks):nth-of-type(odd) .hub--program--time {
+  color: var(--color-program-title-odd);
+}
+
+.hub--program--item a:hover,
+.hub--program--item a:focus {
+  color: var(--color-program-title);
+}
+
+.hub--program--item:not(.hub--dualBlocks):nth-of-type(odd) a:hover,
+.hub--program--item:not(.hub--dualBlocks):nth-of-type(odd) a:focus {
+  color: var(--color-program-title-odd);
 }
 
 .hub--auth {
@@ -214,7 +233,7 @@ main.main--hub {
 }
 
 footer.footer--hub {
-  background-color: var(--color-ui-01);
+  background-color: var(--color-background-block);
   margin: calc(var(--base-spacing) * 12) auto 0;
   padding: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 6);
   text-align: center;
@@ -241,7 +260,7 @@ footer.footer--hub {
   .hub--dualBlocks > hr {
     flex:  0 1 2px;
     border-top: none;
-    border-left: 2px solid var(--color-ui-02);
+    border-left: 2px solid var(--color-background-block-alternate);
     margin: 0 calc(var(--base-spacing) * 4);
   }
 
@@ -283,7 +302,7 @@ footer.footer--hub {
   .hub--grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: calc(var(--base-spacing) * 8);
+    gap: calc(var(--base-spacing) * 8);
   }
 
   .hub--grid--menu {
@@ -297,8 +316,6 @@ footer.footer--hub {
   }
 
   .hub--box {
-    background-color: var(--color-ui-01);
-    border-bottom: 2px solid var(--color-ui-03);
     padding: calc(var(--base-spacing) * 4);
     position: relative;
   }

@@ -65,7 +65,7 @@
 
 html,
 body {
-  background: var(--color-ui-01);
+  background: var(--color-background-page);
   color: var(--color-text-01);
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
@@ -229,19 +229,19 @@ small {
 a {
   text-decoration-style: underline;
   text-decoration-skip-ink: auto;
-  color: var(--color-special-blue);
+  color: var(--color-link);
   transition: color 0.15s ease-in-out;
 }
 a:visited {
-  color: var(--color-brand-03);
+  color: var(--color-link-visited);
 }
 a:active,
 a.active {
-  color: var(--color-brand-01-dark);
+  color: var(--color-link-active);
 }
 a:hover,
 a:focus {
-  color: var(--color-brand-01);
+  color: var(--color-link-hover);
 }
 a.title {
   color: var(--color-brand-01);
@@ -249,19 +249,19 @@ a.title {
 }
 a.title:hover,
 a.title:focus {
-  color: var(--color-brand-01-dark);
+  color: var(--color-brand-01-dark); 
 }
 a.discreet {
   color: inherit;
 }
 a.discreet:hover,
 a.discreet:focus {
-  color: var(--color-brand-01);
+  color: var(--color-link-hover);
 }
 
 code,
 pre {
-  background: var(--color-ui-02);
+  background: var(--color-background-block-alternate); 
 }
 pre {
   max-width: 100%;
@@ -286,7 +286,7 @@ time.date {
 
 hr {
   border: none;
-  border-top: 2px solid var(--color-ui-02);
+  border-top: 2px solid var(--color-background-block-alternate);
   margin: calc(var(--base-spacing) * 4) 0;
 }
 

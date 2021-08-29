@@ -30,7 +30,7 @@ input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 .btn:focus {
-  outline-color: white;
+  outline-color: currentcolor;
   outline-offset: -4px;
   outline-style: solid;
   outline-width: 2px;
@@ -57,7 +57,7 @@ input[type="submit"]:disabled,
 
 .btn-inverted {
   color: var(--color-brand-02-darker);
-  background: var(--color-ui-01);
+  background: var(--color-background-page);
   transition: color 0.25s ease;
 }
 .btn-inverted:visited {

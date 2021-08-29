@@ -6,7 +6,6 @@ const hugoBin = require("hugo-bin");
 const gutil = require("gulp-util");
 const postcss = require("gulp-postcss");
 const cssImport = require("postcss-import");
-const cssnext = require("postcss-cssnext");
 const cssUrl = require("postcss-url");
 const BrowserSync = require("browser-sync");
 const webpack = require("webpack");
@@ -65,9 +64,6 @@ const css = () => {
             }
           }
         ]),
-        cssnext({
-          browsers: ["> 0.25%"]
-        })
       ])
     )
     .pipe(gulp.dest("./dist/css"))
