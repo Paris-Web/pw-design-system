@@ -249,7 +249,7 @@ a.title {
 }
 a.title:hover,
 a.title:focus {
-  color: var(--color-brand-01-dark); 
+  color: var(--color-brand-01-dark);
 }
 a.discreet {
   color: inherit;
@@ -261,7 +261,7 @@ a.discreet:focus {
 
 code,
 pre {
-  background: var(--color-background-block-alternate); 
+  background: var(--color-background-block-alternate);
 }
 pre {
   max-width: 100%;

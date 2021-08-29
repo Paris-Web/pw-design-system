@@ -58,7 +58,7 @@ input[type="submit"]:disabled,
 .btn-inverted {
   color: var(--color-brand-02-darker);
   background: var(--color-background-page);
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, background 0.25s ease;
 }
 .btn-inverted:visited {
   color: var(--color-brand-02-darker);
@@ -80,7 +80,7 @@ input[type="submit"]:disabled,
 .btn-link:visited {
   color: var(--color-brand-02-darker);
   background: transparent;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, background 0.25s ease;
 }
 .btn-ghost:hover,
 .btn-link:hover,

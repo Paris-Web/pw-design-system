@@ -28,7 +28,7 @@ header.header--hub {
   height: calc(var(--base-spacing) * 20);
   display: flex;
   justify-content: space-between;
-  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 5); 
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 5);
 }
 
 header.header--hub .logo {
