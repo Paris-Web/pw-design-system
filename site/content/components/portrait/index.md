@@ -9,45 +9,45 @@ menu: "components"
 
 <dl>
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             name="Camille Exemple"
             twitter="https://www.twitter.com/CamilleExemple"
             github="https://www.github.com/CamilleExemple"
             website="https://www.camilleexemple.com/"
             description="Pixelliste sans filet" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             name="Camille Exemple"
             twitter="https://www.twitter.com/CamilleExemple"
             description="Pixelliste sans filet" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             name="Camille Exemple"
             description="Pixelliste sans réseaux" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             name="Camille Exemple"
             description="Pixelliste avec lien"
             link="#" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             avatar="https://www.paris-web.fr/img/staff/joachim-robert.jpg"
             name="Camille Exemple"
             description="Pixelliste avec lien et réseaux"
@@ -56,15 +56,15 @@ menu: "components"
             github="https://www.github.com/CamilleExemple"
             website="https://www.camilleexemple.com/"
             linkedin="https://www.linkedin.com/CamilleExemple" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 
     <dd>
-        {{<example>}}
-            {{<portrait
+        {{< example >}}
+            {{< portrait
             surprise="true"
             name="Orateur·rice Surprise&nbsp;!" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 </dl>
 
@@ -72,8 +72,8 @@ menu: "components"
 
 <dl>
     <dd>
-        {{<example>}}
-            {{<portrait-long
+        {{< example >}}
+            {{< portrait-long
                 link="#"
                 avatar=""
                 name="Camille Exemple"
@@ -82,22 +82,22 @@ menu: "components"
                 website="https://www.camilleexemple.com/" >}}
                 Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.
-            {{</portrait-long>}}
-        {{</example>}}
+            {{< /portrait-long >}}
+        {{< /example >}}
     </dd>
     <dd>
-        {{<example>}}
-            {{<portrait-long
+        {{< example >}}
+            {{< portrait-long
                 link="#"
                 avatar="acme.jpg"
                 sponsor="true"
                 name="ACME Corp"
                 twitter="https://www.twitter.com/AcmeCorp"
-                website="https://www.acmecorp.com/">}}
+                website="https://www.acmecorp.com/" >}}
                 Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.
-            {{</portrait-long>}}
-        {{</example>}}
+            {{< /portrait-long >}}
+        {{< /example >}}
     </dd>
 </dl>
 
@@ -105,21 +105,21 @@ menu: "components"
 
 <dl>
     <dd>
-        {{<example>}}
-            {{<portrait-small
+        {{< example >}}
+            {{< portrait-small
                 link="#"
                 avatar=""
                 name="Camille Exemple"
                 description="Pixelliste sans filet" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
     <dd>
-        {{<example>}}
-            {{<portrait-small
+        {{< example >}}
+            {{< portrait-small
                 link="#"
                 avatar=""
                 name="Camille Exemple-long-de-la-ligne"
                 description="Pixelliste sans filet" >}}
-        {{</example>}}
+        {{< /example >}}
     </dd>
 </dl>

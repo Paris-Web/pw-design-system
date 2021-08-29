@@ -103,7 +103,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "dist", "js"),
-    publicPath: process.env.HUGO_BASEURL || "/",
+    publicPath: path.join(process.env.HUGO_BASEURL || "/", "js/"),
   },
   resolve: {
     fallback: {
