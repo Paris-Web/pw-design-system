@@ -34,6 +34,10 @@
   left: 0;
   object-fit: cover;
 }
+.presentation-preview__link img.contain {
+  object-fit: contain;
+  object-position: top center;
+}
 .presentation-preview__link:hover img,
 .presentation-preview__link:active img,
 .presentation-preview__link:focus img {

@@ -10,8 +10,10 @@ const hits = connectHits(options => {
     let image = hit.video && hit.video.link
                   ? hit.video.link
                   : hit.image;
+    let className = ""
     if (!image) {
-      image = "https://www.paris-web.fr/images/placeholder-conf.svg";
+      image = `https://www.paris-web.fr/img/vignettes/vignette.php?e=${hit.entry_id}`;
+      className = " contain";
     }
     
     const title = hit._highlightResult.title.matchLevel !== "none"
@@ -23,7 +25,7 @@ const hits = connectHits(options => {
         <div class="presentation-preview__media thumbnail">
           <a href="${hit.url}" class="presentation-preview__link">
             <img
-              class="thumbnail__media"
+              class="thumbnail__media${className}"
               src="${image}"
             />
           </a>
