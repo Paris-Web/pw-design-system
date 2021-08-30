@@ -8,4 +8,4 @@ fi
 
 echo "Deploying to remote folder '$BRANCH_SLUG'"
 
-rsync -avzL --delete --chmod=755 dist/ sites@www.paris-web.fr:/srv/sites/www/www/design-system/$BRANCH_SLUG
+rsync -avzL --delete dist/ deployer@www.paris-web.fr:/srv/sites/www/www/design-system/$BRANCH_SLUG
