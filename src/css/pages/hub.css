@@ -22,29 +22,40 @@ html {
 }
 
 header.header--hub {
-  display: block;
   background-color: var(--color-background-block);
   border-bottom: 2px solid var(--color-background-block-shadow);
   height: calc(var(--base-spacing) * 20);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 5);
 }
 
-header.header--hub .logo {
-  margin-bottom: calc(var(--base-spacing) * -10);
+@media (min-width: 44em) {
+  header.header--hub {
+    flex-direction: row;
+  }
 }
 
 header.header--hub .logo img {
-  max-width: calc(var(--base-spacing) * 48);
-  max-height: calc(var(--base-spacing) * 24);
+  width: 100%;
+  height: auto;
+  max-width: calc(var(--base-spacing) * 100);
 }
 
 header.header--hub .toggle-switch label {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
   gap: var(--base-spacing);
+}
+
+@media (min-width: 44em) {
+  header.header--hub .toggle-switch label {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 main.main--hub {

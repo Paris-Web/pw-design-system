@@ -5,6 +5,12 @@ const toggleTheme = (calledAtInit = false) => {
 
   const newValue = document.body.classList.contains('dark-theme');
 
+  if (newValue) {
+    document.querySelector("#hub-logo").src = "/images/logo-pw2021-dark.svg"
+  } else {
+    document.querySelector("#hub-logo").src = "/images/logo-pw2021.svg"
+  }
+
   localStorage.setItem(THEME_STORAGE_KEY, newValue);
 
   const labelElement = document.querySelector('#dark-mode-switch + label span.text span');
