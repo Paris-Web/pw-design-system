@@ -3,3 +3,4 @@ dist/
 yarn.lock
 site/resources
 .env
+.DS_Store

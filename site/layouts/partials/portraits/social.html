@@ -1,4 +1,4 @@
-{{ if (.Scratch.Get "twitter") or (.Scratch.Get "linkedin") or (.Scratch.Get "github") or (.Scratch.Get "website") }}
+{{ if or (.Scratch.Get "twitter") (.Scratch.Get "linkedin") (.Scratch.Get "github") (.Scratch.Get "website") }}
 <div class="portrait__links">
     {{ if .Scratch.Get "website" }}
     <a href="{{ .Scratch.Get "website" }}" class="icon-link">
