@@ -35,11 +35,12 @@ jobs:
           fi
         id: extract_branch
 
-#      - name: 🧹 Clean deleted branch
-#        uses: garygrossgarten/github-action-ssh@release
-#        with:
-#          command: rm -rf ./${{ steps.extract_branch.outputs.branch }}
-#          host: ${{ secrets.SERVER }}
-#          username: ${{ secrets.USER }}
-#          privateKey: ${{ secrets.SSH_KEY}}
-#        uses: StephanThierry/ftp-delete-action@v2.1
+      - name: 🧹 Clean deleted branch
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          # always verify that the target directory is not an empty string, then delete it
+          command: if [ ! "${{ steps.extract_branch.outputs.branch }}" ];then exit 1; fi && rm -rf ./${{ steps.extract_branch.outputs.branch }}
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USER }}
+          privateKey: ${{ secrets.SSH_KEY}}
+        uses: StephanThierry/ftp-delete-action@v2.1
