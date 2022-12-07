@@ -39,8 +39,8 @@ jobs:
         with:
           username: ${{ secrets.USER }}
           server: ${{ secrets.SERVER }}
-          port: 22 # default is 22
-          ssh_private_key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          ssh_private_key: ${{ secrets.SSH_KEY }}
           local_path: ./dist/
           remote_path: /srv/sites/www/www/design-system/${{ steps.extract_branch.outputs.branch }}/
           # sftp_only: # optional
