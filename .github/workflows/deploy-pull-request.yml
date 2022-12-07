@@ -1,6 +1,11 @@
 name: Deploy Pull Request
 
-on: [pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - master 
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -13,9 +18,6 @@ jobs:
         run: |
           HEAD_REF=$(printf "%q" "${{ github.event.pull_request.head.ref }}")
 
-          echo "Branch name is $HEAD_REF"
-
-          HEAD_REF=${HEAD_REF/refs\/heads\//}
           HEAD_REF=${HEAD_REF/\//-}
           
           echo "Sanitized branch name is $HEAD_REF"
@@ -41,8 +43,8 @@ jobs:
       - name: 🌮 Keep dist directory
         uses: actions/upload-artifact@v3
         with:
-          name: dist
-          path: dist/ # or path/to/artifact
+          name: dist-${{ steps.extract_branch.outputs.branch }}
+          path: dist/
 
       - name: 📂 SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
