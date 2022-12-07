@@ -1,6 +1,6 @@
 import connectRefinementList from "instantsearch.js/es/connectors/refinement-list/connectRefinementList";
 import { html, render } from "lit-html";
-import { unsafeHTML } from "lit-html/directives/unsafe-html";
+import { unsafeHTML } from "lit-html/directives/unsafe-html.js";
 import filterDetails from "./filterDetails";
 
 const makeChangeHandler = refine => ({
