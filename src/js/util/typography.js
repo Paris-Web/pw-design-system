@@ -1,4 +1,4 @@
-import WebFont from "webfontloader";
+import FontsLoader from "ffontsloader";
 
 const FALLBACK_TIMEOUT = 1000;
 const TOTAL_TIMEOUT = 5000;
@@ -21,7 +21,7 @@ export default () => {
     timeout = null;
   }, FALLBACK_TIMEOUT);
 
-  WebFont.load({
+  FontsLoader.load({
     custom: {
       families: ["PT Sans", "PT Sans Narrow"]
     },
