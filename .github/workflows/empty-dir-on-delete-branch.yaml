@@ -39,7 +39,8 @@ jobs:
         uses: garygrossgarten/github-action-ssh@0.7.0
         with:
           # always verify that the target directory is not an empty string, then delete it
-          command: if [ ! "${{ steps.extract_branch.outputs.branch }}" ];then exit 1; fi && rm -rf ./${{ steps.extract_branch.outputs.branch }}
+          #command: if [ ! "${{ steps.extract_branch.outputs.branch }}" ];then exit 1; fi && rm -rf ./${{ steps.extract_branch.outputs.branch }}
+          command: pwd ; ls -la
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USER }}
           privateKey: ${{ secrets.SSH_KEY}}
