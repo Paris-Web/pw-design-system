@@ -11,7 +11,7 @@ jobs:
       - name: 🛂 Extract branch name
         shell: bash
         run: |
-          HEAD_REF=$(printf "%q" "${{ github.event.ref }}")
+          HEAD_REF=$(printf "%q" "${{ github.event.pull_request.head.ref }}")
 
           echo "Branch name is $HEAD_REF"
 
