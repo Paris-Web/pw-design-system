@@ -36,7 +36,7 @@ jobs:
         id: extract_branch
 
       - name: 🧹 Clean deleted branch
-        uses: garygrossgarten/github-action-ssh@release
+        uses: garygrossgarten/github-action-ssh@0.7.0
         with:
           # always verify that the target directory is not an empty string, then delete it
           command: if [ ! "${{ steps.extract_branch.outputs.branch }}" ];then exit 1; fi && rm -rf ./${{ steps.extract_branch.outputs.branch }}
