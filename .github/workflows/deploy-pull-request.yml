@@ -11,7 +11,10 @@ jobs:
       - name: 🛂 Extract branch name
         shell: bash
         run: |
-          HEAD_REF=$(printf "%q" "${{ github.head_ref }}")
+          HEAD_REF=$(printf "%q" "${{ github.event.ref }}")
+
+          echo "Branch name is $HEAD_REF"
+
           HEAD_REF=${HEAD_REF/refs\/heads\//}
           HEAD_REF=${HEAD_REF/\//-}
           
@@ -34,18 +37,18 @@ jobs:
         run: |
           npm ci
           HUGO_BASEURL="/design-system/${{ steps.extract_branch.outputs.branch }}/" npm run build
-      - name: 📂 SFTP Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: ${{ secrets.USER }}
-          server: ${{ secrets.SERVER }}
-          port: 22
-          ssh_private_key: ${{ secrets.SSH_KEY }}
-          local_path: ./dist/
-          remote_path: /srv/sites/www/www/design-system/${{ steps.extract_branch.outputs.branch }}/
-          # sftp_only: # optional
-          # sftpArgs: # optional
-          # delete_remote_files: # optional
+#      - name: 📂 SFTP Deploy
+#        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+#        with:
+#          username: ${{ secrets.USER }}
+#          server: ${{ secrets.SERVER }}
+#          port: 22
+#          ssh_private_key: ${{ secrets.SSH_KEY }}
+#          local_path: ./dist/
+#          remote_path: /srv/sites/www/www/design-system/${{ steps.extract_branch.outputs.branch }}/
+#          # sftp_only: # optional
+#          # sftpArgs: # optional
+#          # delete_remote_files: # optional
 
       - name: 💬 Leave a message
         uses: mshick/add-pr-comment@v1
