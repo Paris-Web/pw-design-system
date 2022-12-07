@@ -51,7 +51,7 @@ jobs:
           server: ${{ secrets.SERVER }}
           port: 22
           ssh_private_key: ${{ secrets.SSH_KEY }}
-          local_path: ./dist/
+          local_path: ./dist/*
           remote_path: ./${{ steps.extract_branch.outputs.branch }}/
           # sftp_only: # optional
           # sftpArgs: # optional
@@ -62,7 +62,7 @@ jobs:
         with:
           message: |
             ## 🛺 Branch preview has been deployed!
-            👉 <https://www.paris-web.fr/design-system/${{ steps.extract_branch.outputs.branch }}/index.html/>
+            👉 <https://www.paris-web.fr/design-system/${{ steps.extract_branch.outputs.branch }}/index.html>
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]'
           allow-repeats: false
