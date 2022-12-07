@@ -13,3 +13,8 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "section"]
 
 [blackfriday]
   fractions = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

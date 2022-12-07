@@ -15,9 +15,7 @@
   margin: calc(-2 * var(--base-spacing));
   display: inline-block;
 }
-.font-fallback .footer a {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
+
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;

@@ -5,6 +5,7 @@
     url("/fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     url("/fonts/PTSans-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: fallback;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
     url("/fonts/PTSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
     url("/fonts/PTSans-Narrow.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -41,6 +45,7 @@
     url("/fonts/PTSans-NarrowBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
 }
 
 :root {
@@ -71,23 +76,6 @@ body {
   line-height: 1.4;
 }
 
-.font-fallback,
-.font-fallback body,
-.font-fallback h1,
-.font-fallback .h1-like,
-.font-fallback h2,
-.font-fallback .h2-like,
-.font-fallback h3,
-.font-fallback .h3-like,
-.font-fallback h4,
-.font-fallback .h4-like,
-.font-fallback h5,
-.font-fallback .h5-like,
-.font-fallback h6,
-.font-fallback .h6-like {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
-
 * {
   font-family: inherit;
   font-size: inherit;
@@ -114,7 +102,6 @@ h6,
   font-weight: bold;
 }
 
-.font-fallback .normal,
 .normal {
   font-size: 1em;
   font-weight: normal;
@@ -279,9 +266,6 @@ time.date {
   text-transform: uppercase;
   color: var(--color-text-03);
   font-weight: bold;
-}
-.font-fallback .date-important {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 hr {
