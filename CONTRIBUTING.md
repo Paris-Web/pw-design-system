@@ -14,7 +14,7 @@ Pour installer le projet, se référer au README.md.
 
 Si vous avez des doutes sur la démarche à suivre, n'hésitez pas à contacter une des personnes suivantes qui se feront une joie de vous aider, que ce soit pour ajouter de nouveaux composants, en modifier ou suivre le processus de Pull Request&nbsp;:
 
-* [@JulienPradet](https://github.com/JulienPradet) ([Twitter](https://twitter.com/JulienPradet))
+* [@joachimesque](https://github.com/joachimesque) ([@joachim@boitam.eu](https://boitam.eu/@joachim))
 
 Le but de cette liste est simplement de recenser les gens prêts à aider les autres à contribuer. Il n'y a pas de grand gourou. Si vous souhaitez être ajouté à la liste mais n'êtes pas sûr de pouvoir aider ou comment aider, contactez l'une des personnes de cette liste qui vous montrera toutes les ficelles.
 
