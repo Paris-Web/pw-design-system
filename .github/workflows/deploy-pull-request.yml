@@ -1,6 +1,6 @@
 name: Deploy Pull Request
 
-on: [pull_request, workflow_dispatch]
+on: [pull_request,  workflow_dispatch]
 
 jobs:
   deploy:
@@ -11,8 +11,8 @@ jobs:
       - name: 🛂 Extract branch name
         shell: bash
         run: |
-          HEAD_REF=$(printf "%q" "${{ github.head_ref }}")
-          HEAD_REF=${HEAD_REF/refs\/heads\//}
+          HEAD_REF=$(printf "%q" "${{ github.event.pull_request.head.ref }}")
+
           HEAD_REF=${HEAD_REF/\//-}
           
           echo "Sanitized branch name is $HEAD_REF"
@@ -34,6 +34,13 @@ jobs:
         run: |
           npm ci
           HUGO_BASEURL="/design-system/${{ steps.extract_branch.outputs.branch }}/" npm run build
+
+      - name: 🌮 Keep dist directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-${{ steps.extract_branch.outputs.branch }}
+          path: dist/
+
       - name: 📂 SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
@@ -41,8 +48,8 @@ jobs:
           server: ${{ secrets.SERVER }}
           port: 22
           ssh_private_key: ${{ secrets.SSH_KEY }}
-          local_path: ./dist/
-          remote_path: /srv/sites/www/www/design-system/${{ steps.extract_branch.outputs.branch }}/
+          local_path: ./dist/*
+          remote_path: ./${{ steps.extract_branch.outputs.branch }}/
           # sftp_only: # optional
           # sftpArgs: # optional
           # delete_remote_files: # optional
@@ -52,7 +59,7 @@ jobs:
         with:
           message: |
             ## 🛺 Branch preview has been deployed!
-            👉 <https://www.paris-web.fr/design-system/${{ steps.extract_branch.outputs.branch }}/index.html/>
+            👉 <https://www.paris-web.fr/design-system/${{ steps.extract_branch.outputs.branch }}/index.html>
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]'
           allow-repeats: false
