@@ -79,7 +79,6 @@ menu: "pages"
 
 <section class="content content--2-cols" aria-labelledby="news-title">
 	<h2 class="separation separation--primary" id="news-title">Actualités</h2>
-
 	<div class="content__wrapper">
 		<div class="content__main">
 			{{< actu-item
@@ -90,7 +89,6 @@ menu: "pages"
 				excerpt="Augmentez votre visibilité professionnelle en devenant partenaire de Paris Web 2018."
 			>}}
 		</div>
-
 		<div class="content__sidebar">
 			{{< fil-actu >}}
 				<li class="actu-list__item">

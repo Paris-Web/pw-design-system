@@ -70,15 +70,13 @@
   font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
     sans-serif;
 }
-.font-fallback .portrait svg text {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
 
 .portrait-long {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
+
 .portrait-long__side {
   text-align: center;
   position: relative;

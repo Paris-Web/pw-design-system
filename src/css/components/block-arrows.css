@@ -21,11 +21,11 @@
   bottom: 0;
 }
 .negative__arrow::after {
-  right: calc(- var(--arrow-width) / 2);
+  right: calc(-1 * var(--arrow-width) / 2);
   transform: skewX(-45deg);
 }
 .negative__arrow::before {
-  left: calc(- var(--arrow-width) / 2);
+  left: calc(-1 * var(--arrow-width) / 2);
   transform: skewX(45deg);
 }
 
