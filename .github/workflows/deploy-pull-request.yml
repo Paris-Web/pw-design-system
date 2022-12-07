@@ -37,6 +37,12 @@ jobs:
         run: |
           npm ci
           HUGO_BASEURL="/design-system/${{ steps.extract_branch.outputs.branch }}/" npm run build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/ # or path/to/artifact
+
 #      - name: 📂 SFTP Deploy
 #        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
 #        with:
