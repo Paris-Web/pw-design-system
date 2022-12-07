@@ -43,4 +43,3 @@ jobs:
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USER }}
           privateKey: ${{ secrets.SSH_KEY}}
-        uses: StephanThierry/ftp-delete-action@v2.1
