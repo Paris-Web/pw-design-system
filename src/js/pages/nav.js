@@ -170,7 +170,6 @@ const listenFooterPosition = () => {
 };
 
 const initNavigation = () => {
-  console.log("bouhlalaok");
   listenButtons();
   listenFooterPosition();
 };

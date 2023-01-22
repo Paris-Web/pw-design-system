@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+require('dotenv').config();
 
 const getBaseUrl = (() => {
   let baseUrl = process.env.HUGO_BASEURL || "/";
@@ -63,9 +64,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
-        "NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development"),
         "ALGOLIA_APP_ID": JSON.stringify(process.env.ALGOLIA_APP_ID),
-        "ALGOLIA_ADMIN_KEY": JSON.stringify(process.env.ALGOLIA_ADMIN_KEY),
         "ALGOLIA_SEARCH_ONLY_API_KEY": JSON.stringify(
           process.env.ALGOLIA_SEARCH_ONLY_API_KEY
         )
@@ -92,7 +91,6 @@ module.exports = {
   entry: {
     app: ["./js/app"],
     archives: ["./js/archives"],
-    "admin-archives": ["./js/admin-archives"],
     hub: ["./js/hub"],
     hub_live: ["./js/hub_live"],
     styleguide: ["./js/styleguide"],
