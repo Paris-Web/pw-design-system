@@ -17,7 +17,7 @@
 }
 .direct-link aside {
   flex: 2;
-  border-top: 2px solid var(--color-ui-02);
+  border-top: 2px solid var(--color-background-block-alternate);
   margin-top: calc(var(--base-spacing) * 4);
   padding-top: calc(var(--base-spacing) * 6);
 }
@@ -50,7 +50,7 @@
     .direct-link aside {
         margin-top: 0;
         border-top: none;
-        border-left: 2px solid var(--color-ui-02);
+        border-left: 2px solid var(--color-background-block-alternate);
         padding-top: 0;
         padding-left: calc(var(--base-spacing) * 6);
         padding-right: calc(var(--base-spacing) * 2);

@@ -103,7 +103,7 @@ const listenButtons = () => {
     removeMenuCloseOnResize = listenMenuCloseOnResize(closeMenu);
   };
 
-  document.querySelector(".js-open-menu").addEventListener("click", openMenu);
+  document.querySelector(".js-open-menu")?.addEventListener("click", openMenu);
 
   const closeButtons = document.querySelectorAll(".js-close-menu");
   for (let i = 0; i < closeButtons.length; i++) {
@@ -170,7 +170,6 @@ const listenFooterPosition = () => {
 };
 
 const initNavigation = () => {
-  console.log("bouhlalaok");
   listenButtons();
   listenFooterPosition();
 };
