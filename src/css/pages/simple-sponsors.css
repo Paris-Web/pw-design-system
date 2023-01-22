@@ -54,7 +54,7 @@
   .simpleSponsor-section__sponsors > * {
     padding-left: calc(var(--base-spacing) * 4);
     padding-right: calc(var(--base-spacing) * 4);
-    border-right: 2px solid var(--color-ui-02);
+    border-right: 2px solid var(--color-background-block-alternate);
     margin-top: calc(var(--base-spacing) * 4);
     margin-bottom: calc(var(--base-spacing) * 4);
   }
@@ -103,7 +103,7 @@
 
   .simpleSponsor-section--or .simpleSponsor-section__sponsors > * {
     width: 50%;
-    border-right: 2px solid var(--color-ui-02);
+    border-right: 2px solid var(--color-background-block-alternate);
   }
   .simpleSponsor-section--or .simpleSponsor-section__sponsors > :nth-child(2n) {
     border-right: none;
@@ -120,7 +120,7 @@
   .simpleSponsor-section--argent .simpleSponsor-section__sponsors > :nth-child(2n),
   .simpleSponsor-section--bronze .simpleSponsor-section__sponsors > :nth-child(2n),
   .simpleSponsor-section--autre .simpleSponsor-section__sponsors > :nth-child(2n) {
-    border-right: 2px solid var(--color-ui-02);
+    border-right: 2px solid var(--color-background-block-alternate);
   }
   .simpleSponsor-section--argent .simpleSponsor-section__sponsors > :nth-child(3n),
   .simpleSponsor-section--bronze .simpleSponsor-section__sponsors > :nth-child(3n),
