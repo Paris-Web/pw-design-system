@@ -10,7 +10,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
@@ -22,7 +22,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente l'atelier « <a href="{{< absoluteUrl "pages/presentation" >}}">Refaisons Paris Web !</a> »</p>
@@ -34,7 +34,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
@@ -46,7 +46,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
@@ -58,7 +58,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
@@ -70,7 +70,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
@@ -82,7 +82,7 @@ layout: "page"
         link="pages/orateur"
         avatar=""
         name="Camille Exemple"
-        twitter="https://www.twitter.com/CamilleExemple"
+        fediverse="https://mamot.fr/@CamilleExemple"
         github="https://www.github.com/CamilleExemple"
         website="https://www.camilleexemple.com/" >}}
         <p class="important">Camille Exemple présente la conférence « <a href="{{< absoluteUrl "pages/presentation" >}}">Lorem Ipsum, en veux-tu ? En voilà !</a> »</p>
