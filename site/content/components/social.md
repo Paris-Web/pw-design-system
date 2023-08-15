@@ -23,6 +23,12 @@ menu: "components"
             </a>
         </li>
         <li>
+            <a class="social-link" href="https://mamot.fr/@parisweb">
+                {{< icon icon="big-fediverse" >}}
+                Twitter
+            </a>
+        </li>
+        <li>
             <a class="social-link" href="https://www.paris-web.fr/abonnement.php">
                 {{< icon icon="big-mail" >}}
                 Newsletter
