@@ -4,3 +4,4 @@ yarn.lock
 site/resources
 .env
 .DS_Store
+/site/.hugo_build.lock
