@@ -14,7 +14,7 @@ C'est ici aussi que les fichiers CSS et JS sont générés pour le site de [www.
 
 ### Prerequisites
 
-Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines (testé avec node 16 et npm 7).
+Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines (testé avec node 18 et npm 9).
 
 Ensuite, récupérez ce dépôt et installez les dépendances avec la commande suivante :
 
