@@ -17,6 +17,12 @@
   line-height: 2.5;
 }
 
+.columns-list--follow {
+  grid-template-columns: repeat(3, 1fr);
+  margin: calc(7 * var(--base-spacing)) 0 calc(4 * var(--base-spacing));
+  text-align: center;
+}
+
 @media screen and (min-width: 44em) {
   .columns-list {
     grid-template-columns: repeat(4, 1fr);

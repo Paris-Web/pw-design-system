@@ -68,7 +68,7 @@ layout: "full"
                 </li>
                 <li>
                     <a class="social-link" href="https://mamot.fr/@parisweb">
-                        {{< icon icon="big-fediverse" >}}
+                        {{< icon icon="big-mastodon" >}}
                         Mastodon
                     </a>
                 </li>
