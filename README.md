@@ -24,7 +24,7 @@ npm install
 
 ### Development
 
-Pour faire tourner une instance locale du site, executez la commande suivante :
+Pour faire tourner une instance locale du site, exécutez la commande suivante :
 
 ```bash
 npm start
@@ -34,7 +34,7 @@ Vous pouvez ensuite aller sur http://localhost:3000/
 
 ### Static build
 
-Pour compiler le site, executez la commande suivante :
+Pour compiler le site, exécutez la commande suivante :
 
 ```bash
 npm run build
@@ -68,7 +68,7 @@ générateur de site statique. Vous pourrez donc retrouver la même structure de
 |  |--js
 ```
 
-## Elements propres au Design System
+## Éléments propres au Design System
 
 Ce Design System permet au pôle design de discuter des évolutions de celui-ci et
 valider les implémentations réalisées. Cependant, il est aussi utile aux
