@@ -25,7 +25,7 @@ menu: "components"
         <li>
             <a class="social-link" href="https://mamot.fr/@parisweb">
                 {{< icon icon="big-fediverse" >}}
-                Twitter
+                Mastodon
             </a>
         </li>
         <li>

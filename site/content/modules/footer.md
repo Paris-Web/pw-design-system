@@ -14,7 +14,7 @@ layout: "full"
           <img class="footer-logo" src="{{< absoluteUrl "images/logo/logo.svg" >}}" role="img" alt="Paris Web" />
         </h2>
         <p class="footer__desc">
-            Depuis plus de dix ans, Paris Web est le rendez-vous incontournable des professionnels francophones du Web. Les conférences et ateliers Paris Web sont organisés par l’association à but non lucratif Paris-Web.
+            Depuis plus de dix ans, Paris Web est le rendez-vous incontournable des professionnels francophones du Web. Les conférences et ateliers Paris Web sont organisés par l’association à but non lucratif Paris Web.
         </p>
         <div class="footer__links">
             <ul class="columns-list">
