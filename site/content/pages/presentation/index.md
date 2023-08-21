@@ -48,7 +48,7 @@ Conférence en forme de Pull Request à la communauté. Suivi de commande, état
     link="pages/orateur"
     avatar=""
     name="Camille Exemple"
-    twitter="https://www.twitter.com/CamilleExemple"
+    fediverse="https://mamot.fr/@CamilleExemple"
     github="https://www.github.com/CamilleExemple"
     website="https://www.camilleexemple.com/" >}}
     Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
