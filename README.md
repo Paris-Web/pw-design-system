@@ -14,7 +14,7 @@ C'est ici aussi que les fichiers CSS et JS sont générés pour le site de [www.
 
 ### Prerequisites
 
-Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines (testé avec node 16 et npm 7).
+Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines (testé avec node 18 et npm 9).
 
 Ensuite, récupérez ce dépôt et installez les dépendances avec la commande suivante :
 
@@ -24,7 +24,7 @@ npm install
 
 ### Development
 
-Pour faire tourner une instance locale du site, executez la commande suivante :
+Pour faire tourner une instance locale du site, exécutez la commande suivante :
 
 ```bash
 npm start
@@ -34,7 +34,7 @@ Vous pouvez ensuite aller sur http://localhost:3000/
 
 ### Static build
 
-Pour compiler le site, executez la commande suivante :
+Pour compiler le site, exécutez la commande suivante :
 
 ```bash
 npm run build
@@ -68,7 +68,7 @@ générateur de site statique. Vous pourrez donc retrouver la même structure de
 |  |--js
 ```
 
-## Elements propres au Design System
+## Éléments propres au Design System
 
 Ce Design System permet au pôle design de discuter des évolutions de celui-ci et
 valider les implémentations réalisées. Cependant, il est aussi utile aux
