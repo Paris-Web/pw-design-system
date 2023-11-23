@@ -12,22 +12,20 @@ menu: "components"
         {{< example >}}
             {{< portrait
             name="Camille Exemple"
-            twitter="https://www.twitter.com/CamilleExemple"
+            fediverse="https://mamot.fr/@CamilleExemple"
             github="https://www.github.com/CamilleExemple"
             website="https://www.camilleexemple.com/"
             description="Pixelliste sans filet" >}}
         {{< /example >}}
     </dd>
-
     <dd>
         {{< example >}}
             {{< portrait
             name="Camille Exemple"
-            twitter="https://www.twitter.com/CamilleExemple"
+            fediverse="https://mamot.fr/@CamilleExemple"
             description="Pixelliste sans filet" >}}
         {{< /example >}}
     </dd>
-
     <dd>
         {{< example >}}
             {{< portrait
@@ -35,7 +33,6 @@ menu: "components"
             description="Pixelliste sans réseaux" >}}
         {{< /example >}}
     </dd>
-
     <dd>
         {{< example >}}
             {{< portrait
@@ -44,7 +41,6 @@ menu: "components"
             link="#" >}}
         {{< /example >}}
     </dd>
-
     <dd>
         {{< example >}}
             {{< portrait
@@ -52,13 +48,12 @@ menu: "components"
             name="Camille Exemple"
             description="Pixelliste avec lien et réseaux"
             link="#"
-            twitter="https://www.twitter.com/CamilleExemple"
+            fediverse="https://mamot.fr/@CamilleExemple"
             github="https://www.github.com/CamilleExemple"
             website="https://www.camilleexemple.com/"
             linkedin="https://www.linkedin.com/CamilleExemple" >}}
         {{< /example >}}
     </dd>
-
     <dd>
         {{< example >}}
             {{< portrait
@@ -77,7 +72,7 @@ menu: "components"
                 link="#"
                 avatar=""
                 name="Camille Exemple"
-                twitter="https://www.twitter.com/CamilleExemple"
+                fediverse="https://mamot.fr/@CamilleExemple"
                 github="https://www.github.com/CamilleExemple"
                 website="https://www.camilleexemple.com/" >}}
                 Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -92,7 +87,7 @@ menu: "components"
                 avatar="acme.jpg"
                 sponsor="true"
                 name="ACME Corp"
-                twitter="https://www.twitter.com/AcmeCorp"
+                fediverse="https://mamot.fr/@AcmeCorp"
                 website="https://www.acmecorp.com/" >}}
                 Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.
