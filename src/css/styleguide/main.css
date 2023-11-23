@@ -11,3 +11,9 @@
 @import "./content/components/buttons.css";
 @import "./content/modules/sidebar.css";
 @import "./content/modules/header.css";
+
+/* main.css override */
+
+:root {
+  --color-background-page: var(--color-ui-02);
+}
