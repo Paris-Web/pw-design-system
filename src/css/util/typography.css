@@ -163,7 +163,7 @@ h3.half-bottom-margin,
 .separation:empty {
   display: none;
 }
-.separation:not(:empty)::after {
+.separation:where(:not(:empty))::after {
   content: "";
   display: block;
   position: absolute;
