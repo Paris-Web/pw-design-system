@@ -1,5 +1,6 @@
 import algoliasearch from "algoliasearch/lite";
 import instantsearch from "instantsearch.js";
+import { configure } from "instantsearch.js/es/widgets";
 import searchBox from "./searchBox";
 import refinementList from "./refinementList";
 import rangeInput from "./rangeInput";
@@ -29,60 +30,49 @@ const initArchives = () => {
     indexName: "www_programmes",
     routing: true,
     searchClient,
-    searchParameters: {
-      hitsPerPage: 12
-    }
   });
 
-  search.addWidget(
+  search.addWidgets([
     searchBox({
       container: "#searchbox"
-    })
-  );
+    }),
 
-  search.addWidget(
+    configure({
+      hitsPerPage: 12
+    }),
+
     refinementList({
       container: "#themes",
       attribute: "themes",
       title: "Étiquettes"
-    })
-  );
+    }),
 
-  search.addWidget(
     refinementList({
       container: "#duration",
       attribute: "duration",
       title: "Durée"
-    })
-  );
+    }),
 
-  search.addWidget(
     rangeInput({
       container: "#year",
       attribute: "year",
       min: 2006,
       max: new Date().getFullYear()
-    })
-  );
+    }),
 
-  search.addWidget(
     hits({
       container: "#hits",
       countContainer: "#hits-count"
-    })
-  );
+    }),
 
-  search.addWidget(
     pagination({
       container: "#pagination"
-    })
-  );
+    }),
 
-  search.addWidget(
     poweredBy({
       container: "#powered-by-algolia"
-    })
-  );
+    }),
+  ]);
 
   search.start();
 };
