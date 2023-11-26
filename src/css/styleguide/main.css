@@ -11,3 +11,9 @@
 @import "./content/components/buttons.css";
 @import "./content/modules/sidebar.css";
 @import "./content/modules/header.css";
+
+/* code samples */
+.highlight, .highlight pre {
+  overflow: scroll;
+  background: var(--color-ui-02) !important;
+}
