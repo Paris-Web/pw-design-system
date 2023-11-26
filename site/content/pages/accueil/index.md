@@ -189,27 +189,6 @@ Après la conférence
 </section>
 ```
 
-## Orateurs
-
-Pendant la conférence
-
-```php
-	<section class="s-speakers s-speakers-widget l-groundZero l-block l-third" aria-labelledby="speakers">
-	  <article>
-		<h2 id="speakers">Les orateurs 2016</h2>
-		<a href="template.php?version=<?php echo $_GET['version']?>&template=liste-orateur&periode=<?php echo $_GET['periode']?>">Voir tous les orateurs</a>
-		<ul>
-      <?php foreach ($selection_orateur as $label_orateur){ ?>
-      <li><dl class="clearfix speaker">
-        <a href="template.php?version=<?php echo $_GET['version']?>&template=detail-orateur&periode=<?php echo $_GET['periode']?>&orateur=<?php echo $label_orateur;?>"><img src="<?php echo get_photo_orateur($label_orateur)?>" width="130" height="130" alt="">
-        <?php echo $liste_orateur[$label_orateur]['nom'];?></a>
-      </li>
-      <?php } ?>
-      </ul>
-	  </article>
-	</section>
-```
-
 ## Actualités
 
 Pendant la conférence
