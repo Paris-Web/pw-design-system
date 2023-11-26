@@ -17,7 +17,6 @@
   left: 0;
   z-index: 200;
   width: auto;
-  max-width: 380px;
   text-align: center;
   background: var(--color-brand-01);
   color: var(--color-text-inverted);
