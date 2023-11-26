@@ -133,6 +133,8 @@ menu: "pages"
     </aside>
 </section>
 
+<div class="content">
+
 ## Après (nouveau)
 
 Après la conférence
@@ -198,3 +200,5 @@ Pendant la conférence
 … et bien d’autres mais on ne remettra que celles que l’on garde !
 
 Voir [le template commencé pour 2017](https://github.com/Paris-Web/pw-2017/blob/d88ab54bc77372ea3c994b6d93f4ac6089767803/template2017/page_accueil.php)
+
+</div>
