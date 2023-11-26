@@ -16,12 +16,12 @@
   bottom: 0;
   left: 0;
   z-index: 200;
-  width: 20vw;
-  max-width: 380px;
+  width: auto;
   text-align: center;
   background: var(--color-brand-01);
   color: var(--color-text-inverted);
   padding: var(--base-spacing);
+  white-space: nowrap;
 }
 .back-to-design-system:visited {
   color: var(--color-text-inverted);
