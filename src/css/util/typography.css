@@ -5,6 +5,7 @@
     url("/fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     url("/fonts/PTSans-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: fallback;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
     url("/fonts/PTSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
     url("/fonts/PTSans-Narrow.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -41,6 +45,7 @@
     url("/fonts/PTSans-NarrowBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
 }
 
 :root {
@@ -65,26 +70,10 @@
 
 html,
 body {
+  background: var(--color-background-page);
   color: var(--color-text-01);
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.4;
-}
-
-.font-fallback,
-.font-fallback body,
-.font-fallback h1,
-.font-fallback .h1-like,
-.font-fallback h2,
-.font-fallback .h2-like,
-.font-fallback h3,
-.font-fallback .h3-like,
-.font-fallback h4,
-.font-fallback .h4-like,
-.font-fallback h5,
-.font-fallback .h5-like,
-.font-fallback h6,
-.font-fallback .h6-like {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 * {
@@ -97,19 +86,22 @@ h1,
 h2,
 .h2-like,
 h3,
-.h3-like,
+.h3-like {
+  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
+  font-weight: bold;
+}
+
 h4,
 .h4-like,
 h5,
 .h5-like,
 h6,
 .h6-like {
-  font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", Arial,
-    sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: bold;
 }
 
-.font-fallback .normal,
 .normal {
   font-size: 1em;
   font-weight: normal;
@@ -148,6 +140,19 @@ h6,
   font-size: 0.875rem;
 }
 
+h2.half-bottom-margin,
+.h2-like.half-bottom-margin,
+h3.half-bottom-margin,
+.h3-like.half-bottom-margin {
+  margin-bottom: calc(var(--base-spacing) * 1.5);
+}
+.no-top-margin {
+  margin-top: 0;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
 .inline-title {
   display: inline;
 }
@@ -158,7 +163,7 @@ h6,
 .separation:empty {
   display: none;
 }
-.separation:not(:empty)::after {
+.separation:where(:not(:empty))::after {
   content: "";
   display: block;
   position: absolute;
@@ -197,11 +202,12 @@ p {
     font-size: 2.5rem;
   }
 }
-p.big {
+.big {
   font-size: 1.125rem;
 }
-p.small {
-  font-size: 0.75rem;
+.small,
+small {
+  font-size: 0.80rem;
 }
 .important {
   font-weight: bold;
@@ -210,19 +216,19 @@ p.small {
 a {
   text-decoration-style: underline;
   text-decoration-skip-ink: auto;
-  color: var(--color-special-blue);
+  color: var(--color-link);
   transition: color 0.15s ease-in-out;
 }
 a:visited {
-  color: var(--color-brand-03);
+  color: var(--color-link-visited);
 }
 a:active,
 a.active {
-  color: var(--color-brand-01-dark);
+  color: var(--color-link-active);
 }
 a:hover,
 a:focus {
-  color: var(--color-brand-01);
+  color: var(--color-link-hover);
 }
 a.title {
   color: var(--color-brand-01);
@@ -237,12 +243,12 @@ a.discreet {
 }
 a.discreet:hover,
 a.discreet:focus {
-  color: var(--color-brand-01);
+  color: var(--color-link-hover);
 }
 
 code,
 pre {
-  background: var(--color-ui-02);
+  background: var(--color-background-block-alternate);
 }
 pre {
   max-width: 100%;
@@ -261,12 +267,61 @@ time.date {
   color: var(--color-text-03);
   font-weight: bold;
 }
-.font-fallback .date-important {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
 
 hr {
   border: none;
-  border-top: 2px solid var(--color-ui-02);
+  border-top: 2px solid var(--color-background-block-alternate);
   margin: calc(var(--base-spacing) * 4) 0;
+}
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+.inline-image {
+  display: inline-block;
+  margin: 0 0.3rem;
+  vertical-align: text-bottom;
+}
+
+mark {
+  background: transparent;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+mark::before {
+  background-color: var(--color-special-yellow);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(-2deg);
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+mark:nth-of-type(2)::before {
+  transform: rotate(1deg);
+}
+mark:nth-of-type(3)::before {
+  transform: rotate(-3deg);
+}
+mark:nth-of-type(4)::before {
+  transform: rotate(0deg);
+}
+mark:nth-of-type(5)::before {
+  transform: rotate(-1deg);
+}
+a:hover mark::before,
+a:focus mark::before {
+  opacity: 1;
 }

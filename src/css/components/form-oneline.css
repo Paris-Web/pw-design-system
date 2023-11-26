@@ -4,13 +4,36 @@
   width: 100%;
   margin: calc(var(--base-spacing) * 10) 0;
 }
+.form-oneline--inline {
+  margin: calc(var(--base-spacing) * 3) 0;
+}
 
 .form-oneline__field {
   margin-top: 0;
   margin-bottom: 0;
   flex: 1;
+  position: relative;
 }
 .form-oneline__action .btn {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid var(--color-brand-02-dark);
+}
+.form-oneline__field input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-top: calc(0.6rem - 1px);
+  padding-bottom: calc(0.6rem - 3px);
+}
+
+.form-oneline__field .filter__clear {
+  position: absolute;
+  right: calc(var(--base-spacing) * 2);
+  bottom: calc(var(--base-spacing) * 2.5);
+}
+
+.form-oneline__field .filter__clear[hidden] {
+  display: none;
 }

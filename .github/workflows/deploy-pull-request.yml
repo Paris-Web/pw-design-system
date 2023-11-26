@@ -1,0 +1,65 @@
+name: Deploy Pull Request
+
+on: [pull_request,  workflow_dispatch]
+
+jobs:
+  deploy:
+    name: 🛺 Deploy Pull Request
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛂 Extract branch name
+        shell: bash
+        run: |
+          HEAD_REF=$(printf "%q" "${{ github.event.pull_request.head.ref }}")
+
+          HEAD_REF=${HEAD_REF/\//-}
+          
+          echo "Sanitized branch name is $HEAD_REF"
+
+          if [[ -z "$GITHUB_OUTPUT" ]]; then
+            echo "::set-output name=branch::$(eval printf "%s" "$HEAD_REF")"
+          else
+            echo "branch=$(eval printf "%s" "$HEAD_REF")" >> "$GITHUB_OUTPUT"
+          fi
+        id: extract_branch
+      - name: ⚙️ Checkout
+        uses: actions/checkout@v3
+      - name: 🐚 Cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - name: 🛠 Build
+        run: |
+          npm ci
+          HUGO_BASEURL="/design-system/${{ steps.extract_branch.outputs.branch }}/" npm run build
+
+      - name: 🌮 Keep dist directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-${{ steps.extract_branch.outputs.branch }}
+          path: dist/
+
+      - name: 📂 SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.USER }}
+          server: ${{ secrets.SERVER }}
+          port: 22
+          ssh_private_key: ${{ secrets.SSH_KEY }}
+          local_path: ./dist/*
+          remote_path: ./${{ steps.extract_branch.outputs.branch }}/
+          # sftp_only: # optional
+          # sftpArgs: # optional
+          # delete_remote_files: # optional
+
+      - name: 💬 Leave a message
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            ## 🛺 Branch preview has been deployed!
+            👉 <https://www.paris-web.fr/design-system/${{ steps.extract_branch.outputs.branch }}/index.html>
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false

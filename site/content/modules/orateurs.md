@@ -13,7 +13,7 @@ layout: "full"
 {{< lineup link="#voir-plus">}}
     {{< portrait name="Camille Exemple"
     description="Pixelliste avec lien et réseaux. Et qui a une bio très intéressante." link="#"
-    twitter="https://www.twitter.com/CamilleExample"
+    fediverse="https://mamot.fr/@CamilleExample"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 
@@ -21,7 +21,7 @@ layout: "full"
     name="Camille Exemple"
     description="Pixelliste avec lien et réseaux"
     link="#"
-    twitter="https://www.twitter.com/CamilleExample"
+    fediverse="https://mamot.fr/@CamilleExample"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 
@@ -29,7 +29,7 @@ layout: "full"
     name="Camille Exemple"
     description="Pixelliste avec lien et réseaux"
     link="#"
-    twitter="https://www.twitter.com/CamilleExample"
+    fediverse="https://mamot.fr/@CamilleExample"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 
@@ -37,7 +37,7 @@ layout: "full"
     name="Camille Exemple"
     description="Pixelliste avec lien et réseaux"
     link="#"
-    twitter="https://www.twitter.com/CamilleExample"
+    fediverse="https://mamot.fr/@CamilleExample"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 
@@ -45,7 +45,7 @@ layout: "full"
     name="Camille Exemple"
     description="Pixelliste avec lien et réseaux. Et qui a une bio très intéressante. Du style intéressante plus plus."
     link="#"
-    twitter="https://www.twitter.com/CamilleExample"
+    fediverse="https://mamot.fr/@CamilleExample"
     github="https://www.github.com/CamilleExample"
     website="https://www.camilleexemple.com/" >}}
 {{< /lineup >}}

@@ -5,7 +5,7 @@ menu: "components"
 
 # Sponsor
 
-Ce composant permet l’affichage des informations relatives à un sponsor. Il est notamment utilisé au sein des [sponsors]({{< relref "modules/sponsors/index.md" >}}).
+Ce composant permet l’affichage des informations relatives à un sponsor. Il est notamment utilisé au sein des [sponsors]({{< relref "/modules/sponsors/index.md" >}}).
 
 ---
 

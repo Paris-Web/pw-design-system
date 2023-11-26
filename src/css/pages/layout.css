@@ -187,16 +187,22 @@ body.is-menu-opened {
   padding: 0 calc(var(--base-spacing) * 2);
 }
 
+.menu__links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--color-ui-01);
+  transition: width 0.15s ease-out, background-color 0.15s ease-in-out;
+}
+
 .menu__links a:hover::before,
 .menu__links a:focus::before,
 .menu__links a.active::before,
 .menu__links a.special::before {
-  content: "";
-  position: absolute;
   width: 80%;
-  height: 100%;
-  left: 0;
-  top: 0;
 }
 .menu__links a.special::before {
   background: var(--color-brand-01);
@@ -219,6 +225,8 @@ body.is-menu-opened {
 .menu__links a:focus,
 .menu__links a.active,
 .menu__links a.special {
+  transition-delay: 0.05s;
+  transition-duration: 0.1s;
   color: var(--color-text-inverted);
 }
 .menu__links a:hover > span,
@@ -227,6 +235,9 @@ body.is-menu-opened {
 .menu__links a.special > span {
   position: relative;
   z-index: 1;
+  background: var(--color-ui-01);
+  transition: background-color 0.15s ease-in-out;
+  transition-delay: 0.15s;
 }
 .menu__links a.special:hover > span,
 .menu__links a.special:focus > span {
@@ -283,6 +294,7 @@ body.is-menu-opened {
 .content {
   margin: 0 calc(var(--base-spacing) * 3);
   padding: calc(var(--base-spacing) * 6) 0;
+  position: relative;
 }
 
 .content > :first-child:not(.breadcrumb),

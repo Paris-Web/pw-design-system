@@ -1,0 +1,13 @@
+{{ $resizeOptions := .Get "logoResizeOptions" }}
+{{ $logo := (.Get "logo" | .Page.Resources.GetMatch).Resize $resizeOptions }}
+
+{{ .Scratch.Set "name" (.Get "name") }}
+{{ .Scratch.Set "logo" $logo.Permalink }}
+{{ .Scratch.Set "siteUrl" (.Get "siteUrl") }}
+{{ if .Get "niveau" }}
+    {{ .Scratch.Set "niveau" (.Get "niveau") }}
+{{ else }}
+    {{ .Scratch.Set "niveau" "autre" }}
+{{ end }}
+
+{{ partial "simple-sponsors/simple-sponsor" . }}

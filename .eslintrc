@@ -1,15 +1,18 @@
-env:
-  browser: true
-
-extends: eslint:recommended
-
-parser: babel-eslint
-
-plugins: [ "import" ]
-
-globals:
-  __dirname: true
-  require: true
-  process: true
-  ENV: true
-  module: true
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "process": "readonly",
+    "__dirname": "readonly",
+    "module": "readonly",
+    "require": "readonly"
+  }
+}

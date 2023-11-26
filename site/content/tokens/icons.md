@@ -12,10 +12,12 @@ menu: "tokens"
 * {{< example >}}{{< icon icon="menu" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="github" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="twitter" >}}{{< /example >}}
+* {{< example >}}{{< icon icon="fediverse" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="linkedin" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="mastodon" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="web" >}}{{< /example >}}
 * {{< example >}}{{< icon icon="left-arrow" >}}{{< /example >}}
+* {{< example >}}{{< icon icon="down-arrow" >}}{{< /example >}}
 
 ## Grandes icones
 
@@ -23,6 +25,8 @@ menu: "tokens"
     <ul>
         <li>{{< example >}}{{< icon icon="big-facebook" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-twitter" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-fediverse" >}}{{< /example >}}</li>
+        <li>{{< example >}}{{< icon icon="big-mastodon" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-mail" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-rss" >}}{{< /example >}}</li>
         <li>{{< example >}}{{< icon icon="big-conference" >}}{{< /example >}}</li>

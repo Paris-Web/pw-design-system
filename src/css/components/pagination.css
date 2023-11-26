@@ -1,21 +1,54 @@
 .pagination {
+  padding: 0;
   margin: calc(var(--base-spacing) * 10) 0;
   text-align: center;
 }
-.pagination > * {
+.pagination__item {
   display: inline-block;
   white-space: nowrap;
   font-weight: bold;
+}
+.pagination__item > *,
+.pagination__item > a {
+  display: block;
   color: var(--color-text-03);
   padding: 0 calc(var(--base-spacing) * 2);
   line-height: calc(var(--base-spacing) * 6);
   min-width: calc(var(--base-spacing) * 6);
   min-height: calc(var(--base-spacing) * 6);
+  border-radius: calc(var(--base-spacing) * 3);
+  background: transparent;
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
 }
-.pagination a:hover,
-.pagination .active {
-  text-decoration: none;
+.pagination > :hover > a,
+.pagination__item.pagination__item--active > a {
   background: var(--color-text-03);
   color: var(--color-text-inverted);
-  border-radius: calc(var(--base-spacing) * 3);
+}
+.pagination > :not(.pagination__item--disabled):focus > a,
+.pagination > :not(.pagination__item--disabled):focus-within > a:focus {
+  outline: none;
+  background: var(--color-text-03);
+  color: var(--color-text-inverted);
+  box-shadow: 0 0 0 2px var(--color-ui-01), 0 0 0 4px var(--color-text-03);
+}
+.pagination__item.pagination__item--active > a {
+  text-decoration: none;
+  pointer-events: none;
+}
+.pagination__item.pagination__item--disabled > *,
+.pagination__item.pagination__item--disabled:hover > * {
+  color: var(--color-ui-04);
+  background: transparent;
+  text-decoration: none;
+  pointer-events: none;
+}
+.pagination__item.pagination__item--disabled:focus > *,
+.pagination__item.pagination__item--disabled:focus-within > *:focus {
+  outline: none;
+  background: var(--color-ui-04);
+  color: var(--color-text-inverted);
+  box-shadow: 0 0 0 2px var(--color-ui-01), 0 0 0 4px var(--color-ui-04);
+  text-decoration: none;
+  pointer-events: none;
 }

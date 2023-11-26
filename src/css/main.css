@@ -9,6 +9,8 @@
 @import "util/grid.css";
 @import "util/screen-reader.css";
 @import "util/icons.css";
+@import "util/helpers.css";
+@import "components/block-arrows.css";
 @import "components/breadcrumb.css";
 @import "components/portrait.css";
 @import "components/buttons.css";
@@ -26,6 +28,12 @@
 @import "components/tag.css";
 @import "components/table.css";
 @import "components/video.css";
+@import "components/presentation-preview.css";
+@import "components/toggle-switch.css";
+@import "components/thumbnail.css";
+@import "components/video.css";
+@import "components/filters.css";
+@import "modules/algolia.css";
 @import "modules/call-to-action.css";
 @import "modules/direct-link.css";
 @import "modules/orateurs.css";
@@ -51,6 +59,7 @@
 @import "pages/print.css";
 @import "pages/actualite.css";
 @import "pages/sponsors.css";
+@import "pages/simple-sponsors.css";
 @import "pages/404.css";
 @import "pages/direct.css";
-@import "styleguide/main.css";
+@import "pages/hub.css";

@@ -1,7 +1,4 @@
 @media screen and (min-width: 44em) {
-  .content--2-cols {
-    width: calc(90ch + 8vw);
-  }
   .content--2-cols .content__wrapper {
     display: flex;
   }

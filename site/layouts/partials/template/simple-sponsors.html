@@ -1,0 +1,27 @@
+<div class="content">
+  <h2>Sponsor Premium</h2>
+
+  {{ with .Site.GetPage "page" "pages/simple-sponsors/index.md" }}
+  <ul>
+    {{ $sponsorsResources := .Resources }}
+    {{ range where (.Resources.ByType "page") ".Params.niveau" "platine" }}
+    <li>
+      <a href="{{ .Params.siteUrl }}">
+        {{ $glob := printf "%s/logo.*" .Params.logoDir }}
+        {{ if (eq .Params.logoType "svg") }}
+          {{ $logo := $sponsorsResources.GetMatch $glob }}
+          <img width="150" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
+        {{ else }}
+          {{ $logo := ($sponsorsResources.GetMatch $glob).Resize "150x" }}
+          <img width="150" src="{{ $logo.Permalink }}" alt="{{ .Title }}" title="">
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <footer>
+    <a href="{{ relref . "pages/simple-sponsors/index.md" }}">Découvrez tous nos sponsors</a>
+  </footer>
+</div>

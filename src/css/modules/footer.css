@@ -15,15 +15,13 @@
   margin: calc(-2 * var(--base-spacing));
   display: inline-block;
 }
-.font-fallback .footer a {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
+
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;
 }
 
-.footer__description img {
+.footer img {
   width: 5em;
   max-width: 100%;
   display: block;
@@ -33,77 +31,77 @@
   font-size: 0.8rem;
   margin: 0;
 }
+
 .footer__legal p a {
   font-size: 1em;
   text-decoration: underline;
   font-family: inherit;
   font-weight: normal;
 }
-.footer__legal section + section {
-  margin-top: calc(var(--base-spacing) * 2);
+
+.footer__grid {
+  padding-inline: 2%;
 }
 
-.footer__legal .full-content__side {
-  margin-top: var(--base-spacing);
+.footer__title {
+  grid-area: title;
+  align-self: center;
 }
-.footer-previous-editions {
-  margin-bottom: calc(var(--base-spacing) * 2);
+
+.footer__desc {
+  grid-area: desc;
 }
+
+.footer__links {
+  grid-area: links;
+}
+
+.footer__social {
+  grid-area: social;
+}
+
+.footer__foot {
+  grid-area: foot;
+}
+
+.footer__license {
+  grid-area: license;
+}
+
+.footer__grid > * {
+  margin: 0;
+}
+
+.footer__license p, .footer__foot p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+
 
 @media screen and (min-width: 44em) {
-  .footer__description {
-    display: flex;
-    align-items: center;
-  }
-  .footer__description > * {
-    margin: 0;
-  }
-  .footer__description > :first-child {
-    width: 22%;
-    margin-right: 2%;
-  }
-  .footer__description > :last-child {
-    width: calc((22 * 3 + 4 * 2) * 1%);
-    margin-left: 2%;
+  .footer__grid {
+    display: grid;
+    gap: 1rem 1%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "title   desc"
+      "links   links"
+      "social   social"
+      "foot    foot"
+      "license license";
   }
 }
 
 @media screen and (min-width: 68em) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer__description {
-    width: 20%;
-    flex-direction: column;
-  }
-  .footer__description > :first-child {
-    width: 100%;
-    margin-right: 0;
-  }
-  .footer__description > :last-child {
-    width: 100%;
-    margin-left: 0;
-  }
-  .footer__description img {
-    margin-bottom: calc(var(--base-spacing) * 2);
-  }
-
-  .full-content__main.footer__main {
-    /* Magic value that alignes the links with the description */
-    margin-top: 4rem;
-  }
-
-  .footer__links {
-    display: flex;
-  }
-  .footer__links__pages {
-    width: 78%;
-  }
-  .footer__links__follow {
-    width: 20%;
-    margin-left: 2%;
-    margin-top: var(--base-spacing);
+  .footer__grid {
+    display: grid;
+    gap: 1rem 5%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "title   title"
+      "desc    links"
+      "desc    social"
+      "license foot ";
   }
 }

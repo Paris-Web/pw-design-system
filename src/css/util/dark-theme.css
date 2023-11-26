@@ -1,0 +1,37 @@
+/* COLOR OVERRIDES FOR DARK THEME */
+
+body.dark-theme {
+  --color-ui-01: #111;
+  --color-ui-02: #25222c;
+  --color-ui-03: #423f4a;
+  --color-ui-04: #585462;
+  --color-ui-05: #66636f;
+  --color-ui-06: #86838f;
+  --color-ui-07: #c3c3ce;
+
+  --color-text-01: #fff;
+  --color-text-02: #e7e5ef;
+  --color-text-03: #aaa7b4;
+  --color-text-inverted: #fff;
+
+  --color-background-page: var(--color-ui-01);
+  --color-background-block: var(--color-ui-02);
+  --color-background-block-alternate: var(--color-ui-03);
+  --color-background-block-shadow:  var(--color-ui-03);
+  --color-background-video:  var(--color-ui-01);
+
+  --color-program-title: var(--color-brand-01-light);
+  --color-program-title-odd: var(--color-brand-02-light);
+
+  --color-link: var(--color-special-blue-light);
+  --color-link-visited: var(--color-brand-03-light);
+  --color-link-hover: var(--color-brand-01-light);
+  --color-link-active: var(--color-brand-01);
+
+  --gradient: linear-gradient(
+    to right,
+    var(--color-brand-01) 0%,
+    var(--color-ui-03) 50%,
+    var(--color-brand-02) 100%
+  );
+}

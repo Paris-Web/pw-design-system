@@ -1,0 +1,41 @@
+:root {
+  --arrow-width: 1rem;
+}
+
+.negative__arrow {
+  position: absolute;
+  height: var(--arrow-width);
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.negative__arrow::before, .negative__arrow::after {
+  background: white;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+}
+.negative__arrow::after {
+  right: calc(-1 * var(--arrow-width) / 2);
+  transform: skewX(-45deg);
+}
+.negative__arrow::before {
+  left: calc(-1 * var(--arrow-width) / 2);
+  transform: skewX(45deg);
+}
+
+.positive__arrow {
+  position: absolute;
+  z-index: 3;
+  left: calc(50% - var(--arrow-width));
+  bottom: calc(1px - var(--arrow-width));
+  width: 0;
+  border-left: var(--arrow-width) solid transparent;
+  border-right: var(--arrow-width) solid transparent;
+  border-top: var(--arrow-width) solid #fff;
+}

@@ -1,6 +1,9 @@
 .form-field {
   margin: calc(var(--base-spacing) * 4) 0;
 }
+.form-field--button {
+  margin: calc(var(--base-spacing) * 8) 0;
+}
 .form-field__label {
   margin: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 1.5);
   color: var(--color-text-03);
@@ -8,20 +11,56 @@
   font-weight: bold;
 }
 
-input {
+input:not([type="checkbox"]):not([type="radio"]) {
   border: 1px solid var(--color-ui-03);
-  border-bottom: 3px solid var(--color-brand-02);
+  border-bottom: 3px solid var(--color-brand-02-light);
   border-radius: 3px;
   line-height: 1.4;
   padding: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 1.5);
   width: 100%;
-  background: var(--color-ui-01);
+  background: var(--color-background-page);
+  color: var(--color-text-01);
 }
-input:disabled {
+.form-field__input--primary input {
+  border-bottom-color: var(--color-brand-01);
+}
+.form-field__input--primary input:active,
+.form-field__input--primary input:focus {
+  border-bottom-color: var(--color-brand-01-dark);
+}
+input:not([type="checkbox"]):not([type="radio"]):disabled {
   cursor: auto;
   opacity: 0.5;
   background: var(--color-ui-01);
 }
-input:invalid {
+input:not([type="checkbox"]):not([type="radio"]):invalid {
   border-bottom-color: var(--color-special-red);
+}
+input:not([type="checkbox"]):not([type="radio"]):active,
+input:not([type="checkbox"]):not([type="radio"]):focus {
+  border-bottom-color: var(--color-brand-02-dark);
+}
+
+.input-year {
+  width: 4.5em;
+}
+
+.form-field--checkbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-field--checkbox input[type="checkbox"] {
+  width: auto;
+  margin-left: 0;
+  margin-right: calc(var(--base-spacing) * 2);
+  align-self: center;
+}
+
+.form-field--checkbox input[type="checkbox"]:checked + * {
+  font-weight: bold;
+}
+
+input.input-year.input-year--is-refined {
+  font-weight: bold;
 }

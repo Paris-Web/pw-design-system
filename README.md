@@ -14,7 +14,7 @@ C'est ici aussi que les fichiers CSS et JS sont générés pour le site de [www.
 
 ### Prerequisites
 
-Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines.
+Il faut installer [node](https://nodejs.org/en/download/) et [npm](https://www.npmjs.com/get-npm) sur vos machines (testé avec node 18 et npm 9).
 
 Ensuite, récupérez ce dépôt et installez les dépendances avec la commande suivante :
 
@@ -24,17 +24,17 @@ npm install
 
 ### Development
 
-Pour faire tourner une instance locale du site, executez la commande suivante :
+Pour faire tourner une instance locale du site, exécutez la commande suivante :
 
 ```bash
 npm start
 ```
 
-Vous pouvez ensuite aller sur http://localhost:3000/ - à moins que votre navigateur ne se soit ouvert tout seul.
+Vous pouvez ensuite aller sur http://localhost:3000/
 
 ### Static build
 
-Pour compiler le site, executez la commande suivante :
+Pour compiler le site, exécutez la commande suivante :
 
 ```bash
 npm run build
@@ -42,7 +42,7 @@ npm run build
 
 Les fichiers seront ensuite disponibles dans le dossier `/dist`.
 
-Parmi ces fichiers, les fichiers `app.js` et `css/main.css` sont les fichiers qui pourront être utilisés directement sur le site de Paris Web.
+Parmi ces fichiers, les fichiers `js/app.js` et `css/main.css` sont les fichiers qui pourront être utilisés directement sur le site de Paris Web. Les fichiers `js/hub.js` et `css/hub.css` sont utilisés pour le Hub.
 
 ### Déploiement
 
@@ -68,7 +68,7 @@ générateur de site statique. Vous pourrez donc retrouver la même structure de
 |  |--js
 ```
 
-## Elements propres au Design System
+## Éléments propres au Design System
 
 Ce Design System permet au pôle design de discuter des évolutions de celui-ci et
 valider les implémentations réalisées. Cependant, il est aussi utile aux

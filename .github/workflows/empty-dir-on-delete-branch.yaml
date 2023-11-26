@@ -1,0 +1,45 @@
+name: Cleanup branch on delete
+
+on: [delete, workflow_dispatch]
+
+jobs:
+  delete:
+    if: github.event.ref_type == 'branch'
+    name: 🗑 Cleanup dir on branch delete
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛂 Extract branch name
+        shell: bash
+        run: |
+          if [ ! "${{ github.event.ref }}" ];then
+            exit 1
+          fi
+
+          HEAD_REF=$(printf "%q" "${{ github.event.ref }}")
+          
+          echo "Branch name is $HEAD_REF"
+          
+          HEAD_REF=${HEAD_REF/refs\/heads\//}
+          HEAD_REF=${HEAD_REF/\//-}
+          
+          echo "Sanitized branch name is $HEAD_REF"
+
+          if [ ! "$(eval printf "%s" "$HEAD_REF")" ];then
+            exit 1
+          fi
+
+          if [[ -z "$GITHUB_OUTPUT" ]]; then
+            echo "::set-output name=branch::$(eval printf "%s" "$HEAD_REF")"
+          else
+            echo "branch=$(eval printf "%s" "$HEAD_REF")" >> "$GITHUB_OUTPUT"
+          fi
+        id: extract_branch
+
+      - name: 🧹 Clean deleted branch
+        uses: garygrossgarten/github-action-ssh@0.7.0
+        with:
+          # always verify that the target directory is not an empty string, then delete it
+          command: pwd ; ls -la ./${{ steps.extract_branch.outputs.branch }} ; if [ ! "${{ steps.extract_branch.outputs.branch }}" ];then exit 1; fi ; rm -rf ./${{ steps.extract_branch.outputs.branch }}
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USER }}
+          privateKey: ${{ secrets.SSH_KEY}}

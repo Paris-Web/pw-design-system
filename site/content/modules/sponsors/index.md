@@ -5,7 +5,7 @@ menu: "modules"
 
 # Sponsors
 
-Ce module permet l’affichage d’un ensemble de [sponsors]({{< relref "components/sponsor/index.md" >}}) ayant le même niveau de sponsoring.
+Ce module permet l’affichage d’un ensemble de [sponsors]({{< relref "/components/sponsor/index.md" >}}) ayant le même niveau de sponsoring.
 
 ---
 

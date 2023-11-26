@@ -27,4 +27,21 @@
   --color-special-green: #39ca74;
   --color-special-yellow: #fdc02f;
   --color-special-blue: #0172f0;
+  --color-special-blue-light: hsl(212, 99%, 66%);
+
+  --color-background-page: white;
+  --color-background-block: var(--color-ui-01);
+  --color-background-block-alternate: var(--color-ui-02);
+  --color-background-block-shadow:  var(--color-ui-03);
+  --color-background-video:  var(--color-ui-06);
+
+  --color-program-title: var(--color-brand-01);
+  --color-program-title-odd: var(--color-brand-02-dark);
+
+  --color-link: var(--color-special-blue);
+  --color-link-visited: var(--color-brand-03);
+  --color-link-hover: var(--color-brand-01);
+  --color-active-hover: var(--color-brand-01-dark);
+
+  --gradient: linear-gradient(to right, var(--color-brand-01) 0%, var(--color-brand-02) 100%);
 }

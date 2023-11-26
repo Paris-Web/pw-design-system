@@ -1,0 +1,20 @@
+baseURL = "/"
+languageCode = "fr-fr"
+languageLang = "fr"
+title = "Paris Web Design System"
+defaultContentLanguage = "fr"
+pygmentsCodeFences = true
+pygmentsStyle = "colorful"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "section"]
+
+[blackfriday]
+  fractions = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
