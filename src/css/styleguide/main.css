@@ -12,8 +12,8 @@
 @import "./content/modules/sidebar.css";
 @import "./content/modules/header.css";
 
-/* main.css override */
-
-:root {
-  --color-background-page: var(--color-ui-02);
+/* code samples */
+.highlight, .highlight pre {
+  overflow: scroll;
+  background: var(--color-ui-02) !important;
 }

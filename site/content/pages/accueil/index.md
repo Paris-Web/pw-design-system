@@ -133,6 +133,8 @@ menu: "pages"
     </aside>
 </section>
 
+<div class="content">
+
 ## Après (nouveau)
 
 Après la conférence
@@ -189,27 +191,6 @@ Après la conférence
 </section>
 ```
 
-## Orateurs
-
-Pendant la conférence
-
-```php
-	<section class="s-speakers s-speakers-widget l-groundZero l-block l-third" aria-labelledby="speakers">
-	  <article>
-		<h2 id="speakers">Les orateurs 2016</h2>
-		<a href="template.php?version=<?php echo $_GET['version']?>&template=liste-orateur&periode=<?php echo $_GET['periode']?>">Voir tous les orateurs</a>
-		<ul>
-      <?php foreach ($selection_orateur as $label_orateur){ ?>
-      <li><dl class="clearfix speaker">
-        <a href="template.php?version=<?php echo $_GET['version']?>&template=detail-orateur&periode=<?php echo $_GET['periode']?>&orateur=<?php echo $label_orateur;?>"><img src="<?php echo get_photo_orateur($label_orateur)?>" width="130" height="130" alt="">
-        <?php echo $liste_orateur[$label_orateur]['nom'];?></a>
-      </li>
-      <?php } ?>
-      </ul>
-	  </article>
-	</section>
-```
-
 ## Actualités
 
 Pendant la conférence
@@ -219,3 +200,5 @@ Pendant la conférence
 … et bien d’autres mais on ne remettra que celles que l’on garde !
 
 Voir [le template commencé pour 2017](https://github.com/Paris-Web/pw-2017/blob/d88ab54bc77372ea3c994b6d93f4ac6089767803/template2017/page_accueil.php)
+
+</div>

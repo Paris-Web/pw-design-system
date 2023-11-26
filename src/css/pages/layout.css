@@ -346,6 +346,12 @@ body.is-menu-opened {
 }
 
 @media screen and (min-width: 68em) {
+  body {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+  }
+
   .header {
     display: none;
   }
@@ -356,6 +362,10 @@ body.is-menu-opened {
     pointer-events: all;
     width: auto;
     visibility: visible;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
   }
   .menu__overlay {
     display: none;
@@ -375,9 +385,8 @@ body.is-menu-opened {
     text-align: center;
   }
   .main {
-    margin-left: 20vw;
-    margin-left: calc(20vw - 1px);
     min-height: 100vh;
+    width: 100%;
   }
 
   .content {
@@ -394,13 +403,7 @@ body.is-menu-opened {
     padding-top: calc(7vh + 1.2em);
   }
 
-  body {
-    position: relative;
-    overflow-y: scroll;
-  }
-  body.is-footer-visible .nav .menu {
-    position: absolute;
-    top: auto;
-    bottom: 0;
+  .footer {
+    grid-column: span 2;
   }
 }
