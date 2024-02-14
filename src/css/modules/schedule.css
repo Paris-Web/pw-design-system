@@ -46,12 +46,10 @@
 .s-scheduleChart .s-scheduleChart-secondRoom {
   border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-02-light);
 }
-.s-scheduleChart .s-scheduleChart-thirdRoom,
-.s-scheduleChart .s-scheduleChart-secondRoom:last-child {
+.s-scheduleChart .s-scheduleChart-thirdRoom {
   border-left: calc(var(--base-spacing) * 1) solid var(--color-brand-03-light);
 }
-.s-scheduleChart .s-scheduleChart-thirdRoom:empty,
-.s-scheduleChart .s-scheduleChart-secondRoom:last-child:empty {
+.s-scheduleChart .s-scheduleChart-thirdRoom:empty {
   border-left: calc(var(--base-spacing) * 1) solid var(--color-ui-02);
 }
 
