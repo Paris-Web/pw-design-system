@@ -1,45 +1,52 @@
 ---
-title: "Ils nous soutiennent"
+title: "Sponsors"
 linktitle: "Nos partenaires"
 menu: "pages"
 layout: "page"
 ---
 
-Paris-Web met tous les ans tout en œuvre pour fournir une conférence de la meilleure qualité au meilleur prix. Et pour cela nous recevons l'aide de nos partenaires et soutiens.
-
-En échange d’une grande visibilité sur nos supports de communication, les partenaires nous fournissent les ressources qui nous manquent pour améliorer la qualité de l’évènement, et nous permettre de fournir plus de services aux personnes qui participent, et aux autres.
-
-**Vous désirez nous soutenir ?** Téléchargez le [dossier de partenariat pour Paris Web 2018](dossier de partenariat pour Paris Web 2018) et contactez-nous à l'adresse [partenariats@paris-web.fr](mailto:partenariats@paris-web.fr).
+Paris Web met tous Ies ans tout en æuvre pour fournir une conférence de Ia meilleure qualité au meilleur prix. Et pour cela, nous recevons ['aide de nos partenaires et soutiens. En échange d'une grande visibilité sur nos supports de communication, Ies partenaires nous fournissent Ies ressources qui nous manquent pour améliorer Ia qualité de I'événement, et nous permettre de fournir plus de services aux personnes qui participent, et aux autres.
 
 {{< sponsors-section
   title="Sponsor platine"
   niveau="platine"
   logoResizeOptions="600x"
 >}}
-
 {{< sponsors-section
-  title="Sponsors Or"
+  title="Partenaires Or"
   niveau="or"
   logoResizeOptions="450x"
+  hideDescription="true"
 >}}
-
 {{< sponsors-section
-  title="Sponsors Argent"
+  title="Partenaires Argent"
   niveau="argent"
   logoResizeOptions="350x"
+  hideDescription="true"
 >}}
-
 {{< sponsors-section
-  title="Sponsors Bronze"
-  niveau="bronze"
-  logoResizeOptions="220x"
->}}
-
-{{< sponsors-section
-  title="Autres Soutiens"
+  title="Partenaires Orateurs"
   niveau="autre"
   logoResizeOptions="220x"
+  hideDescription="true"
 >}}
+<hr />
+<section class="call-to-action">
+  <div class="call-to-action__content">
+    <p>Vous partagez nos valeurs, et vous souhaitez profiter d'une visibilité auprés de professionnels du web ?</p>
+  </div>
+  <div class="call-to-action__actions">
+    <a href="#" class="btn">Soutenez Paris Web</a>
+  </div>
+</section>
+<hr />
+{{< sponsors-section
+  title="Partenaires Bronze"
+  niveau="bronze"
+  logoResizeOptions="220x"
+  hideDescription="true"
+>}}
+
 
 
 <h2 class="separation">Soutenez Paris Web !</h2>

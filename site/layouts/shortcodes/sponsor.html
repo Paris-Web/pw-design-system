@@ -2,6 +2,7 @@
 {{ $logo := (.Get "logo" | .Page.Resources.GetMatch).Resize $resizeOptions }}
 
 {{ .Scratch.Set "name" (.Get "name") }}
+{{ .Scratch.Set "hideDescription" (.Get "hideDescription") }}
 {{ .Scratch.Set "logo" $logo.Permalink }}
 {{ .Scratch.Set "description" .Inner }}
 {{ .Scratch.Set "siteUrl" (.Get "siteUrl") }}

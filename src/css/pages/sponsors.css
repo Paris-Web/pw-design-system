@@ -1,3 +1,14 @@
+:root {
+  --sponsor-or-height: 160px;
+  --sponsor-argent-height: 140px;
+  --sponsor-autre-height: 120px;
+  --sponsor-bronze-height: 100px;
+}
+
+.sponsor-section {
+  margin-bottom: 3rem;
+}
+
 .sponsor-section--platine .sponsor__logo {
   max-width: calc(100% / 12 * 10);
 }
@@ -9,35 +20,49 @@
   max-width: 67%;
 }
 .sponsor--or .sponsor__logo img {
-  max-height: 10rem;
+  max-height: var(--sponsor-or-height);
 }
 
 .sponsor--argent .sponsor__logo {
   max-width: 50%;
 }
 .sponsor--argent .sponsor__logo img {
-  max-height: 8rem;
+  max-height: var(--sponsor-argent-height);
 }
 
-.sponsor--bronze .sponsor__logo,
 .sponsor--autre .sponsor__logo {
   max-width: 33%;
 }
-.sponsor--bronze .sponsor__logo img,
 .sponsor--autre .sponsor__logo img {
-  max-height: 5rem;
+  max-height: var(--sponsor-autre-height);
+}
+
+.sponsor--bronze .sponsor__logo {
+  max-width: 25%;
+}
+.sponsor--bronze .sponsor__logo img {
+  max-height: var(--sponsor-bronze-height);
 }
 
 .sponsor {
   margin-top: calc(var(--base-spacing) * 8);
   margin-bottom: calc(var(--base-spacing) * 8);
 }
+.sponsor__logo {
+  display: block;
+}
 .sponsor__logo img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  object-position: bottom left;
+  object-position: center;
+}
+.sponsor--or .sponsor__description,
+.sponsor--argent .sponsor__description,
+.sponsor--bronze .sponsor__description,
+.sponsor--autre .sponsor__description {
+  display: none;
 }
 .sponsor__description h3 {
   margin-top: calc(var(--base-spacing) * 2);
@@ -58,6 +83,7 @@
   .sponsor-section__sponsors {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     margin-left: calc(var(--base-spacing) * -4);
     margin-right: calc(var(--base-spacing) * -4);
   }
@@ -77,41 +103,91 @@
     border-right: none;
   }
 
-  .sponsor-section--platine .sponsor__logo {
-    max-width: 67%;
+  .sponsor__description h3 {
+    margin-top: 0;
   }
+  .sponsor__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .sponsor__logo img {
+    object-position: center;
+  }
+  .sponsor-section--platine .sponsor__logo {
+    height: auto;
+    max-width: 67%;
+    margin-bottom: calc(var(--base-spacing) * 2);
+  }
+
+  .sponsor--argent .sponsor__logo img {
+    height: var(--sponsor-argent-height);
+  }
+  .sponsor--autre .sponsor__logo img {
+    height: var(--sponsor-autre-height);
+  }
+  .sponsor--bronze .sponsor__logo img {
+    height: var(--sponsor-bronze-height);
+  }
+
   .sponsor-section--or .sponsor__logo {
     max-width: 50%;
   }
-  .sponsor-section--argent .sponsor-section__sponsors > *,
-  .sponsor-section--bronze .sponsor-section__sponsors > *,
-  .sponsor-section--autre .sponsor-section__sponsors > * {
+  .sponsor-section--or .sponsor__logo img,
+  .sponsor-section--argent .sponsor__logo img,
+  .sponsor-section--bronze .sponsor__logo img,
+  .sponsor-section--autre .sponsor__logo img {
+    width: 100%;
+  }
+  .sponsor-section--argent .sponsor__logo,
+  .sponsor-section--bronze .sponsor__logo,
+  .sponsor-section--autre .sponsor__logo {
+    max-width: 80%;
+  }
+  .sponsor-section--or .sponsor__logo {
+    margin: 0 auto;
+  }
+  .sponsor-section--argent .sponsor-section__sponsors > * {
     width: 50%;
   }
-  .sponsor-section--argent .sponsor-section__sponsors > :nth-child(3n),
-  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(3n),
-  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(3n) {
-    border-right: none;
-  }
   .sponsor-section--argent .sponsor__logo {
-    max-width: calc(100% / 12 * 10);
+    margin: 0 auto;
+  }
+  .sponsor-section--bronze .sponsor-section__sponsors > *,
+  .sponsor-section--autre .sponsor-section__sponsors > * {
+    width: 33.3%;
   }
   .sponsor-section--bronze .sponsor__logo,
   .sponsor-section--autre .sponsor__logo {
-    max-width: 50%;
+    margin: 0 auto;
+  }
+  .sponsor-section--argent .sponsor-section__sponsors > :nth-child(2n),
+  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(3n),
+  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(3n),
+  .sponsor-section--argent .sponsor-section__sponsors > :last-child,
+  .sponsor-section--bronze .sponsor-section__sponsors > :last-child,
+  .sponsor-section--autre .sponsor-section__sponsors > :last-child {
+    border-right: none;
   }
 }
 
 @media screen and (min-width: 44em) {
   .sponsor--platine {
     display: flex;
+    align-items: stretch;
   }
   .sponsor--platine .sponsor__logo {
-    width: 33%;
+    display: flex;
+    align-items: center;
+    height: 100%;
     padding-right: calc(var(--base-spacing) * 4);
+    width: 33%;
   }
   .sponsor--platine .sponsor__logo img {
-    object-position: top right;
+    max-height: 12rem;
+    height: 100%;
+    object-position: center;
+    width: 100%;
   }
   .sponsor--platine .sponsor__description {
     width: 67%;
@@ -122,33 +198,41 @@
     width: 50%;
     border-right: 2px solid var(--color-ui-02);
   }
-  .sponsor-section--or .sponsor-section__sponsors > :nth-child(2n) {
+  .sponsor-section--or .sponsor-section__sponsors > :nth-child(2n),
+  .sponsor-section--or .sponsor-section__sponsors > :last-child {
     border-right: none;
   }
-  .sponsor-section--or .sponsor__logo {
-    max-width: calc(67% - calc(var(--base-spacing) * 4));
+  .sponsor--or .sponsor__logo img {
+    height: var(--sponsor-or-height);
   }
 
-  .sponsor-section--argent .sponsor-section__sponsors > *,
-  .sponsor-section--bronze .sponsor-section__sponsors > *,
-  .sponsor-section--autre .sponsor-section__sponsors > * {
+  .sponsor-section--or .sponsor__logo,
+  .sponsor-section--argent .sponsor__logo,
+  .sponsor-section--bronze .sponsor__logo,
+  .sponsor-section--autre .sponsor__logo {
+    max-width: 70%;
+  }
+
+  .sponsor-section--argent .sponsor-section__sponsors > * {
     width: 33%;
   }
-  .sponsor-section--argent .sponsor-section__sponsors > :nth-child(2n),
-  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(2n),
-  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(2n) {
+  .sponsor-section--autre .sponsor-section__sponsors > * {
+    width: 25%;
+  }
+  .sponsor-section--bronze .sponsor-section__sponsors > * {
+    width: 20%;
+  }
+  .sponsor-section--argent .sponsor-section__sponsors > :nth-child(n),
+  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(n),
+  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(n) {
     border-right: 2px solid var(--color-ui-02);
   }
   .sponsor-section--argent .sponsor-section__sponsors > :nth-child(3n),
-  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(3n),
-  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(3n) {
+  .sponsor-section--bronze .sponsor-section__sponsors > :nth-child(4n),
+  .sponsor-section--autre .sponsor-section__sponsors > :nth-child(5n),
+  .sponsor-section--argent .sponsor-section__sponsors > :last-child,
+  .sponsor-section--bronze .sponsor-section__sponsors > :last-child,
+  .sponsor-section--autre .sponsor-section__sponsors > :last-child {
     border-right: none;
-  }
-  .sponsor-section--argent .sponsor__logo {
-    max-width: calc(67% - calc(var(--base-spacing) * 4));
-  }
-  .sponsor-section--bronze .sponsor__logo,
-  .sponsor-section--autre .sponsor__logo {
-    max-width: calc(50% - calc(var(--base-spacing) * 4));
   }
 }

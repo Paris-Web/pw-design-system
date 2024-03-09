@@ -1,5 +1,6 @@
 {{ $niveau := .Get "niveau" }}
 {{ $resizeOptions := .Get "logoResizeOptions" }}
+{{ $hideDescription := .Get "hideDescription" }}
 <div class="sponsor-section sponsor-section--{{ $niveau }}">
   <h2 class="separation">{{ .Get "title" }}</h2>
 
@@ -21,6 +22,7 @@
       {{ .Scratch.Set "description" .Params.description }}
       {{ .Scratch.Set "siteUrl" .Params.siteUrl }}
       {{ .Scratch.Set "niveau" $niveau }}
+      {{ .Scratch.Set "hideDescription" $hideDescription }}
       {{ partial "sponsors/sponsor" . }}
     {{ end }}
   </div>
