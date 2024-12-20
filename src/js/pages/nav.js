@@ -151,7 +151,23 @@ const listenIntersection = (element, callback) => {
   });
 };
 
+const initModalDialog = () => {
+  const menu = document.querySelector('.menu__content');
+  if (window.matchMedia('(min-width: 68em').matches) {
+    Object.assign(menu, {
+      role: 'dialog',
+      ariaModal: 'true',
+      tabindex: '-1'
+    });
+  } else {
+    ['role', 'aria-modal', 'tabindex'].forEach(attr => {
+      menu.removeAttribute(attr);
+    });
+  }
+}
+
 const initNavigation = () => {
+  initModalDialog();
   listenButtons();
 };
 
