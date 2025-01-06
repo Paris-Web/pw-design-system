@@ -1,5 +1,6 @@
 import debounce from "../util/debounce";
-import throttle from "../util/throttle";
+
+const breakpoint = window.matchMedia('(max-width: 68em');
 
 const getFocusableElementsWithin = target =>
   target.querySelectorAll(
@@ -111,48 +112,26 @@ const listenButtons = () => {
   }
 };
 
-const listenIntersection = (element, callback) => {
-  const simulateIntersectionObserver = () => {
-    const offsetTop = element.offsetTop;
-    const windowHeight = window.innerHeight;
-    callback({ isIntersecting: window.scrollY > offsetTop - windowHeight });
-  };
-
-  const throttledSimulateIntersectionObserver = throttle(
-    simulateIntersectionObserver,
-    200
-  );
-  const debouncedSimulateIntersectionObserver = debounce(
-    simulateIntersectionObserver,
-    50
-  );
-
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      entries => {
-        const entry = entries.find(entry => entry.target === element);
-        callback(entry);
-      },
-      {
-        threshold: 0
-      }
-    );
-    observer.observe(element);
+const initModalDialog = (breakpoint) => {
+  const menu = document.querySelector('.menu__content');
+  if (breakpoint.matches) {
+    Object.assign(menu, {
+      role: 'dialog',
+      ariaModal: 'true',
+      tabindex: '-1'
+    });
   } else {
-    window.addEventListener("scroll", () => {
-      throttledSimulateIntersectionObserver();
-      debouncedSimulateIntersectionObserver();
+    ['role', 'aria-modal', 'tabindex'].forEach(attr => {
+      menu.removeAttribute(attr);
     });
   }
-
-  window.addEventListener("resize", () => {
-    throttledSimulateIntersectionObserver();
-    debouncedSimulateIntersectionObserver();
-  });
-};
+}
 
 const initNavigation = () => {
+  initModalDialog(breakpoint);
   listenButtons();
+
+  breakpoint.addEventListener("change", initModalDialog);
 };
 
 export default initNavigation;

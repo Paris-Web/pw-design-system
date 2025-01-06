@@ -1,8 +1,5 @@
-<div class="menu__sponsors">
-    <div class="menu__sponsors__title h2-like">Nos partenaires</div>
-
+<ul class="menu__sponsors">
     {{ with .Site.GetPage "page" "pages/sponsors/index.md" }}
-        <ul>
             {{ $sponsorsResources := .Resources }}
             {{ range where (.Resources.ByType "page") ".Params.niveau" "platine" }}
                 <li>
@@ -13,9 +10,8 @@
                     </a>
                 </li>
             {{ end }}
-        </ul>
     {{ end }}
 
-    <a href="{{ .Site.BaseURL }}pages/sponsors">Tous nos partenaires</a>
-    <a href="{{ .Site.BaseURL }}pages/devenez-sponsor">Soutenez Paris Web</a>
-</div>
+    <li><a href="{{ .Site.BaseURL }}pages/sponsors">Tous nos partenaires</a></li>
+    <li><a href="{{ .Site.BaseURL }}pages/devenez-sponsor">Soutenez Paris Web</a></li>
+</ul>
