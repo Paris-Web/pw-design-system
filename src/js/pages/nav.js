@@ -1,5 +1,6 @@
 import debounce from "../util/debounce";
-import throttle from "../util/throttle";
+
+const breakpoint = window.matchMedia('(max-width: 68em');
 
 const getFocusableElementsWithin = target =>
   target.querySelectorAll(
@@ -111,49 +112,9 @@ const listenButtons = () => {
   }
 };
 
-const listenIntersection = (element, callback) => {
-  const simulateIntersectionObserver = () => {
-    const offsetTop = element.offsetTop;
-    const windowHeight = window.innerHeight;
-    callback({ isIntersecting: window.scrollY > offsetTop - windowHeight });
-  };
-
-  const throttledSimulateIntersectionObserver = throttle(
-    simulateIntersectionObserver,
-    200
-  );
-  const debouncedSimulateIntersectionObserver = debounce(
-    simulateIntersectionObserver,
-    50
-  );
-
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      entries => {
-        const entry = entries.find(entry => entry.target === element);
-        callback(entry);
-      },
-      {
-        threshold: 0
-      }
-    );
-    observer.observe(element);
-  } else {
-    window.addEventListener("scroll", () => {
-      throttledSimulateIntersectionObserver();
-      debouncedSimulateIntersectionObserver();
-    });
-  }
-
-  window.addEventListener("resize", () => {
-    throttledSimulateIntersectionObserver();
-    debouncedSimulateIntersectionObserver();
-  });
-};
-
-const initModalDialog = () => {
+const initModalDialog = (breakpoint) => {
   const menu = document.querySelector('.menu__content');
-  if (window.matchMedia('(min-width: 68em').matches) {
+  if (breakpoint.matches) {
     Object.assign(menu, {
       role: 'dialog',
       ariaModal: 'true',
@@ -167,8 +128,10 @@ const initModalDialog = () => {
 }
 
 const initNavigation = () => {
-  initModalDialog();
+  initModalDialog(breakpoint);
   listenButtons();
+
+  breakpoint.addEventListener("change", initModalDialog);
 };
 
 export default initNavigation;
